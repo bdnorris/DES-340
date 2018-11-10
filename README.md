@@ -11,7 +11,7 @@ lastUpdated
  ## Calendar
 
  <ClientOnly>
-  <Calendar/>
+  <Calendar calId="buncuq6n9adeuvap19g0o32u7s%40" />
 </ClientOnly>
 
 
