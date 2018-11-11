@@ -2,15 +2,30 @@ module.exports = {
   title: 'Marlin Network User Interface Design Guidelines',
   description: 'lorem',
   themeConfig: {
+    displayAllHeaders: false, // Default: false
     lastUpdated: 'Last Updated', // string | boolean,
-    // nav: [
+    nav: [
     //   { text: 'Home', link: '/' },
-    //   { text: 'Responsive', link: '/chapters/responsive.html' },
+      { text: 'Projects', link: '/projects/' },
     //   { text: 'External', link: 'https://google.com' },
-    // ],
+    ],
     sidebar: [
       '/',
-      // ['/chapters/responsive.md', 'Responsive Design']
+      {
+        title: 'Projects',
+        collapsable: true,
+        children: [
+          'projects/project01.md',
+          'projects/project02.md',
+        ]
+      },
+      {
+        title: 'Lectures',
+        collapsable: true,
+        children: [
+          'lectures/lecture01.md'
+        ]
+      }
     ]
   },
   markdown: {
