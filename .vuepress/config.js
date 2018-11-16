@@ -20,6 +20,13 @@ module.exports = {
         ]
       },
       {
+        title: 'Exercises',
+        collapsable: true,
+        children: [
+          'exercises/exercise01.md',
+        ]
+      },
+      {
         title: 'Lectures',
         collapsable: true,
         children: [
