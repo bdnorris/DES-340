@@ -4,14 +4,16 @@
 
 ### Points: 50
 
-Many websites and on-screen applications are made up of reusable components of text, images and user interface elements (i.e. buttons). These components often need to be flexible, since there might be a lot of variation in the actual content they display. For instance, think about a Facebook post or an article summary on a news website.
+Often, we'll be discussing in class how web design is different than print. However, one thing that designing for screens and print have in common is that typography is often the cornerstone of a successful design. There are differences in the details, but the foundational concepts are still the same. 
 
-Effective digital design needs to be scannable and clearly direct the user to the content most relevant to them. Often, for business purposes, it needs to drive the user toward a specific action.
+We'll start this multi-part project by focusing on good typographic hierarchy by designing a post for a blog.
+
+...
 
 ## Objectives
 
-- Create a one-page website with a visual/textual narrative with a beginning, middle, and end, using:
-- Text
+- Create a clear typographic hierarchy for a standard blog post
+- Make it responsive...
 - Images
 
 ## Examples:
@@ -22,7 +24,9 @@ Effective digital design needs to be scannable and clearly direct the user to th
 *   [Heroku](https://www.heroku.com)
 *   [Craft CMS](https://craftcms.com)
 
-## Objectives
+## Design
+
+pick a theme, 
 
 *   Practice studying existing websites for effective methods and patterns of layout, design and user interface
 *   Introduction to designing user-interfaces/web layouts in Photoshop/Illustrator
