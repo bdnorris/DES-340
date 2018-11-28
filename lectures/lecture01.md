@@ -47,6 +47,14 @@ Design and development are neatly convergent – everyone wins when they underst
 
 [Danilo Campos: Why don't more designers code?](https://www.quora.com/Software-Product-Design/Why-dont-more-designers-code/answer/Danilo-Campos?share=1&srid=8P8)
 
+#### Ultimately
+
+If you want to do web design professionally, you will find benefits in learning some (front-end) code, but unless you work for a small firm it is unlikely you’ll have to write anything production ready.
+
 ## The learning curve
 
-...
+<img :src="$withBase('/assets/img/curve-2-1024x613.png')" alt="Developer Learning Curve">
+
+[Developer Learning Curve](https://www.crondose.com/2016/09/developer-learning-curve/)
+
+When starting...

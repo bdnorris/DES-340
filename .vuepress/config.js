@@ -1,12 +1,12 @@
 module.exports = {
-  title: 'Marlin Network User Interface Design Guidelines',
-  description: 'lorem',
+  title: 'Web Design for Design Majors',
+  description: 'DES-340 Documentation Site',
   themeConfig: {
     displayAllHeaders: false, // Default: false
     lastUpdated: 'Last Updated', // string | boolean,
     nav: [
     //   { text: 'Home', link: '/' },
-      { text: 'Projects', link: '/projects/' },
+    { text: 'Projects', link: '/projects/' },
     //   { text: 'External', link: 'https://google.com' },
     ],
     sidebar: [
@@ -41,6 +41,7 @@ module.exports = {
       includeLevel: [2, 3]
     }
   },
+  base: '/',
   // async ready() {
   //   // ...
   // }

@@ -1,13 +1,19 @@
 ---
-lastUpdated
+prev: false
+next: false
 ---
 
 
-# DES-340 : Web Design for Design Majors
 
+# DES-340
 
+## Calendar: Section 301 (Fleener/MW/4PM)
 
- ## Calendar
+<ClientOnly>
+  <Calendar calId="buncuq6n9adeuvap19g0o32u7s%40" />
+</ClientOnly>
+
+## Calendar: Section 302 (Norris/MW/7PM)
 
 <ClientOnly>
   <Calendar calId="buncuq6n9adeuvap19g0o32u7s%40" />
