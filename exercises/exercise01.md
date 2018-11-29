@@ -1,13 +1,21 @@
-# "Master Study" of user interface components
+# E1 HTML Bio
 
+## Your first HTML
 
-Points: 20
+We're going to get you started with some basic HTML by making a short bio in codepen.
 
 ### Step 1
 
-Screenshot 10 examples of calls to action, highlights, call-outs, or other “components” in web sites (from a curated source, such as thebestdesigns.com, onepagelove.com)  
-Example from wired.com: [https://www.evernote.com/l/ACzF7J2CVXlCSbJH1cFsKC_juYiiTIbZhtw](https://www.evernote.com/l/ACzF7J2CVXlCSbJH1cFsKC_juYiiTIbZhtw)
+You've created your [Codepen](https://codepen.io) account right? Login and make a new "pen". 
 
 ### Step 2
 
-Choose 3 of them, with instructor guidance, and do a 'study' of them: recreate each of them using Photoshop or Illustrator. You can substitute fonts when necessary.
+Add a picture of yourself. You can't upload photos directly to Codepen, so try using [postimage](https://postimg.cc) to upload a modestly sized image of yourself (~200px square) to use. After it's uploaded, copy the "Direct Link".
+
+Start your pen with an IMG tag. It's the tag we use to show images in an HTML Document. It works like:
+
+```{html}
+<img width="200" height="200" src="https://i.postimg.cc/XN2Rr5v3/brian-norris-head.png" alt="Brian Norris" />
+```
+
+Width...

@@ -35,26 +35,28 @@ To understand the basics of how large systems (websites) are put together and de
 
 > The more interesting question, then – are designers well served to know how to code?
 
-And the answer, obviously, is yes. Any design has constraints. A designer can be more successful by understanding the technological constraints behind whatever medium he or she designs for. An understanding of how certain approaches are "cheap" either in terms of development time or in terms of computational practicality can ensure that a design makes it out of a mockup and into some shipping software.
+> And the answer, obviously, is yes. Any design has constraints. A designer can be more successful by understanding the technological constraints behind whatever medium he or she designs for. An understanding of how certain approaches are "cheap" either in terms of development time or in terms of computational practicality can ensure that a design makes it out of a mockup and into some shipping software.
 
-The best designer is worth nothing if they spend weeks on end creating designs that require, say, some expensive-ass compositing that kills an application's framerate.
+> The best designer is worth nothing if they spend weeks on end creating designs that require, say, some expensive-ass compositing that kills an application's framerate.
 
-Constraints aside, it's great for a developer and designer to share skills because then they can use the same vocabulary. Anything that improves communication is, clearly, going to be a good idea.
+> Constraints aside, it's great for a developer and designer to share skills because then they can use the same vocabulary. Anything that improves communication is, clearly, going to be a good idea.
 
-And it goes both ways. Developers are well-served to understand design. They know what their code can do, and they know which approaches are resource-efficient. How nice when a developer can suggest a useful design opportunity they already know how to implement.
+> And it goes both ways. Developers are well-served to understand design. They know what their code can do, and they know which approaches are resource-efficient. How nice when a developer can suggest a useful design opportunity they already know how to implement.
 
-Design and development are neatly convergent – everyone wins when they understand more of both.
+> Design and development are neatly convergent – everyone wins when they understand more of both.
 
-[Danilo Campos: Why don't more designers code?](https://www.quora.com/Software-Product-Design/Why-dont-more-designers-code/answer/Danilo-Campos?share=1&srid=8P8)
+&mdash; [Danilo Campos: Why don't more designers code?](https://www.quora.com/Software-Product-Design/Why-dont-more-designers-code/answer/Danilo-Campos?share=1&srid=8P8)
 
-#### Ultimately
+#### Ultimately...  
 
 If you want to do web design professionally, you will find benefits in learning some (front-end) code, but unless you work for a small firm it is unlikely you’ll have to write anything production ready.
 
 ## The learning curve
 
-<img :src="$withBase('/assets/img/curve-2-1024x613.png')" alt="Developer Learning Curve">
+
+
+![Developer Learning Curve](/assets/img/curve-2-1024x613.png)
 
 [Developer Learning Curve](https://www.crondose.com/2016/09/developer-learning-curve/)
 
-When starting...
+To summarize, when starting out, you'll likely find some concepts pretty tough, but with a little effort, things will start to fall into place... for a while. Ultimately reach a bit of an impasse, where you can make basic things, but pushing towards a more complete understanding takes a disproportionate amount of effort compared to the learning the basics. 

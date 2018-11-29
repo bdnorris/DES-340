@@ -19,7 +19,9 @@ next: false
   <Calendar calId="buncuq6n9adeuvap19g0o32u7s%40" />
 </ClientOnly>
 
+## Syllabus
 
+[Download the Syllabus](/assets/pdf/FY19_Holiday_Operator_Letter.pdf)
 
 ---
 

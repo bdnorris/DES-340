@@ -24,6 +24,7 @@ module.exports = {
         collapsable: true,
         children: [
           'exercises/exercise01.md',
+          'exercises/exercise02.md',
         ]
       },
       {
