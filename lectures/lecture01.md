@@ -1,3 +1,7 @@
+---
+prev: false
+---
+
 # Introduction
 
 > All materials, whether wood or pixels, have a grain, and that grain suggests the best way to work. Go with the grain and one will find sturdiness combined with tremendous flexibility — a natural and exciting give that grounds decisions and excites with possibilities. Work against the grain and the work becomes precarious, difficult and fragile. Instead of the elegant bending that software requires to adjust to different screens, uses, and situations, the work breaks because it cannot adapt.

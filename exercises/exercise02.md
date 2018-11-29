@@ -1,4 +1,4 @@
-# E2 UI Study
+# E2: UI Study
 
 ## "Master Study" of user interface components
 

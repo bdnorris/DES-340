@@ -1,3 +1,7 @@
+---
+prev: false
+---
+
 # Project 1A: Intro to Digital Typography
 
 ## Web Typography Exploration
