@@ -5,7 +5,7 @@
 Points: 20
 
 Do a study (recreation) of one website masthead/header screenshot, rebuilding the headline, sub-headline, body copy and buttons (the ones that are on the top/header/masthead, not the whole page).
-Additionally, do a study of 3 of the buttons you found.
+Additionally, do a study of 3 of the buttons you found. 
 
 ### Step 1
 

@@ -48,6 +48,8 @@ Next, you'll include a heading with your name. Heading tags go from `<h1>` (top 
 
 Heading tags wrap some text, so they need to be closed at the end. Only a few "self-closing" tags like `<img>` would not have this. Most of the time, you need to close your tags using the opening tag with a `/` in front.
 
+Now that our name has a tag around it, we can refer to it as an **"element"**.
+
 ### Step 4: Add an E-mail link
 
 Links are a key feature of the Web and are the key component of the idea of [Hypertext](https://en.wikipedia.org/wiki/Hypertext), the "HT" in "HTML".
