@@ -12,11 +12,11 @@ module.exports = {
     sidebar: [
       '/',
       {
-        title: 'Projects',
+        title: 'Lectures',
         collapsable: true,
         children: [
-          'projects/project01.md',
-          'projects/project02.md',
+          'lectures/lecture01.md',
+          'lectures/lecture02.md',
         ]
       },
       {
@@ -25,13 +25,35 @@ module.exports = {
         children: [
           'exercises/exercise01.md',
           'exercises/exercise02.md',
+          'exercises/exercise03.md',
+          'exercises/exercise04.md',
+          'exercises/exercise05.md',
+          'exercises/exercise06.md',
+          'exercises/exercise07.md',
+          'exercises/exercise08.md',
         ]
       },
       {
-        title: 'Lectures',
+        title: 'Projects',
         collapsable: true,
         children: [
-          'lectures/lecture01.md'
+          'projects/project01A.md',
+          'projects/project01B.md',
+          'projects/project02.md',
+          'projects/project03.md',
+          'projects/project04.md',
+          'projects/project05.md',
+          'projects/project06.md',
+        ]
+      },
+      {
+        title: 'Resources',
+        collapsable: true,
+        children: [
+          'resources/curated-sources.md',
+          'resources/required-accounts.md',
+          'resources/codecademy.md',
+          'resources/further-learning.md',
         ]
       }
     ]

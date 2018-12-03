@@ -12,13 +12,12 @@ Often, we'll be discussing in class how web design is different than print. Howe
 
 We'll start this multi-part project by focusing on good typographic hierarchy by designing a post for a blog.
 
-...
-
 ## Objectives
 
-- Create a clear typographic hierarchy for a standard blog post
-- Make it responsive...
-- Images
+*   Practice studying existing websites for effective methods and patterns of layout, design and user interface
+*   Introduction to designing user-interfaces/web layouts in Photoshop/Illustrator/XD
+*   Introduction to designing typographic hierarchies for the screen
+*   Introduction to considerations of screen size in your designs
 
 ## Examples:
 
@@ -32,10 +31,24 @@ We'll start this multi-part project by focusing on good typographic hierarchy by
 
 pick a theme, 
 
-*   Practice studying existing websites for effective methods and patterns of layout, design and user interface
-*   Introduction to designing user-interfaces/web layouts in Photoshop/Illustrator
-*   Introduction to designing typographic hierarchies for the screen
-*   Introduction to considerations of screen size in your designs
+
+  - Define typography for a blog article, 
+  - Research 
+  - Must have 
+    - 3 levels of heading
+    - image w/ caption
+    - block quote
+    - list
+    - links
+  - Google fonts — 
+  - Use https://archetypeapp.com/
+    - Extract CSS, 
+    - In class demo of setting up responsive artboards, and translating CSS to Illustrator (backwards for education)
+      - font-size
+      - etc.
+  - Present
+- Part 2 
+  - Design a header, footer, next and previous links and an archive widget. All Responsive
 
 * * *
 

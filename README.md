@@ -3,8 +3,6 @@ prev: false
 next: false
 ---
 
-
-
 # DES-340
 
 ## Calendar: Section 301 (Fleener/MW/4PM)
@@ -21,7 +19,8 @@ next: false
 
 ## Syllabus
 
-[Download the Syllabus](/assets/pdf/FY19_Holiday_Operator_Letter.pdf)
+[Download the Syllabus (Norris)](/assets/pdf/FY19_Holiday_Operator_Letter.pdf)
+[Download the Syllabus (Fleener)](/assets/pdf/FY19_Holiday_Operator_Letter.pdf)
 
 ---
 
