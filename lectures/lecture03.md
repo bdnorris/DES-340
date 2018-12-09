@@ -1,6 +1,72 @@
 # How the Web Works
 
+# The Internet and the Web are not the same things
+
+## The Internet
+
+The Internet is a global network of computers. Pretty much anything you do that connects to another computer through your Internet Service Provider can said to be over the internet, including "The Web."
+
+## The Web
+
+The simplest way to define the "Web" is that the web is a subset of the internet that deals with what exists in the browser. If it's not in a browser, it's not the web. 
+
 ## What's a browser, and what happens when I put a URL in the address bar?
 
-> A browser is a piece of software which allows us to display content on the web (among other things). The most popular web browsers today include Chrome, Firefox, Safari, and Edge. In this lesson, the HTML that you write will be displayed in the emulated browser in the right of your workspace.
->
+A browser is a software application that displays HTML documents, additionally pulling in CSS, Javascript, Video and audio, etc. 
+
+Chrome, Firefox, Safari, Edge, Opera and Internet Explorer are some of the most popular browsers. Each one of them recieves HTML documents from servers. Usually, those documents have links to other files, images, style sheets, videos, javascript, fonts, etc. Each of these requests is happens over a protocol called "HTTP". 
+
+HTTP stands for "Hypertext Transfer Protocol," and it's what it sounds like, a system originally designed to download HTML files to the browser. It's been repurposed to retrieve all kinds of files by a browser. 
+
+### What's in a URL
+
+URL stands for "Uniform Resource Locator," the address of an online resource, like a web site or document. As the [MDN article points out](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL), each URL, in theory, points to a unique resource. However there are exceptions. The web server has different ways of interpreting a URL, and may act differently in different circumstances. 
+
+The URL lives in a browser's address bar, and is initialized in one of two ways: 
+- after clicking a link
+- by typing the URL directly into the address bar
+
+#### Anatomy of a URL
+
+Take the following URL:
+
+https://developer.mozilla.org/en-US/search?q=URL
+
+`https` is the _Protocol_, most of the time it's HTTP or it's secured version HTTPS. You might also see `mailto` for links that open new mail windows, `tel` which can start a phone call, `ftp` which is a protocol meant for transferring files, etc.
+
+`developer.mozilla.org` is the domain name. 
+
+`org` is what's known as a TLD or "top level domain." You're probably pretty familar with these, they include `com`, `net`, `.info`, and country codes like `us`, `uk`, `mx` etc. They're managed by the Internet Corporation for Assigned Names and Numbers (ICANN). 
+
+`mozilla` is the main domain name. This is the one that you buy when you buy a domain name. 
+
+`developer` in this example is a _subdomain_. Once you own a domain, you can usually make as many subdomains as you want. You can use them to point to different places on the web server, so you could run several different websites under the same domain name. 
+
+`/en-US/search` is the _path_. At its most basic level, this indicates that at the root of the website, there's a folder called _en-US_ then a folder called _search_. Often these are interpreted by the webserver in various ways, but ultimately, they're a way to structure content on your website. 
+
+`?q=URL` represents _parameters_ and their _values_. _q_ in this case stands for _query_, and it's value is URL. This is an easy way for a URL to pass values to the webserver. 
+
+So, in this URL, if you typed it into the address bar, a system called the **Domain Name System** (DNS) that works all the way from your computer, router, internet service provider and the backbone of the internet takes over. It figures out what web server is represented by _developer.mozilla.org_ and routes your request. 
+
+Next, the webserver looks at your path to figure out what document or page your requesting, in this case, search results in US english. 
+
+Then, the parameters are read by the server, and special results are returned based on that parameter. In this case, the server saw you wanted to search for the term _URL_, and it looked up in its database those results. It then built an HTML document with the content of those results, and sent it to your browser. 
+
+### Structuring your site
+
+Sometimes, you'll also see a URL like `http://mydomain.com/about.html`. This is a direct reference to the HTML document.
+
+With basic HTML and no program language to interpret URLs, you would almost always place in the root of your site an `index.html` file. **The webserver will always return the index.html file in any directory if that directory is what is requested.**
+
+So, if you created a site, and made an index.html file for the home page, how do you make the "About" page? 
+
+You could either create a file called `about.html` and reference like above, or you could create an "about" folder, place an `index.html` file inside of it, and reference it with a path like so: `http://mydomain.com/about/`. Again, the web server will return the index.html file inside the about folder when requested like so. 
+
+### Requesting files
+
+You'll also see URLs that point directly to other kinds of files, like `http://mydomain.com/my-image.jpg` or `http://mydomain.com/myPDF.pdf`. These directly reference files, and your browser acts appropriately. For an image, it'll usually show it in the browser. For a PDF, depending on how your browser is configured, it will either download the PDF, or show it in the browser. 
+
+## Conclusion
+
+This all happens so quick, you barely notice it, but it's important to understand how URLs work to understand the web, since it's the backbone of how we structure our sites to make them useable. 
+

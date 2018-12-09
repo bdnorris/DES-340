@@ -48,3 +48,8 @@ Fluid images
 
 Maybe try Bootstrap and Foundation
 	
+Coding Responsively
+Relative, Viewport, and Percentage Units
+Relative (%, em, rem) / Viewport (vw, vh, vmin, vmax)
+Min-widths, Max-widths, Min-height, Max-height
+Media Queries for your Breakpoints
