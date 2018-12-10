@@ -1,11 +1,3 @@
-# Responsive Design
-
-
-
-
-## Coding
-
-Responsive Design
 Talked about the design part, how do you code it?
 
 This is a huge subject. 

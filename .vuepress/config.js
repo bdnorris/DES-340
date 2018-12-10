@@ -15,8 +15,9 @@ module.exports = {
         title: 'Lectures',
         collapsable: true,
         children: [
-          'lectures/lecture01.md',
-          'lectures/lecture02.md',
+          'lectures/lecture01-intro.md',
+          'lectures/lecture02-rwd.md',
+          'lectures/lecture03-web-how.md',
         ]
       },
       {

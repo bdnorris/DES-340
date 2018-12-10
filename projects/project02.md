@@ -37,13 +37,8 @@ Usability is often just common sense, but, you have to take the time and make an
 
 ## Required Readings
 
-### Interaction Cost
-
-[http://www.nngroup.com/articles/interaction-cost-definition/](http://www.nngroup.com/articles/interaction-cost-definition/)
-
-### Information Scent
-
-[http://www.nngroup.com/articles/information-scent/](http://www.nngroup.com/articles/information-scent/)
+[Interaction Cost](http://www.nngroup.com/articles/interaction-cost-definition/)
+[Information Scent](http://www.nngroup.com/articles/information-scent/)
 
 ## Case Studies
 
