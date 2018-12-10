@@ -1,8 +1,11 @@
-# Project 1B: Digital Typography: Mastheads and Callouts??
+# Project 1B: Digital Typography Continued
 
 ## Web Typography Exploration
 
 ### Points: 50
+
+- Part 2 
+  - Design a header, footer, next and previous links. All Responsive
 
 One of the most important parts of a website’s layout is the masthead, and this is especially true on consumer facing sites. It’s the first thing people see when visiting your site and sets the tone for the whole site. It’s also the best place to sum up what your site is about with a tagline or welcome message. You can let the visitor know that they are in the right place, and what the primary value of the site is.
 
@@ -10,15 +13,20 @@ It’s also a common place to feature the company or organization’s logo and, 
 
 Your masthead should answer the questions: Where am I?, What can I do here?
 
-Objectives
-Further practice studying existing websites for effective methods and patterns of layout, design and user interface.
-Further practice designing user-interfaces/web layouts in Photoshop/Illustrator.
-Applying the design of typographic hierarchies for the screen to some more specific content.
-Screenshots/Research
+## Objectives
+
+- Further practice studying existing websites for effective methods and patterns of layout, design and user interface.
+- Further practice designing user-interfaces/web layouts in Photoshop/Illustrator.
+- Applying the design of typographic hierarchies for the screen to some more specific content.
+
+
+
+## Process
+
+## Screenshots/Research
 Look at the provided PSD (ctrl-click, download linked file).
 Screenshot the top headers of three websites that have a similar layout. The websites you choose should be from a curated source.
 Also take screenshots of 10 buttons/links/click-throughs on the websites you chose.
-
 
 Part 2: Graphic 1
 Use the provided PSD.
@@ -49,7 +57,9 @@ You can extend the height of the PSD.
 Part 3: Graphic 2
 Do a second graphic with the new masthead photo and design, and a redesigned secondary headline and body copy. This time, include an icon, isolated image, photo or video with the secondary headline and body copy (not inside the masthead).
 
-Presentation
+### Design
+
+## Presentation
 Add your final graphics to your InVision board.
 Make a section for the 3 studies called Assignment 2, Study 1.
 Drag the graphics into this section, along with their original screenshots. Set them each to take up half the screen.

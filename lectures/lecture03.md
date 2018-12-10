@@ -66,7 +66,37 @@ You could either create a file called `about.html` and reference like above, or 
 
 You'll also see URLs that point directly to other kinds of files, like `http://mydomain.com/my-image.jpg` or `http://mydomain.com/myPDF.pdf`. These directly reference files, and your browser acts appropriately. For an image, it'll usually show it in the browser. For a PDF, depending on how your browser is configured, it will either download the PDF, or show it in the browser. 
 
+### Referencing files inside your HTML
+
+Referencing URLs is important in not just structuring your site, but the design and layout as well. CSS files, Javascript files, fonts and images are all referenced with URLs in your HTML. We'll practice this, just remember, those URLs almost never have to be _full_ URLs, but can be _relative_ URLs when inside your HTML or CSS.
+
+Consider the following:
+
+`skills/infrastructure/understanding_urls`
+
+If your current URL was `http://mydomain.com/resources/`, this link would attempt to load `http://mydomain.com/resources/skills/infrastructure/understanding_urls`
+
+If I add a slash to the beginning, like so:
+
+`/skills/infrastructure/understanding_urls`
+
+Then it would instead attempt to access `http://mydomain.com/skills/infrastructure/understanding_urls`
+
+See the difference? Adding the slash assumes you want a URL relative to the root of the site, whereas no slash assumes I want a URL relative to my current path.
+
+You might also need to reference a relative URL like:
+
+`../css/mycss.css`
+
+Those two dots indicated I want to, relatively, go up one directory form where I currently am, then downo further into that path. I could even use `../../etc.css` to keep on going up however many directories I need to. 
+
+So you see, structure matters.
+
 ## Conclusion
 
-This all happens so quick, you barely notice it, but it's important to understand how URLs work to understand the web, since it's the backbone of how we structure our sites to make them useable. 
+This all happens so quick, you barely notice it, but it's important to understand how URLs work to understand the web, since it's the backbone of how we structure our sites to make them useable. We'll practice this in class, but I'd like you to start to pay closer attention to the URLs you use everyday. 
 
+## Resources
+
+[Anatomy of a URL](https://doepud.co.uk/blog/anatomy-of-a-url)
+[What is a URL? (MDN)](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL)

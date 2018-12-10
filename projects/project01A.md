@@ -15,51 +15,62 @@ We'll start this multi-part project by focusing on good typographic hierarchy by
 ## Objectives
 
 *   Practice studying existing websites for effective methods and patterns of layout, design and user interface
-*   Introduction to designing user-interfaces/web layouts in Photoshop/Illustrator/XD
-*   Introduction to designing typographic hierarchies for the screen
-*   Introduction to considerations of screen size in your designs
+*   Introduction to 
+    - designing user-interfaces/web layouts in Photoshop/Illustrator/XD
+    - designing typographic hierarchies for the screen
+    - considerations of screen size in your designs (responsive design)
 
 ## Examples:
 
-*   [Compstak](https://compstak.com/exchange)
-*   [Ionic Framework](http://ionicframework.com)
-*   [BackBlaze](https://www.backblaze.com)
-*   [Heroku](https://www.heroku.com)
-*   [Craft CMS](https://craftcms.com)
+*   [text](https://link)
 
-## Design
+## Process
 
-pick a theme, 
+You must find or write an article for your blog. It can be from an existing blog, or this could be an article from a magazine (the content does not have to be orginal, the design does).
 
+To be a good candidate for your blog, your chosen article must have:
 
-  - Define typography for a blog article, 
-  - Research 
-  - Must have 
-    - 3 levels of heading
-    - image w/ caption
-    - block quote
-    - list
-    - links
-  - Google fonts — 
-  - Use https://archetypeapp.com/
-    - Extract CSS, 
-    - In class demo of setting up responsive artboards, and translating CSS to Illustrator (backwards for education)
-      - font-size
-      - etc.
-  - Present
-- Part 2 
-  - Design a header, footer, next and previous links and an archive widget. All Responsive
+  - 3 levels of heading
+  - at leaste one image with caption
+  - block quote (you can define that)
+  - a list (bulleted or otherwise)
+  - some links to other articles
 
-* * *
-
-
-### Sketch
-
-### Explore Hierarchy
-
-### Design
-
-## Responsive
+### Responsive Design
 
 Your design should be “responsive”. The simplest requirement here, is that the content should be accessible on a mobile device, as well as a desktop computer. It does not mean that the site looks the same on all devices, just that the content is there regardless of device. We’ll go over a lot more of these details in class.
 
+### Research
+
+Research other blogs, looking particularly at their use of type. Consider overall design, but play close attention to their use of typography. Sizes, hierarchies, line-length, leading, etc. Take  screenshots of 3-6 examples present.
+
+### Explore Hierarchy
+
+Try using [Archetype App](https://archetypeapp.com/) to explore your typographic hierarchy. With this app, you can choose fonts, and adjust font sizes. It's a live web view, so what you can do here, you can actually do on the web. 
+
+This app will also let you select from Google's library of free fonts. We'll be using Google's fonts resources a lot in this class, since it's easy and free to include these in your project, and they have some of the most popular typefaces for the web. 
+
+[Google Fonts](https://fonts.google.com)
+
+## Design
+
+I'll provide some templates to get you started. You'll design your article only (we'll worry about headers and footers, etc. in part 2) at the given artboard sizes. So, you'll be designing three times, once each for desktop, tablet, and mobile. 
+
+If you chose a particularly long article, it is ok to cut off the design at a certain point, as long as the required elements are all present. In fact, you may want to edit your article, to show those required parts in a more condensed format, while keeping it looking natural.
+
+## Present
+
+Save your final designs in PNG format. I will show you how to do this in class. 
+
+- Add your final graphics to your InVision board.
+- Make a section for your research with the title __Project 1, Research__.
+    - Drag your screenshots into this section.
+- Make a section called __Project 1, Designs__
+    - Drag your final designs (PNG files) from each 
+    - Do this for each of your artboards.
+
+__In InVision, make sure your Assignment and graphics flow so that the newest items are at the top.__ Project 1, Designs should be on top.
+
+::: danger Due Dates
+1/20 ??? Final critique
+:::
