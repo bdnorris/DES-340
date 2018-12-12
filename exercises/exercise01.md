@@ -58,7 +58,7 @@ How does a browser, or anyone really, know what is a heading, and what is a para
 
 The tags let you start an element in one place, then define where it ends. Notice, the closing tag always has a slash(/), that means, "stop my element here". 
 
-> There are around 100 types of HTML tags but on a day to day basis, most coders only use around 15 to 20 of them. Paragraph tags (<p>) are among the most common.
+> There are around 100 types of HTML tags but on a day to day basis, most coders only use around 15 to 20 of them. Paragraph tags (`<p>`) are among the most common.
 
 -- SuperHi
 

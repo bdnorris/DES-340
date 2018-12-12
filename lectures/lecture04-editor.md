@@ -25,11 +25,13 @@ some are paid for.
 
 
 For instance, this code...
+```html
 <p>Hi there, Rik!</p>
 ...would look exactly the same as...
 <p>
 Hi
 there, Rik!</p>
+```
 
 
 > HTML ignores all the spacing and treats it as if it’s one sentence. If we want to control how the website looks, we need to use CSS — more on that later.
@@ -38,11 +40,13 @@ As HTML doesn’t care about gaps, it means we can make our code
 cleaner to read so that when we come back to it in a few months, or if
 we’re working with another coder, it can make more sense.
 For instance, this is hard to read:
+```html
 <p><a href="about.html">About</a></p>
 So to make it easier, I would write it like:
 <p>
 <a href="about.html">About</a>
 </p>
+```
 
 Indentation is a powerful tool when you start getting more complex
 code.
