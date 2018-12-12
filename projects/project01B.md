@@ -19,8 +19,6 @@ Your masthead should answer the questions: Where am I?, What can I do here?
 - Further practice designing user-interfaces/web layouts in Photoshop/Illustrator.
 - Applying the design of typographic hierarchies for the screen to some more specific content.
 
-
-
 ## Process
 
 ## Screenshots/Research

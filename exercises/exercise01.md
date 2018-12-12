@@ -36,7 +36,31 @@ _alt_ is also optional, but its a best practice to try and include it. It's the 
 
 **All of the above** are called _HTML Attributes_. They're parts of the "Tag" and are sometimes required, and sometimes optional and always in the format `="something"`. Understanding these and their tags are essential to understanding HTML. 
 
-Image tags don't wrap around text, so it's proper to include a `/` at the end of the tag to indicate it's complete (this is called a "self-closing" tag).
+Image tags don't wrap around anything, so it's proper to include a `/` at the end of the tag to indicate it's complete (this is called a "self-closing" tag).
+
+HTML lets you use tags to define what the different parts of text item are. 
+
+Say you have a heading, like "My Heading" and a paragraph underneath. 
+
+```html
+My Heading
+
+HTML stands for HyperText Markup Language. It was invented by British scientist Tim Berners-Lee in the late 1980s when he was working at a laboratory called CERN in Switzerland. Hard to imagine but in those days computer files basically sat on one machine and couldn’t easily be read by another. Not only did Tim invent HTML to “mark up” (or format) text, he invented the first web browser so he could read those files from anywhere.
+```
+
+How does a browser, or anyone really, know what is a heading, and what is a paragraph. It doesn't, you have to define it, with tags. So instead, we "markup" the document with tags...
+
+```html
+<h1>My Heading</h1>
+
+<p>HTML stands for HyperText Markup Language. It was invented by British scientist Tim Berners-Lee in the late 1980s when he was working at a laboratory called CERN in Switzerland. Hard to imagine but in those days computer files basically sat on one machine and couldn’t easily be read by another. Not only did Tim invent HTML to “mark up” (or format) text, he invented the first web browser so he could read those files from anywhere.</p>
+```
+
+The tags let you start an element in one place, then define where it ends. Notice, the closing tag always has a slash(/), that means, "stop my element here". 
+
+> There are around 100 types of HTML tags but on a day to day basis, most coders only use around 15 to 20 of them. Paragraph tags (<p>) are among the most common.
+
+-- SuperHi
 
 ### Step 3: Add a heading
 

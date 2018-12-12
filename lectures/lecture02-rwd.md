@@ -1,7 +1,5 @@
 # Responsive Design
 
-# Responsive Design
-
 [[toc]]
 
 There is a multitude of devices and screen sizes in use today, and most of them are capable of accessing the web. Designing sites that can run anywhere is a significant challenge. Responsive Web Design (RWD) is an approach to this problem. 
