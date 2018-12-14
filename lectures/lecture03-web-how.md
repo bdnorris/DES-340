@@ -92,9 +92,21 @@ Those two dots indicated I want to, relatively, go up one directory form where I
 
 So you see, structure matters.
 
+## Back to the browser
+
+So, when you put that URL in your browser, the DNS system finds the correct webserver, then that webserver interprets that URL, and sends and HTML file back to your browser. That HTML file referenes other files, that are also requested by your browser and sent back.
+
+When you fill out a form, you are sending more than a request, you're sending a packet of text information too.
+
+So your browser reads the HTML, reads the CSS file, lays out the content on the page. The browser also can read a programming language called Javascript and it can make things change in the browser, and create interactive experiences. 
+
+Some clever people also figured out a way to make javascript send HTTP requests as well. This allows the transfer of data back and forth without the URL actually changing in your browser. This is how all of our modern web applications work. They're just really fancy websites with alot of javascript.
+
+**Remember**, the files that make up a website might come from a server, but once they're in your browser, they're now on your computer or mobile device, the only thing that can change that is another HTTP request, or changing the URL. 
+
 ## Conclusion
 
-This all happens so quick, you barely notice it, but it's important to understand how URLs work to understand the web, since it's the backbone of how we structure our sites to make them useable. We'll practice this in class, but I'd like you to start to pay closer attention to the URLs you use everyday. 
+Often, this all happens so quick, you barely notice it, but it's important to understand how URLs work to understand the web, since it's the backbone of how we structure our sites to make them useable. We'll practice this in class, but I'd like you to start to pay closer attention to the URLs you use everyday. 
 
 ## Resources
 
