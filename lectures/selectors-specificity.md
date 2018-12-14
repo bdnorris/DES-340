@@ -1,4 +1,4 @@
-# CSS Intro and Selectors
+# CSS Selectors, Specificit and the Cascade
 
 > By default, the browser gives them a style that looks like the web would have looked in the late 1980s — a simple white background with black text in a default font. At the time this simple styling was fine for scientific research and basic websites, but as the Web became more popular, the Web’s authors wanted to tweak the look and feel of their sites.
 

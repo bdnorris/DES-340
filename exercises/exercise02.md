@@ -89,6 +89,14 @@ Find the index.html file on your computer, and drag it to any web browser.
 
 You should see in the top of you browser tab, the title you placed in the title tag as well as your heading and paragraph.
 
+## Running a local server
+
+Running a local webserver will speed up your development, since it allows you to preview what you're working on live, and in the context of how it will be treated when its deployed on a server. There's several ways to do this, but the easiest is to add an extension to your code editor. 
+
+...
+
+Now, this will launch in your browser, and will automatically update when you save.
+
 ## CSS 
 
 CSS Stands for "Cascading Style Sheets". We'll talk a lot about how that cascade works, and it's pros and cons, but for now, let's just talk about it's basic structure, and where you actually put it in your code editor.
@@ -103,19 +111,7 @@ The next thing to know is that CSS is not HTML. It looks different
 because it does a completely different job. It’s not marking up content,
 it’s describing what content should look like.
 
-### Where to put your CSS
-
-- The best place is it's own file.
-- The second best place is in the head of the document. 
-- The third best place is inline with the HTML.
-
-We'll do all three so you can see how it works. 
-
-...
-
 ### Anatomy of CSS
-
-
 
 There are two main parts to CSS: selectors and rules. The selector picks which part of HTML you want to style, then the rules tell the HTML how to look.
 
@@ -140,5 +136,73 @@ The real power of CSS comes from the selectors, which we'll talk more about late
 
 If you get a property wrong, it won't work. If you get a value wrong, it won't work. But, CSS is pretty forgiving, if you mess up, your page will still display, the browser will just ignore things it doesn't understand. 
 
-## Running a local server
+### Where to put your CSS
+
+1. it's own file.
+2. in the head of the document. 
+3. inline with the HTML.
+
+We'll do all three so you can see how it works. 
+
+There are a couple of ways to add a CSS file to your project, but the most common is to use the `<link>` tag. Start by making a file in your project called `style.css`. You can do this through your code editor.
+
+Then, in your index.html file, add the following tag:
+```html
+<link href="style.css" rel="stylesheet">
+```
+
+You're familiar with the href attribute now. In this case, it would usually be a relative URL, but it could be an absolute URL (one with HTTP://... etc.). The `rel` attribute stands for "relationship". There are other uses for the link tag, but we'll stick to using it for CSS for now.
+
+On every page of our website, we can place this link tag, and we will pull in the exact same CSS file on every page, making this one CSS file able to style our entire site. If we make one change to this file, it will be a global change, which is typically what you'd want.
+
+Now, in your style.css file, write a simple CSS ruleset:
+```css
+body {
+  background-color: #dedede;
+  font-size: 16px;
+  margin: 0;
+  color: #334;
+  font-family: sans-serif;
+}
+p {
+  color: inherit;
+}
+```
+
+Selecting the body tag lets us set global styles for our entire document. If your live server is working, or you have dropped our index.html into a browser and refresh, you should see some style changes to your document. 
+
+Next, lets put some CSS at the head of the document. 
+
+In your index.html file, inside the `<head>` tag, add the following code.
+
+```html
+<style type="text/css">
+body {
+  background-color: pink;
+}
+p {
+  color: blue;
+}
+</style>
+
+```
+
+These styles in the page are considered a higher priority than the linked file. If your styles do not conflict, both will be applied. If there's a conflict, your linked files styles will be overwritten. 
+
+Now, on your paragraph tag in your htmle file, add this attribute.
+
+```html
+style="color: green;"
+
+```
+
+That's an "inline style", and it has the highest priority. It will always overwrite conflicting styles.
+
+### Best Practices
+
+CSS and HTML are really open languages. They're forgiving and there are always a dozen ways to solve one problem. There's very little enforcement on how you organize your document and styles.
+
+Because of this, it's very easy for things to get out of control. If you're using styles in the head of the document, or inline styles, consider if you really need to, because later, if you need like to overwrite an inline style in your external CSS file, you're in big trouble. 
+
+We'll talk more about this when we discuss "specificity". 
 
