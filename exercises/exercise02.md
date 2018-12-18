@@ -49,6 +49,17 @@ These are the key required elements that need to be present in every HTML file. 
 
 The `<body>` element is where content you actually want to show up on the page lives. If you want it to show up, it has to be between the opening and closing `<body>` tags.
 
+```html
+<html>
+  <head>
+    <title>My website</title>
+  </head>
+  <body>
+    <h1>Hey there!</h1>
+  </body>
+</html>
+```
+
 ## Hierarchy is key
 
 ```html
@@ -57,9 +68,9 @@ The `<body>` element is where content you actually want to show up on the page l
 </body>
 ```
 
-> HTML is organized as a collection of family tree relationships. As you saw in the last exercise, we placed `<p>` tags within <body> tags. When an element is contained inside another element, it is considered the child of that element. The child element is said to be nested inside of the parent element.
+> HTML is organized as a collection of family tree relationships. As you saw in the last exercise, we placed `<p>` tags within `<body>` tags. When an element is contained inside another element, it is considered the child of that element. The child element is said to be nested inside of the parent element.
 
-> In the example above, the `<p>` element is nested inside the <body> element. The `<p>` element is considered a child of the <body> element, and the <body> element is considered the parent. You can also see that we've added two spaces of indentation (using the space bar) for better readability.
+<!-- > In the example above, the `<p>` element is nested inside the <body> element. The `<p>` element is considered a child of the <body> element, and the <body> element is considered the parent. You can also see that we've added two spaces of indentation (using the space bar) for better readability. -->
 
 > Since there can be multiple levels of nesting, this analogy can be extended to grandchildren, great-grandchildren, and beyond. The relationship between elements and their ancestor and descendent elements is known as __hierarchy__.
 
@@ -84,6 +95,8 @@ Type and `<html>` start and end tag, then put `<head>`, and `<body>` opening and
 Next, put some kind of text element inside body, a heading and a paragraph. Doesn't mater what they are, we're just messing around.
 
 Now, in the `<head>` tag, add a new tag called `<title>` and put some text inside it.
+
+> We’ve also added one more tag, the `<title>` tag, that lives in the `<head>` tag. The title isn’t included within the page’s content, but you’ll see the phrase “My website” in your browser tab and for your page’s headline in Google results.
 
 Find the index.html file on your computer, and drag it to any web browser.
 
@@ -155,6 +168,10 @@ You're familiar with the href attribute now. In this case, it would usually be a
 
 On every page of our website, we can place this link tag, and we will pull in the exact same CSS file on every page, making this one CSS file able to style our entire site. If we make one change to this file, it will be a global change, which is typically what you'd want.
 
+You can also include multiple CSS files by adding more link tags.
+
+> The order of the stylesheet is only important if you’re overwriting styles in more than one file — the bottom file will be the one that overwrites styles in the top one.
+
 Now, in your style.css file, write a simple CSS ruleset:
 ```css
 body {
@@ -200,7 +217,7 @@ That's an "inline style", and it has the highest priority. It will always overwr
 
 ### Best Practices
 
-CSS and HTML are really open languages. They're forgiving and there are always a dozen ways to solve one problem. There's very little enforcement on how you organize your document and styles.
+CSS and HTML are extremely open languages. They're forgiving and there are always a dozen ways to solve one problem. There's very little enforcement on how you organize your document and styles.
 
 Because of this, it's very easy for things to get out of control. If you're using styles in the head of the document, or inline styles, consider if you really need to, because later, if you need like to overwrite an inline style in your external CSS file, you're in big trouble. 
 
