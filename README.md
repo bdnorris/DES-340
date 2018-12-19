@@ -5,13 +5,14 @@ next: false
 
 # DES-340
 
-## Calendar: Section 301 (Fleener/MW/4PM)
+<!-- ## Calendar: Section 301 (Fleener/MW/4PM)
 
 <ClientOnly>
   <Calendar calId="buncuq6n9adeuvap19g0o32u7s%40" />
-</ClientOnly>
+</ClientOnly> -->
 
-## Calendar: Section 302 (Norris/MW/7PM)
+<!-- ## Calendar: Section 302 (Norris/MW/7PM) -->
+## Calendar
 
 <ClientOnly>
   <Calendar calId="buncuq6n9adeuvap19g0o32u7s%40" />
@@ -19,8 +20,8 @@ next: false
 
 ## Syllabus
 
-[Download the Syllabus (Norris)](/assets/pdf/FY19_Holiday_Operator_Letter.pdf)
-[Download the Syllabus (Fleener)](/assets/pdf/FY19_Holiday_Operator_Letter.pdf)
+[Download the Syllabus (Norris)](/assets/pdf/DES-340-Web-Design-19_01_norris.pdf)
+[Download the Syllabus (Fleener)](/assets/pdf/DES-340-Web-Design-19_01_fleener.pdf)
 
 ---
 
