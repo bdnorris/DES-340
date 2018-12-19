@@ -43,7 +43,7 @@ export default {
   },
   methods: {
     getEvents() {
-      axios.get(this.baseUrl + this.calId + 'group.calendar.google.com/events?showDeleted=false&key='+this.calKey+'&timeMax=2019-06-30T10%3A00%3A00-07%3A00&timeMin='+this.calStart)
+      axios.get(this.baseUrl + this.calId + 'group.calendar.google.com/events?showDeleted=false&key='+this.calKey+'&timeMax=2019-06-30T10%3A00%3A00-07%3A00&orderBy=startTime&singleEvents=true&timeMin='+this.calStart)
       .then(response => {
         console.log('response', response);
         this.$data.events = response.data.items
@@ -52,6 +52,7 @@ export default {
           console.log(error);
       })
     },
+
     parseDate(date) {
       let month = date.substring(5, 7);
       let dateS = date.substring(8, 10);
