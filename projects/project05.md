@@ -55,8 +55,6 @@ After discussing these items with me you should place them as text notes on your
 “Assignment 7: Part 1: Audience”  
 “Assignment 7: Part 1: User Stories”.
 
-<section id="assignment">
-
 # A7:2 Website Workflow: Information Architecture, Wireframing, and Prototyping
 
 Points: 50
@@ -171,39 +169,7 @@ Please place in your InVision account, under the heading “Assignment 7: Inform
 *   Your Sitemap, as text or image, whatever’s most appropriate.
 *   A text note of your published Webflow project wireframing URL.
 
-## Groups
 
-#### 1
-
-Nikki Vaughan  
-Emily Berry  
-Leah Faulkner  
-Taylor Berg  
-
-#### 2
-
-Natalie White  
-Midori Saito  
-James Hunter  
-Halie Branson  
-Melinda Brinker  
-
-#### 3
-
-Emma Allman  
-Kayla Santinanavat  
-Dave Gentilini  
-Abbey Imhoff  
-
-#### 4
-
-Ali Viknyanskaya  
-Avery Brown  
-Kelsey Horner  
-Abby Mellovitz  
-</section>
-
-<section id="assignment">
 
 # A7:3 Website Workflow: Planning Your Design and Development
 
@@ -238,7 +204,7 @@ We’re going to continue to approach this project with the idea that it is a la
     *   Headings
     *   Sub-headings
     *   Body text styles
-    *   Link and/or button styles (<a>)
+    *   Link and/or button styles (`<a>`)
     *   A color palette
     *   Borders, textures, ornaments, etc.
     *   Any other user interface elements that are central to your site
@@ -334,9 +300,7 @@ Style Tiles and Style Guides definitely bleed together. Both show colors, button
 *   [codeforamerica.clearleft.com](http://codeforamerica.clearleft.com/)
 *   [carbondesignsystem.com](http://carbondesignsystem.com/style/colors/swatches)
 
-</section>
 
-<section id="assignment">
 
 # A6: User Interface Design: User Profiles
 

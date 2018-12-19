@@ -25,7 +25,7 @@ You will randomly be assigned a PSD file of a web layout representing a desktop 
 
 ## An Exercise
 
-To get us started on this assignment, I would like you to do a little research. Find a small component or area on a website (any website, but you could consult our “[curated sources](resources.html)” list), screenshot it, and send me the link via Slack. I will do my best, as a presentation in-class, to inspect and describe how it's built. We want to focus on layout here. Not complex interactions or animations. Find an example where you want to know how the underlying HTML/CSS work to position the elements appropriately.
+<!-- To get us started on this assignment, I would like you to do a little research. Find a small component or area on a website (any website, but you could consult our “[curated sources](resources.html)” list), screenshot it, and send me the link via Slack. I will do my best, as a presentation in-class, to inspect and describe how it's built. We want to focus on layout here. Not complex interactions or animations. Find an example where you want to know how the underlying HTML/CSS work to position the elements appropriately. -->
 
 ## Where to Start
 

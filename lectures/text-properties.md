@@ -156,3 +156,24 @@ p {
 text-transform: capitalize;
 }
 ```
+
+<!-- 
+Vertical alignment
+There are two types of way to vertically align tags, and the best to use really depends on the type of display that your tags has.
+Aligning within text
+For “inline” and “inline-block” tags, there’s a pretty straightforward way to do this. There’s a rule in CSS called vertical-align that lets you change how the tag sits within text. For instance, if you want to sit a link to the top of a line of text, if we have bigger tags in that line of text, we can add:
+a {
+vertical-align: top;
+}
+
+Other alignments we can use include “middle”, “bottom” and “baseline” (based on where the letters in text sit).
+We can also use pixel or percentage units to push the tag up from the baseline:
+a {
+vertical-align: 10px;
+} -->
+
+<!-- We can use negative pixels or percentage units to push the tag down
+from the baseline:
+a {
+vertical-align: -30%;
+} -->
