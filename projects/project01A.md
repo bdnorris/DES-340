@@ -8,7 +8,7 @@ prev: false
 
 ### Points: 50
 
-Often, we'll be discussing in class how web design is different than print. However, one thing that designing for screens and print have in common is that typography is often the cornerstone of a successful design. There are differences in the details, but the foundational concepts are still the same. 
+Often, we'll be discussing in class how designing for screens and the web is different than designing for print. However, one thing they have in common is that typography is often the cornerstone of a successful design. There are differences in the details, but the foundational concepts are the same. 
 
 We'll start this multi-part project by focusing on good typographic hierarchy by designing a post for a blog.
 
@@ -22,27 +22,33 @@ We'll start this multi-part project by focusing on good typographic hierarchy by
 
 ## Examples:
 
-*   [text](https://link)
+*   [Help Scout](https://www.helpscout.com/blog/sales-as-a-service/)
+*   [500px](https://iso.500px.com/trending-landscapes-soft-blacks-themes-licensing/)
+*   [Wistia](https://wistia.com/learn/production/social-norms-100k-video)
+*   [Invision (Inside Design)][https://www.invisionapp.com/inside-design/how-to-create-a-ux-portfolio-without-ux-experience/
+*   [Kari Narrator](http://narrator.mauer.co/less-is-more-diving-into-minimalism-in-photography/)
+*   [Emergence](https://emergencemagazine.org/story/born-was-the-mountain/)
+*   [Oceanographic](https://www.oceanographicmagazine.com/features/lost-valley-dinosaurs/)
+*   [Christmas HQ](https://christmashq.com/food-and-drinks/candy/)
 
 ## Process
 
-You must find or write an article for your blog. It can be from an existing blog, or this could be an article from a magazine (the content does not have to be orginal, the design does).
+You must find or write an article for your blog design. It can be from an existing blog, or this could be an article from a magazine (the content does not have to be original, the design does).
 
 To be a good candidate for your blog, your chosen article must have:
 
-  - 3 levels of heading
-  - at leaste one image with caption
-  - block quote (you can define that)
-  - a list (bulleted or otherwise)
+  - at least 2 levels of headings
+  - at least 2 images with captions
+  - blockquote/pull-quote or highlight (you get to define this)
   - some links to other articles
 
 ### Responsive Design
 
-Your design should be “responsive”. The simplest requirement here, is that the content should be accessible on a mobile device, as well as a desktop computer. It does not mean that the site looks the same on all devices, just that the content is there regardless of device. We’ll go over a lot more of these details in class.
+Your design should be “responsive”. The simplest requirement is that the content should be accessible on a mobile device, as well as a desktop computer. It does not mean that the site looks the same on all devices, just that the content is accessible regardless of device. We’ll go over more of these details in class.
 
 ### Research
 
-Research other blogs, looking particularly at their use of type. Consider overall design, but play close attention to their use of typography. Sizes, hierarchies, line-length, leading, etc. Take  screenshots of 3-6 examples present.
+Research other blogs, considering overall design, but pay close attention to their use of typography. Sizes, hierarchies, line-length, leading, etc. Take screenshots of 3-6 examples present.
 
 ### Explore Hierarchy
 
@@ -54,23 +60,28 @@ This app will also let you select from Google's library of free fonts. We'll be 
 
 ## Design
 
-I'll provide some templates to get you started. You'll design your article only (we'll worry about headers and footers, etc. in part 2) at the given artboard sizes. So, you'll be designing three times, once each for desktop, tablet, and mobile. 
+I'll provide some templates to get you started. You'll design your article only (we'll worry about headers and footers, etc. in the next part of the assignment) at the given artboard sizes. So, you'll be designing three times, once each for desktop, tablet, and mobile. 
 
-If you chose a particularly long article, it is ok to cut off the design at a certain point, as long as the required elements are all present. In fact, you may want to edit your article, to show those required parts in a more condensed format, while keeping it looking natural.
+If you chose a particularly long article, it is ok to cut off the design at a certain point, as long as the required elements are all present. In fact, you may want to edit your article, to show those required parts in a more condensed format, while still maintaining a natural look.
+
+#### Templates
+- [Illustrator](/assets/Project1A-WebTemplate.ai)
+- [Photoshop](/assets/Project1A-WebTemplate.psd)
+- [XD](/assets/Project1A-WebTemplate.xd)
 
 ## Present
 
 Save your final designs in PNG format. I will show you how to do this in class. 
 
-- Add your final graphics to your InVision board.
-- Make a section for your research with the title __Project 1, Research__.
+1. Add your final graphics to your InVision board.
+2. Make a section for your research with the title __Project 1A, Research__.
     - Drag your screenshots into this section.
-- Make a section called __Project 1, Designs__
+3. Make a section called __Project 1A, Designs__
     - Drag your final designs (PNG files) from each 
     - Do this for each of your artboards.
 
-__In InVision, make sure your Assignment and graphics flow so that the newest items are at the top.__ Project 1, Designs should be on top.
+__In InVision, make sure your Assignment and graphics flow so that the newest items are at the top.__ Project 1A, Designs should be on top.
 
 ::: danger Due Dates
-1/20 ??? Final critique
+1/28 Final critique
 :::
