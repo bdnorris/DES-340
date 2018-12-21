@@ -8,15 +8,15 @@ prev: false
 
 — __Frank Chimero__ from the forward of _Learn to Code Now!_ by the __SuperHi Team__
 
-## What are we learning?
+## What Are We Learning?
 
 ### Technical Objectives
 
-The goal of this class is to provide a solid introduction into what the web is, how it works, and how to write basic HTML and CSS to get you started. We will discuss higher level concepts in lectures, and through online instruction, exercises and projects you will practice coding in these cornerstone languages of the web.
+The goal of this class is to provide a solid introduction into what the web is, how it works, and how to write basic HTML and CSS to get you started. We will discuss both higher level web design concepts and coding in lectures, and through online instruction. You will practice coding in these cornerstone languages of the web through exercises and projects.
 
 ### Design Objectives
 
-This class will provide an introduction to designing for screens generally, and the web specifically. We'll discuss and put into practice concepts like _Responsive Design_, _User Experience Design_, _User Interface Design_, _Information Architecture_, and typography for the screens and thew web.
+This class will provide an introduction to designing for screens generally, and the web specifically. We'll discuss and put into practice concepts like _Responsive Design_, _User Experience Design_, _User Interface Design_, _Information Architecture_, and typography for the screens and the web.
 
 ## Should designers code?
 
@@ -35,17 +35,19 @@ This class will provide an introduction to designing for screens generally, and 
 > Use code to be creative. Remember coding is really a design tool.
 Whether you’re designing the next Facebook or your new portfolio, all
 you’re doing is writing instructions to a computer. Make that box red.
-Make this column wider. Show the header after the user scrolls. We’re telling a fast but dumb machine how to make a site or an app do
-what we want.
+Make this column wider. Show the header after the user scrolls. We’re telling a fast but dumb machine how to make a site or an app do what we want.
 
-__SuperHi
+— SuperHi
 
 ### Most importantly: Reasons to learn the basics in this class
-#### Communication
-To possess a shared language of concepts, terms, and process with developers
-#### Understanding
-To understand the basics of how large systems (websites) are put together and design for resiliency, and to understand the limits of a particular technology (the web) and design for its strengths and avoid its weaknesses.
 
+#### Communication
+
+To possess a shared language of concepts, terms, and process with developers.
+
+#### Understanding
+
+To understand the basics of how large systems (websites) are put together and design for resiliency, and to understand the limits of a particular technology (the web) and design for its strengths and avoid its weaknesses.
 
 > The more interesting question, then – are designers well served to know how to code?
 
@@ -63,15 +65,15 @@ To understand the basics of how large systems (websites) are put together and de
 
 #### Ultimately...  
 
-If you want to do web design professionally, you will find benefits in learning some (front-end) code, but unless you work for a small firm it is unlikely you’ll have to write anything production ready.
+If you want to do web design professionally, you will find benefits in learning some (front-end) code, but unless you work for a small firm it is unlikely, in the role of designer, you’ll have to write anything production ready.
 
 ## Code languages
 
-There are tons of "programming" languages out there, but as designers (and for the scope of this course) we're mostly worried about the "Front-End" of websites. 
+There are dozens of "programming" languages out there, but as designers (and for the scope of this course) we're primarily worried about the "Front-End" of websites. 
 
-- Front-end: The visuals and interface that make up web sites (client-side)
+- Front-end: The visuals and interface that make up websites (client-side)
 - Back-end: The processes that a user doesn’t see, regarding prepping pages to send to the user from the server, based on URL/cookies/forms/etc., like saving data to a database, checking a user’s password or paying with a credit card (server-side)
-- - Back-end languages include PHP, Python, Ruby, Java, C# (.NET), etc. 
+  - Back-end languages include PHP, Python, Ruby, Java, C# (.NET), etc. 
 
 I will be mentioning back-end stuff from time to time, but it won't be a concern of this course.
 
@@ -79,7 +81,7 @@ There are also different languages for mobile applications. These are meant to r
 
 > The best way to think about front- vs back-end languages is to imagine a website being like a restaurant — you have a front-of-house staffed by the waiters, and a back-of-house where you find the cooks. A customer interacts directly with the waiters, who then tell the kitchen staff what to prepare. The cooks make your food, hand it to a waiter, who then delivers it to your table. On a website, you only see the front-end, which is what you interact with. The back-end works away behind the scenes.
 
-__SuperHi
+— SuperHi
 
 ### Front-end languages
 
@@ -87,13 +89,20 @@ The visual "front-end" of _all_ websites use a combination of...
 
 - _HTML_ (HyperText Markup Language) which defines, categorized and structures content.
 - _CSS_ (Cascading Style Sheets) which sets how everything (the HTML) should look.
-- _Javascript_ which is a scripting language that controls user interactions with web pages. Anything that happens
-after a page has loaded is usually controlled with Javascript
+- _Javascript_ which is a scripting language that controls user interactions with web pages. Anything that happens after a page has loaded is usually controlled with Javascript
 
 ## The learning curve
 
-![Developer Learning Curve](/assets/img/curve-2-1024x613.png)
+![Developer Learning Curve](/assets/img/learning-curve.png)
 
 [Developer Learning Curve](https://www.crondose.com/2016/09/developer-learning-curve/)
 
-To summarize, when starting out, you'll likely find some concepts pretty tough, but with a little effort, things will start to fall into place... for a while. Ultimately reach a bit of an impasse, where you can make basic things, but pushing towards a more complete understanding takes a disproportionate amount of effort compared to the learning the basics. 
+When starting out, you'll likely find some concepts pretty tough, but with a little effort, things will start to fall into place... for a while. Ultimately reach a bit of an impasse, where you can make basic things, but pushing towards a more complete understanding takes a disproportionate amount of effort compared to the learning the basics. 
+
+## How much code will you learn?
+
+It's kind of up to you. We will be covering a lot, but your coding skills will not really be a part of your grade (although, the effort you apply will).
+
+## What if you just can't code?
+
+Again, you will not be graded on the results of your code, just your effort.
