@@ -1,4 +1,4 @@
-# E3: Your first website
+# E2: Your first website
 
 ## Quick and minimal walkthrough of the bones of a website
 
