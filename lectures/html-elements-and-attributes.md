@@ -140,3 +140,9 @@ or footer, but you still want to divide it up somehow, there’s a more general 
 
 <!-- > If `<header>`, `<section>`, `<footer>` and `<div>` don’t actually style up the page, then why use them? Well, not only does it make it easier in the long term (more on this later), but search engines like Google want to know how you’re labeling your content. They’ll rank you higher in search results if they can better understand your HTML content, so it’s good to use `<header>` for all your header content and `<footer>` for your footer content.
  -->
+
+## Comments
+
+```<!-- -->```
+
+`/* */`
