@@ -16,8 +16,8 @@ module.exports = {
         collapsable: true,
         children: [
           'lectures/lecture01-intro.md',
-          'lectures/lecture02-rwd.md',
-          'lectures/lecture03-web-how.md',
+          // 'lectures/lecture02-rwd.md',
+          // 'lectures/lecture03-web-how.md',
         ]
       },
       {
@@ -25,13 +25,13 @@ module.exports = {
         collapsable: true,
         children: [
           'exercises/exercise01.md',
-          'exercises/exercise02.md',
-          'exercises/exercise03.md',
-          'exercises/exercise04.md',
-          'exercises/exercise05.md',
-          'exercises/exercise06.md',
-          'exercises/exercise07.md',
-          'exercises/exercise08.md',
+          // 'exercises/exercise02.md',
+          // 'exercises/exercise03.md',
+          // 'exercises/exercise04.md',
+          // 'exercises/exercise05.md',
+          // 'exercises/exercise06.md',
+          // 'exercises/exercise07.md',
+          // 'exercises/exercise08.md',
         ]
       },
       {
@@ -39,22 +39,22 @@ module.exports = {
         collapsable: true,
         children: [
           'projects/project01A.md',
-          'projects/project01B.md',
-          'projects/project02.md',
-          'projects/project03.md',
-          'projects/project04.md',
-          'projects/project05.md',
-          'projects/project06.md',
+          // 'projects/project01B.md',
+          // 'projects/project02.md',
+          // 'projects/project03.md',
+          // 'projects/project04.md',
+          // 'projects/project05.md',
+          // 'projects/project06.md',
         ]
       },
       {
         title: 'Resources',
         collapsable: true,
         children: [
-          'resources/curated-sources.md',
-          'resources/required-accounts.md',
-          'resources/codecademy.md',
-          'resources/further-learning.md',
+          // 'resources/curated-sources.md',
+          // 'resources/required-accounts.md',
+          // 'resources/codecademy.md',
+          // 'resources/further-learning.md',
         ]
       }
     ]
