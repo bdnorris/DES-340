@@ -40,7 +40,7 @@ As HTML doesn’t care about gaps, it means we can make our code
 cleaner to read so that when we come back to it in a few months, or if
 we’re working with another coder, it can make more sense.
 For instance, this is hard to read:
-```html
+```html 
 <p><a href="about.html">About</a></p>
 So to make it easier, I would write it like:
 <p>

@@ -1,12 +1,14 @@
 # Responsive Design
 
-[[toc]]
-
 There is a multitude of devices and screen sizes in use today, and most of them are capable of accessing the web. Designing sites that can run anywhere is a significant challenge. Responsive Web Design (RWD) is an approach to this problem. 
 
 Designing for the multitude of canvas dimensions is one of the most significant differences between print and digital design. We are now eight years into responsive design as an industry standard design approach, yet, the current state of design tools are not quite up to the task of assisting us in this approach (although, they are getting better). 
 
 So until our design software forces us to think this way, it's up to you to make sure you fill that gap. Thinking of your design canvas as a flexible document rather than one with defined boundaries is the first step.
+
+> Unlike designing a poster or a book, we have to factor in different screen sizes, different browsers and different devices used to access our web pages. A poster design doesn’t have to worry about the person looking at it. A magazine isn’t interactive and can’t change when we turn the pages.
+
+&mdash; SuperHi
 
 ## Responsive Behavior
 
@@ -19,7 +21,7 @@ Most of the time, it’s obvious from the design files which approach certain el
 
 ## Breakpoints
 
-Breakpoints are the pixel value dimensions of the browser’s viewport (browser window) that will trigger different visual layouts. They are typically based on the viewport width (since overflowing content can normally be reached by scrolling) but can be written for height as well. Major breakpoints should be chosen at the beginning of the design process. 
+Breakpoints are the pixel value dimensions of the browser’s viewport (browser window) that will trigger different visual layouts. They are typically based on the viewport width (since overflowing content can normally be reached by scrolling) but can be written for height as well. Major breakpoints necessarily need to be chosen at the beginning of the design process to form a basis for responsive layout. 
 
 ### Breakpoints and Artboards
 
@@ -63,11 +65,11 @@ Choose standard breakpoints for your artboards, and let your design and content 
 
 > Mobile First is a philosophy created by Luke Wroblewski that highlights the need to prioritize the mobile context when creating user experiences. Starting with mobile first:
 
-> Allows websites to reach more people (smartphones with built in browsers have a higher penetration than desktops in some markets)
+> Allows websites to reach more people (smartphones with built-in browsers have a higher penetration than desktops in some markets)
 
 > Forces designers to focus on core content and functionality (What do you do when you lose 80% of your screen real estate?)
 
--- Brad Frost [Mobile First Responsive Web Design](http://bradfrost.com/blog/post/mobile-first-responsive-web-design/)
+&mdash; Brad Frost [Mobile First Responsive Web Design](http://bradfrost.com/blog/post/mobile-first-responsive-web-design/)
 
 The mobile first approach essentially keeps you from making decisions that will hurt mobile users. Consider this approach, especially early in the process during wireframing. 
 
@@ -105,7 +107,7 @@ Asymmetric grids based around content is probably the most sophisticated approac
 
 When designing for various screens, there are multiple approaches to optimizing typography and a thousand variables.
 
-Measure (line-length) and word breaking are some of the more difficult things to control on the web and to optimize for responsive designs. Assuming a flexible container set to some percentage width of the viewport, how do you control line lengths when you don't control the canvas?
+Measure (characters per line) and word breaking are some of the more difficult things to control on the web and to optimize for responsive designs. Assuming a flexible container set to some percentage width of the viewport, how do you control line lengths when you don't control the canvas?
 
 A few approaches to consider:
 - adjusting the font size to maintain proper measure within different breakpoints. 
@@ -117,10 +119,15 @@ Leading, if properly set, should be set as a ratio, so it scales with the type s
 Just remember, you have less control here, _design for resiliency_, but accept that the web is a flexible medium.
 
 [Size Matters: Balancing Line Length And Font Size In Responsive Web Design](https://www.smashingmagazine.com/2014/09/balancing-line-length-font-size-responsive-web-design/)
+
 [Fluid Type](http://trentwalton.com/2012/06/19/fluid-type/)
+
 [Scaling your hierarchy](http://www.modularscale.com/)
+
 [Grid Lover](https://www.gridlover.net/try)
+
 [Archetype App](https://archetypeapp.com/)
+
 
 ## Responsive Images
 

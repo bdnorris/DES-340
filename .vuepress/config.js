@@ -16,7 +16,7 @@ module.exports = {
         collapsable: true,
         children: [
           'lectures/lecture01-intro.md',
-          // 'lectures/lecture02-rwd.md',
+          'lectures/lecture02-rwd.md',
           // 'lectures/lecture03-web-how.md',
         ]
       },
@@ -25,8 +25,8 @@ module.exports = {
         collapsable: true,
         children: [
           'exercises/exercise01.md',
-          // 'exercises/exercise02.md',
-          // 'exercises/exercise03.md',
+          'exercises/exercise02.md',
+          'exercises/exercise03.md',
           // 'exercises/exercise04.md',
           // 'exercises/exercise05.md',
           // 'exercises/exercise06.md',
