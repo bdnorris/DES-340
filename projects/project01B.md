@@ -4,14 +4,14 @@
 
 ### Points: 50
 
-- Part 2 
-  - Design a header, footer, next and previous links. All Responsive
+There's more to a site than just the content. Remember, the web was originally a way to store documents that could be linked together. The idea of a website, as in a collection of related pages came later. So, what makes a website a website? 
 
-One of the most important parts of a website’s layout is the masthead, and this is especially true on consumer facing sites. It’s the first thing people see when visiting your site and sets the tone for the whole site. It’s also the best place to sum up what your site is about with a tagline or welcome message. You can let the visitor know that they are in the right place, and what the primary value of the site is.
+### The Masthead
 
-It’s also a common place to feature the company or organization’s logo and, often, the primary navigation that will be repeated on every page of your site.
+One of the most important parts of a website’s layout is the masthead. It’s the first thing people see when visiting your site and sets the tone for the whole site. It’s also a common place to feature the company or organization’s logo and, often, the primary navigation that will be repeated on every page of your site.
 
 Your masthead should answer the questions: Where am I?, What can I do here?
+
 
 ## Objectives
 
@@ -19,53 +19,58 @@ Your masthead should answer the questions: Where am I?, What can I do here?
 - Further practice designing user-interfaces/web layouts in Photoshop/Illustrator.
 - Applying the design of typographic hierarchies for the screen to some more specific content.
 
+### The Footer
+
+Footers have a different role. They act as a safety net of the website, often exposing useful links and contact information in case the user doesn't find what they're looking for in the masthead or primary navigation.
+
+Both the masthead and the footer tend to stay consistent from page to page, anchoring the user and providing a sense that whatever page they're on, they're still on your site. 
+
+### The "Hero"
+
+A hero section is a bit different. It may change from page to page. It's role is to sum up what this page is about with a tagline or welcome message and often containing a "Call-to-action." You can let the visitor know that they are in the right place, and what the primary value of the page is.
+
+## Design
+
+For the second part of our digital typography project, you'll add a masthead, a footer, and a hero to your blog design. 
+
+### Requirements
+
+**The Masthead** will feature a site title (you can develop a simple logo if you want) and some basic navigation. We'll look more at naivgation later, so for now, you'll just include... 
+- links to 
+  - "Home"
+  - "About"
+  - "Contact"
+  - "Blog"
+- A search input
+- 
+**The Hero** will simply need to give a sense of your articles content. You can move your main title to here, or it could simply be a large image. Refer back to examples and research from the first part of this project. 
+
+**The Footer** will feature...
+- the same links as above
+- some contact information
+- social media links (at least 3)
+- a copywrite notice
+
 ## Process
 
 ## Screenshots/Research
-Look at the provided PSD (ctrl-click, download linked file).
-Screenshot the top headers of three websites that have a similar layout. The websites you choose should be from a curated source.
-Also take screenshots of 10 buttons/links/click-throughs on the websites you chose.
 
-Part 2: Graphic 1
-Use the provided PSD.
+Continue your research on other websites, paying specific attention to the three elements of this project. You'll need to include at least 3 each in the research section of your presentation.
 
-Replace the background photograph with a photo or illustration of yours or one you have rights to. The photo should be at least 1600 pixels wide originally so that you don't have to scale it up. The new photo should be either primarily dark (like the one currently in the PSD) or primarily light. It should also have an area (where your text will go) that isn't busy.
-
-Fonts are up to you this time, but you should stick to fonts available on Google Fonts, or Squirrel Fonts.
-
-This updated photo and the content it contains will be called the masthead.
-
-Inside the masthead, add this content:
-The top-level headline of the page
-Headline Copy: You deserve software that's as low maintenance as you are.
-Alternatives: You may change this copy, but it needs to be a 'you' statement directed at the viewer.
-You deserve [ a thing ] that is [ positive benefit ]
-Example: You deserve an illustrator that works as hard as you do. You deserve a sales force that loves your product as much as you do. You deserve a dating app that can find your [lost half, soul mate].
-A button or link (Call-to-action)
-Copy: Get Started Now
-Alternatives: You may change this copy, but it must be an action statement and can't be "Click here" or anything involving the word "click". The action statement should be what you want the user to do. For the dating app, it would be something like "Find them now".
-Below the masthead, you need this content:
-Secondary Headline
-Copy: Spend more time getting things done
-Alternatives: If you changed the headline copy, you can change this copy. It should relate to the headline.
-Example: (For the dating app) He's waiting: Find him today
-Body copy: Below the second headline, insert 2–3 sentences of lorem ipsum.
-You can extend the height of the PSD.
-
-Part 3: Graphic 2
-Do a second graphic with the new masthead photo and design, and a redesigned secondary headline and body copy. This time, include an icon, isolated image, photo or video with the secondary headline and body copy (not inside the masthead).
-
-### Design
+Continue sticking to fonts available from [Google's Font Library](https://fonts.google.com)
 
 ## Presentation
-Add your final graphics to your InVision board.
-Make a section for the 3 studies called Assignment 2, Study 1.
-Drag the graphics into this section, along with their original screenshots. Set them each to take up half the screen.
-Repeat for your other 2 studies.
-Make a section called Assignment 2, Graphic 1, above the studies.
-Drag your graphic for Graphic 1 into this section.
-Do this for each of your graphics.
-In InVision, make sure your Assignment and graphics flow so that the newest items are at the top… Assignment 2, Graphic 2 should be on top.
+Save your final designs in PNG format.
 
-Examples
-1 2 3 4 5 6
+1. Add your final graphics to your InVision board.
+2. Make a section for your research with the title __Project 1B, Research__.
+    - Drag your screenshots into this section.
+3. Make a section called __Project 1B, Designs__
+    - Drag your final designs (PNG files) from each 
+    - Do this for each of your artboards.
+
+__In InVision, make sure your Assignment and graphics flow so that the newest items are at the top.__ Project 1B, Designs should be on top.
+
+::: danger Due Dates
+2/11 Final critique
+:::

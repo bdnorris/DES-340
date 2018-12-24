@@ -4,8 +4,6 @@
 
 Points: 50
 
-Critique: Presentation style, 2 groups over two periods
-
 Our lives are full of mediated digital experiences, many of which we never consciously think about. We have each chosen a number of services to meet certain needs—how well are they doing their job from a user experience standpoint?
 
 > ### On Usability: from Steve Krug _(from Don’t Make Me Think: Revisited)_
@@ -87,11 +85,11 @@ You should also check [goodui.org](http://goodui.org/) for ideas as to what coul
     etc.
 4.  Write out some suggestions for how this process could be made better. You might address the major interaction cost elements from the reading, listed above. Cite references appropriately and use examples or research if necessary.
 
-### Case Study 2: Your choice
+<!-- ### Case Study 2: Your choice
 
 1.  Think of another common digital user experience you have.
 2.  **Pick a specific goal**, as I've done above (finding the breakdown of a cell phone bill, finding out when a physical bank branch is open) and outline the process of getting to that goal. Take a few screenshots that illustrate key points.
-3.  Write out some suggestions for how this process could be made better. You might address the major interaction cost elements from the reading, listed above. Cite references appropriately and use examples or research if necessary.
+3.  Write out some suggestions for how this process could be made better. You might address the major interaction cost elements from the reading, listed above. Cite references appropriately and use examples or research if necessary. -->
 
 ## Notes on Objectives
 
