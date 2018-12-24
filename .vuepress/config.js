@@ -25,7 +25,7 @@ module.exports = {
         collapsable: true,
         children: [
           'exercises/exercise01.md',
-          'exercises/exercise02.md',
+          'exercises/exercise02.md',  
           'exercises/exercise03.md',
           // 'exercises/exercise04.md',
           // 'exercises/exercise05.md',
@@ -51,7 +51,7 @@ module.exports = {
         title: 'Resources',
         collapsable: true,
         children: [
-          // 'resources/curated-sources.md',
+          'resources/curated-sources.md',
           // 'resources/required-accounts.md',
           // 'resources/codecademy.md',
           // 'resources/further-learning.md',

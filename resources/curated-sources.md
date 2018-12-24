@@ -4,9 +4,9 @@ prev: false
 
 # Curated Sources
 
-## List of curated web design sources for inspiration
+## List of curated web design sources for inspiration and research
 
-Curated Sources
+<!-- Curated Sources -->
 * [SiteInspire](https://www.siteinspire.com/)
 * [One Page Love](https://onepagelove.com/)
 * [Design Shack](https://designshack.net/gallery/all/)
