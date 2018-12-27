@@ -17,7 +17,7 @@ module.exports = {
         children: [
           'lectures/lecture01-intro.md',
           'lectures/lecture02-rwd.md',
-          // 'lectures/lecture03-web-how.md',
+          'lectures/lecture03-web-how.md',
         ]
       },
       {
@@ -40,8 +40,8 @@ module.exports = {
         children: [
           'projects/project01A.md',
           'projects/project01B.md',
-          // 'projects/project02.md',
-          // 'projects/project03.md',
+          'projects/project02.md',
+          'projects/project03.md',
           // 'projects/project04.md',
           // 'projects/project05.md',
           // 'projects/project06.md',

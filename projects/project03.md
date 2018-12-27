@@ -1,6 +1,6 @@
-# Good UI 
+# Project 3: Good UI 
 
-# A4: Effective User Interface Design
+## Effective User Interface Design
 
 Points: 100
 
