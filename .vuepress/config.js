@@ -18,6 +18,7 @@ module.exports = {
           'lectures/lecture01-intro.md',
           'lectures/lecture02-rwd.md',
           'lectures/lecture03-web-how.md',
+          'lectures/lecture04-clickability-and-affordance.md',
         ]
       },
       {
