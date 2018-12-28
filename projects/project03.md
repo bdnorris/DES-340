@@ -4,8 +4,6 @@
 
 Points: 100
 
-Critique: 2 Groups, separate presentations.
-
 User interface design is evolving rapidly, and making digital devices easier and easier to use. But competition online is fierce, and engaging the user with better user-interface practices can go a long way.
 
 On this assignment, you will practice some contemporary user interface design patterns, and see how they relate to common past solutions.
