@@ -19,7 +19,8 @@ module.exports = {
           "lectures/lecture02-rwd.md",
           "lectures/lecture03-web-how.md",
           "lectures/lecture04-clickability-and-affordance.md",
-          "lectures/lecture05-html-elements-and-attributes.md"
+          "lectures/lecture05-html-elements-and-attributes.md",
+          "lectures/lecture06-the-dom.md"
         ]
       },
       {
@@ -28,8 +29,8 @@ module.exports = {
         children: [
           "exercises/exercise01.md",
           "exercises/exercise02.md",
-          "exercises/exercise03.md"
-          // 'exercises/exercise04.md',
+          "exercises/exercise03.md",
+          'exercises/exercise04.md',
           // 'exercises/exercise05.md',
           // 'exercises/exercise06.md',
           // 'exercises/exercise07.md',

@@ -1,16 +1,21 @@
-# Read Brad Frost Chapters
+# Reading: Brad Frost's Atomic Design
 
-Key thing for design that can be quite large, or grow organically
+Points: 20
 
-encyclopedia
+When it comes to large design projects, thinking about graphic design as a system, instead of just the individual pieces becomes essential. This is true in traditional graphics, think about a styleguide for a major brand you might have seen, or a signage system for an internation airport. In digital design, large projects are common, and they can be even more complex than their counterparts in the digital world.
 
-cost of digital growth
+Digital products also have a relative low cost of growth. Adding a wing to an airport is an expensive prospect, while adding a new section to a website is less so. For that reason, there are less inhibitions for digital growth, and a project that started small can grow into an extremely complex project fairly quickly. For that reason, thinking systemically from the beginning can avoid a lot of potential headaches and future costs. 
 
-Chatper 2 Atomic Design Methodology
-http://atomicdesign.bradfrost.com/chapter-2/
+Brad Frost is an authority on design systems, stylguides and systematic thinking in digital design and development. Using the metaphor of atoms and molecules, he wrote "Atomic Design." It's available free online, and your assignment here is to read two of it's most relevant chapters for this course. 
 
-Chapter 4 The Atomic Workflow
-http://atomicdesign.bradfrost.com/chapter-4/
+## Assigned Readings
 
+[Chapter 2: Atomic Design Methodology](http://atomicdesign.bradfrost.com/chapter-2/)
 
-Please read it, and write up a list of at least six new things you learned. At least one full sentence for each. A more thoughtful response will likely get you some extra credit. Submit to me in a reasonable document format through Slack (rtf, doc, docx, pdf, etc.)
+[Chapter 4: The Atomic Workflow](http://atomicdesign.bradfrost.com/chapter-4/)
+
+Please read those chapters, and write up a list of at least **six** new things you learned, at least one full sentence for each. A more thoughtful response will likely get you some extra credit. Submit to me in a reasonable document format through Slack (rtf, doc, docx, pdf, etc.)
+
+:::danger Due Date
+??/??
+:::

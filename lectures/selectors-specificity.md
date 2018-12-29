@@ -1,5 +1,8 @@
-<!-- # CSS Selectors, Specificit and the Cascade
+# CSS Selectors, Specificity and the Cascade
 
+https://thecssworkshop.com/css-basics#module-css-selectors
+
+<!--
 > By default, the browser gives them a style that looks like the web would have looked in the late 1980s — a simple white background with black text in a default font. At the time this simple styling was fine for scientific research and basic websites, but as the Web became more popular, the Web’s authors wanted to tweak the look and feel of their sites.
 
 Over a few years between 1989 and 1996, to change the style, authors used plenty of “hacks” — non-standard ways to get around the limitations of the code they could play with. HTML started getting more complicated as more hacks were added, to the point where HTML started to look unusable to normal people.
