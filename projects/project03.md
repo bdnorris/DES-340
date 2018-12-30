@@ -4,7 +4,7 @@
 
 Points: 100
 
-User interface design is evolving rapidly, and making digital devices easier and easier to use. But competition online is fierce, and engaging the user with better user-interface practices can go a long way.
+User interface design is evolving rapidly, making digital devices easier and easier to use. But competition online is fierce, and engaging the user with better user-interface practices can go a long way.
 
 On this assignment, you will practice some contemporary user interface design patterns, and see how they relate to common past solutions.
 
@@ -14,31 +14,41 @@ On this assignment, you will practice some contemporary user interface design pa
 *   Applying the design of typographic hierarchies for the screen to some more specific content.
 *   Create examples for discussion on what constitutes good/better user interface design patterns.
 
-1.  Go to [goodui.org](https://www.goodui.org) and look at ideas [2](https://www.goodui.org/#2), [7](https://www.goodui.org/#7), [14](https://www.goodui.org/#14), [17](https://www.goodui.org/#17) and [52](https://www.goodui.org/#52)
-2.  Use these examples to make 5 designs, each in multiple formats.
+1.  Go to [goodui.org](https://www.goodui.org) and look at ideas...
+    <!-- - [#2 Try Giving a Gift instead of closing a sale right away.](https://www.goodui.org/#2),  -->
+    - [#7 Try Recommending instead of showing equal choices.](https://www.goodui.org/#7), 
+    - [#14 Try Exposing Options instead of hiding them.](https://www.goodui.org/#14), 
+    - [#17 Try Showing State instead of being state agnostic.](https://www.goodui.org/#17) and 
+    - [#52 Try Thanking instead of simply confirming completion.](https://www.goodui.org/#52)
+2.  Use these examples to make 4 designs, each in multiple formats.
 
 ## Grids
 
-For the following designs, I’m providing Illustrator and Photoshop files in the required formats, with a 12-column “grid” for desktop, and a 6-column for mobile. The grids were generated at [gridcalculator.dk](http://gridcalculator.dk/), so if you would like to adjust your grid, you can use that site to make your own Illustrator grids. Photoshop has a new function to create guides on artboards in a similar manner to this site.
+For the following designs, I’m providing Illustrator, Photoshop and XD files in the required formats, with a 12-column “grid” for desktop, and a 4-column for mobile. The grids were calculated at [gridcalculator.dk](http://gridcalculator.dk/), so if you would like to adjust your grid, you can use that site to make your own Illustrator grids. Photoshop has a new function to create guides on artboards in a similar manner to this site.
 
-[Illustrator Template](http://briannorris.io/msuweb/Assignment4_Template.ai) [Photoshop Template](http://briannorris.io/msuweb/Assignment4_Template.psd)
+[Illustrator Template](/assets/Project4-WebTemplate.ai) 
+
+[Photoshop Template](/assets/Project4-WebTemplate.psd)
+
+[Adobe XD Template](/assets/Project4-WebTemplate.xd)
 
 ## Design Summary
 
 You’ll be designing a series of before and after graphics at different sizes. First you will design the “before” version at a given, typical, desktop size. The before version represents an old, or at least, less thoughtful approach to a user interface problem.
 
-Then, for your after designs, I recommend you try designing them “**Mobile First**”. We’ll also try designing at double size, to ensure hi-res graphics, but, you’ll save the finals at half size. (I will lecture on the ins-and-outs of designing at different scales like this.) Then, when your mobile design is solid, you will create a desktop version of your design, repositioning or resizing elements as necessary. “**Mobile First**” is a design philosophy summed up with this quote:
+Then, for your after designs, I recommend you try designing them “**Mobile First**”. <!--We’ll also try designing at double size, to ensure hi-res graphics, but, you’ll save the finals at half size. (I will lecture on the ins-and-outs of designing at different scales like this.)--> Then, when your mobile design is solid, you will create a desktop version of your design, repositioning or resizing elements as necessary. “**Mobile First**” is a design philosophy summed up with this quote:
 
 > The mobile-first approach is a tenet of progressive enhancement. It is the ideology that mobile design, as the hardest, should be done first. Once the mobile design questions are answered, designing for other devices will be easier. What it boils down to is that, the smallest of the designs will have only the essential features, so right away you have designed the heart of your user experience.
 
 Read about the reasoning and the pros and cons of this approach yourself:
 
-[https://www.uxpin.com/studio/blog/a-hands-on-guide-to-mobile-first-design/](https://www.uxpin.com/studio/blog/a-hands-on-guide-to-mobile-first-design/)  
-[https://codemyviews.com/blog/mobilefirst](https://codemyviews.com/blog/mobilefirst)
+[A Hands-on Guide to Mobile First Design](https://www.uxpin.com/studio/blog/a-hands-on-guide-to-mobile-first-design/)  
+
+[Mobile First](https://codemyviews.com/blog/mobilefirst)
 
 Fonts are up to you, but it would be best to stick to fonts available on [Google Fonts](https://fonts.google.com/), or [Squirrel Fonts.](https://www.fontsquirrel.com/)
 
-## Design 1: Idea #2
+<!-- ## Design 1: Idea #2
 
 [goodui.org/#2](https://www.goodui.org/#2)
 
@@ -59,15 +69,15 @@ Fonts are up to you, but it would be best to stick to fonts available on [Google
 
 _Design your mobile version at 750px wide by 1334px tall. Then, when you're finished, save a copy of it at 375px x 667px (the first size is your “retina” version). This smaller, second version is what you will put on your InVision board._
 
-_If you need to add extra pixels to the height of the mobile design, you may._
+_If you need to add extra pixels to the height of the mobile design, you may._ -->
 
-### After Design (Large):
+<!-- ### After Design (Large):
 
 *   960px x 600px
 
-_Adjust the After Design to be fluid. It should have the same content as the original design, but the position and size of your elements can change._
+_Adjust the After Design to be fluid. It should have the same content as the original design, but the position and size of your elements can change._ -->
 
-## Design 2: Idea #7
+## #7 Try Recommending instead of showing equal choices.
 
 [goodui.org/#7](https://www.goodui.org/#7)
 
@@ -75,28 +85,30 @@ Create 3 products of your choosing (can be real or made up, but you'll need an i
 
 ### Before Design:
 
-*   960px x 600px
+*   1028px x ~600px (it's okay to change the height)
 *   Create the 3 products on the page.
 *   Each should have an image, a price, a product name, 1 sentence of lorem ipsum (product description) and 1 other piece of data.
 *   Give each product the exact same design treatment on the page.
 
 ### After Design (Mobile):
 
+* 388px x ~800px (it's okay to change the height)
+
 Create the design again, but this time, pull one product out, recommend it, and give it special design treatment.
 
 Must include a recommendation statement like "We recommend" or "perfect for you" etc.
 
-_Design your mobile version at 750px wide by 1334px tall. Then, when you're finished, save a copy of it at 375px x 667px (the first size is your “retina” version). This smaller, second version is what you will put on your InVision board._
+<!-- _Design your mobile version at 750px wide by 1334px tall. Then, when you're finished, save a copy of it at 375px x 667px (the first size is your “retina” version). This smaller, second version is what you will put on your InVision board._ -->
 
 _If you need to add extra pixels to the height of the mobile design, you may._
 
 ### After Design (Large):
 
-*   960px x 600px
+*   1028px x ~600px (it's okay to change the height)
 
 _Adjust the After Design to be fluid. It should have the same content as the original design, but the position and size of your elements can change._
 
-## Design 3: Idea #14
+## #14 Try Exposing Options instead of hiding them.
 
 [goodui.org/#14](https://www.goodui.org/#14)
 
@@ -104,7 +116,7 @@ Create 3 options for a user to choose from (may be related to one of the above d
 
 ### Before Design:
 
-*   960px x 600px
+*   1028px x ~600px (it's okay to change the height)
 *   Typeset the lead sentence (headline)
 *   Design a dropdown below it. It should be an un-opened dropdown with something like "Choose an option"
 *   Create a second state of this dropdown. It has been clicked, and is now displaying the 3 options.
@@ -112,6 +124,8 @@ Create 3 options for a user to choose from (may be related to one of the above d
 *   Remember, you don't need to completely fill the space with the dropdown menu. Small or medium sized elements are fine, and so is negative space.
 
 ### After Design (Mobile):
+
+* 388px x ~800px (it's okay to change the height)
 
 Create the design again, but this time, pull the options out of the drop down, and expose them inside the design, similar to how they are exposed in the goodui.org example.
 
@@ -121,11 +135,11 @@ _If you need to add extra pixels to the height of the mobile design, you may._
 
 ### After Design (Large):
 
-*   960px x 600px
+*   1028px x ~600px (it's okay to change the height)
 
 _Adjust the After Design to be fluid. It should have the same content as the original design, but the position and size of your elements can change._
 
-## Design 4: Idea #17
+## #17 Try Showing State instead of being state agnostic.
 
 [goodui.org/#17](https://www.goodui.org/#17)
 
@@ -133,11 +147,13 @@ Create a tabular list of data like on goodui.org. You can use the same content t
 
 ### Before Design:
 
-*   960px x 600px
+*   1028px x ~600px (it's okay to change the height)
 *   Create the table of data with a headline ("Your Invoices") followed by the list of items (the invoices) and their price.
 *   Remember, you don't need to completely fill the space with the table. Small or medium sized elements are fine, and so is negative space.
 
 ### After Design (Mobile):
+
+* 388px x ~800px (it's okay to change the height)
 
 Create the design again, but this time, give users the option to pay directly inside the table. Show one of the items (invoices) as having been paid. Show one of them as having been partially paid.
 
@@ -147,11 +163,11 @@ _If you need to add extra pixels to the height of the mobile design, you may._
 
 ### After Design (Large):
 
-*   960px x 600px
+*   1028px x ~600px (it's okay to change the height)
 
 _Adjust the After Design to be fluid. It should have the same content as the original design, but the position and size of your elements can change._
 
-## Design 5: Idea #52
+## #52 Try Thanking instead of simply confirming completion.
 
 [goodui.org/#52](https://www.goodui.org/#52)
 
@@ -159,12 +175,14 @@ The user has just completed one of the actions that you wanted them to complete 
 
 ### Before Design:
 
-*   960px x 600px
+*   1028px x ~600px (it's okay to change the height)
 *   Have an acknowledgement statement saying something general like "We got your order!" or "Your free month is on the way!" as your headline.
 *   Follow it with 3 sentences of lorem ipsum.
 *   Remember, you don't need to completely fill the space with the design. Small or medium sized elements are fine, and so is negative space.
 
 ### After Design (Mobile):
+
+* 388px x ~800px (it's okay to change the height)
 
 *   Create the design again, but this time, thank the user, followed by a "You" statement. Example:  
     Thank you statement: "Thank you for buying [PRODUCT NAME].
@@ -178,7 +196,7 @@ _If you need to add extra pixels to the height of the mobile design, you may._
 
 ### After Design (Large):
 
-*   960px x 600px
+*   1028px x ~600px (it's okay to change the height)
 
 _Adjust the After Design to be fluid. It should have the same content as the original design, but the position and size of your elements can change._
 
@@ -207,3 +225,5 @@ Add your final graphics to your InVision board.
 *   Make a section on your InVision board called Assignment 4, Design 1.
 *   Arrange the before, after and mobile designs neatly in the section.
 *   Do this for each design.
+
+## Examples

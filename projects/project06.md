@@ -2,11 +2,7 @@
 
 ## Project 1 or 5
 
-# A5: Single Page HTML/CSS Practice
-
-Points: 50
-
-Presentation style, one group.
+Points: 100
 
 ## Objectives
 
