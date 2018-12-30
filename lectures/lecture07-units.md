@@ -22,7 +22,7 @@ Oh, boy. What should ultimately be the simplest unit, is actually a bit complica
 <div height="200" width="300"></div>
 ```
 
-> This would use 200 × 300 device pixels to be drawn on screen. On a Retina display, the same div would use 400 × 600 device pixels in order to keep the same physical size, resulting in four times more pixels, as shown in the figure below.
+> This would use 200 × 300 device pixels to be drawn on screen. On a Retina display, the same div would use 400 × 600 device pixels in order to keep the same physical size, resulting in four times more pixels...
 
 #### Bitmap Pixels (image)
 
@@ -34,7 +34,7 @@ Oh, boy. What should ultimately be the simplest unit, is actually a bit complica
 
 #### Sorry for that
 
-...but the above will become very important when we start talking about retina graphics later. For now, we can define pixels in CSS very easily by using the 'px' suffix.
+...but the above will become very important when we start talking about retina graphics later. For now, we can define pixels in CSS  easily by using the 'px' suffix.
 
 ```css
 .my-div {
@@ -44,20 +44,44 @@ Oh, boy. What should ultimately be the simplest unit, is actually a bit complica
 
 ## Relative Units
 
+Relative units are in relation to something else. This means these units can automatically scale when that relationship changes. 
+
 <!-- What is a relative unit?
 A relative unit gets sizing from something else. In the specification the relative length units are defined as em, ex, ch and rem. These are font-relative lengths. The specification also defines a % value, which is always relative to another value. Using relative values means that things can scale up and down according to some other value. -->
 
 ### Percentages
 
-## em Units
+Setting percentages on an element makes its size relative to their parent. For instance, if you had a `<div>` set to 100%...
+
+```css
+.my-div {
+    width: 100%;
+}
+```
+
+It will fill the width of whatever its parent is, if the parent is `<body>`, it will span the entire window. If you placed another div inside this div and set it to 50%...
+
+```css
+.my-div .inside-div {
+    width: 50%;
+}
+```
+
+This div will always be half of the parent. 
+
+If you changed the parent to be 80%, the 50% would compute to 40% of the window. If you changed the parent to be 400px, that 50% would now only ever mean 200px.
 
 <!-- A container directly inside the viewport with a width of 90% will always be 90% of the available width - whether I am on a phone or high resolution display.
 
 If I have another container inside that first container with a width of 50%, it takes 50% of the width of the parent element and not the viewport. -->
 
+### em Units
+
+Em is the font relative unit, this is similar to Em spaces and Em dashes that you are already familiar with. This unit is relative to itself, then its parent.  
+
 <!-- > An em unit is a size relative to the current font size of that tag. By default, the font size would 16px, so we could use em units instead of px if we’re unsure what pixel size to use but want to make it relative sized:-->
 
-This is similar to Em spaces and Em dashes that you are already familiar with. 
+Given the following CSS...
 
 ```css
 header {
@@ -65,7 +89,7 @@ header {
 }
 ```
 
-> By default, that would be twice 16px (32px). However, if we have something inside the header and use em units, it would be now based on 32px sizes:
+If the base font size is 16px, that would be twice 16px (32px). However, if we have something inside the header and use em units, it would be now based on 32px sizes, because the nested `<h1>` here inherits the font size from its parent. 
 
 ```css
 header h1 {
@@ -73,47 +97,52 @@ header h1 {
 }
 ```
 
-<!-- The font relative units em, ex, ch and rem
-The first of these units are most of interest when it comes to the typography in your designs. The rem and em units however, while referring to font sizes, can be very useful in creating flexible, scalable designs.
+So the H1 size would be 32px &times; 1.5 = 48px.
 
-ex
-The ex unit refers to the x-height of the font. Typically the size of the letter x in that font.
+This can be very useful in creating flexible, scalable designs. 
 
-ch
-The ch unit refers to the width of the ‘0’ (zero) character in the font for that element.
+If I added some padding... 
 
-em
-Using ems as a length unit in layout, and in particular in padding and margins can help to maintain a vertical rhythm. If a user resizes their text or you decide to make font sizes larger or smaller in your stylesheet, the em length unit will scale proportionately. In this example I am using ems for the padding on the box. The padding remains in proportion as I resize the font. -->
+```css
+header h1 {
+    font-size: 1.5em;
+    padding: 1em;
+}
+```
 
+The padding would be relative to the `<h1>` which is relative to its parent, making it _48px_ as well. Saying the padding should be 1em, means you want the padding to be the same as the font-size, which we set at 1.5 * its parent. A bit complex. 
 
-<!-- > The pixel size for this `<h1>` tag would be 1.5 times 32px (not 16px), so 48px large in pixel units.
+The best example would be a standard button. Imagine setting a button's font-size to 2em. Then, you set the margin and padding in Em units as well. If you wanted to make a larger or smaller version, you could just change the fonts size of the button, and all the padding and margins will scale accordingly because Em units are relative to their parents.  As the font size changes, anything else set in Ems changes respectively.
 
-Tough at first, so it will be easier to avoid them while you're learning. However, they can be very powerful.
-
--->
-
-The best example, would be a standard button. Imagine setting a button's font-size to 2em. Then, you set the margin and padding in Em units as well. If you wanted to make a larger or smaller version, you could just change the fonts size of the button, and all the padding and margins will scale accordingly because Em units are relative to their parents.  
-
-
-
+Perhaps when you're learning, you might avoid Ems for a bit, but they can be very powerful. 
 
 <!-- Using em for the width of elements can ensure that a box containing some text increases in width as the font size increases. If I change the widths on the boxes in the example above to ems the boxes now increase in width as their font size increases. -->
 <!-- 
 The em size is relative to the font size on the element in question. This can make ems a little tricky to use. If elements are nested or appear in different contexts in your document you can find that text or elements sized with ems can appear much smaller or larger than you imagined. In the example below both nested boxes have the same class, setting a width of 10em. However that 10em is much wider in the second box because the parent has a larger font-size. -->
 
+### ch and ex
+
+Honestly, I often forget these exist, but they're worth mentioning. 
+
+_ex_ is a unit referring to the x-height of the font.
+
+_ch_ is a unit referring to the width of the zero character in that font.
+
 ### rem Units
 
-> Similar to em units, rem units are based on the current font size of the page (not the current tag). In the last example, the header size would be
-32px if we had “2em” or “2rem”, but the `<h1>` tag would be 24px if we
-were to use “1.5rem” instead of “1.5em”
-
-
-<!-- rem
-The rem (root em) unit is the font-size of the root element, which is usually the html element. As with em, you can use this value as a length unit and it will always remain relative to the root element. You don’t get the nesting issue as we saw with em. This makes it easier for you to set sizes relative to a font size declared on the root element, no matter what context the element is in.
-
-If we change the previous example so that .inner has a width of 20rem the width will be the same for that element no matter what the font-size of the parent is. To change that size we adjust the font size of the html element. -->
+Rem units ("root" em) are similar to Ems, but instead of being relative to the element or its parent, it is only relative to the default font size of the page. If you're default font size (set on `<html>` or `<body>`), is 16px, then 1rem is always 16px, and 2rem is always 32px.
 
 ## Viewport Percentage Units
+
+The viewport is the area in the browser that actually contains your website. Viewport units are relative to this, which makes them incredibly useful.
+
+### vw and vh
+
+1vw = 1% of the viewport width
+
+1vw = 1% of the viewport height
+
+Viewport units are tied to the width of the browser, so if you adjust the size of your browser, these units adjust as well. 
 
 <!-- When we describe the viewport we are talking about the visible area of the website at the current time. Viewport units are relative to the viewport. This makes them incredibly useful for sizing fonts relative to the size of the viewport the user has without needing to use media queries. -->
 
@@ -138,29 +167,43 @@ This unit makes it easy for us to make an element as tall as the viewport. For e
 <!-- vw: 1/100th of the width of the viewport
 You can use the vw unit for simple, flexible grids. The example below demonstrates two columns, one of 30vw and one of 60vw floated left and right. -->
 
-<!-- vmin: equal to the smaller of vh or vw
-A value of 10vmin would be equal to 10vh if the viewport was shorter than it is wide, and 10vw if the viewport is taller than it is wide.
-
-vmax: equal to the larger of vh or vw
-A value of 10vmax would be equal to 10vh if the viewport was taller than it is wide, and 10vw if it is shorter than it is wide. -->
-
 ```css
 section {
     height: 100vh;
 }
 ```
 
-> The “vmin” units look at the sizes of “vh” and “vw” and see which one of
+Would always make that section equal to the full height of the viewport.
+
+### vmin and vmax
+
+`10vmin` would be equal to either 10vh or 10vw, depending on the orientation of the browser. If the width is less than the height, `10vmin` would be 10vw, and vice versa.
+
+`vmax` is the opposite, orienting to whichever is larger between the width or the height.
+
+<!-- vmin: equal to the smaller of vh or vw
+A value of 10vmin would be equal to 10vh if the viewport was shorter than it is wide, and 10vw if the viewport is taller than it is wide.
+
+vmax: equal to the larger of vh or vw
+A value of 10vmax would be equal to 10vh if the viewport was taller than it is wide, and 10vw if it is shorter than it is wide. -->
+
+
+
+<!-- > The “vmin” units look at the sizes of “vh” and “vw” and see which one of
 the two is the smallest. The “vmax” unit does the same, except looking
-for the larger of “vh” and “vw”.
+for the larger of “vh” and “vw”. -->
 
 ## Degrees
 
-> For some CSS rules, we might use angles, such as in background gradients or rotations. To use degrees we use “deg”. For instance, “5deg” is rotate from the top by 5 degrees clockwise. We can use the opposite direction by making it negative, i.e. “-5deg”.
+For some CSS items (like transforms, that we'll look at later) we might use angles. In this case, the suffix is `deg` as in `45deg`.
+
+<!-- > For some CSS rules, we might use angles, such as in background gradients or rotations. To use degrees we use “deg”. For instance, “5deg” is rotate from the top by 5 degrees clockwise. We can use the opposite direction by making it negative, i.e. “-5deg”. -->
 
 ## Multipliers
 
-> Some CSS rules can also take multiplier numbers, such as line heights and scale. This would be just a single number, which might include decimal places. For instance:
+Some CSS rules can just take multipliers or ratios. The best example is line-height.
+
+<!-- > Some CSS rules can also take multiplier numbers, such as line heights and scale. This would be just a single number, which might include decimal places. For instance: -->
 
 ```css
 body {
@@ -168,14 +211,18 @@ body {
 }
 ```
 
-> This means make the line height (or leading), 1.5 times the current
-font size.
+The line height (leading) will always be 1.5 times the current font size. Highly recommended to use a multiplier here instead of setting a pixel or em size.
 
 ## Zero is zero
 
-> Some students ask, what’s the difference between using “0” and “0px”
+Most of the time, when you need to set something to 0, you don't need a unit. 
+
+```css
+font-size: 0;
+```
+
+So in most cases "0" and "0px" are treated the same.
+
+<!-- > Some students ask, what’s the difference between using “0” and “0px”
 or “0em”. The answer is nothing — no pun intended — zero is zero no
-matter what unit you use!
-
-## New Grid Unit "fr"
-
+matter what unit you use! -->
