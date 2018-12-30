@@ -167,10 +167,21 @@ article h1 {
 }
 ```
 
+## "Semantic" markup
+
+You'll notice a lot of the tags are named relating to a role they perform. The general idea with having two code language, HTML and CSS is that they perform different functions. HTML tags should describe what the content means and what the content's role is, not how they look. That's for CSS. 
+
+So when marking up your HTML, your goal should be to describe the content as accurately as possible using the tags available to you. Then you can describe how it looks with CSS.
+
+This is a goal and a principle, it will not always work out perfectly, and that's ok. Sometimes you will use a tag inappropriately. That's ok, it will work. It happens, but keeping in mind our goal of keeping things "Semantic" (relating to meaning) will help us keep our code clean and sane and easier for machines and people to read.
+
+Keeping your HTML semantic and meaningful will also make your CSS cleaner and more readable. 
 
 ## Further structure with classes
 
-You'll define further structure by giving all the above tags classes. We'll talk more about this, but for now, just note that all of these tags, and more, can have a class attribute added to them, and more than one class can be added to each, separated by spaces.
+You'll define further structure by giving all the above tags classes. We'll talk more about this, but for now, just note that all of these tags, and more, can have a class attribute added to them, and more than one class can be added to each, separated by spaces. This gives our elements more "semantic" information. 
+
+**Defining classes and writing CSS to support them is the main task of a front-end developer.**
 
 ```html
 <div class="my-regular-section my-special-section">
@@ -181,3 +192,23 @@ You'll define further structure by giving all the above tags classes. We'll talk
     <!-- content -->
 </div>
 ```
+
+## Also, IDs.
+
+There's another attribute you can use called an "Id". In theory, IDs should only be used once per page. They look like...
+
+```html
+<div id="this-one-thing" class="my-regular-section my-special-section">
+    <!-- content -->
+</div>
+```
+
+However, there's nothing preventing you from using duplicate IDs so it can lead to mistakes. Generally, I think you can avoid using IDs for now, and focus on meaningful and smartly written classes. If you do need to style ONE thing on a page differently, you can use an ID in CSS like...
+
+```css
+#my-id {
+    /* my rules */
+}
+```
+
+But, there is a specificity problem here, that we will discuss in a future lecture.
