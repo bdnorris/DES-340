@@ -22,6 +22,7 @@ module.exports = {
           "lectures/lecture05-html-elements-and-attributes.md",
           "lectures/lecture06-the-dom.md",
           "lectures/lecture07-units.md",
+          "lectures/lecture08-color.md",
         ]
       },
       {
