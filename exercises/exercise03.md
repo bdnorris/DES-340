@@ -41,11 +41,14 @@ There's a special filename called `index.html`. Pretty much every web server eve
 
 ## Required structure
 
+- `<!DOCTYPE html>` 
 - `<html>`
   - `<head>`
   - `<body>`
 
-These are the key required elements that need to be present in every HTML file. `<html>` is a wrapper for the whole page and `<head>` is where you put tags to load in CSS, set metadata describing the document, and a plethora of other items we'll discuss later. 
+These are the key required elements that need to be present in every HTML file. The first item is called a "Doctype" declaration. HTML has went through a few iterations over the years. This simple doctype means "Hey browser, interpret this page as standard HTML." This tag is different than most, in that it doesn't need to be closed.
+
+`<html>` is a wrapper for the whole page and `<head>` is where you put tags to load in CSS, set metadata describing the document, and a plethora of other items we'll discuss later. 
 
 The `<body>` element is where the content you actually want to show up on the page lives. If you want it to show up, it has to be between the opening and closing `<body>` tags.
 
