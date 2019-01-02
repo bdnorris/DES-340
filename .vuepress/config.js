@@ -23,6 +23,7 @@ module.exports = {
           "lectures/lecture06-the-dom.md",
           "lectures/lecture07-units.md",
           "lectures/lecture08-color.md",
+          "lectures/lecture09-text-properties.md"
         ]
       },
       {
@@ -32,7 +33,7 @@ module.exports = {
           "exercises/exercise01.md",
           "exercises/exercise02.md",
           "exercises/exercise03.md",
-          'exercises/exercise04.md',
+          "exercises/exercise04.md"
           // 'exercises/exercise05.md',
           // 'exercises/exercise06.md',
           // 'exercises/exercise07.md',
@@ -46,8 +47,8 @@ module.exports = {
           "projects/project01A.md",
           "projects/project01B.md",
           "projects/project02.md",
-          "projects/project03.md"
-          // 'projects/project04.md',
+          "projects/project03.md",
+          "projects/project04.md"
           // 'projects/project05.md',
           // 'projects/project06.md',
         ]
@@ -56,10 +57,12 @@ module.exports = {
         title: "Resources",
         collapsable: true,
         children: [
-          "resources/curated-sources.md"
-          // 'resources/required-accounts.md',
-          // 'resources/codecademy.md',
-          // 'resources/further-learning.md',
+          "resources/codecademy.md",
+          "resources/required-accounts.md",
+          "resources/curated-sources.md",
+          // "resources/resources.md",
+          "resources/further-learning.md",
+          "resources/randomizer.md"
         ]
       }
     ]

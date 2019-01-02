@@ -69,6 +69,9 @@ In the early days of the web, we used tags called `<bold>` and `<italic>`. But, 
 ### Span
 `<span>` is a generic tag used to separate some section of text. You can add a class and style it easily (change color, weight, etc.). It is **inline** by default.
 
+### Sup and Sub
+`<sup>` and `<sub>` are for superscript and subscript, respectively. The default styles for these will usually work. They are **inline** by default.
+
 ### Lists
 
 We looked at lists a bit before. They are a nested element made up of a wrapper, and items inside. They are really useful for organizing items, but they have a lot of default styles that need to be overwritten.

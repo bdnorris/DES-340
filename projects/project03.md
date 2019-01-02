@@ -34,15 +34,17 @@ For the following designs, I’m providing Illustrator, Photoshop and XD files i
 
 ## Design Summary
 
-You’ll be designing a series of before and after graphics at different sizes. First you will design the “before” version at a given, typical, desktop size. The before version represents an old, or at least, less thoughtful approach to a user interface problem.
+You’ll be designing a series of before and after graphics at different sizes. First, you will design the “before” version at a given, typical, desktop size. The before version represents an old, or at least, less thoughtful approach to a user interface problem.
 
 Then, for your after designs, I recommend you try designing them “**Mobile First**”. <!--We’ll also try designing at double size, to ensure hi-res graphics, but, you’ll save the finals at half size. (I will lecture on the ins-and-outs of designing at different scales like this.)--> Then, when your mobile design is solid, you will create a desktop version of your design, repositioning or resizing elements as necessary. “**Mobile First**” is a design philosophy summed up with this quote:
 
 > The mobile-first approach is a tenet of progressive enhancement. It is the ideology that mobile design, as the hardest, should be done first. Once the mobile design questions are answered, designing for other devices will be easier. What it boils down to is that, the smallest of the designs will have only the essential features, so right away you have designed the heart of your user experience.
 
+&mdash; Ben Gremillion
+
 Read about the reasoning and the pros and cons of this approach yourself:
 
-[A Hands-on Guide to Mobile First Design](https://www.uxpin.com/studio/blog/a-hands-on-guide-to-mobile-first-design/)  
+[A Hands-on Guide to Mobile First Design](https://www.uxpin.com/studio/blog/a-hands-on-guide-to-mobile-first-design/)
 
 [Mobile First](https://codemyviews.com/blog/mobilefirst)
 
@@ -77,7 +79,7 @@ _If you need to add extra pixels to the height of the mobile design, you may._ -
 
 _Adjust the After Design to be fluid. It should have the same content as the original design, but the position and size of your elements can change._ -->
 
-## #7 Try Recommending instead of showing equal choices.
+## #7 Try recommending instead of showing equal choices.
 
 [goodui.org/#7](https://www.goodui.org/#7)
 
@@ -85,14 +87,14 @@ Create 3 products of your choosing (can be real or made up, but you'll need an i
 
 ### Before Design:
 
-*   1028px x ~600px (it's okay to change the height)
+*   1028px &times; ~600px (it's okay to change the height)
 *   Create the 3 products on the page.
 *   Each should have an image, a price, a product name, 1 sentence of lorem ipsum (product description) and 1 other piece of data.
 *   Give each product the exact same design treatment on the page.
 
 ### After Design (Mobile):
 
-* 388px x ~800px (it's okay to change the height)
+* 388px &times; ~800px (it's okay to change the height)
 
 Create the design again, but this time, pull one product out, recommend it, and give it special design treatment.
 
@@ -100,15 +102,24 @@ Must include a recommendation statement like "We recommend" or "perfect for you"
 
 <!-- _Design your mobile version at 750px wide by 1334px tall. Then, when you're finished, save a copy of it at 375px x 667px (the first size is your “retina” version). This smaller, second version is what you will put on your InVision board._ -->
 
-_If you need to add extra pixels to the height of the mobile design, you may._
+<!-- _If you need to add extra pixels to the height of the mobile design, you may._ -->
 
-### After Design (Large):
+### After Design (Desktop):
 
-*   1028px x ~600px (it's okay to change the height)
+*   1028px &times; ~600px (it's okay to change the height)
 
 _Adjust the After Design to be fluid. It should have the same content as the original design, but the position and size of your elements can change._
 
-## #14 Try Exposing Options instead of hiding them.
+### Examples
+
+<img style="display:block;border:1px solid #ccc;" src="/assets/img/137504249.png" alt="Before" />Before
+
+<img style="display:block;border:1px solid #ccc;" src="/assets/img/137504247.png" alt="After (mobile)" />After (mobile)
+
+<img style="display:block;border:1px solid #ccc;" src="/assets/img/137504248.png" alt="After (desktop)" />After (desktop)
+
+
+## #14 Try exposing options instead of hiding them.
 
 [goodui.org/#14](https://www.goodui.org/#14)
 
@@ -116,30 +127,39 @@ Create 3 options for a user to choose from (may be related to one of the above d
 
 ### Before Design:
 
-*   1028px x ~600px (it's okay to change the height)
+*   1028px &times; ~600px (it's okay to change the height)
 *   Typeset the lead sentence (headline)
 *   Design a dropdown below it. It should be an un-opened dropdown with something like "Choose an option"
-*   Create a second state of this dropdown. It has been clicked, and is now displaying the 3 options.
-*   You can display both states inside the same 960px x 600px space. Alternatively, you can divide the space into 2 images. (For example: Two 480px x 600px images)
-*   Remember, you don't need to completely fill the space with the dropdown menu. Small or medium sized elements are fine, and so is negative space.
+*   Create a design of the state of this dropdown. It has been clicked and is now displaying the 3 options.
+*   Remember, you don't need to completely fill the space with the dropdown menu. Small or medium-sized elements are fine, and so is negative space.
 
 ### After Design (Mobile):
 
-* 388px x ~800px (it's okay to change the height)
+* 388px &times; ~800px (it's okay to change the height)
 
-Create the design again, but this time, pull the options out of the drop down, and expose them inside the design, similar to how they are exposed in the goodui.org example.
+Create the design again, but this time, pull the options out of the dropdown and expose them inside the design, similar to how they are exposed in the goodui.org example.
 
-_Design your mobile version at 750px wide by 1334px tall. Then, when you're finished, save a copy of it at 375px x 667px (the first size is your “retina” version). This smaller, second version is what you will put on your InVision board._
+<!-- _Design your mobile version at 750px wide by 1334px tall. Then, when you're finished, save a copy of it at 375px x 667px (the first size is your “retina” version). This smaller, second version is what you will put on your InVision board._ -->
 
-_If you need to add extra pixels to the height of the mobile design, you may._
+<!-- _If you need to add extra pixels to the height of the mobile design, you may._ -->
 
-### After Design (Large):
+### After Design (Desktop):
 
-*   1028px x ~600px (it's okay to change the height)
+*   1028px &times; ~600px (it's okay to change the height)
 
 _Adjust the After Design to be fluid. It should have the same content as the original design, but the position and size of your elements can change._
 
-## #17 Try Showing State instead of being state agnostic.
+### Examples
+
+<img style="display:block;border:1px solid #ccc;" src="/assets/img/expose1.png" alt="Before" />Before (closed)
+
+<img style="display:block;border:1px solid #ccc;" src="/assets/img/expose2.png" alt="Before" />Before (opened)
+
+<img style="display:block;border:1px solid #ccc;width:50%" src="/assets/img/expose3.png" alt="After (mobile)" />After (mobile)
+
+<img style="display:block;border:1px solid #ccc;" src="/assets/img/expose4.png" alt="After (desktop)" />After (desktop)
+
+## #17 Try showing state instead of being state agnostic.
 
 [goodui.org/#17](https://www.goodui.org/#17)
 
@@ -147,62 +167,73 @@ Create a tabular list of data like on goodui.org. You can use the same content t
 
 ### Before Design:
 
-*   1028px x ~600px (it's okay to change the height)
+*   1028px &times; ~600px (it's okay to change the height)
 *   Create the table of data with a headline ("Your Invoices") followed by the list of items (the invoices) and their price.
-*   Remember, you don't need to completely fill the space with the table. Small or medium sized elements are fine, and so is negative space.
+*   Remember, you don't need to completely fill the space with the table. Small or medium-sized elements are fine, and so is negative space.
 
 ### After Design (Mobile):
 
-* 388px x ~800px (it's okay to change the height)
+* 388px &times; ~800px (it's okay to change the height)
 
 Create the design again, but this time, give users the option to pay directly inside the table. Show one of the items (invoices) as having been paid. Show one of them as having been partially paid.
 
-_Design your mobile version at 750px wide by 1334px tall. Then, when you're finished, save a copy of it at 375px x 667px (the first size is your “retina” version). This smaller, second version is what you will put on your InVision board._
+<!-- _Design your mobile version at 750px wide by 1334px tall. Then, when you're finished, save a copy of it at 375px x 667px (the first size is your “retina” version). This smaller, second version is what you will put on your InVision board._ -->
 
-_If you need to add extra pixels to the height of the mobile design, you may._
+<!-- _If you need to add extra pixels to the height of the mobile design, you may._ -->
 
-### After Design (Large):
+### After Design (Desktop):
 
-*   1028px x ~600px (it's okay to change the height)
+*   1028px &times; ~600px (it's okay to change the height)
 
 _Adjust the After Design to be fluid. It should have the same content as the original design, but the position and size of your elements can change._
 
-## #52 Try Thanking instead of simply confirming completion.
+### Examples
+
+<img style="display:block;border:1px solid #ccc;" src="/assets/img/13527169.jpg" alt="Before" />Before
+
+<img style="display:block;border:1px solid #ccc;" src="/assets/img/13527168.jpg" alt="After (mobile)" />After (mobile)
+
+<img style="display:block;border:1px solid #ccc;" src="/assets/img/13527167.jpg" alt="After (desktop)" />After (desktop)
+
+## #52 Try thanking instead of simply confirming completion.
 
 [goodui.org/#52](https://www.goodui.org/#52)
 
-The user has just completed one of the actions that you wanted them to complete in the designs above (they signed up for a free month in Design 1, or purchased the recommended product in Design 2). They are directed to a new screen where you acknowledge they did what you wanted them to do.
+The user has just completed one of the actions that you wanted them to complete in the designs above (e.g. they purchased the recommended product in #7 ). They are directed to a new screen where you acknowledge they did what you wanted them to do.
 
 ### Before Design:
 
-*   1028px x ~600px (it's okay to change the height)
-*   Have an acknowledgement statement saying something general like "We got your order!" or "Your free month is on the way!" as your headline.
-*   Follow it with 3 sentences of lorem ipsum.
-*   Remember, you don't need to completely fill the space with the design. Small or medium sized elements are fine, and so is negative space.
+- 1028px &times; ~600px (it's okay to change the height)
+- Have an acknowledgment statement saying something general like "We got your order!" or "Your free month is on the way!" as your headline.
+- Follow it with 3 sentences of lorem ipsum.
+- Remember, you don't need to completely fill the space with the design. Small or medium-sized elements are fine, and so is negative space.
 
 ### After Design (Mobile):
 
-* 388px x ~800px (it's okay to change the height)
-
-*   Create the design again, but this time, thank the user, followed by a "You" statement. Example:  
+* 388px &times; ~800px (it's okay to change the height)
+* Create the design again, but this time, thank the user, followed by a "You" statement. Example:  
     Thank you statement: "Thank you for buying [PRODUCT NAME].
-*   You Statement: "Your to-do lists are about to get a lot more fun."
-*   Then 3 sentences of lorem ipsum
-*   Then 2 calls to action (the blue text in goodui.org). Write them to sound realistic.
+* You Statement: "Your to-do lists are about to get a lot more fun."
+* Then 3 sentences of lorem ipsum
+* Then 2 calls to action (the blue text in goodui.org). Write them to sound realistic.
 
-_Design your mobile version at 750px wide by 1334px tall. Then, when you're finished, save a copy of it at 375px x 667px (the first size is your “retina” version). This smaller, second version is what you will put on your InVision board._
+<!-- _Design your mobile version at 750px wide by 1334px tall. Then, when you're finished, save a copy of it at 375px x 667px (the first size is your “retina” version). This smaller, second version is what you will put on your InVision board._ -->
 
-_If you need to add extra pixels to the height of the mobile design, you may._
+<!-- _If you need to add extra pixels to the height of the mobile design, you may._ -->
 
-### After Design (Large):
+### After Design (Desktop):
 
-*   1028px x ~600px (it's okay to change the height)
+*   1028px &times; ~600px (it's okay to change the height)
 
 _Adjust the After Design to be fluid. It should have the same content as the original design, but the position and size of your elements can change._
 
-## Examples
+### Examples
 
-View examples from a previous class here: [https://projects.invisionapp.com/boards/ST34OYIN2HV3R/](https://projects.invisionapp.com/boards/ST34OYIN2HV3R/)
+<img style="display:block;border:1px solid #ccc;" src="/assets/img/137504749.png" alt="Before" />Before
+
+<img style="display:block;border:1px solid #ccc;" src="/assets/img/137504747.png" alt="After (mobile)" />After (mobile)
+
+<img style="display:block;border:1px solid #ccc;" src="/assets/img/137504748.png" alt="After (desktop)" />After (desktop)
 
 ## Summary and Research
 
@@ -212,18 +243,18 @@ You should also save a few items of research and sketches to share during critiq
 
 ## Presentation
 
-Add your research, sketches and summary to your InVision board.
+Add your research, sketches, and summary to your InVision board.
 
-*   Make a section on your InVision board called Assignment 4, Summary.
+*   Make a section on your InVision board called **Project 3, Summary**.
 *   Arrange your summary in an InVision text note.
-*   Make a section on your InVision board called Assignment 4, Research and Sketches.
+*   Make a section on your InVision board called **Project 3, Research and Sketches**.
 *   Arrange 3–7 items of research.
 *   Arrange a few relevant sketches.
 
 Add your final graphics to your InVision board.
 
-*   Make a section on your InVision board called Assignment 4, Design 1.
+*   Make a section on your InVision board called **Project 4, #7**.
 *   Arrange the before, after and mobile designs neatly in the section.
 *   Do this for each design.
+*   These designs should be _above_ your sketches, summary, and research.
 
-## Examples
