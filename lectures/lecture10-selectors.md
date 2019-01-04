@@ -105,6 +105,8 @@ p.introduction {
 
 The first selector says "these rules apply to every element with the class 'introduction'". The second selector says, "these rules apply to every *p* element with the class 'introduction'". The second one is more specific, which we'll talk about in a bit.
 
+**Class selectors make up a large chunk of the selectors you'll write. Effective class naming and usage is key to working with CSS and staying sane.** We'll have an entire lecture on this subject later.
+
 ### ID Selectors
 
 You can also give elements "IDs" with the `id` attribute. In theory, every ID should be unique. 
@@ -204,103 +206,141 @@ That selector would target any `<p>` elements that were siblings of an `<h2>`. I
 
 ... only the last two paragraphs would be targeted.
 
-<!-- Classes
-We’re going to add one last level of complexity to our selectors. I
-promise it’ll be the last bit of complexity you’ll need in a selector for
-99.9% of whatever you do.
-Let’s look at some more HTML:
-<section>
-<h2>Experience</h2>
-</section>
-<section>
-<h2>Education</h2>
-</section>
-<section>
-<h2>References</h2>
-</section>
-Most of the time I want to make both sections look the same — the
-same typography, the same color scheme, the same spacings. But let’s
-say we want to change one of the sections very, very slightly. I want to
-change the Education section to have a different background color to
-bring attention to it.
-None of the selectors I’ve used so far make sense to use, as using
-“section” in CSS would change all of the <section> tags. I don’t want to
-do anything with hover either.
+## Attribute Selectors
 
-One way around it could be to change the <section> tag to another tag, but it would need a lot of duplicate code in my style sheet to do two tags looking mostly the same.
-The more sensible and more common way is to use a “class” attribute.
-We want to add a hook into our HTML to say we want to style this up in a particular way. The hook we’ll add doesn’t add any styles until we style it up in CSS.
+You won't use these much as a beginner, but Attribute Selectors are worth mentioning because they're really powerfull. 
 
-How to add class attributes in HTML
-We talked about attributes earlier in the guide when we talked about the “href” attribute for link tags and the “src” attributes for image tags. Attributes are extra information for the web browser to use — for “href” it’s for the browser to know where to send the user next, for “src” it’s to know which file to pull into the page.
-With the “class” attribute, we’re adding a hook into our HTML for our CSS to use later on.
-To add a class attribute, we add the extra information on to the opening HTML tag:
-<section>
-<h2>Experience</h2>
-</section> -->
+We'll just look at one really simple example, you can dig in deeper if you'd like by reviewing the [MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors)
 
-<!-- <section class="highlighted">
-<h2>Education</h2>
-</section>
-<section>
-<h2>References</h2>
-</section>
-In this example, we’ve added a class attribute called “highlighted”
-to the middle tag. We can call the attribute whatever makes sense to
-us to use. Remember, the user doesn’t see the name of this. The only
-rules you have to remember is no spaces and it has to be letters,
-numbers and dashes.
-If a user looked at the web page at the moment, it would look exactly
-the same as it did without a class attribute. It doesn’t do anything until
-we style it.
-You can reuse the class attribute on multiple tags too, for instance:
-<section class="highlighted">
-<h2>Experience</h2>
-</section>
-<section class="highlighted">
-<h2>Education</h2>
-</section> -->
-
-<!-- <section>
-<h2>References</h2>
-</section>
-Here, I’ve added the class attribute of “highlighted” on to the first two tags but not the last tag.
-
-Adding CSS class selectors
-So far we’ve added some class attributes into our HTML but they’re unused at the moment, so let’s hook some CSS up to them.
-In our CSS, if we want to style up all three section tags, we would do so like this:
-section {
-background: white;
-color: black;
+```css
+a[href="https://example.org"] {
+  color: green;
 }
-However, if we then wanted to overwrite the background color of the sections with the class attribute “highlighted”, we would need to select them separately to all the sections. To do this, we would pick all the <section> tags, then filter them by their class using a “.” (period or full stop), then the name of the class attribute: -->
+```
 
-<!-- section {
-background: white;
-color: black;
+The syntax here is `selector[attribute="value"]`. The above CSS would select any link on your page with the exact `href` value of "https://example.org". 
+
+You can also check for the simple existence of an attribute like...
+
+```css
+a[class] {
+  color: purple;
 }
-section.highlighted {
-background: yellow;
+```
+
+This would select any `<a>` tag that had a class set. Even if the class attribute was empty. There are more practical examples, but, they would involve HTML we've not covered yet.
+
+## Psuedo classes
+
+### Link States
+
+Anchor links get to use some special selectors called "Psuedo Classes." Because your browser keeps track of your history, every URL has a state, it's either not visited, visited, or active (being pressed). You can style these states like so...
+
+```css
+a {
+    color: blue;
 }
-Our highlighted sections have a yellow background color, and because
-we’re not overwriting the text color, this is black from the default
-section style.
-We can use the class attributes in lots of different ways. For instance in
-our HTML we could have: -->
+a:active {
+    color: lightblue;
+}
+a:visited {
+    color: gray;
+}
+```
 
-<!-- <p class="intro">
-In this example...
-</p>
-<p>
-However, you may notice...
-</p>
-Then to style up the <p> tag with the class attribute, we could do in our
-CSS style sheet:
+### Hover
 
-p.intro {
-font-size: 18px;
-font-weight: 700;
-} -->
+There's also a really cool psuedo selector that works on links called "hover". This allows us to change styles as users hover the mouse cursor over our links.
+
+```css
+a:hover {
+    color: red;
+}
+```
+
+But, hover actually works on just about any element, allowing us to do things like...
+
+```css
+div:hover {
+    background-color: yellow;
+}
+```
+
+### Focus
+
+The focus psuedo class is mostly for form elements and buttons. If you click into a text field, that field has focus.
+
+```css
+input:focus {
+    border-color: blue;
+}
+```
+
+### Child Selection
+
+Given the following HTML...
+
+```html
+<div class="content">
+    <p>Lorem....</p>
+    <p>Lorem...</p>
+    <p>Lorem...</p>
+    <ul>
+        <li>list item</li>
+        <li>list item</li>
+        <li>list item</li>
+    </ul>
+</div>
+```
+
+...there are several pseudo selectors that allow us to pick elements based on thier order. 
+
+`first-child` lets us pick the first element when it's the first child of it's parent.
+
+```css
+.content p:first-child {
+    font-size: 1.5em;
+}
+```
+This only works if the paragraph element is the first element directly inside that container. To select the first paragraph, even if there was something else before it, we can use `first-of-type` or `last-of-type`.
+
+There's also `last-child`, which works similarly...
+
+```css
+.content p {
+    border-bottom: 1px solid gray;
+}
+.content p:last-child {
+    border-bottom: none;
+}
+```
+
+Both of these can be really useful for building things like borders and margins you want in-between items, but not on the first or last item.
+
+A more complicated one, is `nth-child`. It allows us to pass formulas in to select different repeating patterns of elements. We can also pass in the keywords "odd" or "even"
+
+```css
+ul li:nth-child(odd) {
+    background-color: #eee;
+}
+```
+
+The best way to get a feel for what you can do with `nth-child` is to check out a few links from CSS Tricks...
+
+[Useful :nth-child Recipes](https://css-tricks.com/useful-nth-child-recipies/)
+[:nth Tester](https://css-tricks.com/examples/nth-child-tester/)
+
+There is also `only-child` which will only select an item if it is the only child of it's parent. 
+
+```css
+li:only-child { 
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+```
+
+That CSS would only work on an `<ul>` or an `<ol>` if they only had one `<li>` inside.
+
 
 <!-- Combining class attributes with
 hover states

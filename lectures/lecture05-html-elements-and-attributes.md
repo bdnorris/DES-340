@@ -96,6 +96,8 @@ The W3C is a non-profit group that decides on web coding standards. The standard
 
 The main generic tag is a `<div>` for "division." It has no default styling. When in doubt, use a `<div>`.
 
+Divs are also good for when you want to hold some text, but you don't want to use a `<p>` or a heading.
+
 ### section
 
 > The section element represents a generic section of a document or application. A section, in this context, is a thematic grouping of content. Each section should be identified, typically by including a heading (h1-h6 element) as a child of the section element.
