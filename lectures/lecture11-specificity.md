@@ -1,4 +1,4 @@
-# Specificity in CSS
+# The Cascade and Specificity
 
 > Specificity is the means by which browsers decide which CSS property values are the most relevant to an element and, therefore, will be applied. Specificity is based on the matching rules which are composed of different sorts of CSS selectors.
 
@@ -8,7 +8,69 @@ Understanding specificity in CSS is another key to working with this language an
 
 We've talked previously about how certain CSS rules that conflict will overwrite other rules. The ways we've looked already have to do with the cascade.
 
-## Lets review "The Cascade"
+## "The Cascade"
+
+### Inheritance
+
+```css
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #222233;
+}
+h1 {
+    font-size: 22px;
+}
+```
+
+In this example, we have a starting body rule-set, and a header rule-set.
+
+Remember, body is the wrapping tag for all content on the page. That means, everything in the page will inherit it's style. What typeface will the `<h1>` be? It will be sans-serif, unless you specify. Child tags will always inherit (some) properties from their parents unless they are overwritten.
+
+What font-size will the `<h1>` be? 22px, because specified it on the rule-set for all H1 tags.
+
+### Order
+
+```css
+p {
+    font-family: Arial;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
+```
+In CSS rule-sets, the order of the rules doesn't matter, as long as you don't have conflicting rules. 
+
+```css
+p {
+    font-size: 14px;
+    font-size: 16px;
+}
+```
+
+or
+
+```css
+p {
+    color: red;
+}
+
+p {
+    color: blue; /* blue wins */
+}
+```
+
+In the above case, the font-size will be 16px, because it comes later and will overwrite what comes before.
+
+When rules conflict, CSS that is further down in the document, or loaded last in an external sheet, will overwrite previous styles.
+
+```html
+<link href="style.css" rel="stylesheet">
+<link href="overwrite.css" rel="stylesheet">
+```
+
+
 
 ### Where the CSS is
 
@@ -35,26 +97,6 @@ A linked stylesheet is last, but prefered.
 <link href="a-linked-style-sheet-is-last.css" rel="stylesheet">
 ```
 
-### Order
-
-We've also discussed how order matters. When rules conflict, CSS that is further down in the document, or loaded last in an external sheet, will overwrite previous styles.
-
-```html
-<link href="style.css" rel="stylesheet">
-<link href="overwrite.css" rel="stylesheet">
-```
-
-or
-
-```css
-p {
-    color: red;
-}
-
-p {
-    color: blue; /* blue wins */
-}
-```
 
 ## Selector specificity
 

@@ -1,6 +1,4 @@
-# CSS Selectors and the Cascade
-
-https://thecssworkshop.com/css-basics#module-css-selectors
+# CSS Selectors
 
 > By default, the browser gives them a style that looks like the web would have looked in the late 1980s — a simple white background with black text in a default font. At the time this simple styling was fine for scientific research and basic websites, but as the Web became more popular, the Web’s authors wanted to tweak the look and feel of their sites.
 
@@ -8,7 +6,7 @@ https://thecssworkshop.com/css-basics#module-css-selectors
 
 <!-- Now, remember that HTML was made so regular folks could write it. The people that were making and updating the web browsers at the time decided enough was enough. They needed a new way to Make Coding Great Again, something for the people. -->
 
-> Back at CERN, one of Tim Berners-Lee’s colleagues, a Norwegian called Håkon Wiem Lie, had an idea based on other word processing programs. The idea that if you were using a header or a paragraph in several places across a website, you probably want them to lookconsistent. The idea that you could make the colors and typography
+> Back at CERN, one of Tim Berners-Lee’s colleagues, a Norwegian called Håkon Wiem Lie, had an idea based on other word processing programs. The idea that if you were using a header or a paragraph in several places across a website, you probably want them to look consistent. The idea that you could make the colors and typography
 consistent until you wanted to overwrite something later on.
 Håkon had come up with the idea of Cascading Style Sheets (or CSS
 for short).
@@ -22,48 +20,7 @@ whole site, except for headers where you prefer Georgia.
 in the most generic way possible. What is the most used color? What is
 the most used typeface?
 
-## The Cascade
-
-### Inheritance
-
-```css
-body {
-    font-family: sans-serif;
-    font-size: 16px;
-    color: #222233;
-}
-h1 {
-    font-size: 22px;
-}
-```
-
-In this example, we have a starting body rule-set, and a header rule-set.
-
-Remember, body is the wrapping tag for all content on the page. That means, everything in the page will inherit it's style. What typeface will the `<h1>` be? It will be sans-serif, unless you specify. Child tags will always inherit (some) properties from their parents unless they are overwritten.
-
-What font-size will the `<h1>` be? 22px, because specified it on the rule-set for all H1 tags.
-
-### Order
-
-```css
-p {
-    font-family: Arial;
-    font-weight: 900;
-    font-size: 16px;
-    line-height: 1.5;
-    text-align: center;
-}
-```
-In CSS rule-sets, the order of the rules doesn't matter, as long as you don't have conflicting rules. 
-
-```css
-p {
-    font-size: 14px;
-    font-size: 16px;
-}
-```
-
-In the above case, the font-size will be 16px, because it comes later and will overwrite what comes before.
+We'll look at the cascade more in the next lecture, for now, let's look at some selectors.
 
 ## Basic Selectors
 
@@ -72,9 +29,11 @@ In the above case, the font-size will be 16px, because it comes later and will o
 The most basic selector is an **element** selector. We've mostly been using these for our examples. They select any HTML Element specified. 
 
 ```css
-p { }
+p {
+    color: #222233;
+}
 ```
-This selector would select every instance of the `<p>` tag on our site, even if we were more specific later.
+This selector would select every instance of the `<p>` tag on our site. If we wanted to overwrite this style, we would need to be more specific (next lecture).
 
 ### Class Selectors
 
@@ -86,7 +45,7 @@ adipiscing elit, sed do eiusmod tempor incididunt ut labore et
 dolore magna aliqua. </p>
 ```
 
-To style this is CSS, we would use a `.` before the classname. 
+To style this in CSS, we would use a `.` before the class name. 
 
 ```css
 .introduction {
@@ -103,7 +62,7 @@ p.introduction {
 }
 ```
 
-The first selector says "these rules apply to every element with the class 'introduction'". The second selector says, "these rules apply to every *p* element with the class 'introduction'". The second one is more specific, which we'll talk about in a bit.
+The first selector says "these rules apply to every element with the class 'introduction'". The second selector says, "these rules apply to every `<p>` element with the class 'introduction'". The second one is more specific, which we'll talk about in a bit.
 
 **Class selectors make up a large chunk of the selectors you'll write. Effective class naming and usage is key to working with CSS and staying sane.** We'll have an entire lecture on this subject later.
 
@@ -115,7 +74,7 @@ You can also give elements "IDs" with the `id` attribute. In theory, every ID sh
 <p id="introduction-but-more-specific" class="introduction"></p>
 ```
 
-You use the in CSS with a `#` like...
+You use these in CSS with a `#` like...
 
 ```css
 #introduction-but-more-specific {
@@ -123,11 +82,11 @@ You use the in CSS with a `#` like...
 }
 ```
 
-We'll talk more about it in a bit, but IDs are *very* specific. So specific, that you need to be really careful when using them. They should only be used when you absolutely only want to write styles for one thing that you'll never re-use again.
+We'll talk more about it in a bit, but IDs are *very* specific. So specific, that you need to be careful when using them. They should only be used when you absolutely only want to write styles for one thing that you'll never re-use again.
 
 ## Combinators
 
-## Descendent Selectors
+### Descendant Selectors
 
 Given the following HTML...
 
@@ -137,7 +96,7 @@ adipiscing elit, sed do eiusmod tempor <a href="#">incididunt ut labore</a> et
 dolore magna aliqua.</p>
 ```
 
-...We can use the following CSS selector to select _only links inside elements with the "introduction" class.
+...We can use the following CSS selector to select _only_ links inside elements with the "introduction" class.
 
 ```css
 .introduction a {
@@ -145,7 +104,7 @@ dolore magna aliqua.</p>
 }
 ```
 
-Simply using a space between the selectors implies a ansecstor/descendent relationship. With a descendent selector, it isn't just children that will be styled, but all links that are inside something with the "introduction" class, no matter how deep it's nested.
+Simply using a space between the selectors implies an ancestor/descendant relationship. With a descendent selector, it isn't just children that will be styled, but all links that are inside something with the "introduction" class, no matter how deep it's nested.
 
 You can also have more than one descendant in a list.
 
@@ -157,11 +116,11 @@ You can also have more than one descendant in a list.
 
 In this case, li's that are inside ul's that are inside elements with the class "introduction" will be styled.
 
-Keep in mind though, the longer you make these chains, the more specific they get, and hence become difficult to overwrite later on.
+Keep in mind though, the longer you make these chains, the more specific they get and hence become difficult to overwrite later on.
 
 ### Child Selector
 
-Since using the descendent selector (a space) targets all the descendents, the need arises to target just the immediate children of an element. We use the greater than symbol for this (`>`).
+Since using the descendant selector (a space) targets all the descendants, the need arises to target just the immediate children of an element. We use the greater than symbol for this (`>`).
 
 ```css
 .introduction > a {
@@ -183,7 +142,7 @@ h2 + p {
 }
 ```
 
-... would apply the rule-set to  any `<p>` element that appears _directly after_ an `<h2>`. These only work forwards though, you couldn't target `<h2>`s that occured before a `<p>`.
+...would apply the rule-set to  any `<p>` element that appears _directly after_ an `<h2>`. These only work forwards though, you couldn't target `<h2>`s that occurred before a `<p>`.
 
 #### General Sibling
 
@@ -208,7 +167,7 @@ That selector would target any `<p>` elements that were siblings of an `<h2>`. I
 
 ## Attribute Selectors
 
-You won't use these much as a beginner, but Attribute Selectors are worth mentioning because they're really powerfull. 
+You won't use these much as a beginner, but Attribute Selectors are worth mentioning because they're really powerful. 
 
 We'll just look at one really simple example, you can dig in deeper if you'd like by reviewing the [MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors)
 
@@ -230,11 +189,11 @@ a[class] {
 
 This would select any `<a>` tag that had a class set. Even if the class attribute was empty. There are more practical examples, but, they would involve HTML we've not covered yet.
 
-## Psuedo classes
+## Pseudo classes
 
 ### Link States
 
-Anchor links get to use some special selectors called "Psuedo Classes." Because your browser keeps track of your history, every URL has a state, it's either not visited, visited, or active (being pressed). You can style these states like so...
+Anchor links get to use some special selectors called "Pseudo Classes." Because your browser keeps track of your history, every URL has a state, it's either not visited, visited, or active (being pressed). You can style these states like so...
 
 ```css
 a {
@@ -250,7 +209,7 @@ a:visited {
 
 ### Hover
 
-There's also a really cool psuedo selector that works on links called "hover". This allows us to change styles as users hover the mouse cursor over our links.
+There's also a really cool pseudo selector that works on links called "hover". This allows us to change styles as users hover the mouse cursor over our links.
 
 ```css
 a:hover {
@@ -268,7 +227,7 @@ div:hover {
 
 ### Focus
 
-The focus psuedo class is mostly for form elements and buttons. If you click into a text field, that field has focus.
+The focus pseudo class is mostly for form elements and buttons. If you click into a text field, that field has focus.
 
 ```css
 input:focus {
@@ -293,9 +252,9 @@ Given the following HTML...
 </div>
 ```
 
-...there are several pseudo selectors that allow us to pick elements based on thier order. 
+...there are several pseudo selectors that allow us to pick elements based on their order. 
 
-`first-child` lets us pick the first element when it's the first child of it's parent.
+`first-child` lets us pick the first element when it's the first child of its parent.
 
 ```css
 .content p:first-child {
@@ -317,7 +276,7 @@ There's also `last-child`, which works similarly...
 
 Both of these can be really useful for building things like borders and margins you want in-between items, but not on the first or last item.
 
-A more complicated one, is `nth-child`. It allows us to pass formulas in to select different repeating patterns of elements. We can also pass in the keywords "odd" or "even"
+A more complicated one is `nth-child`. It allows us to pass formulas in to select different repeating patterns of elements. We can also pass in the keywords "odd" or "even"
 
 ```css
 ul li:nth-child(odd) {
@@ -330,7 +289,7 @@ The best way to get a feel for what you can do with `nth-child` is to check out 
 [Useful :nth-child Recipes](https://css-tricks.com/useful-nth-child-recipies/)
 [:nth Tester](https://css-tricks.com/examples/nth-child-tester/)
 
-There is also `only-child` which will only select an item if it is the only child of it's parent. 
+There is also `only-child` which will only select an item if it is the only child of its parent. 
 
 ```css
 li:only-child { 

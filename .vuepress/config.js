@@ -23,7 +23,9 @@ module.exports = {
           "lectures/lecture06-the-dom.md",
           "lectures/lecture07-units.md",
           "lectures/lecture08-color.md",
-          "lectures/lecture09-text-properties.md"
+          "lectures/lecture09-text-properties.md",
+          "lectures/lecture10-selectors.md",
+          "lectures/lecture11-specificity.md",
         ]
       },
       {
