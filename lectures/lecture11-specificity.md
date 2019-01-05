@@ -8,9 +8,8 @@ Understanding specificity in CSS is another key to working with this language an
 
 We've talked previously about how certain CSS rules that conflict will overwrite other rules. The ways we've looked already have to do with the cascade.
 
-## "The Cascade"
 
-### Inheritance
+## Inheritance
 
 ```css
 body {
@@ -25,9 +24,11 @@ h1 {
 
 In this example, we have a starting body rule-set, and a header rule-set.
 
-Remember, body is the wrapping tag for all content on the page. That means, everything in the page will inherit it's style. What typeface will the `<h1>` be? It will be sans-serif, unless you specify. Child tags will always inherit (some) properties from their parents unless they are overwritten.
+Remember, body is the wrapping tag for all content on the page. That means, everything in the page will inherit its style. What typeface will the `<h1>` be? It will be sans-serif, unless you specify. Child tags will always inherit (some) properties from their parents unless they are overwritten.
 
 What font-size will the `<h1>` be? 22px, because specified it on the rule-set for all H1 tags.
+
+## The Cascade
 
 ### Order
 
@@ -91,7 +92,7 @@ A style tag in the HTML document is second.
     }
 </style>
 ```
-A linked stylesheet is last, but prefered.
+A linked stylesheet is last but preferred.
 
 ```html
 <link href="a-linked-style-sheet-is-last.css" rel="stylesheet">
@@ -100,7 +101,7 @@ A linked stylesheet is last, but prefered.
 
 ## Selector specificity
 
-The other major way CSS is specific is the selctors themselves. Majorly powerful, and a major pain.
+The other major way CSS is specific is the selectors themselves. Majorly powerful, and a major pain.
 
 Take the following Code.
 
@@ -132,13 +133,13 @@ div {
 }
 ```
 
-I purposfully reversed the order here to show that order doesn't matter as much as specificity in the selector. 
+I purposely reversed the order here to show that order doesn't matter as much as specificity in the selector. 
 
 The id selector at the top is most specific. Id selectors trump everything.
 
-The best way to understand this, is to play with this [specificity calculator](https://specificity.keegan.st/). 
+The best way to understand this is to play with this [specificity calculator](https://specificity.keegan.st/). 
 
-As you'll see, you can think of the "specificty score" of a selector as a three digit number. Ids are in the 100 spot, classes, attributes and pseudo classes are in the 10 spot, elements and psuedo elements (we haven't discussed those yet) are in the 1 spot.
+As you'll see, you can think of the "specificity score" of a selector as a three digit number. Ids are in the 100 spot, classes, attributes, and pseudo-classes are in the 10 spot, elements and pseudo-elements (we haven't discussed those yet) are in the 1 spot.
 
 ```css
 div {} /* 1 */
@@ -158,11 +159,11 @@ One way to avoid this with IDs is to use an attribute selector instead.
 
 10 is less than 100. 
 
-Sometimes when building a website, you might build a too specific style. It's best to avoid, and I'll give you some tips to help, but everyone makes mistakes, and this is a common problem. 
+Sometimes when building a website, you might create a too-specific style. It's best to avoid it in the first place&mdash;and I'll give you some tips to help with that&mdash;but everyone makes mistakes, and this is a common problem you'll run into as you're learning. 
 
-Other times, you'll be working on something where you only have access to part of the styles. You might be working on a theme for some kind of web based product, and it lets you add your own stylesheet, but not change the original. 
+Other times, you'll be working on something where you only have access to part of the styles. You might be working on a theme for some kind of web-based product that lets you add your own stylesheet, but not change the original. 
 
-In these cases you can use `!important`, it makes your rule the most important, no matter what.
+In these cases you can use `!important`, it makes your rule the highest priority, no matter what.
 
 ```css
 div {
@@ -174,9 +175,9 @@ But be careful, now you're stuck if you need to ever overwrite this style.
 
 ## Working with specificity
 
-You do not need to do this math in your head everytime you use a selector. It's more about developing good selector habits. Soon they'll be second nature and your mistakes will be minimal.
+You do not need to do this math in your head every time you use a selector. It's more about developing good selector habits. Soon they'll be second nature and your mistakes will be minimal.
 
-Remember, classes are meant to be re-usable, so getting more specific with your selectors, _intentionally_ will be the key to writing **general** styles first, then getting more specific **on purpose** to keep your code from having too much repetition, making it hard to maintain.
+Remember, __classes are meant to be re-usable__, so getting more specific with your selectors, _intentionally_ will be the key to writing **general** styles first, then getting more **specific** *on purpose* to keep your code from having too much repetition, making it hard to maintain.
 
 We'll talk about strategies to manage this stuff in a future lecture. For now, just avoid Ids and you'll probably be fine.
 
@@ -185,4 +186,5 @@ We'll also soon talk about how to use your browser's developer tools to identify
 ## Resources
 
 [Specifics on CSS Specificity](https://css-tricks.com/specifics-on-css-specificity/)
+
 [CSS Specificity: Things You Should Know](https://www.smashingmagazine.com/2007/07/css-specificity-things-you-should-know/)

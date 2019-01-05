@@ -32,8 +32,8 @@ module.exports = {
         title: "Exercises",
         collapsable: true,
         children: [
-          "exercises/exercise01.md",
-          "exercises/exercise02.md",
+          "exercises/exercise01-bio.md",
+          "exercises/exercise02-ui-study.md",
           "exercises/exercise03.md",
           "exercises/exercise04.md"
           // 'exercises/exercise05.md',
