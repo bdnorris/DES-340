@@ -1,58 +1,85 @@
-<!-- Background colors
-For changing the background color of the tags, you need to use a new
-rule called background-color:
-footer {
-background-color: #998899;
-}
-Chapter 5 99
-This will give the footer a background color of mid grey.
-Remember you can mix and match your text and background colors:
-section {
-background-color: #111118;
-color: #ffffff;
-}
-This gives our section tags a background color of near black and a text
-color of white.
+# Backgrounds in CSS
 
-Background images
-Some of the time when designing your website, you might not want
-to use a solid background color. The first thing you need to do is make
-sure you have some images in your site that you can pull into the site.
-Remember you can only use particular image types that browsers can
-use, such as “.jpg”, “.gif”, “.png” and “.svg” files.
-To add an image saved as “sally.jpg” into the background of a tag:
-header {
-background-image: url(sally.jpg);
-}
-Notice the “url(...)” around the file name. This is so the browser knows
-to pull it from a URL into the page. There are other types of background
-images we can add, such as linear gradients, that we’ll come to later.
+Controlling aspects of the background of our elements is a key part of making our designs come to life. There are color, images, and even gradient options we'll go over in this lecture.
 
-Background-repeat
-By default, if your image is smaller than the tag of which it’s the
-background, the image will tile. You can control the way it repeats, or
-turn off the tiling altogether.
-To turn off tiling:
-Chapter 5 101
-header {
-background-repeat: no-repeat;
+## Background colors
+
+To set or change the background color of an element, use the `background-color` property.
+
+```css
+div {
+    background-color: red;
 }
-To only repeat horizontally across the page:
-header {
-background-repeat: repeat-x;
+```
+
+You can define color any of the ways we've talked about previously. Using `rgba` will allow you to make a transparent background.
+
+If you've previously set a background color on an element, and want to remove it in a more specific tag, you can use the `transparent` keyword.
+
+```css
+p {
+    background-color: gray;
 }
-It’s repeat “x” because the “x” direction in mathematics is horizontal (or
-from left to right).
-To only repeat vertically down the page:
-header {
-background-repeat: repeat-y;
+p.class-name {
+    background-color: transparent;
 }
-If “x” is across the page, the “y” direction in mathematics is vertical (or
-from top to bottom).
-If you ever want to put the tiling effect back on:
-header {
-background-repeat: repeat;
+```
+
+If you've specified a dark background color, you'll likely want to provide a lighter text color.
+
+```css
+div {
+    background-color: #333344;
+    color: white;
 }
+```
+
+## Background images
+
+To add a background image, use the `background-image` property. It's a little different than some others, since we have to provide a url value.
+
+```css
+div {
+    background-image: url("/images/my-image.jpg");
+}
+```
+
+One thing to note, the image URL can be relative or absolute (contains http[s]:// and full domain), and it's relative to where the CSS is, not the HTML file. So if you have an HTML file and there is an images folder on the same level...
+
+```html
+<img src="images/my-image.jpg" />
+```
+
+But, if your CSS is in a folder as well, you'll first have to back out of that folder by starting the relative URL with two dots before you can enter the image folder to reference that same image.
+
+```css
+div {
+    background-image: url("../images/my-image.jpg");
+}
+```
+
+There are a bunch of other properties we need to talk about to support this image though. By default, this image will display at it's native size, start at the top left of the element and repeat (tile) in both directions. Let's look at how to adjust some of these settings.
+
+### Repeat
+
+The `background-repeat` property controls the tiling. By default, it is set to tile both ways. 
+
+```css
+div {
+    background-repeat: no-repeat; /* turns off tiling */
+    background-repeat: repeat-x; /* tiles horizontally only */
+    background-repeat: repeat-y; /* tiles vertically only */
+    background-repeat: repeat; /* reset to default */
+}
+```
+
+### Position
+
+## Background shorthand
+
+<!--
+
+
 
 Background-position
 Now you’ve added your image and controlled how it tiles, you

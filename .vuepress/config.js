@@ -6,7 +6,7 @@ module.exports = {
     lastUpdated: "Last Updated", // string | boolean,
     nav: [
       //   { text: 'Home', link: '/' },
-      { text: "Projects", link: "/projects/" }
+      // { text: "Projects", link: "/projects/" }
       //   { text: 'External', link: 'https://google.com' },
     ],
     sidebar: [
@@ -26,6 +26,8 @@ module.exports = {
           "lectures/lecture09-text-properties.md",
           "lectures/lecture10-selectors.md",
           "lectures/lecture11-specificity.md",
+          "lectures/lecture12-box-model.md",
+          "lectures/lecture13-code-editor.md",
         ]
       },
       {
@@ -34,8 +36,8 @@ module.exports = {
         children: [
           "exercises/exercise01-bio.md",
           "exercises/exercise02-ui-study.md",
-          "exercises/exercise03.md",
-          "exercises/exercise04.md"
+          "exercises/exercise03-first-website.md",
+          "exercises/exercise04-atomic-design.md"
           // 'exercises/exercise05.md',
           // 'exercises/exercise06.md',
           // 'exercises/exercise07.md',

@@ -225,6 +225,8 @@ div:hover {
 }
 ```
 
+One of the main pitfalls of hover is that it's works differently on touchscreens. There's no such thing as hover on a touch screen device, so it should never be used to hide and show content.
+
 ### Focus
 
 The focus pseudo class is mostly for form elements and buttons. If you click into a text field, that field has focus.

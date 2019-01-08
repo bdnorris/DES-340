@@ -12,6 +12,8 @@ There are many resources online to show you all of these colors. I like this one
 
 [HTML Color Codes: Color Names](https://htmlcolorcodes.com/color-names/)
 
+There is also the "transparent" keyword. This let's you explicitly set no color. It works best on backgrounds and borders. 
+
 ## Hex colors
 
 Probably the most common way to specify colors in CSS is Hex Codes or hexadecimal codes. We won't bother going into the computer science basis of hexadecimal, let's just look at how this color specification works.
@@ -117,7 +119,7 @@ Like all design, having the right amount of contrast is essential for making tex
 
 There are also Accessibility standards for contrast and color blindness concerns.
 
-For contrast, you can use this tool to make sure your color choices for text have the required contrast to meet the W3Cs "Web Content Accessibility Guidelines (WCAG). [Color Contrast Checker](https://webaim.org/resources/contrastchecker/).
+For contrast, you can use this tool to make sure your color choices for text have the required contrast to meet the W3Cs "Web Content Accessibility Guidelines (WCAG). [Color Contrast Checker](https://webaim.org/resources/contrastchecker/). Here's another one: [Colorable](https://colorable.jxnblk.com/)
 
 In your design process, you might consider using Photoshop's color blindness preview features. They can be found under `View > Proof Setup` near the bottom of the list. The most notable problem for color blindness is combinations of red and green. For normal viewers, they have a lot of contrast, but for deuteranopia color blindness, they tend to look very similar.
 

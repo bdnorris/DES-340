@@ -1,6 +1,6 @@
 # Responsive Design
 
-There is a multitude of devices and screen sizes in use today, and most of them are capable of accessing the web. Designing sites that can run anywhere is a significant challenge. Responsive Web Design (RWD) is an approach to this problem. 
+There are a multitude of devices and screen sizes in use today, and most of them are capable of accessing the web. Designing sites that can run anywhere is a significant challenge. Responsive Web Design (RWD) is an approach to this problem. 
 
 Designing for the multitude of canvas dimensions is one of the most significant differences between print and digital design. We are now eight years into responsive design as an industry standard design approach, yet, the current state of design tools are not quite up to the task of assisting us in this approach (although, they are getting better). 
 
