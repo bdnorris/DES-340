@@ -182,3 +182,7 @@ a {
 ```
 
 This can be useful for styling superscripts and subscripts.
+
+## Resources
+
+[CSS Reference for Typography](https://cssreference.io/typography/)

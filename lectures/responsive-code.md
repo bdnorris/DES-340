@@ -151,3 +151,26 @@ float: right;
 } -->
 
 
+<!-- This will make your background image 200px across by 100px down.
+Blurry backgrounds and retina screens
+If you’re on a retina screen, for instance on a new iPhone or a new
+MacBook, you may notice your background images looking blurry
+by default.
+104 Learn to Code Now
+Non-retina screens have three sub-pixels per pixel (one red, one green
+and one blue sub-pixel, remember the hex colors!). On retina screens,
+to make the screen look crisper, they have 12 sub-pixels per pixel (four
+red, four green and four blue).
+With images, each pixel always has three sub-pixels, so when you view
+a “normal” image on a retina screen, it’ll look a bit blurry. To fix this
+we need to double the size of the image to give it more definition on
+those screens.
+One good technique to do this is, if we’re making an image that would
+fill 300px by 200px on a retina screen, we export the image from
+Photoshop or Sketch as twice the size (600px by 400px), then in our
+CSS, we make it half the size again to give it a higher density of pixels:
+header {
+background-size: 300px 200px;
+}
+Exporting the image at double size and halving the size in CSS will
+stop any blurring. -->

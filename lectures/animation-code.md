@@ -154,3 +154,9 @@ including the starting step. Think of it like taking a physical step, it’s the
 amount of times you move your feet!
 
 We can also use steps in the CSS transition rule as well as animations. -->
+
+
+## Resources
+
+[CSS Reference for Transitions](https://cssreference.io/transitions/)
+[CSS Reference for Animation](https://cssreference.io/animations/)

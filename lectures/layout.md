@@ -293,3 +293,6 @@ overflow: auto;
 The overflow hack we used in the last chapter for fixing floats works because we’re forcing the parent to stretch around all of the content, floated or not, by using a hidden overflow.
  -->
 
+## Resources
+
+[CSS Reference for Flexbox](https://cssreference.io/flexbox/)

@@ -323,3 +323,5 @@ You should be careful with scrolling though, it may not always be intuitive that
 [The CSS Box Model: CSS-Tricks](https://css-tricks.com/the-css-box-model/)
 
 [International box-sizing Awareness Day](https://css-tricks.com/international-box-sizing-awareness-day/)
+
+[CSS Reference for the Box Model](https://cssreference.io/box-model/)

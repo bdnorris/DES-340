@@ -258,3 +258,6 @@ z-index: 2;
 This would make the nav be always above the header. Both would be
 always above any tag without a z-index as the default is 0. -->
 
+## Resources
+
+[CSS Reference for Positioning](https://cssreference.io/positioning/)
