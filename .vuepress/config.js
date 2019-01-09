@@ -28,6 +28,7 @@ module.exports = {
           "lectures/lecture11-specificity.md",
           "lectures/lecture12-box-model.md",
           "lectures/lecture13-code-editor.md",
+          "lectures/lecture14-backgrounds.md",
         ]
       },
       {
@@ -37,8 +38,8 @@ module.exports = {
           "exercises/exercise01-bio.md",
           "exercises/exercise02-ui-study.md",
           "exercises/exercise03-first-website.md",
-          "exercises/exercise04-atomic-design.md"
-          // 'exercises/exercise05.md',
+          "exercises/exercise04-atomic-design.md",
+          'exercises/exercise05-coding-text.md',
           // 'exercises/exercise06.md',
           // 'exercises/exercise07.md',
           // 'exercises/exercise08.md',

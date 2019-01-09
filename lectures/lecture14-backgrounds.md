@@ -36,7 +36,7 @@ div {
 
 ## Background images
 
-To add a background image, use the `background-image` property. It's a little different than some others, since we have to provide a url value.
+To add a background image, use the `background-image` property. It's a little different than some others since we have to provide a URL value.
 
 ```css
 div {
@@ -58,7 +58,7 @@ div {
 }
 ```
 
-There are a bunch of other properties we need to talk about to support this image though. By default, this image will display at it's native size, start at the top left of the element and repeat (tile) in both directions. Let's look at how to adjust some of these settings.
+There are a bunch of other properties we need to talk about to support this image though. By default, this image will display at its native size, start at the top left of the element and repeat (tile) in both directions. Let's look at how to adjust some of these settings.
 
 ### Repeat
 
@@ -90,7 +90,7 @@ div {
 
 ### Size
 
-You can control the background's size with the `background-size` property. It works by giving it a width first, and then a height. 
+You can control the background's size with the `background-size` property. It works by giving it a width first, and then height. 
 
 ```css
 div {
@@ -100,7 +100,7 @@ div {
 
 There are also some really useful keywords you can use with `background-size`.
 
-If you want to stretch your background image to completely fill the element's background at any size, and are not worried about cropping some of the image, you can use the keyword `cover`.
+If you want to stretch your background image to completely fill the element's background at any size and are not worried about cropping some of the image, you can use the keyword `cover`.
 
 ```css
 div {
@@ -128,9 +128,9 @@ div {
 
 ## Gradients
 
-Gradients are pretty well supported in browsers now, and are relatively easy to achieve. Instead of providing the `background-image` property with a `url()` value, we provide it the `linear-gradient()` value.
+Gradients are pretty well supported in browsers now and are relatively easy to achieve. Instead of providing the `background-image` property with a `url()` value, we provide it the `linear-gradient()` value.
 
-Linear gradient can accept two color values, with an optional angle value. You can provide it any color values you could normally use in CSS. 
+`linear-gradient` can accept two color values, with an optional angle value. You can provide it with any color values you would normally use in CSS.
 
 ```css
 header {
@@ -171,7 +171,9 @@ Finally, you can use the background shorthand property if you prefer.
 
 ```css
 div {
-    background: background-image background-position background-size background-repeat background-origin background-clip background-attachment background-color;
+    background: background-image background-position background-size 
+    background-repeat background-origin background-clip 
+    background-attachment background-color;
 }
 ```
 
