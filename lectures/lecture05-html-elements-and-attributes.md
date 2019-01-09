@@ -69,6 +69,9 @@ In the early days of the web, we used tags called `<bold>` and `<italic>`. But, 
 ### Span
 `<span>` is a generic tag used to separate some section of text. You can add a class and style it easily (change color, weight, etc.). It is **inline** by default.
 
+### Mark
+The `<mark>` tag is kind of like a highlighter for your HTML. By default, it sets a bright yellow background for your text.
+
 ### Sup and Sub
 `<sup>` and `<sub>` are for superscript and subscript, respectively. The default styles for these will usually work. They are **inline** by default.
 

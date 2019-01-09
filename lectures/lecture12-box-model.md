@@ -52,6 +52,10 @@ div {
 
 That box would try to be as wide as possible, but with constraints on how small and how large it can grow and shrink. 
 
+### Height issues
+
+Try to avoid setting a height on items with text inside. If the item is responsive, the text will reflow, possibly spilling out of your item. Let your content automatically set the height. 
+
 ## Margin and padding
 
 Margins and padding are the key way we create space in our designs. Padding creates whitespace within our element, separating the content from its borders, Margin creates whitespace around the element. 

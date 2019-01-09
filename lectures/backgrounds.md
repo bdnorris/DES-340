@@ -75,6 +75,19 @@ div {
 
 ### Position
 
+We can control where our background image origin sits by using the `background-position` property.
+
+It takes in a horizontal, then vertical position, in any valid CSS values starting from the top left of the element, separated by spaces. You can also use a combination of position keywords: `center`, `top`, `bottom`, `left` and `right`.
+
+```css
+div {
+    background-position: center center; /* centers on both axis */
+    background-position: center left; /* center vertically, but left align horizontally */
+    background-position: 0 0; /* same as "top left" */
+    background-position: 100px 50%; /* 100px from top, centered horizontally  */
+}
+```
+
 ## Background shorthand
 
 <!--

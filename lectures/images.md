@@ -1,6 +1,10 @@
 # Prepping, compressing and using Images on the web
 
->
+It's a ratio, has inherent height!
+
+Floats.
+
+<!-- >
 .jpg JPG files are great for photographs and detailed color
 imagery.
 .gif Are they called “giffs” or “jiffs”? Who knows... but GIF
@@ -32,4 +36,4 @@ site, but not at the background images in the CSS because they’re not
 content.
 Again, there’s no right or wrong answer to this. Remember that HTML
 and CSS are design tools, it’s up to the author how they use them.
-Whatever works best for you is the real answer.
+Whatever works best for you is the real answer. -->
