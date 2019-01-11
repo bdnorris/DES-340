@@ -73,6 +73,16 @@ Choose standard breakpoints for your artboards, and let your design and content 
 
 The mobile first approach essentially keeps you from making decisions that will hurt mobile users. Consider this approach, especially early in the process during wireframing. 
 
+## The Content Question
+
+When RWD was first an issue—and a question for companies considering whether they were ready to make the investment—the idea of having a separate mobile site seemed like a good solution. Why pay to fix the desktop site we just paid for? Let's make version specific for mobile users.
+
+There are several problems with this. The obvious issues of having two sites to maintain and effectively detecting mobile devices (you can't) are deal breakers by themselves. But should mobile users ever have different content from desktop users?
+
+Perhaps it is arguable that in some industries there really are different reasons for a user to get on your website. But is device or screen size really the best determiner of what a user wants?
+
+Best to have efficient navigation and helpful flows and visual queues to make sure all users are able to find what they need, regardless of their specific needs—and certainly regardless of their particular device.
+
 ## Layout Patterns
 
 A designer starting out in responsive design should familiarize themselves with common layout patterns. 

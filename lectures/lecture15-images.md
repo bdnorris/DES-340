@@ -86,15 +86,39 @@ You can do the same thing on a layer folder. As you can imagine, if you're desig
 
 Selecting multiple layers or folders will bring up the "Export As" tool with each layer or layer folder on the left, allowing more of a "batch" process.
 
+There's one more cool trick in Photoshop for generating assets from layers or groups. Go to `File > Generate > Image Assets`. This is either checked on or off. Now, name a layer with a file extension, like `logo.png` and save your file. If you look in your Finder now, next to the Photoshop file you'll see ann assets folder with your file based on the layer. It will re-generate everytime you hit save.
+
+[Export artboards, layers, and more](https://helpx.adobe.com/photoshop/using/export-artboards-layers.html)
+
 ### From Illustrator
 
+Illustrator has a few options for exporting assets, none are very good.
 
+I highly recommend when using Illustrator for digital design, to prep your images in Photoshop first, place them as links in Illustrator, then only using Illustrator for vector graphics, elements that will be built with CSS (buttons, borders, etc.) and type.
+
+However, there aren't a lot of rules here, there's just what works.
+
+You can go to `File > Export > Export As`, but this is really just for whole artboards. This is the best place for you to export your designs for presentation though.
+
+Illustrators new export tool is the "Asset Export" panel. Find it by going to `Window > Asset Export`. Here, you can drag elements or groups of elements to the panel. You can name them, and set your parameters for exporting. Then, select or multi-select which items you want to export, and hit the "export" button in the bottom right. This will export everything all at once. Convenient if you make some changes that affect several items since they will stay up to date.
+
+However, currently there's a flaw here, that will perhaps be fixed in a later version. If I add anything with a mask, which is common practice in Illustrator, it will try and export the entire mask, with just additional transparency. Not cool.
+
+If this happens, you can bring the image into Photoshop and choose `Image > Trim` to trim off transparent pixels.
+
+[Collect assets and export in batches](https://helpx.adobe.com/illustrator/using/collect-assets-export-for-screens.html)
+
+[Asset Export should respect clipping mask](https://illustrator.uservoice.com/forums/601447-illustrator-bugs/suggestions/34968397-asset-export-should-respect-clipping-mask)
 
 ### From XD
 
+I am a beginner in XD, the same as you. Read this article.
+
+[Exportin Design Assets](https://helpx.adobe.com/xd/help/export-design-assets.html)
+
 ## Further compression
 
-However, Adobe is kind of a baby when it comes to compression. I almost never stop at what Adobe programs put out. 
+Please note, always use an "Export" option when you are saving from an Adobe program, not just "Save-As". However, Adobe is kind of a baby when it comes to compression. I almost never stop at what Adobe programs put out. 
 
 ---
 
