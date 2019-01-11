@@ -22,7 +22,7 @@ next: false
 
 [Download the Syllabus (Norris)](/assets/pdf/DES340_SP19_Norris.pdf)
 
-[Download the Syllabus (Fleener)](/assets/pdf/DES-340-Web-Design-19_01_fleener.pdf)
+[Download the Syllabus (Fleener)](/assets/pdf/DES340_SP19_Fleener.pdf)
 
 ---
 
