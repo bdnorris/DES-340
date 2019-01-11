@@ -1,6 +1,6 @@
-# CSS Text Properties
+# CSS Text Properties and Typographic Guidelines
 
-In this lecture, we will focus on CSS properties that are primarily for text and typography styling.
+In this lecture, we will focus on CSS properties that are primarily for text and typography styling as well as some general typography guidelines
 
 ## Weight
 
@@ -182,6 +182,22 @@ a {
 ```
 
 This can be useful for styling superscripts and subscripts.
+
+## Hierarchy and scale
+
+Determining hierarchy and scale to your type designs can be tough, as you probably experienced in other design classes, and Project 1A of this class. Whatever your process is, it's good to at least have a process. I find it useful to adopt someone else's scale or a previous design of your own and then make adjustments for your typeface choices and style. 
+
+Google's **Material Design** [typography system guidelines](https://material.io/design/typography/the-type-system.html) are extremely useful to remind yourself of what kinds of text elements you should design for on a large project. 
+
+## Text legibility
+
+Google's Material [design guidelines for legibility](https://material.io/design/color/text-legibility.html#legibility-standards) are also pretty useful (even though they are more geared to app design than websites).
+
+Remember, the web shares a lot of principles with other graphic design disciplines, but there are also a lot of patterns and specifications people are used to, if you deviate, make sure you have a good reason. 
+
+Apple and Google, for better or for worse, are some of the thought leaders and influencers when it comes to these patterns. They create apps and sites that people use all of the time, nearly daily. And other companies reference their design guidelines simply because it makes it easier for the user to not have to re-learn new user-interface queues for every new app or website. 
+
+But it's not just the patterns that make these guidelines useful, the people at these companies have spent more time thinking about this stuff than you have, so I encourage you to learn from their work. Just keep in mind that they are guidelines, and don't apply to every solution.
 
 ## Resources
 

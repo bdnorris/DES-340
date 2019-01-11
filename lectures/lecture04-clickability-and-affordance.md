@@ -44,6 +44,12 @@ Generally, avoiding making non-clickable things look clickable is just as import
 
 > Focus on content hierarchy within the page. Avoid having many colorful boxes of different sizes on a page. People have difficulty picking out the clickable elements when similar-looking items compete with each other.
 
+#### Button design
+
+Whatever you think of it, a style has emerged for buttons on the web. Background color, white text, all-caps, often rounded corners. This version of a button is really just a simplification of the skeuomorphic buttons of the first generation of websites and interfaces.
+
+[Material Design's Button Documentation](https://material.io/design/components/buttons.html) has some good examples of standards you can use a guide to make buttons not just look clickable, but noticeable and useful.
+
 ### Icons
 
 > When using icons for links, make sure icons are instantly recognizable. Unless you have a really strong resemblance icon or an icon that has become standard, it should be combined with another visual cue, such as a text label, to indicate clickability.
@@ -86,15 +92,16 @@ Patterns are some of our most reliable affordances in user interface design. For
 
 The most basic and direct affordance is a label. Labeled buttons are a great fallback for when other types of signifiers could be misunderstood. When the above examples could lead to any possible confusion, use a label. 
 
-### Negative Affordance
+### Negative affordance
 
 A negative affordance is when you specifically want to indicate that the item is not usable. This is usually when part of an interface needs to be disabled. Be careful here, changing the state of an interface element from active to disabled needs to be very clear. 
 
 Common ways to accomplish this would be to gray out an item, hide it beneath something else, etc. But, if an item is disabled, it needs to be clear what needs to happen in order to re-enable it.
 
-## Touch Affordances
+## Touch affordances
 
 On the web, all we can really count on is clicks, but of course, our interfaces could be optimized for touches and gestures. Eventually, we can count on those too. We won't really be covering this much, but keep in mind, some interfaces can be dragged, swiped, pinched, etc. Indicating this is possible would also be an affordance. 
+
 
 ## Resources
 
