@@ -46,6 +46,8 @@
 
 [Designer's Guide to DPI](http://sebastien-gabriel.com/designers-guide-to-dpi/)
 
+[Google Material Design Guidelines](https://material.io/)
+
 https://www.typewolf.com/
 
 https://unsplash.com/

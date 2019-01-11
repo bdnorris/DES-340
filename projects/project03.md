@@ -26,7 +26,7 @@ On this assignment, you will practice some contemporary user interface design pa
 
 For the following designs, I’m providing Illustrator, Photoshop and XD files in the required formats, with a 12-column “grid” for desktop, and a 4-column for mobile. The grids were calculated at [gridcalculator.dk](http://gridcalculator.dk/), so if you would like to adjust your grid, you can use that site to make your own Illustrator grids. Photoshop has a new function to create guides on artboards in a similar manner to this site.
 
-[Illustrator Template](/assets/Project4-WebTemplate.ai) 
+[Illustrator Template](/assets/Project4-WebTemplate.ai)
 
 [Photoshop Template](/assets/Project4-WebTemplate.psd)
 

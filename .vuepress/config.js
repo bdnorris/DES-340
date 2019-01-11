@@ -23,12 +23,13 @@ module.exports = {
           "lectures/lecture06-the-dom.md",
           "lectures/lecture07-units.md",
           "lectures/lecture08-color.md",
-          "lectures/lecture09-text-properties.md",
+          "lectures/lecture09-text-and-type.md",
           "lectures/lecture10-selectors.md",
           "lectures/lecture11-specificity.md",
           "lectures/lecture12-box-model.md",
           "lectures/lecture13-code-editor.md",
           "lectures/lecture14-backgrounds.md",
+          "lectures/lecture15-images.md",
         ]
       },
       {

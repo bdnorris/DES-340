@@ -69,7 +69,7 @@ If you chose a particularly long article, it is ok to cut off the design at a ce
 - [Photoshop](/assets/Project1A-WebTemplate.psd)
 - [XD](/assets/Project1A-WebTemplate.xd)
 
-## Present
+## Presentation
 
 Save your final designs in PNG format. I will show you how to do this in class. 
 

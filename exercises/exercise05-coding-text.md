@@ -1,4 +1,6 @@
-# Basic Coding Exercise
+# E5: Basic Coding Exercise
+
+Points: 20
 
 Now that we've gotten through some lectures and you've been practicing in Codecademy, it's time to try some practical skills by coding a simple text-based design in Codepen.
 
@@ -26,6 +28,6 @@ You should be able to the colors and sizes from the the Illustrator file, as wel
 
 Name your Codepen "DES-340: Exercise 5". Copy the URL and send to me via Slack.
 
-:::danger Due
+:::danger Due Dates
 March 6th
 :::
