@@ -120,9 +120,17 @@ I am a beginner in XD, the same as you. Read this article.
 
 Please note, always use an "Export" option when you are saving from an Adobe program, not just "Save-As". However, Adobe is kind of a baby when it comes to compression. I almost never stop at what Adobe programs put out. 
 
----
+Here's a list of a few applications and websites you can try further compression. They're listed in order of aggressiveness.
 
-You can compress more and the worst case senario is it doesn't look good, and you need to be less agressive.
+1. [TinyPNG (it does JPGs too)](https://tinypng.com/)
+2. [Compressor.io](https://compressor.io/)
+3. [ImageOptim](https://imageoptim.com/mac)
+
+These are all free, there are others, and probably some good paid options. 99% time, I get great results from TinyPNG.
+
+I recommend always saving your original file exports in a separate folder. TinyPNG, in particular, is very aggressive, and sometimes it will turn a PNG-24 into a PNG-8. So, you cannot assume the files that come out of these compressors could be re-opened in Photoshop and edited.
+
+The worst case scenario is, your file doesn't look good, you can always go back and try a less aggressive approach.
 
 ## SVG preparation
 
