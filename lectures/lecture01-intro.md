@@ -24,7 +24,7 @@ This class will provide an introduction to designing for screens generally, and 
 
 ### Code is a design tool
 
-I want to encourage you to think about <abbr title="Cascading Style Sheets">CSS</abbr>, HTML and programming languages, not as just a way to get designs from Photoshop or some other design tool into the browser, but as design tools themselves. When we use code, we get tools that are rawer than what Adobe gives us, but they allow for more flexibility and control. We can architect systems that let our creations dynamically react to interactions and user input, screen size, or even just let us experiment and iterate through design ideas faster.
+I want to encourage you to think about <abbr title="Cascading Style Sheets">CSS</abbr>, <abbr title="Hypertext Markup Language">HTML</abbr> and programming languages, not as just a way to get designs from Photoshop or some other design tool into the browser, but as design tools themselves. When we use code, we get tools that are rawer than what Adobe gives us, but they allow for more flexibility and control. We can architect systems that let our creations dynamically react to interactions and user input, screen size, or even just let us experiment and iterate through design ideas faster.
 
 ### Reasons you might want to learn to code
 - Career opportunities
@@ -35,6 +35,8 @@ I want to encourage you to think about <abbr title="Cascading Style Sheets">CSS<
 
 ### Reasons you might not want to learn to code
 - You might hate it
+
+The "love it"/"hate it" reasons might seem trite, but it matters. You won't be successful doing development if you don't like it, because your passion for it is the main determiner of how much you'll learn and how effective you can be. Hopefully, this class will give you a good idea of where you fall. 
 
 > Use code to be creative. Remember coding is really a design tool.
 Whether you’re designing the next Facebook or your new portfolio, all
@@ -63,13 +65,13 @@ To understand the basics of how large systems (websites) are put together and de
 
 > And it goes both ways. Developers are well-served to understand design. They know what their code can do, and they know which approaches are resource-efficient. How nice when a developer can suggest a useful design opportunity they already know how to implement.
 
-> Design and development are neatly convergent – everyone wins when they understand more of both.
+> **Design and development are neatly convergent – everyone wins when they understand more of both.**
 
 &mdash; [Danilo Campos: Why don't more designers code?](https://www.quora.com/Software-Product-Design/Why-dont-more-designers-code/answer/Danilo-Campos?share=1&srid=8P8)
 
 #### Ultimately...  
 
-If you want to do web design professionally, you will find benefits in learning some (front-end) code, but unless you work for a small firm it is unlikely, in the role of designer, you’ll have to write anything production ready.
+If you want to do web design professionally, you will find benefits in learning _some_ (front-end) code.
 
 ## Code languages
 
