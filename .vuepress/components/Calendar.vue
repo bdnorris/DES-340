@@ -2,9 +2,11 @@
   <div>
     <!-- <p>cal start: {{ calStart }}</p> -->
     <ul>
-      <li v-for="event in events">
-        <span>{{ parseDate(event.start.date) }}</span>
-        <strong>{{ event.summary }}</strong>
+      <li v-for="event in eventsFormatted">
+        <strong>{{ parseDate(event.start.date) }}</strong>
+        <ul>
+          <li v-for="summary in event.summaries">{{ summary }}</li>
+        </ul>
       </li>
     </ul>
     <div>
@@ -27,6 +29,7 @@ export default {
       calStart: '',
       // events: [''],
       events: [],
+      eventsFormatted: [],
       apiIP: false,
       counter: 1,
     }
@@ -38,15 +41,13 @@ export default {
     
     this.getEvents();
   },
-  mounted () {
-    console.log('events', this.events)
-  },
   methods: {
     getEvents() {
       axios.get(this.baseUrl + this.calId + 'group.calendar.google.com/events?showDeleted=false&key='+this.calKey+'&timeMax=2019-06-30T10%3A00%3A00-07%3A00&orderBy=startTime&singleEvents=true&timeMin='+this.calStart)
       .then(response => {
         console.log('response', response);
         this.$data.events = response.data.items
+        this.formatEvents();
       })
       .catch(error => {
           console.log(error);
@@ -62,13 +63,45 @@ export default {
       console.log(parseInt(month));
       let monthName = monthNames[parseInt(month)-1];
       return monthName + ' ' + dateS;
+    },
+
+    formatEvents() {
+      let rawEvents = this.events
+      var localEventsFormatted = []
+      console.log('raw', rawEvents)
+      let lastDate = ''
+      let key = -1
+      rawEvents.forEach(x => {
+        let date = x.start.date
+        
+        console.log('hi', lastDate, date, key)
+        if (lastDate === date) {
+          localEventsFormatted[key].summaries.push(x.summary)
+          lastDate = date
+        }
+        else {
+          key++
+          localEventsFormatted.push({
+            'start': x.start,
+            'summaries': [x.summary]
+          })
+          lastDate = date
+          
+        }
+        
+      })
+      this.eventsFormatted = localEventsFormatted;
+
     }
+
+
   },
-  // computed: {
-  //   now: function () {
-  //     return Date.now()
-  //   }
-  // }
+  computed: {
+    // now: function () {
+    //   return Date.now()
+    // }
+
+  }
 }
 
 </script>
