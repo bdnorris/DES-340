@@ -1,8 +1,8 @@
 <template>
     <div>
-        <ul>
+        <ol>
             <li v-for="student in students">{{student}}</li>
-        </ul>
+        </ol>
         <button type="button" v-on:click="sortStudents">Sort</button>
     </div>
 </template>

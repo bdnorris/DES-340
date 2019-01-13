@@ -74,7 +74,7 @@ export default {
       rawEvents.forEach(x => {
         let date = x.start.date
         
-        console.log('hi', lastDate, date, key)
+        // console.log('hi', lastDate, date, key)
         if (lastDate === date) {
           localEventsFormatted[key].summaries.push(x.summary)
           lastDate = date
