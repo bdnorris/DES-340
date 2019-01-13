@@ -22,6 +22,10 @@ This class will provide an introduction to designing for screens generally, and 
 
 [Google Search "Should Designers Code"](https://www.google.com/search?q=should+designers+code&oq=should+designers+code&aqs=chrome..69i57j0l5.2587j1j1&sourceid=chrome&ie=UTF-8)
 
+### Code is a design tool
+
+I want to encourage you to think about <abbr title="Cascading Style Sheets">CSS</abbr>, HTML and programming languages, not as just a way to get designs from Photoshop or some other design tool into the browser, but as design tools themselves. When we use code, we get tools that are rawer than what Adobe gives us, but they allow for more flexibility and control. We can architect systems that let our creations dynamically react to interactions and user input, screen size, or even just let us experiment and iterate through design ideas faster.
+
 ### Reasons you might want to learn to code
 - Career opportunities
 - Not needing to rely on a developer

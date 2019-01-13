@@ -226,3 +226,7 @@ So in most cases "0" and "0px" are treated the same.
 <!-- > Some students ask, what’s the difference between using “0” and “0px”
 or “0em”. The answer is nothing — no pun intended — zero is zero no
 matter what unit you use! -->
+
+## Again, code is a design tool
+
+Currently, you don't get relative units like "em" and "vw" in Photoshop or Illustrator. That may be coming, but I want to point out that if you think about your projects and designs systemically, these units can be really powerful. You can shrink or enlarge all of your sizes and paddings based on screen size with a few lines of code. You can use math and automate your text hierarchies. All of this comes later once you are more familiar with these tools. As an example to get you thinking this way, what would happen if you set your `<h1>` styles to `font-size: 5vw;`? You can't do that in Photoshop.
