@@ -17,19 +17,19 @@ module.exports = {
         children: [
           "lectures/lecture01-intro.md",
           "lectures/lecture02-rwd.md",
-          "lectures/lecture03-web-how.md",
-          "lectures/lecture04-clickability-and-affordance.md",
-          "lectures/lecture05-html-elements-and-attributes.md",
-          "lectures/lecture06-the-dom.md",
-          "lectures/lecture07-units.md",
-          "lectures/lecture08-color.md",
-          "lectures/lecture09-text-and-type.md",
-          "lectures/lecture10-selectors.md",
-          "lectures/lecture11-specificity.md",
-          "lectures/lecture12-box-model.md",
-          "lectures/lecture13-code-editor.md",
-          "lectures/lecture14-backgrounds.md",
-          "lectures/lecture15-images.md",
+          // "lectures/lecture03-web-how.md",
+          // "lectures/lecture04-clickability-and-affordance.md",
+          // "lectures/lecture05-html-elements-and-attributes.md",
+          // "lectures/lecture06-the-dom.md",
+          // "lectures/lecture07-units.md",
+          // "lectures/lecture08-color.md",
+          // "lectures/lecture09-text-and-type.md",
+          // "lectures/lecture10-selectors.md",
+          // "lectures/lecture11-specificity.md",
+          // "lectures/lecture12-box-model.md",
+          // "lectures/lecture13-code-editor.md",
+          // "lectures/lecture14-backgrounds.md",
+          // "lectures/lecture15-images.md",
         ]
       },
       {
@@ -38,12 +38,9 @@ module.exports = {
         children: [
           "exercises/exercise01-bio.md",
           "exercises/exercise02-ui-study.md",
-          "exercises/exercise03-first-website.md",
-          "exercises/exercise04-atomic-design.md",
-          'exercises/exercise05-coding-text.md',
-          // 'exercises/exercise06.md',
-          // 'exercises/exercise07.md',
-          // 'exercises/exercise08.md',
+          // "exercises/exercise03-first-website.md",
+          // "exercises/exercise04-atomic-design.md",
+          // 'exercises/exercise05-coding-text.md',
         ]
       },
       {
@@ -52,11 +49,9 @@ module.exports = {
         children: [
           "projects/project01A.md",
           "projects/project01B.md",
-          "projects/project02.md",
-          "projects/project03.md",
-          "projects/project04.md"
-          // 'projects/project05.md',
-          // 'projects/project06.md',
+          // "projects/project02.md",
+          // "projects/project03.md",
+          // "projects/project04.md"
         ]
       },
       {
