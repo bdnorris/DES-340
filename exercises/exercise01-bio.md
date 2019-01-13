@@ -135,7 +135,7 @@ You'll see that the HTML structure of a list actually has a parent/child relatio
 
 __ul__ starts and ends the list. __li__ stands for "list item" and creates a bullet point for each `<li>` tag.
 
-### Step 9: Let's style something real quick
+### Step 7: Let's style something real quick
 
 Ok, we did a bunch of HTML, but let's go ahead and use CSS to style one thing. 
 
