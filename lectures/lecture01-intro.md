@@ -109,6 +109,6 @@ When starting out, you'll likely find some concepts pretty tough, but with a lit
 
 It's kind of up to you. We will be covering a lot, but your coding skills will not really be a part of your grade (although, the effort you apply will).
 
-## What if you just can't code?
+## What if you just can't code? Like, you just don't get it.
 
 Again, you will not be graded on the results of your code, just your effort.
