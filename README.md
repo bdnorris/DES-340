@@ -1,20 +1,30 @@
 ---
-lastUpdated
+prev: false
+next: false
 ---
-
 
 # DES-340
 
-## Testing
- lorem
 
- ## Calendar
 
- <ClientOnly>
-  <Calendar/>
+<!-- ## Calendar: Section 301 (Fleener/MW/4PM)
+
+<ClientOnly>
+  <Calendar calId="buncuq6n9adeuvap19g0o32u7s%40" />
+</ClientOnly> -->
+
+<!-- ## Calendar: Section 302 (Norris/MW/7PM) -->
+## Calendar
+
+<ClientOnly>
+  <Calendar calId="buncuq6n9adeuvap19g0o32u7s%40" />
 </ClientOnly>
 
+## Syllabus
 
+[Download the Syllabus (Norris)](/assets/pdf/DES340_SP19_Norris.pdf)
+
+[Download the Syllabus (Fleener)](/assets/pdf/DES340_SP19_Fleener.pdf)
 
 ---
 
