@@ -134,6 +134,83 @@ The worst case scenario is, your file doesn't look good, you can always go back 
 
 ## SVG preparation
 
+SVGs can be a bit complicated, but I can give you some basic guidelines.
+
+Number one rule of SVG is to keep them simple. Avoiding complex masks, gradients, and objects with a ton of points. Expand your shapes (Object > Expand Appearance) and outline your fonts. Both strokes and fills are valid, but you would get unexpected results if you had any complex outlines or brushes unless you expand them.
+
+Just like a JPG or PNG, an SVG has dimensions that are based on the artboard. In SVG this is called the "viewbox". Make sure your SVG fits inside your artboard. I also recommend you make your SVG artboards even numbers, it will make it easier to calculate changes later. 
+
+Since the artboard is so important, I actually don't recommend using Illustrator's Asset Export panel for this either. I would keep each SVG as a separate AI file, and to make an exception for what I said before, choose File > Save As and choose SVG from the filetype (not SVGZ). 
+
+### Using SVGs
+
+The easiest way to use an SVG, is just use the `<img>` tag and control it's sizing with CSS.
+
+But, I would also encourage you to explore opening the SVG in a text editor, copying the code, and just pasting it into your HTML. You can assign styles and classes to the SVG code, and control it with CSS. Here's a super simple example of what that would look like...
+
+Here's a black circle 20px &times; 20px, saved from Illustrator as an SVG:
+
+```html
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+<g>
+	<circle cx="10" cy="10" r="10"/>
+</g>
+</svg>
+```
+
+Right away, if we're going to include this directly in our HTML, we can get rid of the doctype declaration and the Adobe Illustrator comment.
+
+```html
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+<g>
+	<circle cx="10" cy="10" r="10"/>
+</g>
+</svg>
+```
+
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+<g>
+	<circle cx="10" cy="10" r="10"/>
+</g>
+</svg>
+
+So, as you can see, this looks a bit like HTML. It's made up of tags. The surrounding `<svg>` tag has attributes related to the document. The viewBox attribute sets the size of the "artboard" and all of the other numbers in the document are in reference to that.
+
+Inside that is a `<g>` tag, just standing for "group". Inside that is the `<circle>` element. There are several different shape elements available with SVG, including: ‘circle’, ‘ellipse’, ‘line’, ‘path’, ‘polygon’, ‘polyline’ and ‘rect’.
+
+I could add a class to my circle, by either adding it directly, or I could add it to the group. 
+
+```html
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+<g class="my-circle">
+	<circle cx="10" cy="10" r="10"/>
+</g>
+</svg>
+```
+
+And then I could style it like so...
+
+```css
+.my-circle > circle {
+  fill: blue;
+}
+```
+
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+<g >
+	<circle style="fill:blue" cx="10" cy="10" r="10"/>
+</g>
+</svg>
+
+We could talk about all we could do with SVGs for a while, but it's a bit beyond the scope of this class, so we'll leave it there for now. But, I hope you can see how powerful this could be, with SVG, we get a new language to draw with, that can be used inside of our HTML.
+
 ## How big is too big?
 
 ## Using images on your site
