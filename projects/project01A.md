@@ -25,7 +25,7 @@ We'll start this multi-part project by focusing on good typographic hierarchy by
 *   [Help Scout](https://www.helpscout.com/blog/sales-as-a-service/)
 *   [500px](https://iso.500px.com/trending-landscapes-soft-blacks-themes-licensing/)
 *   [Wistia](https://wistia.com/learn/production/social-norms-100k-video)
-*   [Invision (Inside Design)][https://www.invisionapp.com/inside-design/how-to-create-a-ux-portfolio-without-ux-experience/
+*   [Invision (Inside Design)](https://www.invisionapp.com/inside-design/how-to-create-a-ux-portfolio-without-ux-experience/)
 *   [Kari Narrator](http://narrator.mauer.co/less-is-more-diving-into-minimalism-in-photography/)
 *   [Emergence](https://emergencemagazine.org/story/born-was-the-mountain/)
 *   [Oceanographic](https://www.oceanographicmagazine.com/features/lost-valley-dinosaurs/)
