@@ -12,7 +12,6 @@ One of the most important parts of a website’s layout is the masthead. It’s 
 
 Your masthead should answer the questions: Where am I?, What can I do here?
 
-
 ## Objectives
 
 - Further practice studying existing websites for effective methods and patterns of layout, design and user interface.
@@ -50,8 +49,6 @@ For the second part of our digital typography project, you'll add a masthead, a 
 - some contact information
 - social media links (at least 3)
 - a copywrite notice
-
-## Process
 
 ## Screenshots/Research
 
