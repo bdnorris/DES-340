@@ -7,7 +7,7 @@ module.exports = {
     nav: [
       //   { text: 'Home', link: '/' },
       // { text: "Projects", link: "/projects/" }
-      //   { text: 'External', link: 'https://google.com' },
+      { text: 'Slack', link: 'https://msuwebdesign.slack.com/' },
     ],
     sidebar: [
       "/",
