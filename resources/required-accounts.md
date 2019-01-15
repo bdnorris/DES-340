@@ -23,7 +23,7 @@ Create your accounts at the following sites. We’ll need them the soonest. Keep
 3. That's it! When you work on an exercise in Codepen, you will be able copy the URL and send me it via Slack.
 
 ## InVision
-1. Go to Invision's Sign-Up Page
+1. Go to [Invision's](https://www.invisionapp.com/) Sign-Up Page
 2. Fill out required information
 3. After logging in to your new account, hit the pink "+" and create a new board.
 4. Name it “DES 340 Your Name”
