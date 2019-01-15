@@ -169,6 +169,10 @@ However, now that a lot of the patterns are defined, we're in a better place to 
 
 [Modern Layouts: Getting Out of Our Ruts by Jen Simmons](https://vimeo.com/147950924)
 
+# Responsive browser preview
+
+I'll do a quick demo of how to preview websites responsively in [Chrome](https://developers.google.com/web/tools/chrome-devtools/device-mode/), [Safari](https://www.macobserver.com/tmo/article/safari-9-using-responsive-design-mode) and [Firefox](https://developer.mozilla.org/en-US/docs/Tools/Responsive_Design_Mode). 
+
 # Responsive Resources
 
 [Brad Frost's Responsive Resources](http://bradfrost.github.io/this-is-responsive/resources.html)
