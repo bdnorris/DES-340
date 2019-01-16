@@ -37,6 +37,8 @@ Since Apple's suite of devices is pretty common, choosing some breakpoints based
 
 Visit [screensiz.es](http://screensiz.es/) to view a wide variety of device resolutions. 
 
+Visit [iOSRes](http://iosres.com/) to view Apple specific resolutions. Notice the "Logical Resolution" row on this site. It describes how you would size something in CSS. For instance, making a box in CSS 375px wide would be 100% of the iPhone 8's screen width. We'll talk more about this when we talk about retina graphics.
+
 Popular phone breakpoints let you know how most people see your site, allowing you to optimize for most users, while not outright breaking anything for anyone.
 
 Here’s some common breakpoints based on some assumptions about devices: 
