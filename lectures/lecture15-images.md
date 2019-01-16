@@ -213,7 +213,21 @@ We could talk about all we could do with SVGs for a while, but it's a bit beyond
 
 ## How big is too big?
 
+Of course, the point of all of this is that even with broadband speed internet, the time it takes our sites to load matters. It matters to give someone on a crummy 3g connection a chance at accessing your site, and it even matters that your site feel snappy to someone with a really fast connection. There are a lot of factors here, but the items that are in your control are what we're concerned with. 
+
+If we looked at Missouri State's homepage as an example, the largest asset on the page is actually a javascript file. The main featured image is second, measuring in at around 63k. That's pretty good. 
+
+When deciding on what's acceptable, you need to consider your audience and your content. If your making a portfolio site, image quality really matters. The home page of a university, being a more general audience, likely to be accessed from mobile devices, quality matters less than snappy delivery. 
+
+The size of your files matters for you or your client's bottom line as well. Consider our University's website. It probably gets a lot of traffic. Let's say it gets 50,000 views a month (although I have no idea). Now, returning visitors likely get a cached version of that main image from their own browser's storage, saving the need to download a new copy. But let's say all 50,000 views are unique. Just that one image (63k), downloaded 50,000 times is 3.15GB. Not crazy, but that is just one image. 
+
+Now say you didn't compress the image and it was 140k instead. Now we're talking 7GB. That's bandwidth the school (you) has to pay for. 
+
+To the real question, how big is too big? Well, you need to test, and make sure your site feels like it's loading well, even if it's on a slow connection. We'll look at how to do this when we talk about browser developer tools. For now, keep your big hero images under 300k, and your smaller content images at 150 or less, and you should be fine.
+
 ## Using images on your site
+
+
 
 ### Background or Content?
 

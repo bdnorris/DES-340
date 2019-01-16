@@ -134,6 +134,10 @@ Just a general design rule, try to avoid using #000000 or pure black in your des
 
 ## Resources
 
+[MDN: CSS Color Docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Applying_color)
+
 [Hail Pixel Color App](https://color.hailpixel.com)
 
-[MDN: CSS Color Docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Applying_color)
+[Adobe Color CC](https://color.adobe.com/create/color-wheel/)
+
+[Coolors.co](https://coolors.co/)

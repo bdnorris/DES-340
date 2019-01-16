@@ -87,3 +87,21 @@ https://colourco.de/
 [CSS Vertical Centering Tutorials](http://webdesignerwall.com/tutorials/css-vertical-centering-everything-need-know)
 
 [Flexbox Playground](http://codepen.io/enxaneta/pen/adLPwv)
+
+## Generators
+
+### Color
+
+[Hail Pixel Color App](https://color.hailpixel.com)
+
+[Adobe Color CC](https://color.adobe.com/create/color-wheel/)
+
+[Coolors.co](https://coolors.co/)
+
+### Gradients
+
+[UI Gradients](https://uigradients.com/)
+
+### General
+
+[CSSMatic](https://www.cssmatic.com/)

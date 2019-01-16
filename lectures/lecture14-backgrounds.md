@@ -165,6 +165,10 @@ div {
 
 You can specify the shape of the radial gradient with the keywords `circle` or `ellipse` (default).
 
+Here's a cool gradient generator to let you explore what you can do with CSS Gradients
+
+[UI Gradients](https://uigradients.com/)
+
 ## Background shorthand
 
 Finally, you can use the background shorthand property if you prefer.
