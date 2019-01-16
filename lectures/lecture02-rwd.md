@@ -35,7 +35,7 @@ There are a few approaches you can take when defining breakpoints. You can base 
 
 Since Apple's suite of devices is pretty common, choosing some breakpoints based on iPhone and iPad sizes is a pretty popular approach.
 
-Visit [iOS Resolutions](http://iosres.com) to see the current crop of Apple's device resolutions. 
+Visit [screensiz.es](http://screensiz.es/) to view a wide variety of device resolutions. 
 
 Popular phone breakpoints let you know how most people see your site, allowing you to optimize for most users, while not outright breaking anything for anyone.
 
