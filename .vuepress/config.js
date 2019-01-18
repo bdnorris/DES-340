@@ -17,8 +17,8 @@ module.exports = {
         children: [
           "lectures/lecture01-intro.md",
           "lectures/lecture02-rwd.md",
-          // "lectures/lecture03-web-how.md",
-          // "lectures/lecture04-clickability-and-affordance.md",
+          "lectures/lecture03-web-how.md",
+          "lectures/lecture04-clickability-and-affordance.md",
           // "lectures/lecture05-html-elements-and-attributes.md",
           // "lectures/lecture06-the-dom.md",
           // "lectures/lecture07-units.md",
