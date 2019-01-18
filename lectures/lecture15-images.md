@@ -227,7 +227,38 @@ To the real question, how big is too big? Well, you need to test, and make sure 
 
 ## Using images on your site
 
+We've looked at the `<img>` tag and the `background-image` property in CSS. Let's look at how we can use the `<img>` tag in a little more detail.
 
+Something I include in every site is the following CSS code snippet: 
+
+```css
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+```
+This is something easy you can do for responsive images. The idea here is that you use the images container to control the size of the image. 
+
+First off, images by default are `display: inline`. So we want to make them display block so they automatically break when around text and follow our normal box model (width, height, border, margin, padding).
+
+If you HTML is structured like so...
+
+```html
+<div class="image-container">
+   <img src="myimage.jpg" alt="My Image" />
+</div>
+```
+
+...you can control this images size in CSS and the image will aways try and fill the entirity of it's container. It's height will adjust automatically. 
+
+```css
+.image-container {
+	width: 100%;
+}
+```
+
+Now my container will fill 100% of it's container, which may be 100% too, or 50%, or 200px, or whatever. If I wanted two images side-by-side, I might set my container to 50%&mdash;but that gets into layout, so we'll save it for a bit later.
 
 ### Background or Content?
 
