@@ -100,7 +100,7 @@ I highly recommend when using Illustrator for digital design, to prep your image
 
 However, there aren't a lot of rules here, there's just what works.
 
-You can go to `File > Export > Export As`, but this is really just for whole artboards. This is the best place for you to export your designs for presentation though.
+You can go to `File > Export > Export As`, but this is really just for whole artboards. This is the best place for you to export your designs for presentation though. You can also go to `File > Export > Export for Screens` if you want more of a preview of what you're exporting. 
 
 Illustrators new export tool is the "Asset Export" panel. Find it by going to `Window > Asset Export`. Here, you can drag elements or groups of elements to the panel. You can name them, and set your parameters for exporting. Then, select or multi-select which items you want to export, and hit the "export" button in the bottom right. This will export everything all at once. Convenient if you make some changes that affect several items since they will stay up to date.
 
