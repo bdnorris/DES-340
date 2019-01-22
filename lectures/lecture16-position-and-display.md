@@ -202,6 +202,13 @@ right: 0;
 
 works on absolute as well
 
+
+<!-- 
+The element will not remain in the natural flow of the page. It will position itself according to the viewport.
+
+Because it's positioned, it will act as an anchor point for the absolutely positioned pink block. -->
+
+
 <!-- 
 
 header {
@@ -282,3 +289,5 @@ always above any tag without a z-index as the default is 0. -->
 [CSS Reference for Display](https://cssreference.io/property/display/)
 
 [CSS Reference for Positioning](https://cssreference.io/positioning/)
+
+[CSS Reference for z-index](https://cssreference.io/property/z-index/)

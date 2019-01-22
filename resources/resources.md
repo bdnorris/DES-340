@@ -58,6 +58,13 @@ https://fonts.google.com/
 
 https://colourco.de/
 
+#### Pattern Libraries
+
+[Pattern Tap](http://patterntap.com/patterntap)
+
+[UI Patterns](http://ui-patterns.com)
+
+
 ### HTML / CSS
 
 [HTML5 Boilerplate](https://html5boilerplate.com/)

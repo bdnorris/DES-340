@@ -189,6 +189,8 @@ Determining hierarchy and scale to your type designs can be tough, as you probab
 
 Google's **Material Design** [typography system guidelines](https://material.io/design/typography/the-type-system.html) are extremely useful to remind yourself of what kinds of text elements you should design for on a large project. 
 
+Here's a great resource discussing scale and measer in Responsive Design: [A More Modern Scale for Web Typography](http://typecast.com/blog/a-more-modern-scale-for-web-typography)
+
 ## Text legibility
 
 Google's Material [design guidelines for legibility](https://material.io/design/color/text-legibility.html#legibility-standards) are also pretty useful (even though they are more geared to app design than websites).

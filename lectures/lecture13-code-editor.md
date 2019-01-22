@@ -132,3 +132,7 @@ That's a good beginners rundown, but there are tons of features and extensions a
 
 [VS Code Tips and Tricks](https://code.visualstudio.com/docs/getstarted/tips-and-tricks)
 
+[Browser Preview VS Code Extension](https://marketplace.visualstudio.com/items?itemName=auchenberg.vscode-browser-preview)
+
+[Live Server for VS Code](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+
