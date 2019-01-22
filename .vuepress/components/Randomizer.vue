@@ -27,6 +27,7 @@ export default {
             'Jess Christensen',
             'Olina Einarsdottir',
             'Kathryn Garbee',
+            'Brittany Godat',
             'Samantha Harris',
             'Mikaylah Jones',
             'Shannon Kelly',
