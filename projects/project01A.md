@@ -82,6 +82,10 @@ Save your final designs in PNG format. I will show you how to do this in class.
 
 __In InVision, make sure your Assignment and graphics flow so that the newest items are at the top.__ Project 1A, Designs should be on top.
 
+## Resources
+
+[A More Modern Scale for Web Typography](http://typecast.com/blog/a-more-modern-scale-for-web-typography)
+
 ::: danger Due Dates
 1/28 Final critique
 :::
