@@ -18,6 +18,9 @@
 
 [Web Designer News](http://www.webdesignernews.com/)
 
+Scroll down to the list of twitter profiles. These are your current CSS influencers...
+[CSS Doesn't Suck](https://andy-bell.design/wrote/css-doesnt-suck/)
+
 ## Try to follow best practices
 
 [CSS Guidelines](http://cssguidelin.es/)
