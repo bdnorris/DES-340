@@ -1,7 +1,7 @@
 <template>
     <div>
         <ol>
-            <li v-for="student in students">{{student}}</li>
+            <li v-for="student in students"><span v-html="student"></span></li>
         </ol>
         <button type="button" v-on:click="sortStudents">Sort</button>
     </div>
@@ -20,20 +20,22 @@ export default {
       return {
           students: [],
           section301: ['yo', 'what', 'rick', 'larry', 'sally', 'patricia'],
-          section302: ['Rachel Backs',
-            'Mitchell Banning',
-            'Katelyn Betz',
-            'Zachary Boyd',
-            'Jess Christensen',
-            'Olina Einarsdottir',
-            'Kathryn Garbee',
-            'Samantha Harris',
-            'Mikaylah Jones',
-            'Shannon Kelly',
-            'Lauren Luebbert',
-            'Emily Moreno',
-            'Eric Spratt',
-            'Caleb Stafford'
+          section302: [
+            '<a target="_blank" href="https://projects.invisionapp.com/boards/K33SHF2YUAS/">Rachel Backs</a>',
+            '<a target="_blank" href="https://projects.invisionapp.com/boards/XD3SHF78UEJ/">Mitchell Banning</a>',
+            '<a target="_blank" href="https://projects.invisionapp.com/boards/MB3SHF1GJ97/">Katelyn Betz</a>',
+            '<a target="_blank" href="https://projects.invisionapp.com/boards/NE3SAX3PVUQ/">Zachary Boyd</a>',
+            '<a target="_blank" href="https://projects.invisionapp.com/boards/BD3SHFFQVYK/">Jess Christensen</a>',
+            '<a target="_blank" href="https://projects.invisionapp.com/boards/E23S9PSW8D7/">Olina Einarsdottir</a>',
+            '<a target="_blank" href="https://projects.invisionapp.com/boards/9M3SHFDTAQR/">Kathryn Garbee</a>',
+            '<a target="_blank" href="https://projects.invisionapp.com/boards/3G3SBXU2YPW/">Brittany Godat</a>',
+            '<a target="_blank" href="https://projects.invisionapp.com/boards/FK3S9QL8J5U/">Samantha Harris</a>',
+            '<a target="_blank" href="https://projects.invisionapp.com/boards/ND3SHF3RFQU/">Mikaylah Jones</a>',
+            '<a target="_blank" href="https://projects.invisionapp.com/boards/V33SARN4SYT/">Shannon Kelly</a>',
+            '<a target="_blank" href="https://projects.invisionapp.com/boards/6V3SHFA27U8/">Lauren Luebbert</a>',
+            '<a target="_blank" href="https://projects.invisionapp.com/boards/AJ3SHFB7GSF/">Emily Moreno</a>',
+            '<a target="_blank" href="https://projects.invisionapp.com/boards/QB3SHF9GVX2/">Eric Spratt</a>',
+            '<a target="_blank" href="https://projects.invisionapp.com/boards/BC3SHGR28X6/">Caleb Stafford</a>',
           ]
       }
   },
