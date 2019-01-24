@@ -193,96 +193,61 @@ as a relatively positioned tag. If you want the “co-ordinates” to be based o
 
 ### Fixed
 
-`position: fixed;` is how we can make things "sticky" with CSS. 
+`position: fixed;` is how we can make things "sticky" with CSS. It works similarly to absolute, and removes the element from the normal flow of the page. The difference is it doesn't care about scrolling. For that reason, it's always positioned relative to the document root (`<html>`). 
 
-left: 0;
-bottom: 0;
-top: 0;
-right: 0;
+The following CSS would make my fixed item take up the entire viewport...
 
-works on absolute as well
-
-
-<!-- 
-The element will not remain in the natural flow of the page. It will position itself according to the viewport.
-
-Because it's positioned, it will act as an anchor point for the absolutely positioned pink block. -->
-
-
-<!-- 
-
-header {
-position: fixed;
-top: 0;
-left: 0;
+```css
+div {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
 }
-This will attach the tag to the page in the top left corner and keep it there, even if scrolling up and down the page. -->
+```
 
-<!-- One thing you might noticed is that when you take the tag out of the usual context of the page, it might lose its width. That’s because it has no clue about what size it should be. If you want to fill up the whole width of the browser, you can add in:
-header {
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
+This works on `absolute` as well, by-the-way. Notice, when using both top and bottom, you don't necessarily need a `height` property, and if you use both left and right, you don't necessarily need a `width` property.
+
+Often this is used for a sticky header. 
+
+```css
+{
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
 }
-This will stretch the header across the whole of the page. We could
-also start to add heights, background colors and more to this header
-to fill it out. -->
+```
 
+Anything with `position: absolute;` that is nested inside your fixed element will be positioned relative to your `fixed` element.
 
+### A note on layout
 
+> One thing you might be tempted to do is start building your layouts using positions rather than floats, because it looks easier — it’s similar to design programs like Photoshop and Sketch where you set an “x” and “y” position and away you go. But resist the temptation. The more positioning you use, the more tangles you’ll end up in, when it comes to fixing your layout for mobile.
 
-<!-- Combining positions and floats
-One thing you might be tempted to do is start building your layouts using positions rather than floats, because it looks easier — it’s similar to design programs like Photoshop and Sketch where you set an “x” and “y” position and away you go. But resist the temptation. Floats are a more powerful tool, especially when it comes to responsive design. The more positioning you use, the more tangles you’ll end up in, when it comes to fixing your layout for mobile. -->
-
-<!-- We can however combine positions and floats in great ways. Let’s say
-we want a sticky header where our title is on the left and navigation is
-on the right. Our HTML would look something like: -->
-
-<!-- <header>
-<h1>Boyce</h1>
-<nav>
-<a href="portfolio.html">Portfolio</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
-</nav>
-</header>
-
-So first we want to fix our header to the top of the page. Next we want
-to move our title to the left, then we want to move our navigation to the
-right. Remember, because we’re floating everything inside the header,
-we need to fix the layout with a hidden overflow:
-header {
-position: fixed;
-top: 0;
-left: 0;
-overflow: hidden;
-} -->
-
-<!-- h1 {
-float: left;
-}
-nav {
-float: right;
-}
-It might be very tempting to make the floats into absolute positions, but don’t do this as it makes it harder when we move to responsive later! -->
+Positioning shouldn't be used for your main layout rules, essentially because it's harder to implement responsive design. This will become more clear as we dig further into layout.
 
 ### Using z-index
 
-<!-- Overlapping positions
-Sometimes you might have tags that overlap due to using position rules in lots of ways. The default order is based on whatever tag is further down in the HTML but sometimes you want to switch them out.
-As we said earlier in the guide, going across the page is called the “x” direction and going down the page is called the “y” direction. There’s one more direction, the “z” direction, which is to do with how close a tag is to the user.
-By default, every tag is at the base level, zero, and then sorted by the order of the HTML. We can change that by increasing the “z-index” of the tag. The higher the “z-index”, the “closer” to the user the tag will seem. -->
+Items that are positioned get access to the `z-index` property. The "Z" in this case refers to an "axis". Horizontal is "X", vertical is "Y", and "Z" is the third dimension. In this case it lets us control the layering of our elements. 
 
-<!-- To change the z-index, just increase or decrease the number:
-header {
-z-index: 1;
+With positioning, we can start having elements layred on top of other elements. As design gets more complicated, the order of the HTML elements in our document determine what appears on top of what. The `z-index` property lets us control this with CSS.
+
+By default, every element has a z-index of "0". You can then change the property to bring the to the top, or push it down. This is similar to arranging layers in Photoshop or Illustrator.
+
+```css
+.my-top-element {
+  position: relative;
+  z-index: 10;
 }
-nav {
-z-index: 2;
-}
-This would make the nav be always above the header. Both would be
-always above any tag without a z-index as the default is 0. -->
+```
+
+Easy if you only have a few items. It gets harder when you have several, and have to control multiple z-indexes. I like to start with 10s. That way, if I have two items, one set at "10" and one set at "20". Now I have a third element that needs to be in-between them, I can use "11". If I just did "1" and "2", I'd have to re-adjust everything.
+
+You can also use negative numbers (`-1`), if you need to push something below the default 0 label. Remember, **only elements with position other than `static` get z-index**, so if you need to push something below elements without "position", you will need to use negative numbers.
 
 ## Resources
 
@@ -291,3 +256,5 @@ always above any tag without a z-index as the default is 0. -->
 [CSS Reference for Positioning](https://cssreference.io/positioning/)
 
 [CSS Reference for z-index](https://cssreference.io/property/z-index/)
+
+[Position on CSS-Tricks](https://css-tricks.com/almanac/properties/p/position/)
