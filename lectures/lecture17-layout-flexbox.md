@@ -1,31 +1,84 @@
-<!-- # CSS Layout: An Introduction
+# CSS Layout and Flexbox
 
 ## Floats, and why we're skipping them
 
+I mentioned floats when we discussed images. In the early web, there was no real layout methods. The web was really supposed to just be text documents with image support, sort of like a Word file. The hack was to use the `<table>` element to layout web pages. When responsive design became a thing, CSS floats were used instead. Still a hack. 
+
+There's a new(ish) kid on the block though, and it's called Flexbox. 
+
+The trick of Flexbox is that since it's newish, it can be difficult to support older browsers, like Internet Explorere. However, there are ways, that we'll discuss at the end of this lecture. 
+
+Since we have Flexbox now, and it's support is pretty good, we no longer need floats. But, if you're searching around the internet, or looking at someone else's code, you might still see this method hanging around. 
+
 ## Flexbox
 
-Flexbox
-So we have four different options: “inline” to act as if text and can
-possibly wrap on two lines or more, “inline-block” to act as a box that
-goes horizontally and not wrap on two lines, “block” to act as a box
-that goes vertically down the page, and “none” to hide tags.
-More recently, the nerds at W3C decided to add another display type
-to the list. They found that a lot of web sites were being used more for
-“web apps” — more complicated web pages that act like desktop apps
-— so they added some simple and powerful tools for distributing space
-and aligning content in ways that these “web apps” and complex web
-pages often need. These are based on a new display type called “flex”. In
-the coder community we talk about using “flexbox”, because we’re using
-boxes (or tags) that have flex.
-Let’s say we have some HTML that looks like:
+You. are. so. lucky. Flexbox might seem tough, but keep in mind, we had nothing before it. The entire web was a lie, every website you ever used was basically doing incredible things with hacks on top of hacks. You get Flexbox.
+
+**So what is it?** Flexbox is a set of CSS properties that allow for one-directional layout where a parents children can be set to automatically fill the parents space. It also gives us some really great alignment tools. 
+
+From CSS Tricks...
+
+> The Flexbox Layout (Flexible Box) module aims at providing a more efficient way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic (thus the word "flex").
+
+> The main idea behind the flex layout is to give the container the ability to alter its items' width/height (and order) to best fill the available space (mostly to accommodate to all kind of display devices and screen sizes). A flex container expands items to fill available free space, or shrinks them to prevent overflow.
+
+> Most importantly, the flexbox layout is direction-agnostic as opposed to the regular layouts (block which is vertically-based and inline which is horizontally-based). While those work well for pages, they lack flexibility (no pun intended) to support large or complex applications (especially when it comes to orientation changing, resizing, stretching, shrinking, etc.).
+
+> **Note:** Flexbox layout is most appropriate to the components of an application, and small-scale layouts, while the _Grid_ layout is intended for larger scale layouts.
+
+The key to understanding Flexbox is understanding that it's a parent-child relationship. To activate Flexbox, I can use the display property.
+
+```html
 <section>
-<img src="image_1.jpg">
-<img src="image_2.jpg">
-<img src="image_3.jpg">
-<img src="image_4.jpg">
+  <div>
+    <p>Lorem</p>
+  </div>
+  <div>
+    <p>Ipsum</p>
+  </div>
+  <div>
+    <p>Lorem</p>
+  </div>
 </section>
-Most of the time, we’d be using flexbox for more complicated layouts,
-but let’s keep it simple for now. To activate flexbox, we use:
+```
+
+```css
+section {
+  display: flex;
+}
+```
+
+In this case, I've declared the `<section>` element to be a flex parent, making all of the `<div>` elements flex children. That relationship doesn't go past this parent child relationship, so your markup is very important here.
+
+Flex children can also be flex parents though. We'll look at this in a bit.
+
+The easiest way to use flexbox is just to declare it on the parent. There a bunch of defaults that come into play, and you will automatically create a vertical row of boxes that flex to fill the space of the parent. That's just one line of CSS!
+
+But, the complete flexbox spec is huge, and has a lot of properties, so it takes a bit of time to learn. This CSS Tricks article on this is indispensable, and you should refer to it often while you're learning, and even for quite a while after you learn the basics.
+
+[A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+The left column shows all the properties of flex parents, and the right column shows all the properties of flex children.
+
+ ## Flex parents
+
+Making a flex parent is as simple as...
+
+```css
+section {
+  display: flex;
+}
+```
+
+### Direction
+
+
+
+
+
+
+<!-- # CSS Layout: An Introduction
+Flexbox
 
 section {
 display: flex;
