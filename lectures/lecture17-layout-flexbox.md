@@ -10,6 +10,8 @@ The trick of Flexbox is that since it's newish, it can be difficult to support o
 
 Since we have Flexbox now, and it's support is pretty good, we no longer need floats. But, if you're searching around the internet, or looking at someone else's code, you might still see this method hanging around. 
 
+// http://learnlayout.com/toc.html
+
 ## Flexbox
 
 You. are. so. lucky. Flexbox might seem tough, but keep in mind, we had nothing before it. The entire web was a lie, every website you ever used was basically doing incredible things with hacks on top of hacks. You get Flexbox.
@@ -60,7 +62,7 @@ But, the complete flexbox spec is huge, and has a lot of properties, so it takes
 
 The left column shows all the properties of flex parents, and the right column shows all the properties of flex children.
 
- ## Flex parents
+## Flex parents
 
 Making a flex parent is as simple as...
 
@@ -72,161 +74,117 @@ section {
 
 ### Direction
 
+The first big parent property we want to look at is `flex-direction`. This lets us say whether we want our flow to be horizontal or vertical. If you want your flex children to display horizontally, you would use...
 
-
-
-
-
-<!-- # CSS Layout: An Introduction
-Flexbox
-
+```css
 section {
-display: flex;
+  display: flex;
+  flex-direction: row;
 }
-Flex direction
-Next we have a choice about the tags inside our flexboxed section. Do we want the images to be arranged across or down the section?
-If we want to add the direction to be across, we’d add:
+```
+
+"row" is also the default, so you can get away without specifying it at all. If we wanted our flex children to go down the page, we would use...
+
+```css
 section {
-display: flex;
-flex-direction: row;
+  display: flex;
+  flex-direction: column;
 }
+```
 
-It’s “row” as the image tags would go across the page. If we want to make the direction be down the tag, we’d add:
+### Justify
+
+The `justify-content` property lets us specify how the children should use the space in our parent. Remember, these properties don't actually affect the dimensions of the children, just how whitespace is distributed.
+
+Here our your options...
+
+```css
 section {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; /* default, since we're in a row, this means left */
+  justify-content: flex-end; /* row = right, column = bottom */
+  justify-content: center; 
+  justify-content: space-between; /* this makes gutters between our children, and the first and last children will be pushed to the edges */
+  justify-content: space-around; /* this puts gutters on all sides of our children, even the first and last children, the margins are doubled between children */
+  justify-content: space-evenly; /* this differs from space-around, instead of doubling margins between children, it distributes the space evenly at the start, end and in-between. */
 }
-I get “row” and “column” mixed up all the time. The best way to remember which is which is that it’s to do with the tags inside the flexbox and how you want them to sit.
+```
 
-Justify contents
-So far, most of what we’ve done can be made with “blocks” and “inline-blocks”. Where flexbox excels is with the next few CSS rules.
-We’re going to add justify-contents to say where the image tags should start within the section tag. This depends on whether we’ve picked a row or column in our flex direction.
-We’re going to say we have a row, which means the start of the flex would be on the left, and the end of the flex would be on the right (because rows go from left to right).
-To make our images start on the left, we can do the default:
+Notice, a lot of flexbox property values are direction agnostic. So we say `flex-start` instead of "left" for a row. That's because if our direction was `column`, `flex-start` would be "top", not left.
 
+### Wrap
+
+Flexbox is one-dimensional, meaning the properties really only work one way, "row" or "column". However, we can allow for wrapping, making grids of items workable.
+
+By default, flex children will all try to fit onto one line. You can allow the items to wrap with the `flex-wrap` property.
+
+```css
 section {
-display: flex;
-flex-direction: row;
-justify-contents: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap; /* default is nowrap */
 }
-We could make our images start on the right:
+```
+
+What's tricky here is what I call the "Last Row Problem". Using wrap lets you create extra rows or columns, but, you don't have a lot of control over the rows individually. You have to be really careful about how you use `justify-content` with wrapping. Using `justify-content: space-between` will affect the last row differently if there are a different number of children.
+
+### Alignment
+
+One of the coolest things about flexbox is all the alignments it gives us. The `align-items` property gives us control over alignment on the "cross-axis", that is, the axis other than the main one. If you have `flex-direction` set to "row", then the cross-axis is the vertical axis.
+
+```css
 section {
-display: flex;
-flex-direction: row;
-justify-contents: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: stretch; /* (default) the children will stretch along the cross-axis */
+  align-items: flex-start; /* aligns to "top" if row and "left" if column */
+  align-items: flex-end; /* aligns to "bottom" if row and "right" if column */
+  align-items: center; /* vertically centers */
+  align-items: baseline; /* aligns on the first line of text's baseline, regardless of type size */
 }
+```
 
-Or even the middle:
+"stretch" is really useful, it's one of the few ways we could keep different items the same height, even if they have differing content, without explicitly setting the height.
+
+"center" is also very useful. Sometimes I use flexbox with just one parent and item, just because of how easy it is to center.
+
+```html
+<section>
+  <div>center me</div>
+</section>
+```
+
+```css
 section {
-display: flex;
-flex-direction: row;
-justify-contents: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-One thing we can’t do with any other display type is make the tags be
-justified in two different ways. However, we can add space between all
-the tags to make them evenly spaced between but no spacing on
-the outside:
+```
+
+The above would perfectly center the `<div>` inside of the `<section>`, regardless of how big either of them is.
+
+### Align Content
+
+The `align-content` property lets you space out your rows in different ways when using wrapping in flexbox. I'm using the word "rows" here, but if using the column direction, you can substitute the word "columns".
+
+```css
 section {
-display: flex;
-flex-direction: row;
-justify-contents: space-between;
+  align-content: flex-start; /* rows pack into the start of the cross-axis */
+  align-content: flex-end; /* rows pack into the end of the cross-axis */
+  align-content: center; /* rows center together in the middle of the cross-axis */
+  align-content: space-between; /* rows space apart to fill the parent container */
+  align-content: space-around; /* rows space evenly apart with equal space around each */
+  align-content: stretch; /* all children stretch to fill the cross axis */
 }
-We can also make them have an even space around all sides of the
-image tags:
+```
+## Flex children
 
-section {
-display: flex;
-flex-direction: row;
-justify-contents: space-around;
-}
-
-Notice we’re not doing this CSS style on the images themselves but
-on the parent container tag. The section tag is in control over the
-layout here.
-
-To wrap or not to wrap
-Let’s say our section tag runs out of room on responsive design, what should we do with the images inside it? Do we go on to multiple lines with the images? Should we make them wrap or not?
-If we do want to make the images wrap on to multiple lines, we
-can add:
-section {
-display: flex;
-flex-direction: row;
-justify-contents: space-around;
-flex-wrap: wrap;
-}
-But if we want to force the images to be in one single row, even if it crops the images, we can force the layout not to wrap:
-
-section {
-display: flex;
-flex-direction: row;
-justify-contents: space-around
-flex-wrap: nowrap;
-}
-
-Aligning in the other direction
-So far, we’ve said our images should going across the section tag in a
-row, with space around on the “x” direction (the direction across the
-page). What happens in the “y” direction, if the section tag is bigger
-than the size of the images?
-We can control how they work by adding a new CSS rule called
-align-items. If we want to align the items at the top of the flex (in this
-case, as it’s a row, the top), we can do:
-section {
-display: flex;
-flex-direction: row;
-justify-contents: space-around;
-flex-wrap: wrap;
-align-items: flex-start;
-}
-
-If we want to align at the bottom (or right if it’s a column), we can add:
-
-section {
-display: flex;
-flex-direction: row;
-justify-contents: space-around;
-flex-wrap: wrap;
-align-items: flex-end;
-}
-
-If we want to align in the middle:
-section {
-display: flex;
-flex-direction: row;
-justify-contents: space-around;
-flex-wrap: wrap;
-align-items: center;
-}
-We can even make the items stretch from the top to the bottom (or left to right on a column direction):
-section {
-display: flex;
-flex-direction: row;
-justify-contents: space-around;
-flex-wrap: wrap;
-align-items: stretch;
-}
-
-Multiple lines of content
-If we have a few lines of content after we turn on the wrap, how should
-those individual items look? We can add align-content.
-The difference between align-content and align-items is that
-the latter is based on how each individual wrapped row should act,
-whereas align-content is how all the rows should act.
-These use the same five options as justify-content and align-items.
-The options are flex-start, flex-end, center, space-between and
-space-around:
-
-section {
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-flex-wrap: wrap;
-align-items: stretch;
-align-content: space-around;
-}
-Phew, that’s a lot! For images in a section, we’re done, but if we want
-more complex layout, we can also use one more rule to make layouts.
-
+<!-- 
 Flex on items itself
 Let’s say we have a more complex layout in our HTML, for instance something like:
 <header>
@@ -346,6 +304,14 @@ overflow: auto;
 The overflow hack we used in the last chapter for fixing floats works because we’re forcing the parent to stretch around all of the content, floated or not, by using a hidden overflow.
  -->
 
+## Margins and padding with flexbox
+
+## Grid
+
+There's another CSS specification for layout called Grid. As you can guess from the name, it allows us to define grids, and gives us power over columns, rows and gutters!. We'll get to it if we have time, but I'm skipping it for now, because so many of it's properties are very similar to flexbox's. It's just simply easier to learn grid _after_ you've learned flexbox.  
+
 ## Resources
 
 [CSS Reference for Flexbox](https://cssreference.io/flexbox/)
+
+flexbox froggy

@@ -27,6 +27,8 @@ Scroll down to the list of twitter profiles. These are your current CSS influenc
 
 [Design Like a Developer](https://medium.com/going-your-way-anyway/design-like-a-developer-b92f7a8f4520)
 
+[A Book Apart](https://abookapart.com/products/)
+
 ## Debug, solve problems and learn the details
 
 [Stack Overflow](https://stackoverflow.com/)
