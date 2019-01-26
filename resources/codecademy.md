@@ -13,10 +13,10 @@ February 4 &ndash; February 13
 February 13 &ndash; February 27
 [Make a Website](https://www.codecademy.com/learn/make-a-website)
 
-February 27 &ndash; March 11
+February 27 &ndash; March 18
 [Learn Responsive Design](https://www.codecademy.com/learn/learn-responsive-design)
 
-March 11 &ndash; March 25
+March 11 &ndash; March 27
 [Deploy a Website](https://www.codecademy.com/learn/deploy-a-website)
 
 **Feel free to work ahead.** If you miss a due-date, you will lose a point every class period until that course is completed.
