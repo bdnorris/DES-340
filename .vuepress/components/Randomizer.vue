@@ -19,7 +19,23 @@ export default {
   data: function() {
       return {
           students: [],
-          section301: ['yo', 'what', 'rick', 'larry', 'sally', 'patricia'],
+          section301: [
+            '<a target="_blank" href="https://projects.invisionapp.com/boards/PU3SBIXBHAE/">Kallen Brown</a>',
+            '<a target="_blank" href="https://projects.invisionapp.com/boards/623SAJHX4HQ/">Faith Childers</a>',
+            '<a target="_blank" href="https://projects.invisionapp.com/boards/T63SBSBQCSR/">Trenton Clarke</a>',
+            '<a target="_blank" href="https://projects.invisionapp.com/boards/973SBSI4QA5/">Taylor Coleman</a>',
+            '<a target="_blank" href="https://projects.invisionapp.com/boards/HS3SAH3VKMP/">Jessi Donahoo</a>',
+            '<a target="_blank" href="https://projects.invisionapp.com/boards/763SBS958QW/">Bryan Elliott</a>',
+            '<a target="_blank" href="https://projects.invisionapp.com/boards/DX3SBSGWM27/">Alexander Harris</a>',
+            '<a target="_blank" href="https://projects.invisionapp.com/boards/BD3S9QOMJZY/">Victoria Herrera</a>',
+            '<a target="_blank" href="https://projects.invisionapp.com/boards/Q73SBSAMT8R/">Brittney Keim</a>',
+            '<a target="_blank" href="https://projects.invisionapp.com/boards/NG3SBSCF6XM/">Karston Leppanen</a>',
+            '<a target="_blank" href="https://projects.invisionapp.com/boards/9N3SBS7QDP2/">Alaina Netsell</a>',
+            '<a target="_blank" href="https://projects.invisionapp.com/boards/XF3SAMKMPN2/">Morgan Reed</a>',
+            '<a target="_blank" href="https://projects.invisionapp.com/boards/P33SBS5MGZB/">Cody Tolleson</a>',
+            '<a target="_blank" href="https://projects.invisionapp.com/boards/5F3SBS8CQVS/">Victoria Wehde</a>',
+            '<a target="_blank" href="https://projects.invisionapp.com/boards/PD3SBSH84Q9/">Brooke Winsor</a>',
+          ],
           section302: [
             '<a target="_blank" href="https://projects.invisionapp.com/boards/K33SHF2YUAS/">Rachel Backs</a>',
             '<a target="_blank" href="https://projects.invisionapp.com/boards/XD3SHF78UEJ/">Mitchell Banning</a>',
