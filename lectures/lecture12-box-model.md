@@ -1,5 +1,7 @@
 # The CSS Box Model
 
+[Lecture CodePen](https://codepen.io/bdnorris/pen/xMVgvV)
+
 > CSS Basic Box Model is a module of CSS that defines the rectangular boxes—including their padding and margin—that are generated for elements and laid out according to the visual formatting model.
 
 &mdash; [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model)

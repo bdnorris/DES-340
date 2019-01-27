@@ -1,5 +1,7 @@
 # Colors in CSS and the Web
 
+[Lecture CodePen](https://codepen.io/bdnorris/pen/QYNdvm)
+
 There are several CSS rules that accept color values. We'll discuss some of them, and the various ways you can describe color in CSS.
 
 Color in interface and web design is a huge subject. We'll discuss a lot during your work on your projects, so I mainly want to focus on the details of using color in CSS. However, we'll touch on a few key points regarding contrast you should be thinking about when picking colors for your designs.
@@ -11,6 +13,8 @@ CSS supports 140 standard color names. Typically, you wouldn't use these for pro
 There are many resources online to show you all of these colors. I like this one, that groups them by hue. 
 
 [HTML Color Codes: Color Names](https://htmlcolorcodes.com/color-names/)
+
+[Named Colors (CSS Tricks)](https://css-tricks.com/snippets/css/named-colors-and-hex-equivalents/)
 
 There is also the "transparent" keyword. This let's you explicitly set no color. It works best on backgrounds and borders. 
 
@@ -107,7 +111,7 @@ We'll worry about shadows in another lecture.
 
 ### Text decoration
 
-We'll look at this in the Text Properties lecture, but for now, note the property `text-decoration-color` would allow you to change the color of an underline separate from the text itself. 
+We'll look at this in the Text Properties lecture, but for now, note the property `text-decoration-color` would allow you to change the color of an underline separate from the text itself (this doesn't work in all browsers though). 
 
 ### Borders
 

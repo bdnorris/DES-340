@@ -50,6 +50,9 @@ Whatever you think of it, a style has emerged for buttons on the web. Background
 
 [Material Design's Button Documentation](https://material.io/design/components/buttons.html) has some good examples of standards you can use a guide to make buttons not just look clickable, but noticeable and useful.
 
+Here's a good resource to quickly see how major sites have changed their design in a 10 year span. The move towards flatter design and away from skeuomorphic designs is obvious. But you'll also see less cramped designs, which can help clickable things seem more obvious. 
+[Website 10-year challenge](https://www.arun.is/blog/10-year-challenge/)
+
 ### Icons
 
 > When using icons for links, make sure icons are instantly recognizable. Unless you have a really strong resemblance icon or an icon that has become standard, it should be combined with another visual cue, such as a text label, to indicate clickability.

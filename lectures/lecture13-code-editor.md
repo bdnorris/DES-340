@@ -120,6 +120,8 @@ Emmet is a kind of shorthand way to write HTML that some code editors can expand
 
 [Emmet in VS Code](https://code.visualstudio.com/docs/editor/emmet)
 
+BTW, a lot of Emmet works in CodePen too.
+
 ### Search and replace
 
 Most editors should let you search and replace in a file or an entire project.

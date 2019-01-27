@@ -1,3 +1,31 @@
+# Javascript: Programming the Web
+
+## Programing languages
+
+## Server side vs Client side
+
+## Basics
+
+### Variables
+
+### Data Types
+
+### Functions
+
+### Conditionals
+
+### Accessing the DOM
+
+## Addding it to your site
+
+## On jQuery
+
+## On Frameworks
+
+## Resources
+
+https://jgthms.com/javascript-in-14-minutes/
+
 <!-- Our efforts so far have been concerned with two of the three parts of building the front-end of web pages — HTML and CSS.
 These are what make up the content and style of pages. Up to now we’ve only been able to add one level of interaction — CSS states such as hover. How do we add more interactivity? Step forward Javascript!
 This is what gives us the ability to alter a page after it has loaded for our users. The best way to think about where to use Javascript is to think “when the user clicks ...”, “when the user submits a form ...”, “when the user scrolls ...”, “when the user resizes the browser ...”, etc.
