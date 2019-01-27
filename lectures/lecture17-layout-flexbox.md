@@ -184,129 +184,143 @@ section {
 ```
 ## Flex children
 
-<!-- 
-Flex on items itself
-Let’s say we have a more complex layout in our HTML, for instance something like:
-<header>
-<h1>Logo</h1>
-<p>Tag line</p>
-<nav>
-<a href="login.html">Log in</a>
-<a href="signup.html">Sign up</a>
-</nav>
-</header>
-The idea of flexbox itself is to let tags directly inside the flexbox have some flexibility in their width or height (depending on the direction of your flex-flow rule). For instance we might be trying to make a sidebar and a main content which has the ratio of 1:4. We can also make them stretch to fit the whole of the container — something that’s particularly tricky to do with just floats alone.
-Let’s say we have a section tag with two div tags inside:
+AKA "flex items", the children of items with `display: flex` set have their own set of properties.
 
+The trikiest one is the `flex-grow`, `flex-shrink`, and `flex-basis` properties. You can set them individually, but it's reccommended you use the shorthand `flex` property instead, since it will set the other values intelligently.
+
+```css
+.item {
+  flex: <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ;
+  flex: 0 1 auto; /* default if you don't set anything */
+  flex: none; /* equivalant to setting "flex: 0 0 auto" */
+  flex: auto; /* equivalant to setting "flex: 1 1 auto" */
+}
+```
+
+> This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto.
+
+&mdash;CSS Tricks
+
+> The idea of flexbox itself is to let tags directly inside the flexbox have some flexibility in their width or height (depending on the direction of your flex-flow rule). For instance we might be trying to make a sidebar and a main content which has the ratio of 1:4. We can also make them stretch to fit the whole of the container...
+
+&mdash;SuperHi
+
+```html
 <section>
-<div class="sidebar">
-Here goes our sidebar...
-</div>
-<div class="content">
-Here’s our content...
-</div>
+  <div class="sidebar">
+    Here goes our sidebar...
+  </div>
+  <div class="content">
+    Here’s our content...
+  </div>
 </section>
-Usually, we could add in floating and widths to give it some layout,
-but if one of our divs has more content than the other, it doesn’t
-stretch both of them to fit. To show this, let’s give the main container a
-minimum height:
+```
 
+```css
 section {
-display: flex;
-flex-flow: row;
-align-items: stretch;
-min-height: 400px;
+  display: flex;
+  flex-flow: row;
+  align-items: stretch;
+  min-height: 400px;
 }
 div.sidebar {
-flex: 1;
-background-color: red;
+  flex: 1;
 }
-
 div.content {
-flex: 4;
-background-color: blue;
+  flex: 4;
 }
-Not only will our two divs stretch to fit the height of the section tag,
-they will also have flexible widths at a ratio of 1:4.
+```
 
-Flex and static
-Where flexible tags come in useful is when we want to mix set pixel
-widths with flexible ones. Let’s say we want our sidebar to always be
-200 pixels wide but our content div tag to change — there isn’t a way
-to know how wide this is going to be, so let’s make the browser do the
-hard work!
-We can keep the section CSS the same as before. We just need to change
-the sidebar to a set width and our content to fill the space:
+These two divs will stretch to fit the height of the section tag and they will  have flexible widths at a ratio of 1:4.
+
+You can also mix widths and heights with grow and shrink.
+
+```css
 section {
-display: flex;
-flex-flow: row;
-align-items: stretch;
-min-height: 400px;
+  display: flex;
+  flex-flow: row;
+  align-items: stretch;
+  min-height: 400px;
 }
 
 div.sidebar {
-width: 200px;
-background-color: red;
+  width: 200px;
 }
 div.content {
-flex: 1;
-background-color: blue;
+  flex: 1;
 }
+```
 
-Flex grow, shrink and basis
-We can add some more information into our flex rule. If we just give it a single number, this will be the amount it can grow (e.g. 1:4 ratio from before), but let’s say we don’t want our sidebar to be less than 200 pixels wide. We can add some more information into our flex rule.
-We can add up to three values into the rule: the ratio of flexible growth, the ratio of flexible shrinking and then the basis size for the tag.
-For our sidebar, we’re happy for it to stretch at a ratio of 1:4 bigger than 200px, but we don’t want it shrinking at any ratio at all under 200px:
-div.sidebar {
-flex: 1 0 200px;
-background-color: red;
+Here, the `.sidebar` element would stay at 200px wide, but the `.content` element would shrink. 
+
+`flex-basis` is a good alternative to setting widths. The "basis" is the initial main size of a flex child. It can then grown and shrink from there. It's default value is "auto".
+
+```css
+div {
+  flex: 1 0 200px;
 }
+```
 
-div.content {
-flex: 4;
-background-color: blue;
+That div is allowed to grow to fill space according to it's parent's rules, but it isn't allowed to shrink, so it's minimum size (width or height) is effectively 200px.
+
+You can use any unit value for flex-basis, or you can use the keyword "auto".
+
+```css
+div {
+  flex: 1 1 50%;
 }
-What this is now doing is saying to the browser, at sizes bigger than 1000px (1 + 4 ratio times 200px minimum), be in a ratio of 1:4, but at under 1000px, keep the sidebar at 200px and make the content size flexible. At very small browser sizes, our content tag could be very small too, while our sidebar stays the same!
+```
 
+This div can grow and shrink, but will try to be 50%. This means if it's siblings are set the same and it's parent allows wrapping, it will allow 2 per row. If there were 3 and wrapping was not allowed, it would end up being 33.333%. You'll see more about how this stuff works in the next lecture.
 
+Although setting different values other than 1 or 0 for flex-grow and flex-shrink is a pretty powerful tool, I don't really use it. I find percentages are easier for me to grasp, and I simply use either 0 or 1 to basically turn shrinking and growing to on or off.
 
+### Order
+
+`order` is a wonderful property that lets you shuffle flex children around. This can be really useful if you want different orders in items between desktop and mobile. 
+
+```html
+<section>
+  <div class="one">Lorem</div>
+  <div class="two">Ipsum</div>
+</section>
+```
+
+```css
+section {
+  display: flex;
+}
+div.one {
+  flex: 1 1 50%;  
+}
+div.two {
+  flex: 1 1 50%;
+}
+```
+
+Normally, here we'd get "Lorem" then "Ipsum" on the same line. But if I added the order property...
+
+```css
+section {
+  display: flex;
+}
+div.one {
+  flex: 1 1 50%;  
+  order: 2;
+}
+div.two {
+  flex: 1 1 50%;
+  order: 1;
+}
+```
+
+Now I would get "Ipsum" then "Lorem". The default is 0, so technically, I would only have to give a flex child an order of 1 to make it appear after everything else. We'll look at some practical uses for this later.
+
+### align-self
+
+`align-self` will allow the default alignment (or the one specified by align-items on the flex parent) to be overridden for individual flex items. This means if the parent had `align-items: flex-start`, but the child had `align-self: flex-end`, that one particular child would appear at the bottom or right of the flex parent, instead of the top or left (depending on `flex-direction`).
 
 ## Grid, and why we're skipping it
-
-Overflow
-We talked earlier about a new rule called overflow that we didn’t
-explain. In this chapter we’ll talk a little more about what overflow
-actually is and what it does.
-Let’s say we have a <div> tag that’s 300 by 300 pixels. Most of the time
-we’d expect our content to fix inside the tag, but what if we have more
-content than can do that?
-Think of a drinking glass. Most of the time, liquid would fit inside it
-comfortably, but if we have too much, what happens? It overflows.
-Luckily in CSS, we can control what happens. By default, just like with
-a liquid, the content will overspill and escape the container, but we can
-change how that works.
-If we want to cut off any extra content so it’s clipped, we can give the
-<div> tag an overflow of “hidden”:
-
-div {
-overflow: hidden;
-}
-If we decide that within our tag, we want a little scroll bar so a user can
-see the rest of the clipped content, we can add:
-
-div {
-overflow: scroll;
-}
-On some web browsers, this will give the <div> tag a permanent scroll bar, even if the content isn’t bigger than the tag. To make it automatically have a scroll bar if the content is bigger and no scroll bar if it’s smaller, we can add the overflow automatically:
-div {
-overflow: auto;
-}
-The overflow hack we used in the last chapter for fixing floats works because we’re forcing the parent to stretch around all of the content, floated or not, by using a hidden overflow.
- -->
-
-## Margins and padding with flexbox
-
-## Grid
 
 There's another CSS specification for layout called Grid. As you can guess from the name, it allows us to define grids, and gives us power over columns, rows and gutters!. We'll get to it if we have time, but I'm skipping it for now, because so many of it's properties are very similar to flexbox's. It's just simply easier to learn grid _after_ you've learned flexbox.  
 
@@ -314,4 +328,10 @@ There's another CSS specification for layout called Grid. As you can guess from 
 
 [CSS Reference for Flexbox](https://cssreference.io/flexbox/)
 
-flexbox froggy
+This is a pretty great way to learn flexbox properties. You should really try it: 
+[Flexbox Froggy](https://flexboxfroggy.com/)
+
+Probably the best way to learn Flexbox is to try and build something with it, and keep this open in a browser tab to refer to:
+[CSS Tricks: A Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+[MDN Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/flex)
