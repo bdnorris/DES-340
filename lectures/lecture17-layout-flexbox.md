@@ -1,28 +1,30 @@
 # CSS Layout and Flexbox
 
+[Lecture CodePen](https://codepen.io/bdnorris/pen/WPwoGw)
+
 ## Floats, and why we're skipping them
 
-I mentioned floats when we discussed images. In the early web, there was no real layout methods. The web was really supposed to just be text documents with image support, sort of like a Word file. The hack was to use the `<table>` element to layout web pages. When responsive design became a thing, CSS floats were used instead. Still a hack. 
+I mentioned floats when we discussed images. In the early web, there were no real layout methods. The web was really supposed to just be text documents with image support, sort of like a Word file. The hack was to use the `<table>` element to layout web pages. When responsive design became a thing, CSS floats were used instead. Still a hack. 
 
 There's a new(ish) kid on the block though, and it's called Flexbox. 
 
-The trick of Flexbox is that since it's newish, it can be difficult to support older browsers, like Internet Explorere. However, there are ways, that we'll discuss at the end of this lecture. 
+The trick of Flexbox is that since it's newish, it can be difficult to support older browsers, like Internet Explorer. However, there are ways, that we'll discuss at the end of this lecture. 
 
-Since we have Flexbox now, and it's support is pretty good, we no longer need floats. But, if you're searching around the internet, or looking at someone else's code, you might still see this method hanging around. 
+Since we have Flexbox now, and its support is pretty good, we no longer need floats. But, if you're searching around the internet, or looking at someone else's code, you might still see this method hanging around. 
 
-// http://learnlayout.com/toc.html
+This is a pretty good site to see a lot of basic CSS layout techniques, including floats: [Learn Layout](http://learnlayout.com/toc.html)
 
 ## Flexbox
 
 You. are. so. lucky. Flexbox might seem tough, but keep in mind, we had nothing before it. The entire web was a lie, every website you ever used was basically doing incredible things with hacks on top of hacks. You get Flexbox.
 
-**So what is it?** Flexbox is a set of CSS properties that allow for one-directional layout where a parents children can be set to automatically fill the parents space. It also gives us some really great alignment tools. 
+**So what is it?** Flexbox is a set of CSS properties that allow for one-directional layout where a parent's children can be set to automatically fill the parent's space. It also gives us some really great alignment tools. 
 
 From CSS Tricks...
 
 > The Flexbox Layout (Flexible Box) module aims at providing a more efficient way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic (thus the word "flex").
 
-> The main idea behind the flex layout is to give the container the ability to alter its items' width/height (and order) to best fill the available space (mostly to accommodate to all kind of display devices and screen sizes). A flex container expands items to fill available free space, or shrinks them to prevent overflow.
+> The main idea behind the flex layout is to give the container the ability to alter its items' width/height (and order) to best fill the available space (mostly to accommodate to all kind of display devices and screen sizes). A flex container expands items to fill available free space or shrinks them to prevent overflow.
 
 > Most importantly, the flexbox layout is direction-agnostic as opposed to the regular layouts (block which is vertically-based and inline which is horizontally-based). While those work well for pages, they lack flexibility (no pun intended) to support large or complex applications (especially when it comes to orientation changing, resizing, stretching, shrinking, etc.).
 
@@ -50,13 +52,13 @@ section {
 }
 ```
 
-In this case, I've declared the `<section>` element to be a flex parent, making all of the `<div>` elements flex children. That relationship doesn't go past this parent child relationship, so your markup is very important here.
+In this case, I've declared the `<section>` element to be a flex parent, making all of the `<div>` elements flex children. That relationship doesn't go past this parent-child relationship, so your markup is very important here.
 
 Flex children can also be flex parents though. We'll look at this in a bit.
 
 The easiest way to use flexbox is just to declare it on the parent. There a bunch of defaults that come into play, and you will automatically create a vertical row of boxes that flex to fill the space of the parent. That's just one line of CSS!
 
-But, the complete flexbox spec is huge, and has a lot of properties, so it takes a bit of time to learn. This CSS Tricks article on this is indispensable, and you should refer to it often while you're learning, and even for quite a while after you learn the basics.
+But, the complete flexbox spec is huge and has a lot of properties, so it takes a bit of time to learn. This CSS Tricks article on this is indispensable, and you should refer to it often while you're learning, and even for quite a while after you learn the basics.
 
 [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
@@ -83,7 +85,7 @@ section {
 }
 ```
 
-"row" is also the default, so you can get away without specifying it at all. If we wanted our flex children to go down the page, we would use...
+"row" is also the default so you can get away without specifying it at all. If we wanted our flex children to go down the page, we would use...
 
 ```css
 section {
@@ -96,7 +98,7 @@ section {
 
 The `justify-content` property lets us specify how the children should use the space in our parent. Remember, these properties don't actually affect the dimensions of the children, just how whitespace is distributed.
 
-Here our your options...
+Here are your options...
 
 ```css
 section {
@@ -115,7 +117,7 @@ Notice, a lot of flexbox property values are direction agnostic. So we say `flex
 
 ### Wrap
 
-Flexbox is one-dimensional, meaning the properties really only work one way, "row" or "column". However, we can allow for wrapping, making grids of items workable.
+Flexbox is one-dimensional, meaning the properties really only works one way, "row" or "column". However, we can allow for wrapping, making grids of items workable.
 
 By default, flex children will all try to fit onto one line. You can allow the items to wrap with the `flex-wrap` property.
 
@@ -148,7 +150,7 @@ section {
 }
 ```
 
-"stretch" is really useful, it's one of the few ways we could keep different items the same height, even if they have differing content, without explicitly setting the height.
+"stretch" is really useful, it's one of the few ways we could keep different items the same height, even if they have different content, without explicitly setting the height.
 
 "center" is also very useful. Sometimes I use flexbox with just one parent and item, just because of how easy it is to center.
 
@@ -174,6 +176,9 @@ The `align-content` property lets you space out your rows in different ways when
 
 ```css
 section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-content: flex-start; /* rows pack into the start of the cross-axis */
   align-content: flex-end; /* rows pack into the end of the cross-axis */
   align-content: center; /* rows center together in the middle of the cross-axis */
@@ -186,7 +191,7 @@ section {
 
 AKA "flex items", the children of items with `display: flex` set have their own set of properties.
 
-The trikiest one is the `flex-grow`, `flex-shrink`, and `flex-basis` properties. You can set them individually, but it's reccommended you use the shorthand `flex` property instead, since it will set the other values intelligently.
+The trickiest one is the `flex-grow`, `flex-shrink`, and `flex-basis` properties. You can set them individually, but it's recommended you use the shorthand `flex` property instead since it will set the other values intelligently.
 
 ```css
 .item {
@@ -197,13 +202,13 @@ The trikiest one is the `flex-grow`, `flex-shrink`, and `flex-basis` properties.
 }
 ```
 
-> This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto.
+> This is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. The default is "0 1 auto".
 
-&mdash;CSS Tricks
+&mdash; CSS Tricks
 
 > The idea of flexbox itself is to let tags directly inside the flexbox have some flexibility in their width or height (depending on the direction of your flex-flow rule). For instance we might be trying to make a sidebar and a main content which has the ratio of 1:4. We can also make them stretch to fit the whole of the container...
 
-&mdash;SuperHi
+&mdash; SuperHi
 
 ```html
 <section>
@@ -231,7 +236,9 @@ div.content {
 }
 ```
 
-These two divs will stretch to fit the height of the section tag and they will  have flexible widths at a ratio of 1:4.
+These two divs will stretch to fit the height of the section tag and they will have flexible widths at a ratio of 1:4...sorta. The ratio is not perfect, in that it takes content and extra space into account. For this reason, I don't actually use numbers higher than one (I address this more below).
+
+[Flex Grow is Weird](https://css-tricks.com/flex-grow-is-weird/)
 
 You can also mix widths and heights with grow and shrink.
 
@@ -253,7 +260,7 @@ div.content {
 
 Here, the `.sidebar` element would stay at 200px wide, but the `.content` element would shrink. 
 
-`flex-basis` is a good alternative to setting widths. The "basis" is the initial main size of a flex child. It can then grown and shrink from there. It's default value is "auto".
+`flex-basis` is a good alternative to setting widths. The "basis" is the initial main size of a flex child. It can then grown and shrink from there. Its default value is "auto".
 
 ```css
 div {
@@ -261,7 +268,7 @@ div {
 }
 ```
 
-That div is allowed to grow to fill space according to it's parent's rules, but it isn't allowed to shrink, so it's minimum size (width or height) is effectively 200px.
+That div is allowed to grow to fill space according to its parent's rules, but it isn't allowed to shrink, so it's minimum size (width or height) is effectively 200px.
 
 You can use any unit value for flex-basis, or you can use the keyword "auto".
 
@@ -271,7 +278,7 @@ div {
 }
 ```
 
-This div can grow and shrink, but will try to be 50%. This means if it's siblings are set the same and it's parent allows wrapping, it will allow 2 per row. If there were 3 and wrapping was not allowed, it would end up being 33.333%. You'll see more about how this stuff works in the next lecture.
+This div can grow and shrink, but will try to be 50%. This means if its siblings are set the same and its parent allows wrapping, it will allow 2 per row. If there were 3 and wrapping was not allowed, it would end up being 33.333%. You'll see more about how this stuff works in the next lecture.
 
 Although setting different values other than 1 or 0 for flex-grow and flex-shrink is a pretty powerful tool, I don't really use it. I find percentages are easier for me to grasp, and I simply use either 0 or 1 to basically turn shrinking and growing to on or off.
 
@@ -322,7 +329,7 @@ Now I would get "Ipsum" then "Lorem". The default is 0, so technically, I would 
 
 ## Grid, and why we're skipping it
 
-There's another CSS specification for layout called Grid. As you can guess from the name, it allows us to define grids, and gives us power over columns, rows and gutters!. We'll get to it if we have time, but I'm skipping it for now, because so many of it's properties are very similar to flexbox's. It's just simply easier to learn grid _after_ you've learned flexbox.  
+There's another CSS specification for layout called Grid. As you can guess from the name, it allows us to define grids, and gives us power over columns, rows, and gutters!. We'll get to it if we have time, but I'm skipping it for now, because so many of its properties are very similar to flexbox's. It's just simply easier to learn grid _after_ you've learned flexbox.  
 
 ## Resources
 
