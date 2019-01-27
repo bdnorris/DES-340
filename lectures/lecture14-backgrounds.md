@@ -1,5 +1,7 @@
 # Backgrounds in CSS
 
+[Lecture CodePen](https://codepen.io/bdnorris/pen/qgZrZR)
+
 Controlling aspects of the background of our elements is a key part of making our designs come to life. There are color, images, and even gradient options we'll go over in this lecture.
 
 ## Background colors
