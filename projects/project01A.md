@@ -30,6 +30,7 @@ We'll start this multi-part project by focusing on good typographic hierarchy by
 *   [Emergence](https://emergencemagazine.org/story/born-was-the-mountain/)
 *   [Oceanographic](https://www.oceanographicmagazine.com/features/lost-valley-dinosaurs/)
 *   [Christmas HQ](https://christmashq.com/food-and-drinks/candy/)
+*   [Up Bank](https://up.com.au/blog/designing-a-super-powered-welcome-pack-experience/)
 
 ## Process
 
