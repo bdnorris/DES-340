@@ -14,13 +14,13 @@ There's more to a site than just the content. Remember, the web was originally a
 
 ### The Masthead
 
-One of the most important parts of a website’s layout is the masthead. It’s the first thing people see when visiting your site and sets the tone for the whole site. It’s also a common place to feature the company or organization’s logo and, often, the primary navigation that will be repeated on every page of your site.
+One of the most important parts of a website’s layout is the masthead. It’s the first thing people see when visiting your site and sets the tone for the whole site. It’s also a commonplace to feature the company or organization’s logo and, often, the primary navigation that will be repeated on every page of your site.
 
 Your masthead should answer the questions: Where am I?, What can I do here?
 
 ### The "Hero"
 
-A hero section is a bit different. It may change from page to page. It's role is to sum up what this page is about with a tagline or welcome message and often containing a "Call-to-action." You can let the visitor know that they are in the right place, and what the primary value of the page is.
+A hero section is a bit different. It may change from page to page. Its role is to sum up what this page is about with a tagline or welcome message and often containing a "Call-to-action." You can let the visitor know that they are in the right place, and what the primary value of the page is.
 
 ### The Footer
 
@@ -34,21 +34,23 @@ For the second part of our digital typography project, you'll add a masthead, a 
 
 ### Requirements
 
-**The Masthead** will feature a site title (you can develop a simple logo if you want) and some basic navigation. We'll look more at naivgation later, so for now, you'll just include... 
+**The Masthead** will feature a site title (you can develop a simple logo if you want) and some basic navigation. 
+
+We'll look more at navigation later, so for now, you'll just include... 
 - links to 
   - "Home"
   - "About"
   - "Contact"
   - "Blog"
 - A search input
-- 
+
 **The Hero** will simply need to give a sense of your articles content. You can move your main title to here, or it could simply be a large image. Refer back to examples and research from the first part of this project. 
 
 **The Footer** will feature...
 - the same links as above
 - some contact information
 - social media links (at least 3)
-- a copywrite notice
+- a copyright notice
 
 ## Screenshots/Research
 
