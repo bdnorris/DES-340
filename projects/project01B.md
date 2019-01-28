@@ -6,27 +6,27 @@
 
 There's more to a site than just the content. Remember, the web was originally a way to store documents that could be linked together. The idea of a website, as in a collection of related pages came later. So, what makes a website a website? 
 
-### The Masthead
-
-One of the most important parts of a website’s layout is the masthead. It’s the first thing people see when visiting your site and sets the tone for the whole site. It’s also a common place to feature the company or organization’s logo and, often, the primary navigation that will be repeated on every page of your site.
-
-Your masthead should answer the questions: Where am I?, What can I do here?
-
 ## Objectives
 
 - Further practice studying existing websites for effective methods and patterns of layout, design and user interface.
 - Further practice designing user-interfaces/web layouts in Photoshop/Illustrator.
 - Applying the design of typographic hierarchies for the screen to some more specific content.
 
+### The Masthead
+
+One of the most important parts of a website’s layout is the masthead. It’s the first thing people see when visiting your site and sets the tone for the whole site. It’s also a common place to feature the company or organization’s logo and, often, the primary navigation that will be repeated on every page of your site.
+
+Your masthead should answer the questions: Where am I?, What can I do here?
+
+### The "Hero"
+
+A hero section is a bit different. It may change from page to page. It's role is to sum up what this page is about with a tagline or welcome message and often containing a "Call-to-action." You can let the visitor know that they are in the right place, and what the primary value of the page is.
+
 ### The Footer
 
 Footers have a different role. They act as a safety net of the website, often exposing useful links and contact information in case the user doesn't find what they're looking for in the masthead or primary navigation.
 
 Both the masthead and the footer tend to stay consistent from page to page, anchoring the user and providing a sense that whatever page they're on, they're still on your site. 
-
-### The "Hero"
-
-A hero section is a bit different. It may change from page to page. It's role is to sum up what this page is about with a tagline or welcome message and often containing a "Call-to-action." You can let the visitor know that they are in the right place, and what the primary value of the page is.
 
 ## Design
 
