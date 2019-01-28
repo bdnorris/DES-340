@@ -1,20 +1,18 @@
 # Coding for responsive design and Media Queries
 
-Talked about the design part, how do you code it?
+We've talked a lot about the design part of Responsive Web Design (RWD), but how do you code it? This is a pretty big subject, but the main key to making all of this work is the use of "media queries". Media Queries allow us to write breakpoints into our CSS. 
 
-This is a huge subject. 
+In the past most web design consisted of pretty much everything being set at a fixed width. Once a plethora of web-enabled devices started hitting the market  "responsive" came along as the new web development buzzword. The thing was, a lot of the tools already existed. Flexible units like percentages had been in CSS from the beginning, min-width and max-width were introduced in IE 7. Media queries were the last needed piece. Without them, our designs couldn't "respond" to the width of the viewport. They were introduced as an official standard in June 2012 and were supported all major browsers. 
 
-Classic articles from 2010-11
-https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/
-https://alistapart.com/article/responsive-web-design
+## Classic articles from 2010-11
 
-Modern guide from Google
-https://developers.google.com/web/fundamentals/design-and-ui/responsive/
+[Responsive Web Design](https://alistapart.com/article/responsive-web-design)
 
-Design and code intersect
-Past everything was fixed width
-Solution, keep everything flexible
-Code provides tools and techniques
+[Guidelines for Responsive Web Design](https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/)
+
+Most of the technique's listed here are pretty similar to what you would use today, with the exception being there was no Flexbox or Grid.
+
+## Media queries
 
 Media queries are the heart
 Breakpoints
@@ -174,3 +172,8 @@ background-size: 300px 200px;
 }
 Exporting the image at double size and halving the size in CSS will
 stop any blurring. -->
+
+
+## Resources
+
+[RWD Guide from Google](https://developers.google.com/web/fundamentals/design-and-ui/responsive/)
