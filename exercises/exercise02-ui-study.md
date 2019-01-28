@@ -8,7 +8,7 @@ Do a study (recreation) of three "calls-to-action" or other "components", rebuil
 
 ### Step 1
 
-Screenshot 10 examples of calls to action, highlights, call-outs, or other “components” in web sites (can be from a [curated source](/resources/curated-sources.html)...)
+Screenshot 10 examples of calls to action, highlights, call-outs, or other “components” in websites (can be from a [curated source](/resources/curated-sources.html)...)
 
 #### Some examples of "components"
 
@@ -22,7 +22,7 @@ Screenshot 10 examples of calls to action, highlights, call-outs, or other “co
 
 ### Step 2
 
-Choose 3 of them, with instructor guidance, and do a 'study' of them: recreate each of them using Photoshop, Illustrator, or XD. Feel free to substitute fonts when necessary. Icons and other images can be represented by gray boxes.
+Choose 3 of them, with instructor guidance, and do a 'study' of them: recreate each of them using Photoshop, Illustrator, Sketch or XD. Feel free to substitute fonts when necessary. Icons and other images can be represented by gray boxes.
 
 ### What?, Why?
 
