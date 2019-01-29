@@ -5,7 +5,13 @@ next: false
 
 # DES-340
 
+## Active Assignments
 
+- Projects
+  - Finalize [1A](./projects/project01A.md)
+  - Start [1B](./projects/project01B.md): sketches, research
+- Codecademy [Introduction to HTML](https://www.codecademy.com/learn/learn-html)
+- Exercise [E2](./exercises/exercise02-ui-study.md)
 
 <!-- ## Calendar: Section 301 (Fleener/MW/4PM)
 
