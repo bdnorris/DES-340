@@ -14,166 +14,136 @@ Most of the technique's listed here are pretty similar to what you would use tod
 
 ## Media queries
 
-Media queries are the heart
-Breakpoints
-major ones often for common devices
-minor ones where you need them
-Min-width and Max-width are the bookends
-Percentage and vh VW are the units
+...media queiry codepen ...
 
-clear floats to stack
-or let things wrap
-showing and hiding with display none and media queries
-
-Work on site: Browser tools for responsive
-Navigation
-Home Page
-Assignment 2 -> Images
-
-
-Fluid images
-	crop, or cover or flexible
-	width: 100%
-	height: auto
-	put in a wrapper, wrapper determines width
-	deliver images at max size
-
-Maybe try Bootstrap and Foundation
-	
-Coding Responsively
-Relative, Viewport, and Percentage Units
-Relative (%, em, rem) / Viewport (vw, vh, vmin, vmax)
-Min-widths, Max-widths, Min-height, Max-height
-Media Queries for your Breakpoints
-
-
-> What we’ll add to our CSS is a new concept called “media queries”.
-Essentially, we’ll be turning on or off particular CSS styles depending
-on the size of the browser itself.
-
-> Very early in this guide, we talked about the idea that we can put
-HTML tags inside other tags — Pimp my Ride style. We can do
-something similar in CSS. We can say “if the browser is smaller than
-600px then do these styles ... if not, ignore”.
-
-> Let’s show an example where we have the whole site having a font size
-of 18px. On a smaller browser, the font size might look too big, so we
-want to reduce it to 14px if the browser is smaller than 600px wide:
+Media queries are the heart of responsive coding. They're how we set our breakpoints in our code. They let you turn particular CSS styles on and off depending on the size of the viewport.
 
 ```css
 body {
-	font-size: 18px;
+	font-size: 14px;
 }
-@media (max-width: 600px) {
+@media screen and (min-width: 600px) {
 	body {
-		font-size: 14px;
+		font-size: 16px;
 	}
 }
 ```
 
-> Notice how we have an @ (or ampersand) with the word “media”
-straight after it. This is telling CSS to do a browser check. In our
-rounded brackets, our check is to ask: “Is the browser 600px or less?”.
-If it is, then add the styles. We can put multiple styles within a media
-query too:
+Our media query is a wrapper for our CSS. It starts with the @ sign, then the word "media". "screen" means we only want these styles to apply to screens, rather than print stylesheets (when you hit the print button). 
+
+This CSS says our default font-size is `14px`. However, if the browser viewport is at least 600px wide the base font-size should be `16px`.
+
+There's a lot you can do with media queries other than check viewport width, but we're going to stick to that for now. Here's a few options for how you could setup your media queries.
 
 ```css
 body {
-font-size: 18px;
+	font-size: 14px;
+} 
+@media screen and (min-width: 768px) {
+	/* medium */
+	body {
+		font-size: 16px;
+		color: blue;
+	}
 }
-h1 {
-font-size: 32px;
-}
-@media (max-width: 600px) {
-body {
-font-size: 14px;
-}
-h1 {
-font-size: 21px;
-}
+@media screen and (min-width: 1024px) {
+	/* large */
+	body {
+		font-size: 18px;
+	}
 }
 ```
 
->You can also have multiple media queries in the same style sheet. Let’s say we want to have a mid point below 900px and above 600px where the font size should be 16px:
+There, we used two media queries to adjust our font size. But what about that `color` property? It would _cascade_ up to from 768px into our desktop. Our font-size will work because the large setting is **after** the medium styles, meaning it will overwrite them. If you want to limit a media query to a specific range, you'll have to use both `min-width` and `max-width` (this also means when someone hit's print, they're printing the mobile version).
+
+You can think of min-width and max-width like the bookends of your CSS code. 
 
 ```css
 body {
-font-size: 18px;
+	font-size: 14px;
+} 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	/* medium */
+	body {
+		font-size: 16px;
+		color: blue;
+	}
 }
-@media (max-width: 900px) {
-body {
-font-size: 16px;
-}
-}
-@media (max-width: 600px) {
-body {
-font-size: 14px;
-}
+@media screen and (min-width: 1024px) {
+	/* large */
+	body {
+		font-size: 18px;
+	}
 }
 ```
 
-> The order of the media queries matters, as the second one overwrites
-the first. If they were the other way around, the font size would 16px if
-the browser was less than 900px and less than 600px too.
+Notice I didn't use `max-width: 1024px`, that would case our style sets to overlap on that one pixel width, which can be hard to notice when you make a mistake.
 
-Media queries for layouts
-> Media queries are heavily used to turn multi-column layouts into
-single-column layouts in responsive design. Let’s take a two-column
-desktop layout in HTML:
+### Mobile-first
 
-<!-- ```css
-<section>
-<div class="main">
-Here is the main content
-</div>
-<div class="side">
-Here is a sidebar
-</div>
-</section>
-``` -->
+The order of our queries matter, styles further down our file will overwrite previous styles, if match the query.
 
-<!-- In your desktop version of your CSS, you’d have something like:
-section {
-overflow: hidden;
-width: 920px;
-margin: 0 auto 0 auto;
-}
-div.main {
-width: 600px;
-float: left;
-}
+I'm taking advantage of that and using a "mobile-first" coding approach...not to be confused with "mobile-first" design. Writing my CSS mobile first means I write my mobile styles outside my media queries, and write my medium, then large styles inside my media queries. I prefer this method, since mobile styles are usually simpler it means I'm less likely to have to write unnecessary overwrites.
 
-div.side {
-width: 300px;
-float: right;
-} -->
+## Retina Images
 
+...image codepent ...
 
-<!-- This will make your background image 200px across by 100px down.
-Blurry backgrounds and retina screens
-If you’re on a retina screen, for instance on a new iPhone or a new
-MacBook, you may notice your background images looking blurry
+If you're on a "Retina" screen (Apple's branded name for pixel dense screens), you'll notice that images might look a little blurry.
+
+> If you’re on a retina screen, for instance on a new iPhone or a new MacBook, you may notice your background images looking blurry
 by default.
-104 Learn to Code Now
-Non-retina screens have three sub-pixels per pixel (one red, one green
-and one blue sub-pixel, remember the hex colors!). On retina screens,
-to make the screen look crisper, they have 12 sub-pixels per pixel (four
-red, four green and four blue).
-With images, each pixel always has three sub-pixels, so when you view
-a “normal” image on a retina screen, it’ll look a bit blurry. To fix this
-we need to double the size of the image to give it more definition on
-those screens.
-One good technique to do this is, if we’re making an image that would
-fill 300px by 200px on a retina screen, we export the image from
-Photoshop or Sketch as twice the size (600px by 400px), then in our
-CSS, we make it half the size again to give it a higher density of pixels:
-header {
-background-size: 300px 200px;
+
+> Non-retina screens have three sub-pixels per pixel (one red, one green and one blue sub-pixel, remember the hex colors!). On retina screens, to make the screen look crisper, they have 12 sub-pixels per pixel (four red, four green and four blue). With images, each pixel always has three sub-pixels, so when you view a “normal” image on a retina screen, it’ll look a bit blurry. To fix this we need to double the size of the image to give it more definition on those screens.
+
+&mdash; SuperHi
+
+So how do you fix this. Basically, we need to export our images at twice the size we are setting them in CSS. For responsive images, this might mean twice the size of it's _largest_ size that appears in the browser.
+
+So, if we have an image that appears in the browser at 300px &times; 200px, we'll export it out of our design program, or otherwise size it to 600px &times; 400px. Then in our CSS, we could...
+
+```css
+.my-class {
+	width: 300px;
+	height: 200px; /* optional */
 }
-Exporting the image at double size and halving the size in CSS will
-stop any blurring. -->
+	.my-class img {
+		width: 100%;
+		height: auto;
+	}
+```
+
+This would force the image's container to be half the size of the image, making our image sharp on a Retina screen. But be careful, we still need to watch our image's size. Sometimes you have to balance quality and filesize to give an overall good experience to your user.
+
+Remember, setting the style of the `<img>` tag here can be done globally, so images always fill their containers. In fact, height may not be necessary at all.
+
+In the case of background images, we could do something similar. Let's say the biggest size the image will be in the browser is 2000px &times; 500px. We export an image that is 4000px &times; 1000px.
+
+```css
+.my-class {
+	background-size: 2000px 500px;
+	/* or */
+	background-size: cover;
+}
+```
+
+Explicitly setting the background size will keep the background size that size no matter what, even if it gets cropped by the container some, setting it to `cover` will make it fit the container, but either way, it will look sharp.
+
+The importance of these techniques depend on the image. Some photographs and backgrounds may not need it. SVGs will never need it, since they're scalable by nature. You really want your graphics to look sharp, so using SVGs for icons and logos is recommended, or, double sized PNGs. 
+
+Just remember, whatever type of screen you have, it's good to find other types of screens to view your website's on, so you can adjust and optimize. 
+
+
+## Percentage and VW
+
+... percentage and vw codepen ...
 
 
 ## Resources
 
 [RWD Guide from Google](https://developers.google.com/web/fundamentals/design-and-ui/responsive/)
+
+
+http://giona.net/tools/css3-mediaquery-generator/
+
+

@@ -341,4 +341,7 @@ This is a pretty great way to learn flexbox properties. You should really try it
 Probably the best way to learn Flexbox is to try and build something with it, and keep this open in a browser tab to refer to:
 [CSS Tricks: A Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
-[MDN Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/flex)
+[MDN Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/flex)https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+
+vet this -> https://www.youtube.com/watch?v=JJSoEo8JSnc
+

@@ -90,7 +90,13 @@ export default {
     }
   },
   created: function() {
-      this.sortStudents();
+    //   this.sortStudents();
+    if (this.section === '301') {
+        this.students = this.section301
+    }
+    else if (this.section === '302') {
+        this.students = this.section302
+    }
   }
 }
 
