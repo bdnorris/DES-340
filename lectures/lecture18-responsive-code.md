@@ -134,9 +134,84 @@ The importance of these techniques depend on the image. Some photographs and bac
 Just remember, whatever type of screen you have, it's good to find other types of screens to view your website's on, so you can adjust and optimize. 
 
 
-## Percentage and VW
+## Ems, Rems, Percentage and VW
 
 ... percentage and vw codepen ...
+
+Now's where we bring back those relative units and see how we can use them with media queries.
+
+### Ems and Rems
+
+```css
+html, body {
+	font-size: 16px;
+}
+
+.my-container {
+ font-size: 1rem; /* 16px */
+}
+
+	.my-container > button {
+		padding: 1em;
+		margin: 0 1em;
+		font-size: 1.5em;
+	}
+
+@media screen and (min-width: 769px) {
+	.my-container {
+		font-size: 1.2rem; /* 19.2px */
+	}
+} 
+```
+
+By using Ems for my button, I can easily change the context of that Em on it's parent to affect the sizing of the button overall, and make it larger for 769px and above. By using Rems, I'm still connecting the size to the root. I could also...
+
+```css
+html, body {
+	font-size: 16px;
+}
+@media screen and (min-width: 769px) {
+	html, body {
+		font-size: 1.2rem; /* 19.2px */
+	}
+} 
+```
+
+But global changes could have side affects you don't intend, so use with care.
+
+### Percentages
+
+Using percentages for widths works really well. We can define our boxes in percentages to have control over how many items we have per row in a flexbox. The percentage is always in reference to the elements direct parent. I'll show you how that works in the next lecture. 
+
+For heights though, I would avoid percentages. Heights of block elements depend on the content. A box with a certain width will naturally expand it's height to accomodate the content, but it doesn't work the other way around. So saying "height: 50%" only works if the parents height is set explicitly. Best to avoid it.
+
+https://stackoverflow.com/questions/5657964/css-why-doesn-t-percentage-height-work
+
+```css
+.my-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+	.child-element {
+		width: 100%;
+		flex-basis: 100%; /* we'll look at this closer in the next lecture */
+	}
+
+@media screen and (min-width: 769px) {
+	.child-element {
+		width: 50%;
+		flex-basis: 50%;
+	}
+}
+```
+
+In the above code, I'm saying to make my flex children 100% wide, but for above 768px, only 50% wide (two per-row).
+
+### VW and VH
+
+
+
 
 
 ## Resources

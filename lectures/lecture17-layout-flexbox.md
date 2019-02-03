@@ -327,6 +327,10 @@ Now I would get "Ipsum" then "Lorem". The default is 0, so technically, I would 
 
 `align-self` will allow the default alignment (or the one specified by align-items on the flex parent) to be overridden for individual flex items. This means if the parent had `align-items: flex-start`, but the child had `align-self: flex-end`, that one particular child would appear at the bottom or right of the flex parent, instead of the top or left (depending on `flex-direction`).
 
+## Autoprefixer
+
+Older browsers. 
+
 ## On "Grid"
 
 There's another CSS specification for layout called Grid. As you can guess from the name, it allows us to define grids, and gives us power over columns, rows, and gutters!. We'll get to it if we have time, but I'm skipping it for now, because so many of its properties are very similar to flexbox's. It's just simply easier to learn grid _after_ you've learned flexbox.  
