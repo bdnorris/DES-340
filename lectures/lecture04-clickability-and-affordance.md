@@ -16,6 +16,8 @@ As always, Nielsen Norman Group has the best research on this subject. I encoura
 
 > But today’s users have seen hyperlinks and buttons that look widely different. Signifiers can evolve over time as web users gain more exposure to different interaction cues and get to learn these new cues.
 
+A quick note on link state, links can also have a "visited" state to show the user when they have already visited a URL (it uses the user's browser history). The default color for this state is a dark purple. So, it's best not only to avoid purple as a link color, but it's also good to remember you should plan your own visited state for a text-heavy website. For instance, keeping track of visited links may not be that important on a small brochure site, but it's a lot more important on an e-commerce site, a text-heavy site, or a site where users do a lot of searching.
+
 ## Digital vs. "Real-World" interfaces
 
 Here's where our design aesthetics and trends can lead to user-experience issues. One of the clearest ways to make a button clickable is to give it a 3-dimensional effect as if it was a "real button". Not very cool. (at least, currently).

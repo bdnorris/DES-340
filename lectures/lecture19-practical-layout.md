@@ -30,6 +30,18 @@ The following would be a completely valid alternative way to write `width: 33.33
 }
 ```
 
+There's a lot of power here. Here's something I've done to create an asymetrical layout using a calculated left margin...
+
+```css
+.my-text-container {
+  margin-left: calc((100vw - 1240px)/2);
+}
+```
+
+I took the max-midth of my imagined container that would normally be centered, but instead subtract that from 100vw, then divide by two. I'm essentially figuring out how far from the left my content would be if I was centereing the whole layout, when I was actually just centering 1 side.
+
+... codepen
+
 ## Making columns
 
 The general principal for making columns of elements is the "row/column" method. Basically you have a block level container as your row, and you use Flexbox to set items inside that row. Your container will usually have a `max-width` set, so your columns do not expand indefinitely. How many containers you need depends on your background.
@@ -49,18 +61,106 @@ As you can also see in this pen, you can easily use flexbox settings to change h
 
 ... grids and layout codepen ...
 
-Percentage and vh VW are the units
+Going back to when we first talked about RWD, here's some examples of some of those responsive layout patterns.
 
-clear floats to stack
-or let things wrap
+### Mostly Fluid pattern
 
-### Combining max-widths and percentages
+... cp
 
-### adding gutters
+### Column Drop pattern
+
+... cp
+
+<!-- ### Combining max-widths and percentages
+
+Let's look a little closer. A really common pattern I use would be to combine a container's max-width with  -->
+
+### Adding gutters
+
+Here's where things get tricky. CSS Grid has a gutter concept built in, but let's see how we can make this work with Flexbox. 
+
+Now, we can, with Flexbox, use `justify-content` to space out our items. So a feasible solution would be to specify our children with less of a percentage than we normally would, automatically creating our gutters.
+
+```css
+.my-parent {
+  display: flex;
+  justify-content: space-between;
+}
+.my-children {
+  flex: 0 0 22%;
+}
+```
+
+Here, we are telling our flex-parent to distribute extra whitespace between our child boxes, then, we are telling our boxes to be 22%, instead of 25%. We are also telling them not to grow or to shrink, since percentages shrink and grow anyway. If I have 4 flex children, that gives me 88% of our parents width I'm using up with boxes, leaving 12% left over for whitespace. With 4 items, I need three gutters, and 12/3 is 4%. So I automatically get 4% between each item. 
+
+However, what if I don't want flexible gutters? What if I want my boxes to flex, but my gutters to be a stable number. This is where a couple of new selectors come into play as well as the `calc()` function.
 
 ### First and last child
 
-### using order
+We'll get more into "psuedo-classes" later, but I want to introduce two right now, They are `first-child` and `last-child`. We use pseeud-classes by placing an `:` after our selector.
+
+First and last child select the first child of a parent, and the last child of a parent, leaving the rest alone.
+
+```html
+<ul>
+  <li>Aardvark</li>
+  <li>Anteater</li>
+  <li>Elephant</li>
+</ul>
+```
+
+```css
+ul > li {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+ul > li:first-child {
+  margin-left: 0;
+}
+ul > li:last-child {
+  margin-right: 0;
+}
+```
+
+Using the above code, no matter how many items were inside the `<ul>`, they would all get a `margin-left` and `margin-right`, except the first item gets it's left margin reset to 0, and the last item gets it's margin reset to 0. 
+
+We can combine this idea with the `calc()` function to control our rows of items.
+
+```css
+.row {
+  display: flex;
+}
+.row > .column {
+  flex-basis: 0 0 calc(25% - 0.75em);
+  margin: 0 0.5em 1em 0.5em;
+}
+.row > .column:first-child {
+  margin-left: 0;
+}
+.row > .column:last-child {
+  margin-right: 0;
+}
+```
+
+So we have to do some arithmetic here... 4 items per row means 3 gutters, because I want no spacing on the outside for now. If I want 1em of spacing in the 3 gutters, I'll use left and right margins of 0.5em. 
+
+My total space I want is still 3em, so each box should be 25% - 3/4 ems. Giving me, `calc(25% - 0.75em)`. Complicated, but it's the kind of thing you only need to figure out once, then you can use over and over again. Here's a CodePen showing some options.
+
+... cp
+
+But what if I want to have a wrapping grid of items, `first-child` and `last-child` won't work. There is no pseudo-class for first and last in a row of wrapping flex-children.
+
+### Grid again?
+
+The solution to that is to use Grid, it's what it was made for. We'll look at it later! For now, here's a Flexbox solution, instead of compensating for the left and right margin with pseudo classes, we'll just allow our container to be a bit larger than the container above it. 
+
+The second solution in this CodePen is based on another pseudo selector called `nth-child()`, that works like `first-child` and `last-child`, but lets us specify things like "every third item" or "every sixth item", etc. We'll look at these closer in another lecture.
+
+... cp
+
+### Using order
+
+We can use the Flexbox `order` property to let us flip things around in our RWD patterns.
 
 ## Nesting for success-ting
 
@@ -106,7 +206,7 @@ float: right;
 
 ### Text columns
 
-### Another note on Grid
+### Yet another note on Grid
 
 So let's mention CSS Grid one more time. It's pretty great, and will absolutely solve a lot of your layout problems. However, I'm not lecturing on it, since I still think it will be easier to figure out Flexbox first.
 

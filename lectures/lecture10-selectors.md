@@ -303,29 +303,6 @@ li:only-child {
 That CSS would only work on an `<ul>` or an `<ol>` if they only had one `<li>` inside.
 
 
-<!-- Combining class attributes with
-hover states
-Okay, just one more complicated selector. I promise.
-In the last example, where we had a <p> tag with the class attribute of “intro”, what if we wanted to do something when a user hovered the <p> tag? We’d combine the selectors:
-p {
-font-size: 16px;
-}
-p.intro {
-font-size: 18px;
-font-weight: 700;
-}
-p.intro:hover {
-color: red;
-} -->
-
-<!-- Here we have three styles. The first is picking any <p> tag. The second
-is picking any <p> tag, then filtering for any with the class attribute of
-“intro”. The last one is picking any <p> tag, then filtering for the class
-attribute of “intro” and then only applying the style on hover. Phew!
-So for this style sheet, the tag with <p class=”intro”> would be font
-size 18px and bold font weight (or 700 weight) by default. Then we
-apply the red color only on hover. -->
-
 <!-- Multiple classes
 We can also add more than one class on to a tag. The way we do this is
 by using a space between the two class names:

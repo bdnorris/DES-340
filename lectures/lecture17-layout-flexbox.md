@@ -329,11 +329,51 @@ Now I would get "Ipsum" then "Lorem". The default is 0, so technically, I would 
 
 ## Autoprefixer
 
-Older browsers. 
+Flexbox is a bit different from a lot of the other things we've talked about in CSS so far. It's orginal specification was actually created by Microsoft for use in IE11, but the specification was changed by the end, after the end of IE's support life. I'll talk about browser differences more when we talk about debugging, but whether or not to use a certain feature, and how to handle older browsers is something you need to keep in mind. 
+
+There's an awesome tool out there to help us, called ["Autoprefixer."](https://autoprefixer.github.io/) I have Autoprefixer built into my tooling, but that's a bit technical and advanced for this course. For now, just know that Autoprefixer will take in your CSS, and build in fallback code meant to work in older browers, AUTOmatically. For instance, given the following CSS...
+
+```css
+.my-conainter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  .my-container > div {
+    flex: 1 1 auto;
+  }
+```
+
+...the Autoprefixer tool will return...
+
+```css
+.my-conainter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+  .my-container > div {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+```
+
+Those properties and values with `-` in front of them are "Vendor Prefixes" meant to only work in particular browser engines. As you can see, `justify-content` was orginially `-ms-flex-pack` for IE and `-webkit-box-pack` for Safari and Chrome. 
+
+Taking this extra step towards the end of your development process means more people will see your site as you intended. 
 
 ## On "Grid"
 
-There's another CSS specification for layout called Grid. As you can guess from the name, it allows us to define grids, and gives us power over columns, rows, and gutters!. We'll get to it if we have time, but I'm skipping it for now, because so many of its properties are very similar to flexbox's. It's just simply easier to learn grid _after_ you've learned flexbox.  
+There's another CSS specification for layout called Grid. As you can guess from the name, it allows us to define grids, and gives us power over columns, rows, and gutters!. It's also newer than Flexbox, meaning it's browser compatibility is really only the newest browser versions.
+
+We'll get to it if we have time, but I'm skipping it for now, because so many of its properties are very similar to flexbox's. It's just simply easier to learn grid _after_ you've learned flexbox.
 
 ## Resources
 
@@ -349,3 +389,4 @@ Probably the best way to learn Flexbox is to try and build something with it, an
 
 vet this -> https://www.youtube.com/watch?v=JJSoEo8JSnc
 
+Flexbugs!!!
