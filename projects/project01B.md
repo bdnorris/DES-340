@@ -56,7 +56,7 @@ We'll look more at navigation later, so for now, you'll just include...
 
 Continue your research on other websites, paying specific attention to the three elements of this project. You'll need to include at least 3 each in the research section of your presentation.
 
-Continue sticking to fonts available from [Google's Font Library](https://fonts.google.com)
+Continue sticking to fonts available from [Google's Font Library](https://fonts.google.com), [Adobe Fonts](https://fonts.adobe.com/) if you have an Adobe CC Subscription, or [Font Squirrel](https://www.fontsquirrel.com/).
 
 ## Presentation
 Save your final designs in PNG format.

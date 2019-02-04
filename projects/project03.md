@@ -235,6 +235,10 @@ _Adjust the After Design to be fluid. It should have the same content as the ori
 
 <img style="display:block;border:1px solid #ccc;" src="/assets/img/137504748.png" alt="After (desktop)" />After (desktop)
 
+### Fonts
+
+Continue sticking to fonts available from [Google's Font Library](https://fonts.google.com), [Adobe Fonts](https://fonts.adobe.com/) if you have an Adobe CC Subscription, or [Font Squirrel](https://www.fontsquirrel.com/).
+
 ## Summary and Research
 
 Write a short summary (75–200 words) on your findings from this assignment, with emphasis on the before and after designs and any principles you learned from goodui.org. You should also mention any thoughts you have on the process of re-designing for desktop/mobile.
