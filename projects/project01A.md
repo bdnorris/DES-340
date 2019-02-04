@@ -57,7 +57,15 @@ Try using [Archetype App](https://archetypeapp.com/) to explore your typographic
 
 This app will also let you select from Google's library of free fonts. We'll be using Google's fonts resources a lot in this class, since it's easy and free to include these in your project, and they have some of the most popular typefaces for the web. 
 
-[Google Fonts](https://fonts.google.com)
+### Font Use
+
+For our digital design projects, we'll mostly want to stick to [Google Fonts](https://fonts.google.com). This will allow us to easily code our designs if we choose since we won't have to worry about font-licensing and other font restrictions. The fonts on your computer *will not work* on the web as they currently are. 
+
+If you have a valid Adobe Creative Cloud subscription, you could use [Adobe Fonts](https://fonts.adobe.com/) if you choose. The installation process is different, but they are usable on the web, _if_ they have a specific web font version, and your subscription remains valid.
+
+One more option is [Font Squirrel](https://www.fontsquirrel.com/), they only host commercially free-to-use typefaces. Just make sure whichever font you choose has a web version (there will be a little globe icon).
+
+If you wish to use any other font, please discuss with me first.
 
 ## Design
 
