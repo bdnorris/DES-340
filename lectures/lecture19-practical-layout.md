@@ -191,7 +191,7 @@ Here is a sidebar
 <!-- In your desktop version of your CSS, you’d have something like:
 section {
 overflow: hidden;
-width: 920px;
+width: 920px; 
 margin: 0 auto 0 auto;
 }
 div.main {
