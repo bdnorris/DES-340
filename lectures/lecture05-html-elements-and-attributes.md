@@ -185,11 +185,9 @@ So when marking up your HTML, your goal should be to describe the content as acc
 
 This is a goal and a principle, it will not always work out perfectly, and that's ok. Sometimes you will use a tag inappropriately. That's ok, it will work. It happens, but keeping in mind our goal of keeping things "Semantic" (relating to meaning) will help us keep our code clean and sane and easier for machines and people to read.
 
-Keeping your HTML semantic and meaningful will also make your CSS cleaner and more readable. When in doubt, keep in mind... <mark>classes for styling, tags for meaning.</mark> That doesn't mean you don't style your tags, you do, but classes let you define your own context, whereas tags are universal and used by every website.
-
 ## Further structure with classes
 
-You'll define further structure by giving all the above tags classes. We'll talk more about this, but for now, just note that all of these tags, and more, can have a class attribute added to them, and more than one class can be added to each, separated by spaces. This gives our elements more "semantic" information. 
+You'll define further structure by giving all the above tags classes. We'll talk more about this, but for now, just note that all of these tags, and more, can have a class attribute added to them, and more than one class can be added to each, separated by spaces. Class naming can be tricky. Keeping your classes semantic will give you a lot of flexibility, but you'll also likely use classes that are just named after the intended visual style.
 
 **Defining classes and writing CSS to support them is the main task of a front-end developer.**
 
@@ -198,10 +196,12 @@ You'll define further structure by giving all the above tags classes. We'll talk
     <!-- content -->
 </div>
 
-<div class="my-regular-section">
+<div class="my-regular-section padded">
     <!-- content -->
 </div>
 ```
+
+Keeping your HTML semantic and meaningful will also make your CSS cleaner and more readable. When in doubt, keep in mind... <mark>classes for styling, tags for meaning.</mark> That doesn't mean you don't style your tags, you do, but classes let you define your own context, whereas tags are universal and used by every website.
 
 ## Also, IDs.
 
