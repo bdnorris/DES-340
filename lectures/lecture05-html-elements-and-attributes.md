@@ -111,7 +111,7 @@ Divs are also good for when you want to hold some text, but you don't want to us
 
 > The article element represents a complete, or self-contained, composition in a document, page, application, or site. This could be a magazine, newspaper, technical or scholarly article, an essay or report, a blog or other social media post.
 
-> A general rule is that the article element is appropriate only if the element’s contents would be listed explicitly in the document’s outline. Each article should be identified, typically by including a heading(h1-h6 element) as a child of the article element.
+> A general rule is that the article element is appropriate only if the element’s contents would be listed explicitly in the document’s outline. Each article should be identified, typically by including a heading (h1-h6 element) as a child of the article element.
 
 ### aside
 
@@ -185,7 +185,7 @@ So when marking up your HTML, your goal should be to describe the content as acc
 
 This is a goal and a principle, it will not always work out perfectly, and that's ok. Sometimes you will use a tag inappropriately. That's ok, it will work. It happens, but keeping in mind our goal of keeping things "Semantic" (relating to meaning) will help us keep our code clean and sane and easier for machines and people to read.
 
-Keeping your HTML semantic and meaningful will also make your CSS cleaner and more readable. 
+Keeping your HTML semantic and meaningful will also make your CSS cleaner and more readable. When in doubt, keep in mind... <mark>classes for styling, tags for meaning.</mark> That doesn't mean you don't style your tags, you do, but classes let you define your own context, whereas tags are universal and used by every website.
 
 ## Further structure with classes
 
