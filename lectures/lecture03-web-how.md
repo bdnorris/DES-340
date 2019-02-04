@@ -30,13 +30,13 @@ The URL lives in a browser's address bar, and is initialized in one of two ways:
 
 Take the following URL:
 
-https://developer.mozilla.org/en-US/search?q=URL
+<mark>https://developer.mozilla.org/en-US/search?q=URL</mark>
 
-`https` is the _Protocol_, most of the time it's HTTP or it's secured version HTTPS. You might also see `mailto` for links that open new mail windows, `tel` which can start a phone call, `ftp` which is a protocol meant for transferring files, etc.
+`https` is the _Protocol_, most of the time it's HTTP or it's secured version, HTTPS. You might also see `mailto` for links that open new mail windows, `tel` which can start a phone call, `ftp` which is a protocol meant for transferring files, etc.
 
 `developer.mozilla.org` is the domain name. 
 
-`org` is what's known as a TLD or "top level domain." You're probably pretty familiar with these, they include `com`, `net`, `.info`, and country codes like `us`, `uk`, `mx` etc. They're managed by the Internet Corporation for Assigned Names and Numbers (ICANN). 
+`org` is what's known as a TLD or "top level domain." You're probably pretty familiar with these, they include `com`, `net`, `info`, and country codes like `us`, `uk`, `mx` etc. They're managed by the Internet Corporation for Assigned Names and Numbers (ICANN). 
 
 `mozilla` is the main domain name. This is the one that you buy when you buy a domain name. 
 
@@ -44,7 +44,7 @@ https://developer.mozilla.org/en-US/search?q=URL
 
 `/en-US/search` is the _path_. At its most basic level, this indicates that at the root of the website, there's a folder called _en-US_ then a folder called _search_. Often these are interpreted by the web server in various ways, but ultimately, they're a way to structure content on your website. 
 
-`?q=URL` represents _parameters_ and their _values_. _q_, in this case stands for _query_, and its value is URL. This is an easy way for a URL to pass values to the web server. 
+`?q=URL` represents _parameters_ and their _values_. _q_, in this case is the **parameter** and stands for _query_. Its **value** is "URL". This is an easy way for a URL to pass values to the web server. 
 
 So, in this URL, if you typed it into the address bar, a system called the **Domain Name System** (DNS) that works all the way from your computer, router, internet service provider and the backbone of the internet takes over. It figures out what web server is represented by _developer.mozilla.org_ and routes your request. 
 
@@ -56,11 +56,11 @@ Then, the parameters are read by the server, and special results are returned ba
 
 Sometimes, you'll also see a URL like `http://mydomain.com/about.html`. This is a direct reference to the HTML document.
 
-With basic HTML and no programming language to interpret URLs, you would almost always place in the root of your site an `index.html` file. **The web server will always return the index.html file in any directory if that directory is what is requested.**
+With basic HTML and no programming language to interpret URLs, you would almost always place in the root of your site an `index.html` file. **The web server will always return the index.html file in any directory if that directory is requested without referencing a file.**
 
 So, if you created a site, and made an index.html file for the home page, how do you make the "About" page? 
 
-You could either create a file called `about.html` and reference like above, or you could create an "about" folder, place an `index.html` file inside of it, and reference it with a path like so: `http://mydomain.com/about/`. Again, the web server will return the index.html file inside the about folder when requested like so. 
+You could either create a file called `about.html` and reference like above, or you could create an "about" folder, place an `index.html` file inside of it, and reference it with a path like so: `http://mydomain.com/about/`. Again, the web server will return the index.html file inside the about folder when requested that way. 
 
 ### Requesting files
 
@@ -90,7 +90,7 @@ You might also need to reference a relative URL like:
 
 Those two dots indicated I want to, relatively, go up one directory from where I currently am, then down further into that path. I could even use `../../etc.css` to keep on going up however many directories I need to. 
 
-So you see, structure matters.
+If you needed to reference different website, you would need to use the full URL. So on `http://mydomain.com`, if I wanted to reference an image from another site, I would need to include the full URL to that image... `https://source.unsplash.com/random`
 
 ## Back to the browser
 
@@ -102,7 +102,7 @@ So your browser reads the HTML, reads the CSS file, lays out the content on the 
 
 Some clever people also figured out a way to make javascript send HTTP requests as well. This allows the transfer of data back and forth without the URL actually changing in your browser. This is how all of our modern web applications work. They're just really fancy websites with a lot of javascript.
 
-**Remember**, the files that make up a website might come from a server, but once they're in your browser, they're now on your computer or mobile device, the only thing that can change that is another HTTP request, or changing the URL. 
+**Remember**, the files that make up a website might come from a server, but once they're in your browser, they're now on your computer or mobile device, the only thing that can change that is another HTTP request, either in the background with javascript, or by changing the URL in the browser. 
 
 ## Conclusion
 

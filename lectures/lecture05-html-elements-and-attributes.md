@@ -27,6 +27,8 @@ display: flex; /* flexbox layout, we'll discuss later */
 display: grid; /* grid layout, we'll discuss later */
 ```
 
+We'll discuss the `display` property in more detail later.
+
 ### Examples
 
 In this example, the `<p>` tag is _block_, but the `<span>` tag is _inline_.
@@ -54,7 +56,7 @@ exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 ## Typographic elements
 
 ### Headings
-`<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>` are our heading tags. H1 indicates the highest in the hierarchy and by default will be set to the larges size. Headings also all have `font-weight: bold` applied to them. They are **block** elements that by default will have margins set above and below.
+`<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>` are our heading tags. H1 indicates the highest in the hierarchy and by default will be set to the largest size. Headings also all have `font-weight: bold` applied to them. They are **block** elements that by default will have margins set above and below.
 
 ### Paragraphs
 The `<p>` tag is what we use to markup our paragraphs. They are **block** elements that by default will have some margin set above and below. 
