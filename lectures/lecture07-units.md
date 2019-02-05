@@ -4,37 +4,37 @@
 
 ### Pixels
 
-Oh, boy. What should ultimately be the simplest unit, is actually a bit complicated. The good news is, we mostly just have to worry about what are called "Reference Pixels" or "CSS Pixels". I'll quote from a Smashing magazine article to explain these a bit.
+What should ultimately be the simplest unit, is actually a bit complicated. The good news is, we mostly just have to worry about what are called "Reference Pixels" or "CSS Pixels". I'll quote from a Smashing magazine article to explain these a bit.
 
 [Towards a Retina Web](https://www.smashingmagazine.com/2012/08/towards-retina-web/)
 
 #### Device Pixels (real screens)
 
-> A **device pixel** (or physical pixel) is the tiniest physical unit in a display. Each and every pixel sets its own color and brightness as instructed by the operating system, while the imperceptible distance between these tiny dots takes care of tricking the eye into perceiving the full image.
+> A **device pixel** (or physical pixel) is the tiniest physical unit _in a display_. Each and every pixel sets its own color and brightness as instructed by the operating system, while the imperceptible distance between these tiny dots takes care of tricking the eye into perceiving the full image.
 
 > **Screen density** refers to the number of device pixels on a physical surface. It is often measured in pixels per inch (PPI). Apple has coined the marketing term “Retina” for its double-density displays, claiming that the human eye can no longer distinguish individual pixels on the screen from a “natural” viewing distance.
 
 #### CSS/Reference/Device-Independent Pixels (sizing in the browser)
 
-> A **CSS pixel** is an abstract unit used by browsers to precisely and consistently draw content on Web pages. Generically, CSS pixels are referred to as device-independent pixels (DIPs). On standard-density displays, 1 CSS pixel corresponds to 1 device pixel.
+> A **CSS pixel** is an _abstract unit used by browsers_ to precisely and consistently draw content on Web pages. Generically, CSS pixels are referred to as device-independent pixels (DIPs). On standard-density displays, 1 CSS pixel corresponds to 1 device pixel.
 
 ```html
-<div height="200" width="300"></div>
+<img height="200" width="300" src="my-image.jpg" />
 ```
 
-> This would use 200 × 300 device pixels to be drawn on screen. On a Retina display, the same div would use 400 × 600 device pixels in order to keep the same physical size, resulting in four times more pixels...
+> This would use 200 × 300 device pixels to be drawn on screen. On a Retina display, the same image would use 400 × 600 device pixels in order to keep the same physical size, resulting in four times more pixels...
 
 #### Bitmap Pixels (image)
 
 > A **bitmap pixel** is the smallest unit of data in a raster image (PNG, JPG, GIF, etc). Each pixel contains information on how it is to be displayed, including its position in the image’s coordinate system and its color. Some image formats can store additional per-pixel data, such as opacity (which is the alpha channel).
 
-> Beside its raster resolution, an image on the Web has an abstract size, defined in CSS pixels. The browser squeezes or stretches the image based on its CSS height or width during the rendering process.
+> Beside its raster resolution, an image on the Web has an _abstract size, defined in CSS pixels_. The browser squeezes or stretches the image based on its CSS height or width during the rendering process.
 
 > When a raster image is displayed at full size on a standard-density display, 1 bitmap pixel corresponds to 1 device pixel, resulting in a full-fidelity representation. Because a bitmap pixel can’t be further divided, it gets multiplied by four on Retina displays to preserve the same physical size of the image, losing detail along the way.
 
-#### Sorry for that
+#### Sorry about that
 
-...but the above will become very important when we start talking about retina graphics later. For now, we can define pixels in CSS  easily by using the 'px' suffix.
+...but the above will become very important when we start talking about retina graphics later. For now, we can define pixels in CSS easily by using the 'px' suffix.
 
 ```css
 .my-div {

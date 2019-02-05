@@ -192,11 +192,11 @@ You'll define further structure by giving all the above tags classes. We'll talk
 **Defining classes and writing CSS to support them is the main task of a front-end developer.**
 
 ```html
-<div class="my-regular-section my-special-section">
+<div class="my-section my-special-section">
     <!-- content -->
 </div>
 
-<div class="my-regular-section padded">
+<div class="my-section padded">
     <!-- content -->
 </div>
 ```
