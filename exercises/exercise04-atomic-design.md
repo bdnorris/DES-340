@@ -1,4 +1,4 @@
-# E4: Reading: Brad Frost&rsquo;s Atomic Design
+# E4: Reading: Brad Frost’s Atomic Design
 
 Points: 20
 
