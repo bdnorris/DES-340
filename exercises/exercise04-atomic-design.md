@@ -17,5 +17,5 @@ Brad Frost is an authority on design systems, style guides and systematic thinki
 Please read those chapters, and write up a list of at least **six** new things you learned, at least one full sentence for each. A more thoughtful response will likely get you some extra credit. Submit to me in a reasonable document format through Slack (rtf, doc, docx, pdf, etc.)
 
 :::danger Due Date
-??/??
+Monday, 2/25
 :::

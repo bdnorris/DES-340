@@ -53,6 +53,7 @@ These are the key required elements that need to be present in every HTML file. 
 The `<body>` element is where the content you actually want to show up on the page lives. If you want it to show up, it has to be between the opening and closing `<body>` tags.
 
 ```html
+<!DOCTYPE html>
 <html>
   <head>
     <title>My website</title>
@@ -81,6 +82,8 @@ The `<body>` element is where the content you actually want to show up on the pa
 
 &mdash; Codecademy HTML (Introduction to HTML)
 
+Note, we're talking about the hierarchy of the document, not necessarily _visual hierarchy_.
+
 However you describe it, the nesting/hierarchy/parent-child relationships of our element is important. The first concern is describing the document. You want to section items off in a logical way. The second concern is styling and layout, which depend a lot on the relationships of your elements in HTML. 
 
 ## Getting started
@@ -93,7 +96,7 @@ In your code editor, create a new file called index.html. Remember, naming our f
 It's best to keep your filenames "web-safe." URLs can only contain certain characters, so sticking to those is best. To be extra safe, use all lowercase, with no spaces or special characters. Use hyphens and underscores to separate words instead.
 :::
 
-Type and `<html>` start and end tag, then put `<head>`, and `<body>` opening and closing tags inside the `<html>` tag.
+Type `<!DOCTYPE html>` on the first line. Then add `<html>` opening and closing tags, then put `<head>`, and `<body>` opening and closing tags inside the `<html>` tag.
 
 Next, put some kind of text element inside body, a heading and a paragraph. Doesn't matter what they are, we're just messing around.
 
@@ -115,7 +118,7 @@ Click on the "Go Live" option in the bottom bar, this will launch in your browse
 
 ## Adding more pages
 
-Let's add a couple other pages. In Finder or your code editor, and copy/duplicate your index.html file. Rename it to `about.html`. Open this file in your editor, and change the content in the body, and the title tag.
+Let's add another page. In Finder or your code editor, copy/duplicate your index.html file. Rename it to `about.html`. Open this file in your editor, and change the content in the body, and the title tag.
 
 Go back to index.html and add the following code somewhere in the body of your html document:
 
@@ -187,7 +190,7 @@ The **p** is called a **selector** because it selects the HTML element to style.
 
 The real power of CSS comes from the selectors, which we'll talk more about later. There are a lot of CSS properties we'll discuss as well, and each property has a range of acceptable values. 
 
-If you get a property wrong, it won't work. If you get a value wrong, it won't work. But, CSS is pretty forgiving, if you mess up, your page will still display, the browser will just ignore things it doesn't understand. In theory this is great, but it can make it hard to figure out what the actual problem is. We'll talk more about debugging your code. 
+If you get a property wrong, it won't work. If you get a value wrong, it won't work. But, CSS is pretty forgiving, if you mess up, your page will still display, the browser will just ignore things it doesn't understand. In theory this is great, but it can make it hard to figure out what the actual problem is. We'll talk more about debugging your code later. 
 
 ### Where to put your CSS
 
@@ -206,7 +209,7 @@ Then, in your index.html file, add the following tag:
 
 You're familiar with the `href` attribute now. In this case, it would usually be a relative URL, but it could be an absolute URL (one with HTTP://... etc.). The `rel` attribute stands for "relationship". There are other uses for the link tag, but we'll stick to using it for CSS for now.
 
-On every page of our website, we can place this link tag, and we will pull in the exact same CSS file on every page, making this one CSS file able to style our entire site. If we make one change to this file, it will be a global change, which is typically what you'd want.
+On every page of our website, we can place this link tag (do that now), and we will pull in the exact same CSS file on every page, making this one CSS file able to style our entire site. If we make one change to this file, it will be a global change, which is typically what you'd want.
 
 You can also include multiple CSS files by adding more link tags.
 
