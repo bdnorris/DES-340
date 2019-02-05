@@ -4,37 +4,37 @@
 
 ### Pixels
 
-Oh, boy. What should ultimately be the simplest unit, is actually a bit complicated. The good news is, we mostly just have to worry about what are called "Reference Pixels" or "CSS Pixels". I'll quote from a Smashing magazine article to explain these a bit.
+What should ultimately be the simplest unit, is actually a bit complicated. The good news is, we mostly just have to worry about what are called "Reference Pixels" or "CSS Pixels". I'll quote from a Smashing magazine article to explain these a bit.
 
 [Towards a Retina Web](https://www.smashingmagazine.com/2012/08/towards-retina-web/)
 
 #### Device Pixels (real screens)
 
-> A **device pixel** (or physical pixel) is the tiniest physical unit in a display. Each and every pixel sets its own color and brightness as instructed by the operating system, while the imperceptible distance between these tiny dots takes care of tricking the eye into perceiving the full image.
+> A **device pixel** (or physical pixel) is the tiniest physical unit _in a display_. Each and every pixel sets its own color and brightness as instructed by the operating system, while the imperceptible distance between these tiny dots takes care of tricking the eye into perceiving the full image.
 
 > **Screen density** refers to the number of device pixels on a physical surface. It is often measured in pixels per inch (PPI). Apple has coined the marketing term “Retina” for its double-density displays, claiming that the human eye can no longer distinguish individual pixels on the screen from a “natural” viewing distance.
 
 #### CSS/Reference/Device-Independent Pixels (sizing in the browser)
 
-> A **CSS pixel** is an abstract unit used by browsers to precisely and consistently draw content on Web pages. Generically, CSS pixels are referred to as device-independent pixels (DIPs). On standard-density displays, 1 CSS pixel corresponds to 1 device pixel.
+> A **CSS pixel** is an _abstract unit used by browsers_ to precisely and consistently draw content on Web pages. Generically, CSS pixels are referred to as device-independent pixels (DIPs). On standard-density displays, 1 CSS pixel corresponds to 1 device pixel.
 
 ```html
-<div height="200" width="300"></div>
+<img height="200" width="300" src="my-image.jpg" />
 ```
 
-> This would use 200 × 300 device pixels to be drawn on screen. On a Retina display, the same div would use 400 × 600 device pixels in order to keep the same physical size, resulting in four times more pixels...
+> This would use 200 × 300 device pixels to be drawn on screen. On a Retina display, the same image would use 400 × 600 device pixels in order to keep the same physical size, resulting in four times more pixels...
 
 #### Bitmap Pixels (image)
 
 > A **bitmap pixel** is the smallest unit of data in a raster image (PNG, JPG, GIF, etc). Each pixel contains information on how it is to be displayed, including its position in the image’s coordinate system and its color. Some image formats can store additional per-pixel data, such as opacity (which is the alpha channel).
 
-> Beside its raster resolution, an image on the Web has an abstract size, defined in CSS pixels. The browser squeezes or stretches the image based on its CSS height or width during the rendering process.
+> Beside its raster resolution, an image on the Web has an _abstract size, defined in CSS pixels_. The browser squeezes or stretches the image based on its CSS height or width during the rendering process.
 
 > When a raster image is displayed at full size on a standard-density display, 1 bitmap pixel corresponds to 1 device pixel, resulting in a full-fidelity representation. Because a bitmap pixel can’t be further divided, it gets multiplied by four on Retina displays to preserve the same physical size of the image, losing detail along the way.
 
-#### Sorry for that
+#### Sorry about that
 
-...but the above will become very important when we start talking about retina graphics later. For now, we can define pixels in CSS  easily by using the 'px' suffix.
+...but the above will become very important when we start talking about retina graphics later. For now, we can define pixels in CSS easily by using the 'px' suffix.
 
 ```css
 .my-div {
@@ -112,9 +112,9 @@ header h1 {
 
 The padding would be relative to the `<h1>` which is relative to its parent, making it _48px_ as well. Saying the padding should be 1em, means you want the padding to be the same as the font-size, which we set at 1.5 * its parent. A bit complex. 
 
-The best example would be a standard button. Imagine setting a button's font-size to 2em. Then, you set the margin and padding in Em units as well. If you wanted to make a larger or smaller version, you could just change the fonts size of the button, and all the padding and margins will scale accordingly because Em units are relative to their parents.  As the font size changes, anything else set in Ems changes respectively.
+The best example would be a standard button. Imagine setting a button's font-size to 2em. Then, you set the margin and padding in Em units as well. If you wanted to make a larger or smaller version, you could just change the font-size of the button, and all the padding and margins will scale accordingly because Em units are relative to their parents.  As the font size changes, anything else set in Ems changes respectively.
 
-Perhaps when you're learning, you might avoid Ems for a bit, but they can be very powerful. 
+Perhaps when you're learning, you might avoid Ems for a bit, but they can be very powerful so I encourage you to try them out here and there. 
 
 <!-- Using em for the width of elements can ensure that a box containing some text increases in width as the font size increases. If I change the widths on the boxes in the example above to ems the boxes now increase in width as their font size increases. -->
 <!-- 
@@ -128,6 +128,8 @@ _ex_ is a unit referring to the x-height of the font.
 
 _ch_ is a unit referring to the width of the zero character in that font.
 
+Since they're relative, they'll work like Ems.
+
 ### rem Units
 
 Rem units ("root" em) are similar to Ems, but instead of being relative to the element or its parent, it is only relative to the default font size of the page. If you're default font size (set on `<html>` or `<body>`), is 16px, then 1rem is always 16px, and 2rem is always 32px.
@@ -140,32 +142,9 @@ The viewport is the area in the browser that actually contains your website. Vie
 
 1vw = 1% of the viewport width
 
-1vw = 1% of the viewport height
+1vh = 1% of the viewport height
 
-Viewport units are tied to the width of the browser, so if you adjust the size of your browser, these units adjust as well. 
-
-<!-- When we describe the viewport we are talking about the visible area of the website at the current time. Viewport units are relative to the viewport. This makes them incredibly useful for sizing fonts relative to the size of the viewport the user has without needing to use media queries. -->
-
-<!-- Viewport units can also be used for certain layout tasks, as I’ve outlined briefly here and we’ll see more use cases in the rest of the course.
-
-
-### vw, vh, vmin and vmax
-We can base our sizes on the “viewport” — essentially the part of our
-page that the browser can currently see. If our unit is “1vw”, this is 1
-percent of the viewport width, so if our browser is 1200px across, 1vw
-is 12px. “vh” is 1 percentage of the viewport height — so if we can only
-see 800px of our page in the browser, 1vh is 8px.
-Sometimes we might not know how wide or tall our user’s browsers
-are, so using “vw” and “vh” units can work well. For instance, having a
-section at exactly the height of the browser could be useful for an intro
-to the page: -->
-
-<!-- vh: 1/100th of the height of the viewport
-This unit makes it easy for us to make an element as tall as the viewport. For example a full screen hero image. -->
-
-
-<!-- vw: 1/100th of the width of the viewport
-You can use the vw unit for simple, flexible grids. The example below demonstrates two columns, one of 30vw and one of 60vw floated left and right. -->
+Viewport units are tied to the width and height of the browser, particularly the part of the website that is currently visible. So, if you adjust the size of your browser, these units adjust with it. 
 
 ```css
 section {
@@ -177,21 +156,9 @@ Would always make that section equal to the full height of the viewport.
 
 ### vmin and vmax
 
-`10vmin` would be equal to either 10vh or 10vw, depending on the orientation of the browser. If the width is less than the height, `10vmin` would be 10vw, and vice versa.
+`10vmin` would be equal to either 10vh or 10vw, depending on the orientation of the browser. If the width is less than the height (portrait), `10vmin` would be 10vw, and vice versa.
 
 `vmax` is the opposite, orienting to whichever is larger between the width or the height.
-
-<!-- vmin: equal to the smaller of vh or vw
-A value of 10vmin would be equal to 10vh if the viewport was shorter than it is wide, and 10vw if the viewport is taller than it is wide.
-
-vmax: equal to the larger of vh or vw
-A value of 10vmax would be equal to 10vh if the viewport was taller than it is wide, and 10vw if it is shorter than it is wide. -->
-
-
-
-<!-- > The “vmin” units look at the sizes of “vh” and “vw” and see which one of
-the two is the smallest. The “vmax” unit does the same, except looking
-for the larger of “vh” and “vw”. -->
 
 ## Degrees
 

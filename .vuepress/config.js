@@ -21,7 +21,7 @@ module.exports = {
           "lectures/lecture04-clickability-and-affordance.md", // swtich 3 and 4 later
           "lectures/lecture05-html-elements-and-attributes.md",
           "lectures/lecture06-the-dom.md",
-          // "lectures/lecture07-units.md",
+          "lectures/lecture07-units.md",
           // "lectures/lecture08-color.md",
           // "lectures/lecture09-text-and-type.md",
           // "lectures/lecture10-selectors.md",
@@ -40,8 +40,8 @@ module.exports = {
         children: [
           "exercises/exercise01-bio.md",
           "exercises/exercise02-ui-study.md",
-          // "exercises/exercise03-first-website.md",
-          // "exercises/exercise04-atomic-design.md",
+          "exercises/exercise03-first-website.md",
+          "exercises/exercise04-atomic-design.md",
           // 'exercises/exercise05-coding-text.md',
         ]
       },

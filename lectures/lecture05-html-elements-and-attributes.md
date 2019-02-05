@@ -27,6 +27,8 @@ display: flex; /* flexbox layout, we'll discuss later */
 display: grid; /* grid layout, we'll discuss later */
 ```
 
+We'll discuss the `display` property in more detail later.
+
 ### Examples
 
 In this example, the `<p>` tag is _block_, but the `<span>` tag is _inline_.
@@ -54,7 +56,7 @@ exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 ## Typographic elements
 
 ### Headings
-`<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>` are our heading tags. H1 indicates the highest in the hierarchy and by default will be set to the larges size. Headings also all have `font-weight: bold` applied to them. They are **block** elements that by default will have margins set above and below.
+`<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>` are our heading tags. H1 indicates the highest in the hierarchy and by default will be set to the largest size. Headings also all have `font-weight: bold` applied to them. They are **block** elements that by default will have margins set above and below.
 
 ### Paragraphs
 The `<p>` tag is what we use to markup our paragraphs. They are **block** elements that by default will have some margin set above and below. 
@@ -109,7 +111,7 @@ Divs are also good for when you want to hold some text, but you don't want to us
 
 > The article element represents a complete, or self-contained, composition in a document, page, application, or site. This could be a magazine, newspaper, technical or scholarly article, an essay or report, a blog or other social media post.
 
-> A general rule is that the article element is appropriate only if the element’s contents would be listed explicitly in the document’s outline. Each article should be identified, typically by including a heading(h1-h6 element) as a child of the article element.
+> A general rule is that the article element is appropriate only if the element’s contents would be listed explicitly in the document’s outline. Each article should be identified, typically by including a heading (h1-h6 element) as a child of the article element.
 
 ### aside
 
@@ -183,23 +185,23 @@ So when marking up your HTML, your goal should be to describe the content as acc
 
 This is a goal and a principle, it will not always work out perfectly, and that's ok. Sometimes you will use a tag inappropriately. That's ok, it will work. It happens, but keeping in mind our goal of keeping things "Semantic" (relating to meaning) will help us keep our code clean and sane and easier for machines and people to read.
 
-Keeping your HTML semantic and meaningful will also make your CSS cleaner and more readable. 
-
 ## Further structure with classes
 
-You'll define further structure by giving all the above tags classes. We'll talk more about this, but for now, just note that all of these tags, and more, can have a class attribute added to them, and more than one class can be added to each, separated by spaces. This gives our elements more "semantic" information. 
+You'll define further structure by giving all the above tags classes. We'll talk more about this, but for now, just note that all of these tags, and more, can have a class attribute added to them, and more than one class can be added to each, separated by spaces. Class naming can be tricky. Keeping your classes semantic will give you a lot of flexibility, but you'll also likely use classes that are just named after the intended visual style.
 
 **Defining classes and writing CSS to support them is the main task of a front-end developer.**
 
 ```html
-<div class="my-regular-section my-special-section">
+<div class="my-section my-special-section">
     <!-- content -->
 </div>
 
-<div class="my-regular-section">
+<div class="my-section padded">
     <!-- content -->
 </div>
 ```
+
+Keeping your HTML semantic and meaningful will also make your CSS cleaner and more readable. When in doubt, keep in mind... <mark>classes for styling, tags for meaning.</mark> That doesn't mean you don't style your tags, you do, but classes let you define your own context, whereas tags are universal and used by every website.
 
 ## Also, IDs.
 

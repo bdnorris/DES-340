@@ -98,6 +98,8 @@ by default.
 
 &mdash; SuperHi
 
+It looks blurry, because the pixel in the image needs to be split into 4 device pixels on the Retina diplay. Remember when we talked about pixels in the [Unit Lecture](lecture07-units.md)
+
 So how do you fix this. Basically, we need to export our images at twice the size we are setting them in CSS. For responsive images, this might mean twice the size of it's _largest_ size that appears in the browser.
 
 So, if we have an image that appears in the browser at 300px &times; 200px, we'll export it out of our design program, or otherwise size it to 600px &times; 400px. Then in our CSS, we could...
