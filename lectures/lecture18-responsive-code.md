@@ -14,7 +14,7 @@ Most of the technique's listed here are pretty similar to what you would use tod
 
 ## Media queries
 
-...media queiry codepen ...
+[Media Query Codepen](https://codepen.io/bdnorris/pen/EroEZp)
 
 Media queries are the heart of responsive coding. They're how we set our breakpoints in our code. They let you turn particular CSS styles on and off depending on the size of the viewport.
 
@@ -87,7 +87,7 @@ I'm taking advantage of that and using a "mobile-first" coding approach...not to
 
 ## Retina Images
 
-...image codepent ...
+[Retina Images CodePen](https://codepen.io/bdnorris/pen/JxMLLz)
 
 If you're on a "Retina" screen (Apple's branded name for pixel dense screens), you'll notice that images might look a little blurry.
 
