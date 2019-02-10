@@ -51,14 +51,14 @@ Let’s summarize the different components of the interaction cost to find the o
 *   search
 *   find the search box and tap to move the input focus to it
 
-**Your task is to create two outlined UX case studies of your own from the below options**
+**Your task is to create an outlined UX case study of your own from the below options**
 
 ### Case Study Options
 
 #### Task Option 1: Check your banking account balance
 
 1.  Go to your bank's website on a phone, tablet or computer (regardless of what you use, I want you to go to their website in a browser, not their mobile app).
-2.  Outline the process of finding your checking/primary account balance. Take a few screenshots of key things that illustrate what you are describing (buttons, clutter, etc.). Consider using a screenshot tool like [Skitch](https://evernote.com/skitch/), [Awesome Screenshot (chrome extension)](https://www.awesomescreenshot.com/) or [Monosnap](https://monosnap.com/welcome). Both let you blur out sensitive information (like your account number and balance). Alternatively, you can use Photoshop to blur or pixelate sensitive information.
+2.  Outline the process of finding your checking/primary account balance. Take a few screenshots of key things that illustrate what you are describing (buttons, clutter, etc.). Consider using a screenshot tool like [Skitch](https://evernote.com/skitch/), [Awesome Screenshot (chrome extension)](https://www.awesomescreenshot.com/) or [Monosnap](https://monosnap.com/welcome). These apps let you blur out sensitive information (like your account number and balance). Alternatively, you can use Photoshop to blur or pixelate sensitive information using native osX screenshots or in-browser screenshot tools.
 3.  After you've found your account balance, then outline the process of finding when and where you can physically go to deposit cash on a weekend. So you're looking for the address of a place that is open on Saturday or Sunday, and what the hours are.
 4.  Write out some suggestions for how this process could be made better. You might address the major interaction cost elements from the reading&mdash;did they minimize:
     *   reading
@@ -79,10 +79,10 @@ You should also check [goodui.org](http://goodui.org/) for ideas as to what coul
 2.  Outline the process of finding your upcoming bill (if they haven't posted it yet, outline the process of finding how much your last bill was). Take a few screenshots to illustrate key points.
 3.  Then, outline the process of finding out what charges made up that bill.  
     For example, if your amount due is $90, you need to find out where it says:  
-    Universal Service Fee: $5  
-    Unlimited Data: $30  
-    Taxes: $10  
-    etc.
+    - Universal Service Fee: $5  
+    - Unlimited Data: $30  
+    - Taxes: $10  
+    - etc.
 4.  Write out some suggestions for how this process could be made better. You might address the major interaction cost elements from the reading, listed above. Cite references appropriately and use examples or research if necessary.
 
 <!-- ### Case Study 2: Your choice
@@ -95,7 +95,7 @@ You should also check [goodui.org](http://goodui.org/) for ideas as to what coul
 
 The general goal of this assignment is to familiarize yourself with concepts of usability and user experience and to take the time to analyze the usability of the websites you use on a regular basis. Try jotting down notes or making an audio recording of yourself going through the tasks above. Consider how well the designers who made that site you’re using considered your experience.
 
-Take the lessons learned from this assignment and apply them to your own designs. Learn how to be critical of your own work. When we design something, especially something as complex as web-based software tools, we have a tendency to be too close to it and unable to see its flaws or we simply take shortcuts to meet a deadline. The client may be happy, you may be happy but unhappy users will ultimately mean an unsuccessful project. The exercises in this assignment will help you step back and think about your work from the end user’s point of view.
+Take the lessons learned from this assignment and apply them to your own designs. Learn how to be critical of your own work. When we design something, especially something as complex as web-based software tools, we have a tendency to be too close to it and therefore unable to see its flaws. Or we simply take shortcuts to meet a deadline. The client may be happy, you may be happy but unhappy users will ultimately mean an unsuccessful project. The exercises in this assignment will help you step back and think about your work from the end user’s point of view.
 
 ## Presentation
 
