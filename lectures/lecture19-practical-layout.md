@@ -40,7 +40,7 @@ There's a lot of power here. Here's something I've done to create an asymetrical
 
 I took the max-midth of my imagined container that would normally be centered, but instead subtract that from 100vw, then divide by two. I'm essentially figuring out how far from the left my content would be if I was centereing the whole layout, when I was actually just centering 1 side.
 
-... codepen
+[Calc Examples CodePen](https://codepen.io/bdnorris/pen/aXYvaj)
 
 ## Making columns
 
