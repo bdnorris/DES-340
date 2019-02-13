@@ -116,6 +116,8 @@ The best example would be a standard button. Imagine setting a button's font-siz
 
 Perhaps when you're learning, you might avoid Ems for a bit, but they can be very powerful so I encourage you to try them out here and there. 
 
+[Em example CodePen](https://codepen.io/bdnorris/pen/EroEZp)
+
 <!-- Using em for the width of elements can ensure that a box containing some text increases in width as the font size increases. If I change the widths on the boxes in the example above to ems the boxes now increase in width as their font size increases. -->
 <!-- 
 The em size is relative to the font size on the element in question. This can make ems a little tricky to use. If elements are nested or appear in different contexts in your document you can find that text or elements sized with ems can appear much smaller or larger than you imagined. In the example below both nested boxes have the same class, setting a width of 10em. However that 10em is much wider in the second box because the parent has a larger font-size. -->

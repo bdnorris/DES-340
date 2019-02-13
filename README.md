@@ -9,7 +9,7 @@ next: false
 
 - Projects
   - Finish [1B](./projects/project01B.md): sketches, research
-  - Start [2](./projects/project02.md): sketches, research
+  - Start [2](./projects/project02.md): research
 - Codecademy [Make a Website](https://www.codecademy.com/learn/make-a-website)
 - Exercise [E4](./exercises/exercise04-atomic-design.md)
 
