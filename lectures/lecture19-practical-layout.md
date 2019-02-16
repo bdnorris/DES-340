@@ -46,13 +46,13 @@ I took the max-midth of my imagined container that would normally be centered, b
 
 The general principal for making columns of elements is the "row/column" method. Basically you have a block level container as your row, and you use Flexbox to set items inside that row. Your container will usually have a `max-width` set, so your columns do not expand indefinitely. How many containers you need depends on your background.
 
-Transparent background, or background that only goes out to your max-width: if you don't need the row to have a background you can get away with one wrapper.
+**Transparent background, or background that only goes out to your max-width**: if you don't need the row to have a background you can get away with one wrapper.
 
-Full width background: you'll need three containers, one that expands indefinitely and another one with a max-width set.
+**Full width background**: you'll need three containers, one that expands indefinitely and another one with a max-width set.
 
 ....
 
-As you can also see in this pen, you can easily use flexbox settings to change how many items per row at different breakpoints by overwriting your settings inside media queires.
+As you can also see in this pen, you can easily use flexbox settings to change how many items per row at different breakpoints by overwriting your settings inside media queries.
 
 
 
