@@ -50,11 +50,15 @@ The general principal for making columns of elements is the "row/column" method.
 
 **Full width background**: you'll need three containers, one that expands indefinitely and another one with a max-width set.
 
-....
+[Flexbox column codepen](https://codepen.io/bdnorris/pen/GzwNpz)
 
 As you can also see in this pen, you can easily use flexbox settings to change how many items per row at different breakpoints by overwriting your settings inside media queries.
 
+## Grids
 
+It is possible to use Flexbox to make grids of items, however, it can be tricky to use margins (although, not impossible).
+
+GRID GRID GRID
 
 
 ## RWD Layout Patterns
@@ -218,3 +222,4 @@ grid game like froggy
 https://www.youtube.com/watch?v=jV8B24rSN5o <- vet this
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout
 
+https://labs.jensimmons.com/2016/
