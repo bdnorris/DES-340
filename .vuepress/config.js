@@ -22,7 +22,7 @@ module.exports = {
           "lectures/lecture05-html-elements-and-attributes.md",
           "lectures/lecture06-the-dom.md",
           "lectures/lecture07-units.md",
-          // "lectures/lecture08-color.md",
+          "lectures/lecture08-color.md",
           // "lectures/lecture09-text-and-type.md",
           // "lectures/lecture10-selectors.md",
           // "lectures/lecture11-specificity.md",
@@ -51,8 +51,8 @@ module.exports = {
         children: [
           "projects/project01A.md",
           "projects/project01B.md",
-          // "projects/project02.md",
-          // "projects/project03.md",
+          "projects/project02.md",
+          "projects/project03.md",
           // "projects/project04.md"
         ]
       },

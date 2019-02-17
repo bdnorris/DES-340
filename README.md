@@ -8,9 +8,8 @@ next: false
 ## Active Assignments
 
 - Projects
-  - Finish [1B](./projects/project01B.md): sketches, research
-- Codecademy [Learn CSS](https://www.codecademy.com/learn/learn-css)
-- Exercise [E2](./exercises/exercise02-ui-study.md)
+  - Finish [Project 2](./projects/project02.md)
+- Codecademy [Make a Website](https://www.codecademy.com/learn/make-a-website)
 - Exercise [E4](./exercises/exercise04-atomic-design.md)
 
 <!-- ## Calendar: Section 301 (Fleener/MW/4PM)
