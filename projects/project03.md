@@ -14,6 +14,8 @@ On this assignment, you will practice some contemporary user interface design pa
 *   Applying the design of typographic hierarchies for the screen to some more specific content.
 *   Create examples for discussion on what constitutes good/better user interface design patterns.
 
+[GoodUI.org](https://www.goodui.org) is a consultancy that utilizes A/B tests and analyzes the results to give data-driven advice to companies who are selling on the web. What this means for you is it has some good ideas about what kind of patterns improve user experience, user engagement and ultimately the financial success for the websites using these patterns. We're going to look at a few and develop designs around them.
+
 1.  Go to [goodui.org](https://www.goodui.org) and look at ideas...
     <!-- - [#2 Try Giving a Gift instead of closing a sale right away.](https://www.goodui.org/#2),  -->
     - [#7 Try Recommending instead of showing equal choices.](https://www.goodui.org/#7), 
@@ -22,15 +24,27 @@ On this assignment, you will practice some contemporary user interface design pa
     - [#52 Try Thanking instead of simply confirming completion.](https://www.goodui.org/#52)
 2.  Use these examples to make 4 designs, each in multiple formats.
 
-## Grids
+<!-- potential new good ones: #37, #43, #47, #53, #56, #59, #63, #68, #75 -->
 
-For the following designs, I’m providing Illustrator, Photoshop and XD files in the required formats, with a 12-column “grid” for desktop, and a 4-column for mobile. The grids were calculated at [gridcalculator.dk](http://gridcalculator.dk/), so if you would like to adjust your grid, you can use that site to make your own Illustrator grids. Photoshop has a new function to create guides on artboards in a similar manner to this site.
+## Sketch and Grids
+
+<!-- For the following designs, I’m providing Illustrator, Photoshop and XD files in the required formats, with a 12-column “grid” for desktop, and a 4-column for mobile. The grids were calculated at [gridcalculator.dk](http://gridcalculator.dk/), so if you would like to adjust your grid, you can use that site to make your own Illustrator grids. Photoshop has a new function to create guides on artboards in a similar manner to this site.
 
 [Illustrator Template](/assets/Project4-WebTemplate.ai)
 
 [Photoshop Template](/assets/Project4-WebTemplate.psd)
 
-[Adobe XD Template](/assets/Project4-WebTemplate.xd)
+[Adobe XD Template](/assets/Project4-WebTemplate.xd) -->
+
+For the following designs, I'm providing a starter Sketch or XD file. **You are required to use Sketch on this project** There is a 12-column grid for desktop, and a 4-column grid for mobile. Template sizes are required, but you can adjust the grid if you'd like. 
+
+[Sketch Documentation: Rulers, Guides, and Grids](https://sketchapp.com/docs/canvas/rulers-guides-grids/)
+
+[Sketch Template](/assets/Project4-WebTemplate.sketch)
+
+<!-- [Adobe XD Template](/assets/Project4-WebTemplate.xd) -->
+
+The lab computers should all have Sketch installed. If you'd like to use Sketch on your personal computer, you can start a 30-day trial. 
 
 ## Design Summary
 
@@ -48,7 +62,7 @@ Read about the reasoning and the pros and cons of this approach yourself:
 
 [Mobile First](https://codemyviews.com/blog/mobilefirst)
 
-Fonts are up to you, but it would be best to stick to fonts available on [Google Fonts](https://fonts.google.com/), or [Squirrel Fonts.](https://www.fontsquirrel.com/)
+Fonts are up to you, but it would be best to stick to fonts available on [Google Fonts](https://fonts.google.com/), [Adobe Fonts/Typekit](https://fonts.adobe.com/) (if you have a CC account), or [Squirrel Fonts.](https://www.fontsquirrel.com/)
 
 <!-- ## Design 1: Idea #2
 
@@ -87,14 +101,14 @@ Create 3 products of your choosing (can be real or made up, but you'll need an i
 
 ### Before Design:
 
-*   1028px &times; ~600px (it's okay to change the height)
+*   1024px &times; ~800px (it's okay to change the height)
 *   Create the 3 products on the page.
 *   Each should have an image, a price, a product name, 1 sentence of lorem ipsum (product description) and 1 other piece of data.
 *   Give each product the exact same design treatment on the page.
 
 ### After Design (Mobile):
 
-* 388px &times; ~800px (it's okay to change the height)
+* 375px &times; ~800px (it's okay to change the height)
 
 Create the design again, but this time, pull one product out, recommend it, and give it special design treatment.
 
@@ -106,17 +120,17 @@ Must include a recommendation statement like "We recommend" or "perfect for you"
 
 ### After Design (Desktop):
 
-*   1028px &times; ~600px (it's okay to change the height)
+*   1024px &times; ~800px (it's okay to change the height)
 
 _Adjust the After Design to be fluid. It should have the same content as the original design, but the position and size of your elements can change._
 
 ### Examples
 
-<img style="display:block;border:1px solid #ccc;" src="/assets/img/137504249.png" alt="Before" />Before
+<img style="display:block;border:1px solid #ccc;" src="/assets/img/project3/137504249.png" alt="Before" />Before
 
-<img style="display:block;border:1px solid #ccc;" src="/assets/img/137504247.png" alt="After (mobile)" />After (mobile)
+<img style="display:block;border:1px solid #ccc;" src="/assets/img/project3/137504247.png" alt="After (mobile)" />After (mobile)
 
-<img style="display:block;border:1px solid #ccc;" src="/assets/img/137504248.png" alt="After (desktop)" />After (desktop)
+<img style="display:block;border:1px solid #ccc;" src="/assets/img/project3/137504248.png" alt="After (desktop)" />After (desktop)
 
 
 ## #14 Try exposing options instead of hiding them.
@@ -127,7 +141,7 @@ Create 3 options for a user to choose from (may be related to one of the above d
 
 ### Before Design:
 
-*   1028px &times; ~600px (it's okay to change the height)
+*   1024px &times; ~800px (it's okay to change the height)
 *   Typeset the lead sentence (headline)
 *   Design a dropdown below it. It should be an un-opened dropdown with something like "Choose an option"
 *   Create a design of the state of this dropdown. It has been clicked and is now displaying the 3 options.
@@ -135,7 +149,7 @@ Create 3 options for a user to choose from (may be related to one of the above d
 
 ### After Design (Mobile):
 
-* 388px &times; ~800px (it's okay to change the height)
+* 375px &times; ~800px (it's okay to change the height)
 
 Create the design again, but this time, pull the options out of the dropdown and expose them inside the design, similar to how they are exposed in the goodui.org example.
 
@@ -145,19 +159,20 @@ Create the design again, but this time, pull the options out of the dropdown and
 
 ### After Design (Desktop):
 
-*   1028px &times; ~600px (it's okay to change the height)
+*   1024px &times; ~800px (it's okay to change the height)
 
 _Adjust the After Design to be fluid. It should have the same content as the original design, but the position and size of your elements can change._
 
 ### Examples
 
-<img style="display:block;border:1px solid #ccc;" src="/assets/img/expose1.png" alt="Before" />Before (closed)
+<img style="max-width:375px;display:block;border:1px solid #ccc;" src="/assets/img/project3/161770788.jpg" alt="Before" />Before (closed)
 
-<img style="display:block;border:1px solid #ccc;" src="/assets/img/expose2.png" alt="Before" />Before (opened)
+<img style="max-width:375px;display:block;border:1px solid #ccc;" src="/assets/img/project3/161770791.jpg" alt="After (desktop)" />After (desktop)
 
-<img style="display:block;border:1px solid #ccc;width:50%" src="/assets/img/expose3.png" alt="After (mobile)" />After (mobile)
+<img style="max-width:375px;display:block;border:1px solid #ccc;" src="/assets/img/project3/161770789.jpg" alt="Before" />Before (opened)
 
-<img style="display:block;border:1px solid #ccc;" src="/assets/img/expose4.png" alt="After (desktop)" />After (desktop)
+<img style="display:block;border:1px solid #ccc;" src="/assets/img/project3/161770790.jpg" alt="After (mobile)" />After (mobile)
+
 
 ## #17 Try showing state instead of being state agnostic.
 
@@ -167,13 +182,13 @@ Create a tabular list of data like on goodui.org. You can use the same content t
 
 ### Before Design:
 
-*   1028px &times; ~600px (it's okay to change the height)
+*   1024px &times; ~800px (it's okay to change the height)
 *   Create the table of data with a headline ("Your Invoices") followed by the list of items (the invoices) and their price.
 *   Remember, you don't need to completely fill the space with the table. Small or medium-sized elements are fine, and so is negative space.
 
 ### After Design (Mobile):
 
-* 388px &times; ~800px (it's okay to change the height)
+* 375px &times; ~800px (it's okay to change the height)
 
 Create the design again, but this time, give users the option to pay directly inside the table. Show one of the items (invoices) as having been paid. Show one of them as having been partially paid.
 
@@ -183,17 +198,17 @@ Create the design again, but this time, give users the option to pay directly in
 
 ### After Design (Desktop):
 
-*   1028px &times; ~600px (it's okay to change the height)
+*   1024px &times; ~800px (it's okay to change the height)
 
 _Adjust the After Design to be fluid. It should have the same content as the original design, but the position and size of your elements can change._
 
 ### Examples
 
-<img style="display:block;border:1px solid #ccc;" src="/assets/img/13527169.jpg" alt="Before" />Before
+<img style="display:block;border:1px solid #ccc;" src="/assets/img/project3/13527169.jpg" alt="Before" />Before
 
-<img style="display:block;border:1px solid #ccc;" src="/assets/img/13527168.jpg" alt="After (mobile)" />After (mobile)
+<img style="max-width:375px;display:block;border:1px solid #ccc;" src="/assets/img/project3/13527168.jpg" alt="After (mobile)" />After (mobile)
 
-<img style="display:block;border:1px solid #ccc;" src="/assets/img/13527167.jpg" alt="After (desktop)" />After (desktop)
+<img style="display:block;border:1px solid #ccc;" src="/assets/img/project3/13527167.jpg" alt="After (desktop)" />After (desktop)
 
 ## #52 Try thanking instead of simply confirming completion.
 
@@ -203,14 +218,14 @@ The user has just completed one of the actions that you wanted them to complete 
 
 ### Before Design:
 
-- 1028px &times; ~600px (it's okay to change the height)
+- 1024px &times; ~800px (it's okay to change the height)
 - Have an acknowledgment statement saying something general like "We got your order!" or "Your free month is on the way!" as your headline.
 - Follow it with 3 sentences of lorem ipsum.
 - Remember, you don't need to completely fill the space with the design. Small or medium-sized elements are fine, and so is negative space.
 
 ### After Design (Mobile):
 
-* 388px &times; ~800px (it's okay to change the height)
+* 375px &times; ~800px (it's okay to change the height)
 * Create the design again, but this time, thank the user, followed by a "You" statement. Example:  
     Thank you statement: "Thank you for buying [PRODUCT NAME].
 * You Statement: "Your to-do lists are about to get a lot more fun."
@@ -223,17 +238,17 @@ The user has just completed one of the actions that you wanted them to complete 
 
 ### After Design (Desktop):
 
-*   1028px &times; ~600px (it's okay to change the height)
+*   1024px &times; ~800px (it's okay to change the height)
 
 _Adjust the After Design to be fluid. It should have the same content as the original design, but the position and size of your elements can change._
 
 ### Examples
 
-<img style="display:block;border:1px solid #ccc;" src="/assets/img/137504749.png" alt="Before" />Before
+<img style="display:block;border:1px solid #ccc;" src="/assets/img/project3/161770816.jpg" alt="Before" />Before
 
-<img style="display:block;border:1px solid #ccc;" src="/assets/img/137504747.png" alt="After (mobile)" />After (mobile)
+<img style="max-width:375px;display:block;border:1px solid #ccc;" src="/assets/img/project3/161770818.jpg" alt="After (mobile)" />After (mobile)
 
-<img style="display:block;border:1px solid #ccc;" src="/assets/img/137504748.png" alt="After (desktop)" />After (desktop)
+<img style="display:block;border:1px solid #ccc;" src="/assets/img/project3/161770817.jpg" alt="After (desktop)" />After (desktop)
 
 ### Fonts
 
@@ -261,4 +276,6 @@ Add your final graphics to your InVision board.
 *   Arrange the before, after and mobile designs neatly in the section.
 *   Do this for each design.
 *   These designs should be _above_ your sketches, summary, and research.
+
+Also: **Send me your Sketch file via Slack. I actually want to see how you build this thing.**
 

@@ -52,7 +52,7 @@ module.exports = {
           "projects/project01A.md",
           "projects/project01B.md",
           "projects/project02.md",
-          // "projects/project03.md",
+          "projects/project03.md",
           // "projects/project04.md"
         ]
       },
