@@ -76,9 +76,55 @@ One slightly confusing thing about Grid is the idea of lines. **Grid Lines** are
 
 [!Grid Area](/assets/img/terms-grid-area.svg)
 
-### Grid Parents
+### Grid Containers
 
-New units
+We'll use the following HTML for these examples. 
+
+```html
+<div class="parent-container">
+  <div>lorem</div>
+  <div>lorem ipsum</div>
+  <div>lorem ipsum dolor</div>
+  <div>lorem ipsum dolor sit</div>
+  <div>lorem ipsum dolor sit amet</div>
+  <div>lorem ipsum dolor sit amet consectetuer</div>
+  <div>lorem</div>
+  <div>lorem ipsum</div>
+  <div>lorem ipsum dolor</div>
+</div>
+```
+
+You can create a grid container simply by setting the `display` property to `grid`.
+
+```css
+.parent-container {
+  display: grid;
+}
+```
+
+The most used properties on grid containers are `grid-template-columns` and `grid-template-rows`.
+
+```css
+.parent-container {
+  grid-template-columns: 50px auto 80px 100px;
+  grid-template-rows: 5em 200px;
+}
+```
+
+<div class="parent-container" style="display:grid;grid-template-columns:50px auto 80px 100px;grid-template-rows: 5em 200px;">
+  <div style="border: 2px solid #ccd">lorem</div>
+  <div style="border: 2px solid #ccd">lorem ipsum</div>
+  <div style="border: 2px solid #ccd">lorem ipsum dolor</div>
+  <div style="border: 2px solid #ccd">lorem ipsum dolor sit</div>
+  <div style="border: 2px solid #ccd">lorem ipsum dolor sit amet</div>
+  <div style="border: 2px solid #ccd">lorem ipsum dolor sit amet consectetuer</div>
+  <div style="border: 2px solid #ccd">lorem</div>
+  <div style="border: 2px solid #ccd">lorem ipsum</div>
+  <div style="border: 2px solid #ccd">lorem ipsum dolor</div>
+</div>
+
+### The fr Unit
+
 fr = fraction/fractional
 
 New functions
