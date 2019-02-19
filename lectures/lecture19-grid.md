@@ -111,6 +111,10 @@ The most used properties on grid containers are `grid-template-columns` and `gri
 }
 ```
 
+Basically, we define a space-separated list of values for the columns, then the same for rows. Additional items will be pushed onto new rows, and those new rows will get the `auto` value.
+
+Like the Flexbox's `flex-basis` property, we can use the keyword `auto`. Columns and rows will expand to fill the available space.
+
 <div class="parent-container" style="display:grid;grid-template-columns:50px auto 80px 100px;grid-template-rows: 5em 200px;">
   <div style="border: 2px solid #ccd">lorem</div>
   <div style="border: 2px solid #ccd">lorem ipsum</div>
@@ -125,13 +129,26 @@ The most used properties on grid containers are `grid-template-columns` and `gri
 
 ### The fr Unit
 
-fr = fraction/fractional
+We get to use a new unit in grid called `fr` which stands for "fraction" or "fractional". We can use to very explicitly 
 
 New functions
 repeat()
 minmax()
-When to Use
 
+
+
+### Gutters aka "Gaps"
+
+We get some new features to define our gutters, and since we're not using margin, they only show up between columns and cells, just like you would expect.
+
+```css
+.parent-container {
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+```
+
+> The gutters are only created between the columns/rows, not on the outer edges.
 
 
 
