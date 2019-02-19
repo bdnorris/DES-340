@@ -32,6 +32,8 @@ One thing that Grid can do is it can let you assign content to areas of the grid
 
 Another thing Grid does that is really useful, is that it comes ith it's own explicit gutter property called `grid-gap`. This is really nice, since using margins and paddings with Flexbox can be a bit painful.
 
+Grid doesn't necessarily replace Flexbox, sometimes flexbox is easier. But when you find ourself straining to make Flexbox work, Grid might be your answer.
+
 So when to use Grid...when Flexbox isn't enough.
 
 ## How Grid?
