@@ -10,7 +10,7 @@ On this assignment, you will practice some contemporary user interface design pa
 
 ## Objectives
 
-*   Further practice designing user-interfaces/web layouts in Photoshop/Illustrator
+*   Further practice designing user-interfaces/web layouts using specified web design software.
 *   Applying the design of typographic hierarchies for the screen to some more specific content.
 *   Create examples for discussion on what constitutes good/better user interface design patterns.
 
@@ -36,11 +36,11 @@ On this assignment, you will practice some contemporary user interface design pa
 
 [Adobe XD Template](/assets/Project4-WebTemplate.xd) -->
 
-For the following designs, I'm providing a starter Sketch or XD file. **You are required to use Sketch on this project** There is a 12-column grid for desktop, and a 4-column grid for mobile. Template sizes are required, but **you can adjust the grid if you'd like** (either number of columns, or their width or their gap width). 
+For the following designs, I'm providing a starter Sketch. **You are required to use Sketch on this project** There is a 12-column grid for desktop, and a 4-column grid for mobile. Template sizes are required, but **you can adjust the grid if you'd like** (either number of columns, or their width or their gap width). 
 
 [Sketch Documentation: Rulers, Guides, and Grids](https://sketchapp.com/docs/canvas/rulers-guides-grids/)
 
-[Sketch Template](/assets/Project4-WebTemplate.sketch)
+[Sketch Template](/assets/Project3-WebTemplate.sketch)
 
 <!-- [Adobe XD Template](/assets/Project4-WebTemplate.xd) -->
 
@@ -163,15 +163,15 @@ Create the design again, but this time, pull the options out of the dropdown and
 
 _Adjust the After Design to be fluid. It should have the same content as the original design, but the position and size of your elements can change._
 
-### Examples
+### Examplessh
 
 <img style="max-width:375px;display:block;border:1px solid #ccc;" src="/assets/img/project3/161770788.jpg" alt="Before" />Before (closed)
 
-<img style="max-width:375px;display:block;border:1px solid #ccc;" src="/assets/img/project3/161770791.jpg" alt="After (desktop)" />After (desktop)
+<img style="max-width:375px;display:block;border:1px solid #ccc;" src="/assets/img/project3/161770791.jpg" alt="Before (opened)" />Before (opened)
 
-<img style="max-width:375px;display:block;border:1px solid #ccc;" src="/assets/img/project3/161770789.jpg" alt="Before" />Before (opened)
+<img style="max-width:375px;display:block;border:1px solid #ccc;" src="/assets/img/project3/161770789.jpg" alt="After" />After (mobile)
 
-<img style="display:block;border:1px solid #ccc;" src="/assets/img/project3/161770790.jpg" alt="After (mobile)" />After (mobile)
+<img style="display:block;border:1px solid #ccc;" src="/assets/img/project3/161770790.jpg" alt="After (desktop)" />After (desktop)
 
 
 ## #17 Try showing state instead of being state agnostic.
