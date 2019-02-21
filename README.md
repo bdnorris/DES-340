@@ -8,7 +8,8 @@ next: false
 ## Active Assignments
 
 - Projects
-  - Finish [Project 2](./projects/project02.md)
+  - Start [Project 3](./projects/project03.md) (Sketches, research)
+  - Experiment with Sketch
 - Codecademy [Make a Website](https://www.codecademy.com/learn/make-a-website)
 - Exercise [E4](./exercises/exercise04-atomic-design.md)
 
