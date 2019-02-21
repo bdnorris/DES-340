@@ -10,7 +10,7 @@ On this assignment, you will practice some contemporary user interface design pa
 
 ## Objectives
 
-*   Further practice designing user-interfaces/web layouts in Photoshop/Illustrator
+*   Practice designing user-interfaces/web layouts in digital specific design software (Sketch).
 *   Applying the design of typographic hierarchies for the screen to some more specific content.
 *   Create examples for discussion on what constitutes good/better user interface design patterns.
 
@@ -36,7 +36,7 @@ On this assignment, you will practice some contemporary user interface design pa
 
 [Adobe XD Template](/assets/Project4-WebTemplate.xd) -->
 
-For the following designs, I'm providing a starter Sketch or XD file. **You are required to use Sketch on this project** There is a 12-column grid for desktop, and a 4-column grid for mobile. Template sizes are required, but you can adjust the grid if you'd like. 
+For the following designs, I'm providing a starter Sketch or XD file. **You are required to use Sketch on this project** There is a 12-column grid for desktop, and a 4-column grid for mobile. Template sizes are required, but **you can adjust the grid if you'd like** (either number of columns, or their width or their gap width). 
 
 [Sketch Documentation: Rulers, Guides, and Grids](https://sketchapp.com/docs/canvas/rulers-guides-grids/)
 
@@ -44,7 +44,7 @@ For the following designs, I'm providing a starter Sketch or XD file. **You are 
 
 <!-- [Adobe XD Template](/assets/Project4-WebTemplate.xd) -->
 
-The lab computers should all have Sketch installed. If you'd like to use Sketch on your personal computer, you can start a 30-day trial. 
+The lab computers should all have Sketch installed. If you'd like to use Sketch on your personal computer, you can start a 30-day trial.
 
 ## Design Summary
 
@@ -61,8 +61,6 @@ Read about the reasoning and the pros and cons of this approach yourself:
 [A Hands-on Guide to Mobile First Design](https://www.uxpin.com/studio/blog/a-hands-on-guide-to-mobile-first-design/)
 
 [Mobile First](https://codemyviews.com/blog/mobilefirst)
-
-Fonts are up to you, but it would be best to stick to fonts available on [Google Fonts](https://fonts.google.com/), [Adobe Fonts/Typekit](https://fonts.adobe.com/) (if you have a CC account), or [Squirrel Fonts.](https://www.fontsquirrel.com/)
 
 <!-- ## Design 1: Idea #2
 
@@ -128,7 +126,7 @@ _Adjust the After Design to be fluid. It should have the same content as the ori
 
 <img style="display:block;border:1px solid #ccc;" src="/assets/img/project3/137504249.png" alt="Before" />Before
 
-<img style="display:block;border:1px solid #ccc;" src="/assets/img/project3/137504247.png" alt="After (mobile)" />After (mobile)
+<img style="max-width:375px;display:block;border:1px solid #ccc;" src="/assets/img/project3/137504247.png" alt="After (mobile)" />After (mobile)
 
 <img style="display:block;border:1px solid #ccc;" src="/assets/img/project3/137504248.png" alt="After (desktop)" />After (desktop)
 
@@ -167,11 +165,11 @@ _Adjust the After Design to be fluid. It should have the same content as the ori
 
 <img style="max-width:375px;display:block;border:1px solid #ccc;" src="/assets/img/project3/161770788.jpg" alt="Before" />Before (closed)
 
-<img style="max-width:375px;display:block;border:1px solid #ccc;" src="/assets/img/project3/161770791.jpg" alt="After (desktop)" />After (desktop)
+<img style="max-width:375px;display:block;border:1px solid #ccc;" src="/assets/img/project3/161770791.jpg" alt="After (desktop)" />Before (opened)
 
-<img style="max-width:375px;display:block;border:1px solid #ccc;" src="/assets/img/project3/161770789.jpg" alt="Before" />Before (opened)
+<img style="max-width:375px;display:block;border:1px solid #ccc;" src="/assets/img/project3/161770789.jpg" alt="Before" />After (mobile)
 
-<img style="display:block;border:1px solid #ccc;" src="/assets/img/project3/161770790.jpg" alt="After (mobile)" />After (mobile)
+<img style="display:block;border:1px solid #ccc;" src="/assets/img/project3/161770790.jpg" alt="After (mobile)" />After (desktop)
 
 
 ## #17 Try showing state instead of being state agnostic.
@@ -272,7 +270,7 @@ Add your research, sketches, and summary to your InVision board.
 
 Add your final graphics to your InVision board.
 
-*   Make a section on your InVision board called **Project 4, #7**.
+*   Make a section on your InVision board called **Project 3, #7**.
 *   Arrange the before, after and mobile designs neatly in the section.
 *   Do this for each design.
 *   These designs should be _above_ your sketches, summary, and research.
