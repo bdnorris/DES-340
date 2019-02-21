@@ -166,6 +166,21 @@ https://tympanus.net/codrops/css_reference/grid/
 
 http://jensimmons.com/post/feb-27-2017/learn-css-grid
 
+  https://www.youtube.com/watch?v=0Gr1XSyxZy0
+
+  https://www.youtube.com/watch?v=hs3piaN4b5I
+
+  https://www.youtube.com/watch?v=lZ2JX_6SGNI&list=PLbSquHt1VCf3rmXD2BymC_ZOGDEIu0OWP
+  https://www.youtube.com/watch?v=ZPtpzuRajzM&ut=
+  https://www.youtube.com/watch?v=mVQiNpqXov8
+
+  https://www.youtube.com/watch?v=EEOJZy_Gge4
+
+  https://www.youtube.com/watch?v=tFKrK4eAiUQ&t
+  https://www.youtube.com/watch?v=qNtJ5p3h2A4
+
+  https://www.youtube.com/watch?v=7msERxu7ivg&t=1s
+
 https://www.youtube.com/watch?v=tY-MHUsG6ls
 
 https://www.youtube.com/watch?v=HgwCeNVPlo0&feature=youtu.be

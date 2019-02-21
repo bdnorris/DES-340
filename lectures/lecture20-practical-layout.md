@@ -223,3 +223,5 @@ https://www.youtube.com/watch?v=jV8B24rSN5o <- vet this
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout
 
 https://labs.jensimmons.com/2016/
+
+https://www.youtube.com/watch?v=tFKrK4eAiUQ&t=448s
