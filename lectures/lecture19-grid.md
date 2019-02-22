@@ -78,11 +78,15 @@ One slightly confusing thing about Grid is the idea of lines. **Grid Lines** are
 
 [!Grid Area](/assets/img/terms-grid-area.svg)
 
+### Grid Examples
+
+[Example CodePen for this Lecture](https://google.com)
+
 ### Grid Containers
 
 We'll use the following HTML for these examples. 
 
-```html
+<!-- ```html
 <div class="parent-container">
   <div>lorem</div>
   <div>lorem ipsum</div>
@@ -94,7 +98,7 @@ We'll use the following HTML for these examples.
   <div>lorem ipsum</div>
   <div>lorem ipsum dolor</div>
 </div>
-```
+``` -->
 
 You can create a grid container simply by setting the `display` property to `grid`.
 
@@ -117,7 +121,7 @@ Basically, we define a space-separated list of values for the columns, then the 
 
 Like the Flexbox's `flex-basis` property, we can use the keyword `auto`. Columns and rows will expand to fill the available space.
 
-<div class="parent-container" style="display:grid;grid-template-columns:50px auto 80px 100px;grid-template-rows: 5em 200px;">
+<!-- <div class="parent-container" style="display:grid;grid-template-columns:50px auto 80px 100px;grid-template-rows: 5em 200px;">
   <div style="border: 2px solid #ccd">lorem</div>
   <div style="border: 2px solid #ccd">lorem ipsum</div>
   <div style="border: 2px solid #ccd">lorem ipsum dolor</div>
@@ -127,15 +131,25 @@ Like the Flexbox's `flex-basis` property, we can use the keyword `auto`. Columns
   <div style="border: 2px solid #ccd">lorem</div>
   <div style="border: 2px solid #ccd">lorem ipsum</div>
   <div style="border: 2px solid #ccd">lorem ipsum dolor</div>
-</div>
+</div> -->
 
 ### The fr Unit
 
 We get to use a new unit in grid called `fr` which stands for "fraction" or "fractional". We can use to very explicitly 
 
-New functions
-repeat()
-minmax()
+### The Auto keyword
+
+### Functions
+
+#### minmax()
+
+#### repeat()
+
+### Content
+
+min-content
+
+max-content
 
 
 
@@ -152,9 +166,9 @@ We get some new features to define our gutters, and since we're not using margin
 
 > The gutters are only created between the columns/rows, not on the outer edges.
 
+### Implicit vs Explicit Grid
 
-
-
+### Inspecting in the browser
 
 ## Resources
 
