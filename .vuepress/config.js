@@ -23,8 +23,8 @@ module.exports = {
           "lectures/lecture06-the-dom.md",
           "lectures/lecture07-units.md",
           "lectures/lecture08-color.md",
-          // "lectures/lecture09-text-and-type.md",
-          // "lectures/lecture10-selectors.md",
+          "lectures/lecture09-text-and-type.md",
+          "lectures/lecture10-selectors.md",
           // "lectures/lecture11-specificity.md",
           // "lectures/lecture12-box-model.md",
           // "lectures/lecture13-code-editor.md",
@@ -42,7 +42,7 @@ module.exports = {
           "exercises/exercise02-ui-study.md",
           "exercises/exercise03-first-website.md",
           "exercises/exercise04-atomic-design.md",
-          // 'exercises/exercise05-coding-text.md',
+          'exercises/exercise05-coding-text.md',
         ]
       },
       {

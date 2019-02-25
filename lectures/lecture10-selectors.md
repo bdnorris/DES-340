@@ -289,6 +289,7 @@ ul li:nth-child(odd) {
 The best way to get a feel for what you can do with `nth-child` is to check out a few links from CSS Tricks...
 
 [Useful :nth-child Recipes](https://css-tricks.com/useful-nth-child-recipies/)
+
 [:nth Tester](https://css-tricks.com/examples/nth-child-tester/)
 
 There is also `only-child` which will only select an item if it is the only child of its parent. 

@@ -11,7 +11,8 @@ next: false
   - Start [Project 3](./projects/project03.md) (Sketches, research)
   - Experiment with Sketch
 - Codecademy [Make a Website](https://www.codecademy.com/learn/make-a-website)
-- Exercise [E4](./exercises/exercise04-atomic-design.md)
+<!-- - Exercise [E4](./exercises/exercise04-atomic-design.md) -->
+- Exercise [E5](./exercises/exercise05-coding-text.md)
 
 <!-- ## Calendar: Section 301 (Fleener/MW/4PM)
 
