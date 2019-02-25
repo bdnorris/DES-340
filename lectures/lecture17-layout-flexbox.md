@@ -28,7 +28,7 @@ From CSS Tricks...
 
 > Most importantly, the flexbox layout is direction-agnostic as opposed to the regular layouts (block which is vertically-based and inline which is horizontally-based). While those work well for pages, they lack flexibility (no pun intended) to support large or complex applications (especially when it comes to orientation changing, resizing, stretching, shrinking, etc.).
 
-> **Note:** Flexbox layout is most appropriate to the components of an application, and small-scale layouts, while the _Grid_ layout is intended for larger scale layouts.
+<!-- > **Note:** Flexbox layout is most appropriate to the components of an application, and small-scale layouts, while the _Grid_ layout is intended for larger scale layouts. -->
 
 The key to understanding Flexbox is understanding that it's a parent-child relationship. To activate Flexbox, I can use the display property.
 
@@ -371,9 +371,9 @@ Taking this extra step towards the end of your development process means more pe
 
 ## On "Grid"
 
-There's another CSS specification for layout called Grid. As you can guess from the name, it allows us to define grids, and gives us power over columns, rows, and gutters!. It's also newer than Flexbox, meaning its browser compatibility is really only the newest browser versions.
+There's another CSS specification for layout called Grid. As you can guess from the name, it allows us to define grids, and gives us power over columns, rows, and gutters!. It's also newer than Flexbox, meaning its browser compatibility is only the newest browser versions.
 
-We'll get to it if we have time, but I'm skipping it for now, because so many of its properties are very similar to Flexbox's. It's just simply easier to learn grid _after_ you've learned flexbox.
+We'll review Grid soon.
 
 ## Resources
 

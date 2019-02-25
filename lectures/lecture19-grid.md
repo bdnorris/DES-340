@@ -36,7 +36,7 @@ Grid doesn't necessarily replace Flexbox, sometimes flexbox is easier. But when 
 
 So when to use Grid...when Flexbox isn't enough.
 
-## How Grid?
+## How to Grid?
 
 Instead of covering the entire Grid specification, I'm going to focus on the most used and most useful properties. In the next lecture, we'll look at some practical uses for these. It will be up to you to go further with Grid if you want, there are a ton of resources at the end of this lecture.
 
@@ -50,7 +50,7 @@ Any quotes in this lecture that aren't referenced are from this CSS-Tricks guide
 
 It's huge, there really is a lot here. Let's dig in...
 
-### Terminology
+## Terminology
 
 Similar to Flexbox, Grid follows a parent child relationship. We'll refer to the parents as **Grid Containers** and the children as **Grid Items**.
 
@@ -78,11 +78,11 @@ One slightly confusing thing about Grid is the idea of lines. **Grid Lines** are
 
 [!Grid Area](/assets/img/terms-grid-area.svg)
 
-### Grid Examples
+## Grid Examples
 
 [Example CodePen for this Lecture](https://google.com)
 
-### Grid Containers
+## Grid Containers
 
 We'll use the following HTML for these examples. 
 
@@ -151,6 +151,53 @@ min-content
 
 max-content
 
+### Aligning content
+
+align-items
+
+justify-items
+
+### Aligning the grid
+
+justify-content
+
+align-content
+
+### Areas
+
+grid-template-areas
+
+## Grid items
+
+### Placing items
+
+grid-column-start
+grid-column-end
+grid-column
+
+grid-row-start
+grid-row-end
+grid-row
+
+grid-area
+
+### item alignments
+
+justify-self
+
+align-self
+
+## Back to the parents for a second...
+
+### Auto columns and rows
+
+grid-auto-columns
+
+grid-auto-rows 
+
+### Flow
+
+grid-auto-flow
 
 
 ### Gutters aka "Gaps"
@@ -169,6 +216,10 @@ We get some new features to define our gutters, and since we're not using margin
 ### Implicit vs Explicit Grid
 
 ### Inspecting in the browser
+
+## Summary
+
+It's not necessarily important for you to become an expert in this, or to memorize these properties, what's important, especially in your role as a designer, is that you take away from Grid, Flexbox and other layout principles what is possible to do on the web. 
 
 ## Resources
 
