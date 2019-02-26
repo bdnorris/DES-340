@@ -40,7 +40,7 @@ For the following designs, I'm providing a starter Sketch or XD file. **You are 
 
 [Sketch Documentation: Rulers, Guides, and Grids](https://sketchapp.com/docs/canvas/rulers-guides-grids/)
 
-[Sketch Template](/assets/Project4-WebTemplate.sketch)
+[Sketch Template](/assets/Project3-WebTemplate.sketch)
 
 <!-- [Adobe XD Template](/assets/Project4-WebTemplate.xd) -->
 
