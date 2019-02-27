@@ -46,7 +46,7 @@ div {
 }
 ```
 
-One thing to note, the image URL can be relative or absolute (contains http[s]:// and full domain), and it's relative to where the CSS is, not the HTML file. So if you have an HTML file and there is an images folder on the same level...
+One thing to note, the image URL can be relative or absolute (contains `http[s]://` and full domain), and it's relative to where the CSS is, not the HTML file. So if you have an HTML file and there is an images folder on the same level...
 
 ```html
 <img src="images/my-image.jpg" />
@@ -64,7 +64,7 @@ There are a bunch of other properties we need to talk about to support this imag
 
 ### Repeat
 
-The `background-repeat` property controls the tiling. By default, it is set to tile both ways. 
+The `background-repeat` property controls the tiling. By default, it is set to tile both directions. 
 
 ```css
 div {
@@ -79,7 +79,7 @@ div {
 
 We can control where our background image origin sits by using the `background-position` property.
 
-It takes in a horizontal, then vertical position, in any valid CSS values starting from the top left of the element, separated by spaces. You can also use a combination of position keywords: `center`, `top`, `bottom`, `left` and `right`.
+It takes in a vertical, then horizontal position, in any valid CSS values starting from the top left of the element, separated by spaces. You can also use a combination of position keywords: `center`, `top`, `bottom`, `left` and `right`.
 
 ```css
 div {

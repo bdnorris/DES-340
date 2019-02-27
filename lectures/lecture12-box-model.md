@@ -167,7 +167,7 @@ We get the following result.
 
 As you can see, the dark gray box we set the margin and padding on, shows its background for 1em around the content, where it then has a border, and outside of that, a margin where you see the containing div's lighter background color.
 
-Notice you don't see the light gray above or below, that's the margin collapse working. We'd have to add padding to the outside box instead if that's what we wanted.
+Notice you don't see the light gray above or below, that's the margin collapse working... the paragraph above is pushing down as well. We'd have to add padding to the outside box instead if that's what we wanted.
 
 ## Borders
 
