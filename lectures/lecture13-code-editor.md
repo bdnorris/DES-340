@@ -12,9 +12,8 @@
 
 HTML and CSS don’t really care about how your code looks, the browser will ignore any white space you put in your code. In HTML, two spaces is just a space. So, there is a difference between no space and one space, but not between one space and two spaces.
 
-
-For instance, this code...
 ```html
+<!-- For instance, this code... -->
 <p>Hello World!</p>
 <!-- ...would look exactly the same as... -->
 <p>
@@ -22,7 +21,7 @@ Hello
 World</p>
 ```
 
-Since HTML doesn’t care about gaps, it means we can make our code cleaner to read so it will make more sense.
+Since HTML doesn’t care about gaps, it means we can make our code cleaner to read and make more sense.
 
 ```html 
 <p><a href="about.html">About</a></p>
@@ -128,7 +127,7 @@ Most editors should let you search and replace in a file or an entire project.
 
 ### So much more
 
-That's a good beginners rundown, but there are tons of features and extensions available to add on to your code editor to make it yours and increase your productivity.
+That's a good beginning rundown, but there are tons of features and extensions available to add on to your code editor to make it yours and increase your productivity.
 
 ## Resources
 
