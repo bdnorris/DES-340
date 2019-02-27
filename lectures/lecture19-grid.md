@@ -135,7 +135,17 @@ Like the Flexbox's `flex-basis` property, we can use the keyword `auto`. Columns
 
 ### The fr Unit
 
-We get to use a new unit in grid called `fr` which stands for "fraction" or "fractional". We can use to very explicitly 
+We get to use a new unit in grid called `fr` which stands for "fraction" or "fractional". We can use to very explicitly state how much of the remaining space we want to our columns or rows to use.
+
+If we set three columns in the following way...
+
+```css
+.my-grid {
+  grid-template-columns: 100px 2fr 1fr;
+}
+```
+
+Lets say our grid container is 1000px wide. The first column will be set explicitly at 100px. That leaves 900px that will be divided for the rest of the columns. 600px ...  300px
 
 ### The Auto keyword
 
