@@ -84,7 +84,7 @@ One slightly confusing thing about Grid is the idea of lines. **Grid Lines** are
 
 ## Grid Containers
 
-We'll use the following HTML for these examples. 
+<!-- We'll use the following HTML for these examples.  -->
 
 <!-- ```html
 <div class="parent-container">
@@ -102,6 +102,8 @@ We'll use the following HTML for these examples.
 
 You can create a grid container simply by setting the `display` property to `grid`.
 
+> Defines the element as a grid container and establishes a new grid formatting context for its contents.
+
 ```css
 .parent-container {
   display: grid;
@@ -109,6 +111,8 @@ You can create a grid container simply by setting the `display` property to `gri
 ```
 
 The most used properties on grid containers are `grid-template-columns` and `grid-template-rows`.
+
+> Defines the columns and rows of the grid with a space-separated list of values. The values represent the track size, and the space between them represents the grid line.
 
 ```css
 .parent-container {
@@ -145,21 +149,72 @@ If we set three columns in the following way...
 }
 ```
 
-Lets say our grid container is 1000px wide. The first column will be set explicitly at 100px. That leaves 900px that will be divided for the rest of the columns. 600px ...  300px
+Lets say our grid container is 1000px wide. The first column will be set explicitly at 100px. That leaves 900px that will be divided for the rest of the columns. 600px for the second one and then 300px for the first one. However, if our site is responsive, and the parent container changes size, that first column will stay at 100px wide. The second and third columsn will flex, the second one always remaining twice the size of the first.
+
+[CSS-Tricks: Introduction to the fr Unit](https://css-tricks.com/introduction-fr-css-unit/)
 
 ### The Auto keyword
 
+On the previous examples, we can also use the `auto` keyword.
+
+```css
+.my-grid {
+  grid-template-columns: 100px auto auto;
+}
+```
+
+A column or row set to auto adjusts the width or height of the grid item to the max width/height of its content. That means that the element auto sizes the column. 
+
 ### Functions
+
+There are some new "functions" in grid that allow us add some flexibility and write a little bit less code.
 
 #### minmax()
 
+`minmax` is basically like setting max-width/height and min-width/height on our grid items. 
+
+```css
+.my-grid {
+  grid-template-columns: 100px 1fr minmax(100px, 300px);
+}
+```
+
+Our third column here will flex between 100px and 300px depending on the rest of our columns and our total available space.
+
 #### repeat()
+
+The repeat function lets us type a little less. 
+
+```css
+.my-grid {
+  grid-template-columns: 100px repeat(4, 1fr);
+}
+```
+The repeat function lets us define 4 `1fr` columns. It would be the equavilant of `grid-template-columns: 1fr 1fr 1fr 1fr;` Not a huge deal for 4, but it's nice if we wanted 10 or 12 or more.
 
 ### Content
 
-min-content
+Grid also lets us size columns based on the content in different ways. It's mostly useful for text. It works on rows too???
 
-max-content
+#### min-content
+
+```css
+.my-grid {
+  grid-template-columns: min-content repeat(3, 1fr);
+}
+```
+
+Our first column using `min-content` would size itself based on the longest word, or otherwise the widest piece of content inside it.
+
+#### max-content
+
+```css
+.my-grid {
+  grid-template-columns: max-content repeat(3, 1fr);
+}
+```
+
+Our first column using `max-content` would size itself based on all of the content. This would ensure text was placed on one line and never break for that column (unless we ran out of space on our page).
 
 ### Aligning content
 
