@@ -218,15 +218,55 @@ Our first column using `max-content` would size itself based on all of the conte
 
 ### Aligning content
 
-align-items
+`align-items` ...
 
-justify-items
+> Aligns grid items along the block (column) axis (as opposed to justify-items which aligns along the inline (row) axis). This value applies to all grid items inside the container.
+
+start - aligns items to be flush with the start edge of their cell
+end - aligns items to be flush with the end edge of their cell
+center - aligns items in the center of their cell
+stretch - fills the whole height of the cell (this is the default)
+
+`justify-items` ...
+
+> Aligns grid items along the inline (row) axis (as opposed to align-items which aligns along the block (column) axis). This value applies to all grid items inside the container.
+
+start - aligns items to be flush with the start edge of their cell
+end - aligns items to be flush with the end edge of their cell
+center - aligns items in the center of their cell
+stretch - fills the whole width of the cell (this is the default)
 
 ### Aligning the grid
 
-justify-content
+These align the grid itself.
 
-align-content
+`justify-content`
+
+> Sometimes the total size of your grid might be less than the size of its grid container. This could happen if all of your grid items are sized with non-flexible units like px. In this case you can set the alignment of the grid within the grid container. This property aligns the grid along the inline (row) axis (as opposed to align-content which aligns the grid along the block (column) axis).
+
+
+    start - aligns the grid to be flush with the start edge of the grid container
+    end - aligns the grid to be flush with the end edge of the grid container
+    center - aligns the grid in the center of the grid container
+    stretch - resizes the grid items to allow the grid to fill the full width of the grid container
+    space-around - places an even amount of space between each grid item, with half-sized spaces on the far ends
+    space-between - places an even amount of space between each grid item, with no space at the far ends
+    space-evenly - places an even amount of space between each grid item, including the far ends
+
+
+`align-content`
+
+> Sometimes the total size of your grid might be less than the size of its grid container. This could happen if all of your grid items are sized with non-flexible units like px. In this case you can set the alignment of the grid within the grid container. This property aligns the grid along the block (column) axis (as opposed to justify-content which aligns the grid along the inline (row) axis).
+
+
+    start - aligns the grid to be flush with the start edge of the grid container
+    end - aligns the grid to be flush with the end edge of the grid container
+    center - aligns the grid in the center of the grid container
+    stretch - resizes the grid items to allow the grid to fill the full height of the grid container
+    space-around - places an even amount of space between each grid item, with half-sized spaces on the far ends
+    space-between - places an even amount of space between each grid item, with no space at the far ends
+    space-evenly - places an even amount of space between each grid item, including the far ends
+
 
 ### Areas
 
