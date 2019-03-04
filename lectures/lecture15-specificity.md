@@ -8,6 +8,8 @@ Understanding specificity in CSS is another key to working with this language an
 
 We've talked previously about how certain CSS rules that conflict will overwrite other rules. The ways we've looked already have to do with the cascade.
 
+Essentially, every single element on your pages has styles. They maybe default, inherited from their parents, or specifically targeted. If an element gets a conflicting style property (`font-size` for instance), specificity determines which value gets applied.
+
 
 ## Inheritance
 
@@ -22,7 +24,7 @@ h1 {
 }
 ```
 
-In this example, we have a starting body rule-set, and a header rule-set.
+In this example, we have a starting body rule-set, and heading rule-set.
 
 Remember, body is the wrapping tag for all content on the page. That means, everything in the page will inherit its style. What typeface will the `<h1>` be? It will be sans-serif, unless you specify. Child tags will always inherit (some) properties from their parents unless they are overwritten.
 
@@ -41,7 +43,7 @@ p {
     text-align: center;
 }
 ```
-In CSS rule-sets, the order of the rules doesn't matter, as long as you don't have conflicting rules. 
+In CSS rule-sets, the order of the rules doesn't matter, as long as you don't have conflicting rules...
 
 ```css
 p {
@@ -171,7 +173,7 @@ div {
 }
 ```
 
-But be careful, now you're stuck if you need to ever overwrite this style.
+But be careful, now you're stuck if you ever need to overwrite this style.
 
 ## Working with specificity
 
