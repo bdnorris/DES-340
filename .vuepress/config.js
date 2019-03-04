@@ -29,8 +29,8 @@ module.exports = {
           "lectures/lecture12-box-model.md",
           "lectures/lecture13-code-editor.md",
           "lectures/lecture14-backgrounds.md",
-          // "lectures/lecture15-images.md",
-          // "lectures/lecture16-position-and-display.md",
+          "lectures/lecture15-images.md",
+          "lectures/lecture16-position-and-display.md",
           // "lectures/lecture17-layout-flexbox.md",
         ]
       },

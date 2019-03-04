@@ -82,7 +82,7 @@ PNG will allow you to turn transparency on and off, and switch to PNG-8 if you w
 
 You can also change the image size right here, or crop the canvas.
 
-You can also right-click (ctrl-click) on a layer and choose `Export As` here to export just one layer from a document.
+You can also right-click (ctrl-click) on a layer and choose `Export As` here to export just one layer from a document. You can also hold the shift key and select multiple layers, choose `Export As` and export all the selected layers at once.
 
 You can do the same thing on a layer folder. As you can imagine, if you're designing in Photoshop, properly managing your layers can make exporting your images much easier.
 
@@ -116,7 +116,13 @@ If this happens, you can bring the image into Photoshop and choose `Image > Trim
 
 I am a beginner in XD, the same as you. Read this article.
 
-[Exportin Design Assets](https://helpx.adobe.com/xd/help/export-design-assets.html)
+[Exporting Design Assets](https://helpx.adobe.com/xd/help/export-design-assets.html)
+
+### From Sketch
+
+Individual items, as well as groups of items, can be "made exportable." Select the items you want on the artboards or in the layers panel, scroll down on the right toolbar and look for `MAKE EXPORTABLE`. Once you clicked this, you can set up the format to export, then choose `Export Selected...`. There are some cool options here, but you don't get the same control Photoshop gives you on JPGs (but it's ok, we can use some other tools). 
+
+The cool thing is that Sketch is going to remember these settings so you won't have to do this every time you make a change. This can even be done on entire artboards. 
 
 ## Further compression
 
@@ -185,7 +191,7 @@ viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve
 
 So, as you can see, this looks a bit like HTML. It's made up of tags. The surrounding `<svg>` tag has attributes related to the document. The viewBox attribute sets the size of the "artboard" and all of the other numbers in the document are in reference to that.
 
-Inside that is a `<g>` tag, just standing for "group". Inside that is the `<circle>` element. There are several different shape elements available with SVG, including: ‘circle’, ‘ellipse’, ‘line’, ‘path’, ‘polygon’, ‘polyline’ and ‘rect’.
+Inside that is a `<g>` tag, just standing for "group". Inside that is the `<circle>` element. There are several different shape elements available with SVG, including: `circle`, `ellipse`, `line`, `path`, `polygon`, `polyline` and `rect`.
 
 I could add a class to my circle, by either adding it directly, or I could add it to the group. 
 
@@ -215,13 +221,13 @@ And then I could style it like so...
 </svg>
 </div>
 
-You'll notice I didn't use "color" or "background-color", but a specific property for SVGs called "fill".
+You'll notice I didn't use `color` or `background-color`, but a specific property for SVGs called "fill".
 
 We could talk about all we could do with SVGs for a while, but it's a bit beyond the scope of this class, so we'll leave it there for now. But, I hope you can see how powerful this could be, with SVG, we get a new language to draw with, that can be used inside of our HTML.
 
 ## How big is too big?
 
-Of course, the point of all of this is that even with broadband speed internet, the time it takes our sites to load matters. It matters to give someone on a crummy 3g connection a chance at accessing your site, and it even matters that your site feels snappy to someone with a really fast connection. There are a lot of factors here, but the items that are in your control are what we're concerned with. 
+Of course, the point of all of this is that even with broadband speed internet, the time it takes our sites to load matters. It matters to give someone on a crummy 3G connection a chance at accessing your site, and it even matters that your site feels snappy to someone with a really fast connection. There are a lot of factors here, but the items that are in your control are what we're concerned with. 
 
 If we looked at Missouri State's homepage as an example, the largest asset on the page is actually a javascript file. The main featured image is second, measuring in at around 63k. That's pretty good. 
 
@@ -258,7 +264,7 @@ If you HTML is structured like so...
 </div>
 ```
 
-...you can control the size of this image in CSS and the image will always try and fill the entirety of its container. Its height will adjust automatically because images have an inherent aspect ratio.
+...you can control the size of this image in CSS and the image will always try and fill the entirety of its container. Its height will adjust automatically because **images have an inherent aspect ratio**.
 
 ```css
 .image-container {
@@ -314,6 +320,6 @@ So, the new pattern was, float everything you want to be on the same row, and th
 
 However, this is also a hack. It's honestly pretty amazing the web went along as long as it did with no real method of layout, just various hacks. 
 
-I've decided I don't need to teach floats anymore, because now we have Flexbox, that we'll talk about soon. Flexbox is not a hack and is actually meant for layout. So, if you see floats when looking at some code, it's probably used for layout, however, you can still use floats on images like I've shown if you need to wrap text around an image or some other kind of box.
+I've decided I don't need to teach floats anymore, because now we have Flexbox and Grid, that we'll talk about soon. Flexbox is not a hack and is actually meant for layout. So, if you see floats when looking at some code, it's probably used for layout, however, you can still use floats on images like I've shown if you need to wrap text around an image or some other kind of box.
 
 [All About Floats](https://css-tricks.com/all-about-floats/)
