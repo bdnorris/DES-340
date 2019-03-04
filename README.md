@@ -9,7 +9,7 @@ next: false
 
 - Projects
   - Continue working on [Project 3](./projects/project03.md)
-- Codecademy [Make a Website](https://www.codecademy.com/learn/make-a-website)
+- Codecademy ([Learn Responsive Design](https://www.codecademy.com/learn/learn-responsive-design))
 - Exercise [E5](./exercises/exercise05-coding-text.md)
 
 <!-- ## Calendar: Section 301 (Fleener/MW/4PM)
