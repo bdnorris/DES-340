@@ -4,7 +4,7 @@
 
 ### 10 points each
 
-January 23 &ndash; February 4
+-January 23 &ndash; February 4-
 [Introduction to HTML](https://www.codecademy.com/learn/learn-html)
 
 February 4 &ndash; February 13

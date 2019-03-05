@@ -10,24 +10,24 @@ Site navigation is an extremely important aspect of web design that we haven't g
 
 Your task is to re-design the navigation of a large website. 
 
-*   Further practice designing user-interfaces in Photoshop/Illustrator
-*   Practice designing stateful user-interface designs
-
-All non-navigation items can simply be grayed out (so feel free to adjust colors, typefaces, etc.).
+* Further practice designing user-interfaces in Photoshop/Illustrator/XD/Sketch
+* Practice designing stateful user-interface designs
 
 ## Subject
 
-Conduct some research and find a site where you find significant problems with its navigation. Since we're looking for inferior design and a large site, avoid "best of" galleries. Dig through your bag or the drawers in your desk, visit the brand name's websites. Look for e-commerce sites where you could buy that item again (large companies and e-commerce sites are likely subjects for this assignment).
+Conduct some research and find a site where you find significant problems with its navigation. Since we're looking for inferior design and a large site, avoid "best of" galleries. Dig through your bag or the drawers in your desk and visit the brand name's websites of the objects you find there. Look for e-commerce sites where you could buy that item again (large companies and e-commerce sites are likely subjects for this assignment).
+
+All non-navigation items can simply be grayed out so feel free to adjust colors, typefaces, etc. We don't care about sticking to any kind of branding or anything here, we just want a large set of organized pages to work with.
 
 ## Statefulness
 
-Your navigation designs need to show state, that is, things that open, close or otherwise change on hover or click/touch need to be shown as separate images.
+Your navigation designs need to show state, that is, things that open, close or otherwise change on hover or click/touch need to be shown as separate designs.
 
 You don't need to be too redundant though, if multiple sub-menus are treated the same, you don't necessarily have to show both.
 
 ## Responsive
 
-The complexity of a large navigation system often means very different strategies for mobile and desktop. Often, what works for desktop simply doesn't translate to smaller screens. Whatever your approach, you will need to show both *mobile* and *desktop*, and they might even be different designs.
+The complexity of a large navigation system often means very different strategies for mobile and desktop. Often, what works for desktop simply doesn't translate to smaller screens. Whatever your approach, you will need to show both *mobile* and *desktop*, and they might use different design strategies.
 
 ## Examples
 
@@ -64,19 +64,37 @@ Familiarize yourself with [basic web navigation patterns](http://ui-patterns.com
 
 ## Information Architecture
 
-Once you find a site with navigation you think is unsuccessful, it's time to analyze why. If your conclusion is that all of its problems have to do with visuals and experience, then you can move towards design. However, if it's because labels don't make sense, sections are in the wrong order, etc., then you may need to re-organize. Typically, we'd just write an outline to make our improvements, but an informal sitemap might also help in deciding how best to organize the navigation (even if it's just on paper). Remember, navigation isn't just for getting around, but should, ideally, give the user a sense of the site as a whole.
+Once you find a site with navigation you think is unsuccessful, it's time to analyze why. If your conclusion is that all of its problems have to do with visuals and experience, then you can move towards design. However, if it's because labels don't make sense, sections are in the wrong order, or some pages are in the wrong section, then you may need to re-organize. Typically, we'd just write an outline to make our improvements, but an informal sitemap might also help in deciding how best to organize the navigation (even if it's just on paper). Remember, navigation isn't just for getting around, but should, ideally, give the user a sense of the site as a whole.
 
 ## Sketch, Wireframe, Sketch
 
-With complex UI like this, do not assume your first idea is the best. I need you to convince me that your final idea strategy is the best one, and there's no better way to do that than show me the strategies you've rejected. So please produce detailed sketches showing other possible strategies than your final. It doesn't matter if it's on paper or a computer wireframe, but they need to have enough detail that the pros and cons of each strategy are apparent. If you stick to paper, scan them this time, so they are decent quality for presentation.
+With complex UI like this, do not assume your first idea is the best. I need you to convince me that your final idea strategy is the best one, and there's no better way to do that than show me the strategies you've rejected. So please produce detailed sketches showing other possible strategies than your final. It doesn't matter if it's on paper or a computer wireframe, but they need to have enough detail that the pros and cons of each strategy are apparent. If you stick to paper, scan them so they are decent quality for presentation.
 
 ## Design
 
-I'm going to encourage you to try <!--the browser based software Figma--> Adobe XD for this assignment (if you haven't already)<!--, because it will allow us to prototype and design in one place. It's free! -->However, I know the learning curves for new software can be tough, so using Illustrator or Photoshop will be fine as well. <!--In that case, you'll use InVision to prototype instead.-->
+I'm going to encourage you to stick with <!--the browser based software Figma--> Adobe XD or Sketch for this assignment <!--(if you haven't already), because it will allow us to prototype and design in one place. It's free! -->However, I know the learning curves for new software can be tough, so using Illustrator or Photoshop will be fine as well. <!--In that case, you'll use InVision to prototype instead.-->
 
-<!-- ## Prototyping
+## Prototyping
 
-If you choose to produce your designs in Figma, then naturally, you can do your prototyping there. If you produce them in Illustrator or Photoshop, you should use InVision. You've used InVision's "boards", but they also have "Prototypes".
+I want you to try at least some prototyping. How you do this relate to which program you choose to produce your work in.
+
+Minmally, I would like to see one prototype of some state change in your designs, this change would be caused by a user click. This means along with producing both designs (open/closed, for example) you will add clickable spots that will change one design to another, mimicking real-world use.
+
+Sketch and XD both have prototyping built-in...
+
+[Sketch Prototyping](https://sketchapp.com/docs/prototyping/)
+
+[XD Prototyping](https://helpx.adobe.com/xd/help/create-prototypes.html)
+
+You will then upload them to Sketch Cloud, or for XD, you can ["Share for Review"](https://helpx.adobe.com/xd/help/share-embed-designs-prototypes.html#create-links-share-prototypes)
+
+With Illustrator or Photoshop, you will need to export your artboards to PNGs, like you normally would, then you can upload them to InVision to make your prototype, then share a link.
+
+[InVision Prototyping](https://support.invisionapp.com/hc/en-us/articles/115000648383-Creating-a-Prototype)
+
+Follow the appropriate instructions above to create a simple prototype we can view during the critique. 
+
+<!--If you choose to produce your designs in Figma, then naturally, you can do your prototyping there. If you produce them in Illustrator or Photoshop, you should use InVision. You've used InVision's "boards", but they also have "Prototypes".
 
 Both apps will use "hotspot" driven prototyping. This is different than prototyping in code where we might create more complex interactions—this is much more like Powerpoint or Keynote. We create hotspots and links between our screens. Then, we can view them as if they were real sites and click the hotspots to "move around" from screen to screen.
 
@@ -86,22 +104,29 @@ Only prototype your mobile design. You can skip the desktop here unless you're f
 
 Please pick a site with at least two tiers of navigation, at least 6 items on its main tier, and some form of utility navigation. The larger the amount of navigation, the harder it might be to design but remember, in this class, you're practicing for real-world problems you might encounter as a professional. Successful information architecture might reduce the complexity of navigation, but ultimately, a large site is a large site.
 
-About half of users are what Jacob Nielsen calls "Search Dominant". Search is a must-have feature on any large website. Include a search box as part of your design.
+About half of users are what Jacob Nielsen calls "Search Dominant". Search is a must-have feature on any large website. **Include a search box as part of your design**.
 
 ## Presentation
 
 Add your research and sketches to your InVision board.
 
-*   Make a section on your InVision board called **Project 4, Research and Sketches**.
-*   Arrange 3–7 items of research.
-*   Arrange a few relevant sketches.
+* Make a section on your InVision board called **Project 4, Research and Sketches**.
+* Arrange 3–7 items of research.
+* Arrange a few relevant sketches.
 
 Add your final graphics to your InVision board.
 
-*   Make a section on your InVision board called **Project 4, Mobile Designs**.
-*   Arrange all of your stateful mobile designs neatly in the section.
-*   Make a section on your InVision board called **Project 4, Desktop Designs**.
-*   Arrange all of your stateful desktop designs neatly in the section.
+* Make a section on your InVision board called **Project 4, Mobile Designs**.
+  * Arrange all of your stateful mobile designs neatly in the section.
+* Make a section on your InVision board called **Project 4, Desktop Designs**.
+  * Arrange all of your stateful desktop designs neatly in the section.
+
+Add your prototype link to your InVision board.
+
+*   Make a section on your InVision board called **Project 4, Prototype**.
+*   Add a link to your prototype.
+
+
 
 <!-- On your InVision board, first, on the bottom, place your research and sketches to help the class and I understand your thought process. Then, above that, stateful PNGs of your designs for mobile and desktop (Figma will allow you to export screens as PNGs). Above them, place a link to your viewable prototype (Figma has a presentation mode with a share function, InVision will let you produce a "public link"). -->
 

@@ -14,7 +14,7 @@ Most of the technique's listed here are pretty similar to what you would use tod
 
 ## Media queries
 
-...media queiry codepen ...
+[Media Query Codepen](https://codepen.io/bdnorris/pen/EroEZp)
 
 Media queries are the heart of responsive coding. They're how we set our breakpoints in our code. They let you turn particular CSS styles on and off depending on the size of the viewport.
 
@@ -87,7 +87,7 @@ I'm taking advantage of that and using a "mobile-first" coding approach...not to
 
 ## Retina Images
 
-...image codepent ...
+[Retina Images CodePen](https://codepen.io/bdnorris/pen/JxMLLz)
 
 If you're on a "Retina" screen (Apple's branded name for pixel dense screens), you'll notice that images might look a little blurry.
 
@@ -212,9 +212,59 @@ In the above code, I'm saying to make my flex children 100% wide, but for above 
 
 ### VW and VH
 
+Let's not forget our "Viewport Units." They make it easy for us to size things directly based on the viewport width, with or without media queries. Although the unit itself is essentialy 1% of the viewport height or width, they are different from percentages, because percentages are related to the parent, whereas Viewport Units are relative to the viewport only.
 
+```css
+.my-container {
+	width: 600px;
+}
 
+	.my-child {
+		width: 50%; /* Here, we're saying make our box half of it's parents width, effectively 300px */
+		width: 20vw; /* Here, we're saying make our box half of the viewport width, REGARDLESS of the parent's width */
+	}
+```
 
+The also work better with heights. If you need to create a hero section that always fills the height of the viewport, regardless of that height, the `vh` unit is here to help.
+
+```css
+header {
+	width: 100vw;
+	height: 80vh;
+}
+
+.thing-under-the-header-we-also-want-to-see {
+	height: 20vh;
+}
+```
+
+Getting your content to look nice inside this is another issue.
+
+We can also tie things like font-size to the viewport, making some responsive headlines (probably not body copy). 
+
+```css
+h1 {
+	font-size: 18vw;
+}
+
+@media screen and (min-width: 769px) {
+	h1 {
+		font-size: 12vw;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	h1 {
+		font-size: 3rem; /* although, you might not want to let it keep growing indefinitely */
+	}
+}
+```
+
+`vmin` and `vmax` are also useful sometimes. Essentially, they look at the height and the width of the viewport and take whichever one is smaller or larger.
+
+There's a lot of interesting things you can do, check out this link for some ideas.
+
+[CSS Tricks: Fun with Viewport Units](https://css-tricks.com/fun-viewport-units/)
 
 ## Resources
 
