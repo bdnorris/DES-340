@@ -23,7 +23,7 @@ All non-navigation items can simply be grayed out so feel free to adjust colors,
 
 Your navigation designs need to show state, that is, things that open, close or otherwise change on hover or click/touch need to be shown as separate designs.
 
-You don't need to be too redundant though, if multiple sub-menus are treated the same, you don't necessarily have to show both.
+You don't need to be too redundant though if multiple sub-menus are treated the same, you don't necessarily have to show both.
 
 ## Responsive
 
@@ -72,13 +72,13 @@ With complex UI like this, do not assume your first idea is the best. I need you
 
 ## Design
 
-I'm going to encourage you to stick with <!--the browser based software Figma--> Adobe XD or Sketch for this assignment <!--(if you haven't already), because it will allow us to prototype and design in one place. It's free! -->However, I know the learning curves for new software can be tough, so using Illustrator or Photoshop will be fine as well. <!--In that case, you'll use InVision to prototype instead.-->
+I'm going to encourage you to stick with <!--the browser-based software Figma--> Adobe XD or Sketch for this assignment <!--(if you haven't already), because it will allow us to prototype and design in one place. It's free! -->However, I know the learning curves for new software can be tough, so using Illustrator or Photoshop will be fine as well. <!--In that case, you'll use InVision to prototype instead.-->
 
 ## Prototyping
 
 I want you to try at least some prototyping. How you do this relate to which program you choose to produce your work in.
 
-Minmally, I would like to see one prototype of some state change in your designs, this change would be caused by a user click. This means along with producing both designs (open/closed, for example) you will add clickable spots that will change one design to another, mimicking real-world use.
+Minimally, I would like to see one prototype of some state change in your designs, this change would be caused by a user click. This means along with producing both designs (open/closed, for example) you will add clickable spots that will change one design to another, mimicking real-world use.
 
 Sketch and XD both have prototyping built-in...
 
@@ -140,7 +140,7 @@ Looking for things on a Web site and looking for them in the “real” world ha
 
 But the Web experience is missing many of the cues we’ve relied on all our lives to negotiate spaces. Consider these oddities of Web space:
 
-**No sense of scale.** Even after we’ve used a Web site extensively, unless it’s a very small site we tend to have very little sense of how big it is (50 pages? 1,000? 17,000?). For all we know, there could be huge corners we’ve never explored. Compare this to a magazine, a museum, or a department store, where you always have at least a rough sense of the seen/unseen ratio.
+**No sense of scale.** Even after we’ve used a Web site extensively unless it’s a very small site we tend to have very little sense of how big it is (50 pages? 1,000? 17,000?). For all we know, there could be huge corners we’ve never explored. Compare this to a magazine, a museum, or a department store, where you always have at least a rough sense of the seen/unseen ratio.
 
 The practical result is that it’s very hard to know whether you’ve seen everything of interest to you in a site, which means it’s hard to know when to stop looking.
 
@@ -164,7 +164,7 @@ On the negative side, I think it explains why we use the term “Web navigation�
 
 I think we talk about Web navigation because “figuring out where you are” is a much more pervasive problem on the Web than in physical spaces. We’re inherently lost when we’re on the Web, and we can’t peek over the aisles to see where we are. Web navigation compensates for this missing sense of place by embodying the site’s hierarchy, creating a sense of “there.”
 
-Navigation isn’t just a feature of a Web site; it is the Web site, in the same way that the building, the shelves, and the cash registers are Sears. Without it, there’s no there there.
+Navigation isn’t just a feature of a Web site; it is the Web site, in the same way, that the building, the shelves, and the cash registers are Sears. Without it, there’s no there-there.
 
 **The moral? Web navigation had better be good.**
 
@@ -184,7 +184,7 @@ But navigation has some other equally important—and easily overlooked—functi
 
 The Sections—sometimes called the primary navigation—are the links to the main sections of the site: the top level of the site’s hierarchy.
 
-In some designs the persistent navigation will also include space to display the secondary navigation: the list of subsections in the current section.
+In some designs, the persistent navigation will also include space to display the secondary navigation: the list of subsections in the current section.
 
 In others, pointing at a section name or clicking on it reveals a dropdown menu. And in others, clicking takes you to the front page of the section, where you’ll find the secondary navigation.
 
