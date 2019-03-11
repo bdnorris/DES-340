@@ -8,7 +8,7 @@ next: false
 ## Active Assignments
 
 - Projects
-  - Continue working on [Project 3](./projects/project03.md)
+  - Start [Project 4](./projects/project04.md) (Research and Sketches!)
 - Codecademy ([Learn Responsive Design](https://www.codecademy.com/learn/learn-responsive-design))
 - Exercise [E5](./exercises/exercise05-coding-text.md)
 
