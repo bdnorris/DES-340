@@ -208,6 +208,8 @@ width: 300px;
 float: right;
 } -->
 
+### Flex Order
+
 ### Text columns
 
 ### Yet another note on Grid

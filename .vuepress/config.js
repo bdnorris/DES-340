@@ -30,8 +30,8 @@ module.exports = {
           "lectures/lecture13-backgrounds.md",
           "lectures/lecture14-images.md",
           "lectures/lecture15-specificity.md",
-          // "lectures/lecture16-position-and-display.md",
-          // "lectures/lecture17-layout-flexbox.md",
+          "lectures/lecture16-position-and-display.md",
+          "lectures/lecture17-layout-flexbox.md",
         ]
       },
       {
