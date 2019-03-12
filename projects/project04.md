@@ -128,6 +128,14 @@ Add your prototype link to your InVision board.
 
 
 
+:::danger Due Dates
+I want to give a little extra time to put some polish on this project. Please make sure you meet all minimum requirements for critique (mobile and desktop designs, plus an attempt at a prototype) Then, we will have and extra class period before I consider the project due.
+
+March 27th: Critique
+
+April 1st: Final Due
+:::
+
 <!-- On your InVision board, first, on the bottom, place your research and sketches to help the class and I understand your thought process. Then, above that, stateful PNGs of your designs for mobile and desktop (Figma will allow you to export screens as PNGs). Above them, place a link to your viewable prototype (Figma has a presentation mode with a share function, InVision will let you produce a "public link"). -->
 
 <!-- Organize them under the heading: Project 2:  Navigation Design and Prototyping -->
