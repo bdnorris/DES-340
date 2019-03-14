@@ -201,6 +201,24 @@ Apple and Google, for better or for worse, are some of the thought leaders and i
 
 But it's not just the patterns that make these guidelines useful, the people at these companies have spent more time thinking about this stuff than you have, so I encourage you to learn from their work. Just keep in mind that they are guidelines, and don't apply to every solution.
 
+## The line break tag
+
+There's a tag called `<br>` that lets you break a line of text. You can use it when you don't need space between something, but the word breaking matters. For instance, when writing something like an address. _Sometimes_ you can get away with using it to finesse line breaking on a headline. Just make sure to test and make sure it works responsively.
+
+> The HTML `<br>` element produces a line break in text (carriage-return). It is useful for writing a poem or an address, where the division of lines is significant.
+
+> The `<br>` element has a single, well-defined purpose&mdash;to create a line break in a block of text. As such, it has no dimensions or visual output of its own, and there is very little you can do to style it.
+
+> Accessibility concerns
+
+> Creating separate paragraphs of text using `<br>` is not only bad practice, it is problematic for people who navigate with the aid of screen reading technology. Screen readers may announce the presence of the element, but not any content contained within `<br>`s. This can be a confusing and frustrating experience for the person using the screen reader.
+
+> Use `<p>` elements, and use CSS properties like margin to control their spacing.
+
+&mdash;MDN 
+
+Essentially, **do not use the `<br>` tag to create whitespace between items`. It does not give you the fine control over spacing you probably need. Use margin and padding on your CSS elements instead.
+
 ## Resources
 
 [CSS Reference for Typography](https://cssreference.io/typography/)
