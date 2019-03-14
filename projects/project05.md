@@ -2,25 +2,19 @@
 
 ## Modern Web Design Workflow
 
-Points: 150 (No grade/no critique)
+Points: 150
 
-This assignment will let you practice designing a website from concept to completion using modern workflows. You will create a concept for a new site, a "styletile", a sitemap, a wireframe, a prototype, and design it.
-
-Part 3 of assignment seven will consist of two steps. Developing “Style Tiles” to define the look and feel of your site, and then coding a “Style Guide” using your knowledge of HTML and CSS.
+This assignment will let you practice designing a website from concept to completion using modern workflows. You will create a concept for a new site, a "styletile", a sitemap, a wireframe, a prototype, and a design.
 
 ## Objectives
 
 *   Coalesce everything you’ve learned about web design into one full-featured project.
-*   Work through a simplified version of a modern web design workflow.
-*   *   Introduction to modern web design workflow.
+*   Introduction to modern web design workflow by working through a simplified version.
 *   Design and analysis of websites and user interfaces.
 *   Exploration of information architecture concepts.
 *   Introduction to “wireframing”/low-fidelity sketching.
-
-*   Introduction to modern web design workflow.
-*   Design and analysis of websites and user interfaces.
-*   Continuing practice designing user interfaces.
-*   Continuing to enhance HTML and CSS coding skills.
+*   Practice designing full page web layouts.
+*   Application of the skills you’ve previously practiced regarding designing web components and content hierarchy.
 
 ## Concept
 
@@ -120,7 +114,7 @@ There are will be **no requirements** for prototyping on this project. I simply 
 
 Choosing a tool for wireframing and prototyping is difficult. It depends a lot on the level of detail you want to establish. Simple thumbnail wireframes can be used to plan the IA and content areas as I’ve mentioned above, and further detail can be achieved with static wireframes consisting of gray boxes and text in Illustrator, Photoshop or Sketch.
 
-You can also go further with wireframes and create semi-functional mock-ups. We’re going to combine wireframing and some basic prototyping in this project using a tool called [Webflow](https://webflow.com/).
+<!-- You can also go further with wireframes and create semi-functional mock-ups. We’re going to combine wireframing and some basic prototyping in this project using a tool called [Webflow](https://webflow.com/).
 
 [Webflow](https://webflow.com/) is a full site builder. It can produce production ready pages, and the company has services for hosting and a content management system. Webflow has a few drag and drop **responsive** layout items that can speed up the wireframing process. We’re going to use Webflow to produce our wireframes.
 
@@ -128,11 +122,11 @@ The free version of Webflow will only allow 2 pages. So we’re going to start t
 
 Your wireframe should be visually simple, as in the linked examples. No graphics, photos, etc. Just text and shapes to represent images/buttons/etc.
 
-Feel free to use Webflow’s built in form fields, linking capabilities, etc. to enhance your wireframes with some basic interactions.
+Feel free to use Webflow’s built in form fields, linking capabilities, etc. to enhance your wireframes with some basic interactions. -->
 
-### Responsive Design
+<!-- ### Responsive Design
 
-The main reason I’m choosing Webflow as the tool for this exercise is it’s great responsive support. You will be able to layout a page, and in real-time, slide the viewport to different widths and see the adjustments happening live.
+The main reason I’m choosing Webflow as the tool for this exercise is it’s great responsive support. You will be able to layout a page, and in real-time, slide the viewport to different widths and see the adjustments happening live. -->
 
 **You must consider the view, all the way from mobile to desktop for this assignment.**
 
@@ -147,15 +141,11 @@ Instead of the typical critique, you will be grouped up with other students to a
 Collect information from your user testing session, make any necessary adjustments, and make sure you have included the necessary items on your InVision board as noted below.
 
 
+# Planning your design
 
+### Style tiles
 
-
-# Planning Your Design and Development
-
-
-### Style Tiles
-
-Instead of designing a full page layout in Photoshop or Illustrator and then attempting to translate this into a coded page, we’re going to approach our final design using the concept of “Style Tiles.” This allows us to efficiently show the look and feel of the site as a whole, rather than focusing on one particular page.
+The next step is to develop a "Style Tile." This will allow us to define the look and feel of our site, and quickly iterate changes, rather than start with a complex, full-page. design. This allows us to efficiently show the look and feel of the site as a whole, rather than focusing on one particular page.
 
 We’re going to continue to approach this project with the idea that it is a large complex web project, even though we’re only touching bits and pieces. As you can probably imagine, it would be a vast and complex undertaking to design an entire large site by having an Illustrator file for every single page and possible configuration of a site. Instead, developing style tiles, style guides, and wireframes—along with careful art direction—can be an efficient way to get a project up and running. It’s also a great way to begin showing a client work, without too much initial time investment.
 
@@ -211,10 +201,8 @@ Style Tiles and Style Guides definitely bleed together. Both show colors, button
     *   Photographic style (natural light/white background/cool/warm/faces/crop styles/etc.)
     *   Some “mood words” (optional—see reference material)
 
-### Presentation
 
-You can create more than one style tile if you wish, and each style tile should be 1200px x 900px, landscape. Upload to your InVision board with the section title “**Assignment 7: Style Tiles**”.
-
+<!-- 
 ### Style Guide
 
 Next, you’re going to create a “Style Guide”, AKA “Pattern Library” using CSS and HTML.
@@ -227,8 +215,14 @@ Think about STATE. Add hover, selected and disabled versions of buttons if appli
 
 Use media queries for changes for different screen sizes. Minimum of one media query should be used for this project to let me know you understand the concept.
 
-The goal is to create an HTML document with a healthy selection of elements styled appropriately. When you view some of the reference materials, you’ll notice large corporate style guides can be very large and are often websites in themselves. We’re obviously aiming for something smaller, but here are some guidelines.
+The goal is to create an HTML document with a healthy selection of elements styled appropriately. When you view some of the reference materials, you’ll notice large corporate style guides can be very large and are often websites in themselves. We’re obviously aiming for something smaller, but here are some guidelines. -->
 
+
+
+
+## Page Design
+
+You will continue exploring web design by creating a series of designs for a common view in contemporary sites: The user profile page. Any website that has a social component (users can share content, view the content shared by others, network, send messages, etc.) often has a profile page for each user.
 
 
 > ...there are five important things you can do to make sure they see—and understand—as much of your site as possible:
@@ -242,8 +236,15 @@ The goal is to create an HTML document with a healthy selection of elements styl
 > —Steve Krug, [Billboard Design 101](http://www.pcworld.com/article/137231/article.html)
 
 
+### Specifications
 
+Exact file dimensions and any grids or guides you use are up to you. But take some time to research common desktop and mobile “breakpoints” and carefully consider how your designs might be used under different user circumstances.
 
+Your desktop view should show what happens beyond your maximum breakpoint. Both views can be as tall as they need to be.
+
+But, here are some ranges of widths as a guideline:
+Mobile: 320px–480px
+Desktop: 768px–1280px
 
 
 
@@ -268,3 +269,18 @@ Please place in your InVision account, under the heading “Assignment 7: Inform
 
 *   Your Sitemap, as text or image, whatever’s most appropriate.
 *   A text note of your published Webflow project wireframing URL.
+
+### Presentation
+
+You can create more than one style tile if you wish, and each style tile should be 1200px x 900px, landscape. Upload to your InVision board with the section title “**Assignment 7: Style Tiles**”.
+
+### Presentation
+
+Make a section on your Invision board called Assignment 6: Research
+Post the research examples in this section. Arrange them neatly.
+
+Make a section on your Invision board called Assignment 6: Designs
+
+Place your designs with a realistic browser height for their view. You could mock-up these designs in a desktop and mobile browser if you wish. Arrange them side by side.
+Additionally, place your full designs at their full height.
+If you have additional designs, or want to show state changes, you can put as many designs as you want here.
