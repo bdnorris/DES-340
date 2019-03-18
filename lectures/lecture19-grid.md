@@ -4,7 +4,7 @@ Similar to Flexbox, but with two dimensions at once, the Grid specification allo
 
 ## Caveats
 
-I've hesitated a lot on whether this is the right course and the right time to dig into the CSS Grid specification. However, after working through examples of how to do layout with Flexbox, I've realized a lot of my techniques, although resilient and useful, are difficutl to explain. Grid solves a lot of these problems.
+I've hesitated a lot on whether this is the right course and the right time to dig into the CSS Grid specification. However, after working through examples of how to do layout with Flexbox, I've realized a lot of my techniques, although resilient and useful, are difficult to explain. Grid solves a lot of these problems.
 
 There are two reasons I hesitated, one is the size of the Grid spec. There are so many properties, new units, and completely new syntax that you don't see in other CSS properties.
 

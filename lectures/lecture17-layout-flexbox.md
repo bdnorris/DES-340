@@ -1,4 +1,4 @@
-# CSS Layout and Flexbox
+# CSS Layout with Flexbox
 
 [Lecture CodePen](https://codepen.io/bdnorris/pen/WPwoGw)
 
