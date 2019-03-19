@@ -217,7 +217,7 @@ There's a tag called `<br>` that lets you break a line of text. You can use it w
 
 &mdash;MDN 
 
-Essentially, **do not use the `<br>` tag to create whitespace between items`. It does not give you the fine control over spacing you probably need. Use margin and padding on your CSS elements instead.
+Essentially, **do not use the `<br>` tag to create whitespace between items**. It does not give you the fine control over spacing you probably need. Use margin and padding on your CSS elements instead.
 
 ## Resources
 
