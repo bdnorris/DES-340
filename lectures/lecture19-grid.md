@@ -6,23 +6,23 @@ Similar to Flexbox, but with two dimensions at once, the Grid specification allo
 
 I've hesitated a lot on whether this is the right course and the right time to dig into the CSS Grid specification. However, after working through examples of how to do layout with Flexbox, I've realized a lot of my techniques, although resilient and useful, are difficult to explain. Grid solves a lot of these problems.
 
-There are two reasons I hesitated, one is the size of the Grid spec. There are so many properties, new units, and completely new syntax that you don't see in other CSS properties.
+There are two reasons I hesitated, one is the size of the Grid specification. There are so many properties, new units, and completely new syntax that you don't see in other CSS properties.
 
-The other is that's so new. Partly this leads to a lack of patterns of the kinds of things you can do with Grid. But the biggest reason is that there is virtually no support in older browsers. Because of this, I simply don't have very much experience with Grid, because supporting Internet Explorer and older versions of Safari isn't optional. 
+The other is that's so new. Partly this leads to a lack of patterns of the kinds of things you can do with Grid. But the biggest reason is that there is virtually no support in older browsers. Because of this, I simply don't have very much experience with Grid, because supporting Internet Explorer and older versions of Safari isn't optional in my work. 
 
-However, Grid is just too powerful, too useful, and I'm deciding to bet on the idea that as students who are new to CSS, Grid is just a more straight forward way to layout web pages.
+However, Grid is just too powerful, too useful, and I'm deciding to bet on the idea that as students who are new to CSS, Grid is a more straight-forward way to layout web pages.
 
 ## History
 
 [The Story of CSS Grid from its Creators](https://alistapart.com/article/the-story-of-css-grid-from-its-creators)
 
-Historically, new features of HTML, CSS or Javascript are slow to be implemented. One reason is that the specifications can take a while to get standardized. Flexbox suffered from this, leading to older browsers using different versions of it. Also different browser makers all have to implement a feature before one can safely use that feature. 
+Historically, new features of HTML, CSS or Javascript are slow to be implemented. One reason is that the specifications can take a while to get standardized. Flexbox suffered from this, leading to older browsers using different versions of it. Usually, different browser makers all have to implement a feature before a developer can safely use that feature, especially when it's a layout feature. 
 
-The people trying to define the Grid spec wanted to avoid the same mistakes that were made with Flexbox, so everything came out relatively fast as a fully formed whole. Hitting the newest browsers in a very complete state. The folks at Microsoft actually spearheaded this movement, mostly so they could build more stuff with web technologies. 
+The people trying to define the Grid spec wanted to avoid the same mistakes that were made with Flexbox. Everything came out relatively fast as a fully-formed whole, hitting up-to-date browsers in a complete state. The folks at Microsoft actually spearheaded this movement, mostly so they could build more stuff with web technologies. 
 
 [CanIUse: Grid](https://caniuse.com/#search=grid)
 
-Now, with pretty good support, Grid is ready, if you don't have to support Internet Explorer. 
+Now, with pretty good support, Grid is ready...if you don't have to support Internet Explorer. 
 
 ## To Flexbox or to Grid
 
