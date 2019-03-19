@@ -9,7 +9,7 @@ next: false
 
 - Projects
   - Start [Project 4](./projects/project04.md) (Research and Sketches!)
-- Codecademy [Deploy a Website](https://www.codecademy.com/learn/deploy-a-website)
+<!-- - Codecademy [Deploy a Website](https://www.codecademy.com/learn/deploy-a-website) -->
 <!-- - Exercise [E5](./exercises/exercise05-coding-text.md) -->
 
 <!-- ## Calendar: Section 301 (Fleener/MW/4PM)

@@ -16,8 +16,8 @@ February 13 &ndash; February 27
 February 27 &ndash; March 18
 [Learn Responsive Design](https://www.codecademy.com/learn/learn-responsive-design)
 
-March 18 &ndash; April 8
-[Deploy a Website](https://www.codecademy.com/learn/deploy-a-website)
+<!-- March 18 &ndash; April 8
+[Deploy a Website](https://www.codecademy.com/learn/deploy-a-website) -->
 
 **Feel free to work ahead.** If you miss a due-date, you will lose a point every class period until that course is completed.
 
@@ -33,3 +33,4 @@ Extra credit courses can be done at anytime, but must be done by the end of the 
 - [Learn Sass](https://www.codecademy.com/learn/learn-sass)
 - [Learn Git](https://www.codecademy.com/learn/learn-git)
 - [Learn the Command Line](https://www.codecademy.com/learn/learn-the-command-line)
+- [Deploy a Website](https://www.codecademy.com/learn/deploy-a-website)
