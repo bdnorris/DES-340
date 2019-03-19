@@ -26,25 +26,25 @@ Now, with pretty good support, Grid is ready...if you don't have to support Inte
 
 ## To Flexbox or to Grid
 
-The main difference between Flexbox and Grid is that although we have the `flex-wrap` property, Flexbox was really only ever meant to work in one direction. Grid is meant to work it two directions, with both columns and rows. 
+The main difference between Flexbox and Grid is that although we have the `flex-wrap` property, Flexbox was really only ever meant to work in one direction. Grid is meant to work in two directions, with both columns and rows. 
 
 One thing that Grid can do is it can let you assign content to areas of the grid regardless of that items order in your HTML. This would allow you to prioritize mobile for your HTML order, but really change stuff on larger screens. 
 
-Another thing Grid does that is really useful, is that it comes ith it's own explicit gutter property called `grid-gap`. This is really nice, since using margins and paddings with Flexbox can be a bit painful.
+Another thing Grid comes with is it's own explicit gutter property called `grid-gap`. This is really nice, since using margins and paddings with Flexbox can be painful.
 
-Grid doesn't necessarily replace Flexbox, sometimes flexbox is easier. But when you find ourself straining to make Flexbox work, Grid might be your answer.
+Grid doesn't necessarily replace Flexbox, sometimes flexbox is easier. But when you find yourself straining to make Flexbox work, Grid might be your answer.
 
-So when to use Grid...when Flexbox isn't enough.
+So when to use Grid... when Flexbox isn't enough.
 
 ## How to Grid?
 
 Instead of covering the entire Grid specification, I'm going to focus on the most used and most useful properties. In the next lecture, we'll look at some practical uses for these. It will be up to you to go further with Grid if you want, there are a ton of resources at the end of this lecture.
 
-Remember the CSS Tricks article showing all of the Flexbox properities. Well, check out the one for Grid...
+Remember the CSS Tricks article showing all of the Flexbox properties? Well, check out the one for Grid...
 
 [CSS-Tricks: Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
-Any quotes in this lecture that aren't referenced are from this CSS-Tricks guide.
+Any quotes in this lecture that aren't referenced are from the above CSS-Tricks guide.
 
 > CSS Grid Layout (aka "Grid"), is a two-dimensional grid-based layout system that aims to do nothing less than completely change the way we design grid-based user interfaces. CSS has always been used to lay out our web pages, but it's never done a very good job of it. First, we used tables, then floats, positioning and inline-block, but all of these methods were essentially hacks and left out a lot of important functionality (vertical centering, for instance). Flexbox helped out, but it's intended for simpler one-dimensional layouts, not complex two-dimensional ones (Flexbox and Grid actually work very well together). Grid is the very first CSS module created specifically to solve the layout problems we've all been hacking our way around for as long as we've been making websites.
 
@@ -80,7 +80,7 @@ One slightly confusing thing about Grid is the idea of lines. **Grid Lines** are
 
 ## Grid Examples
 
-[Example CodePen for this Lecture](https://google.com)
+[Example CodePen for this Lecture](https://codepen.io/bdnorris/pen/XGYQXo)
 
 ## Grid Containers
 
@@ -149,7 +149,7 @@ If we set three columns in the following way...
 }
 ```
 
-Lets say our grid container is 1000px wide. The first column will be set explicitly at 100px. That leaves 900px that will be divided for the rest of the columns. 600px for the second one and then 300px for the first one. However, if our site is responsive, and the parent container changes size, that first column will stay at 100px wide. The second and third columsn will flex, the second one always remaining twice the size of the first.
+Lets say our grid container is 1000px wide. The first column will be set explicitly at 100px. That leaves 900px that will be divided for the rest of the columns. 600px for the second one and then 300px for the first one. However, if our site is responsive, and the parent container changes size, that first column will stay at 100px wide. The second and third columns will flex, the second one always remaining twice the size of the first.
 
 [CSS-Tricks: Introduction to the fr Unit](https://css-tricks.com/introduction-fr-css-unit/)
 
@@ -190,7 +190,7 @@ The repeat function lets us type a little less.
   grid-template-columns: 100px repeat(4, 1fr);
 }
 ```
-The repeat function lets us define 4 `1fr` columns. It would be the equavilant of `grid-template-columns: 1fr 1fr 1fr 1fr;` Not a huge deal for 4, but it's nice if we wanted 10 or 12 or more.
+The repeat function lets us define 4 `1fr` columns. It would be the equivalent of `grid-template-columns: 1fr 1fr 1fr 1fr;` Not a huge deal for 4, but it's nice if we wanted 10 or 12 or more.
 
 ### Content
 
@@ -218,23 +218,23 @@ Our first column using `max-content` would size itself based on all of the conte
 
 ### Aligning content
 
-`align-items` ...
+`align-items`
 
 > Aligns grid items along the block (column) axis (as opposed to justify-items which aligns along the inline (row) axis). This value applies to all grid items inside the container.
 
-start - aligns items to be flush with the start edge of their cell
-end - aligns items to be flush with the end edge of their cell
-center - aligns items in the center of their cell
-stretch - fills the whole height of the cell (this is the default)
+- start - aligns items to be flush with the start edge of their cell
+- end - aligns items to be flush with the end edge of their cell
+- center - aligns items in the center of their cell
+- stretch - fills the whole height of the cell (this is the default)
 
 `justify-items` ...
 
 > Aligns grid items along the inline (row) axis (as opposed to align-items which aligns along the block (column) axis). This value applies to all grid items inside the container.
 
-start - aligns items to be flush with the start edge of their cell
-end - aligns items to be flush with the end edge of their cell
-center - aligns items in the center of their cell
-stretch - fills the whole width of the cell (this is the default)
+- start - aligns items to be flush with the start edge of their cell
+- end - aligns items to be flush with the end edge of their cell
+- center - aligns items in the center of their cell
+- stretch - fills the whole width of the cell (this is the default)
 
 ### Aligning the grid
 
@@ -244,44 +244,109 @@ These align the grid itself.
 
 > Sometimes the total size of your grid might be less than the size of its grid container. This could happen if all of your grid items are sized with non-flexible units like px. In this case you can set the alignment of the grid within the grid container. This property aligns the grid along the inline (row) axis (as opposed to align-content which aligns the grid along the block (column) axis).
 
-
-    start - aligns the grid to be flush with the start edge of the grid container
-    end - aligns the grid to be flush with the end edge of the grid container
-    center - aligns the grid in the center of the grid container
-    stretch - resizes the grid items to allow the grid to fill the full width of the grid container
-    space-around - places an even amount of space between each grid item, with half-sized spaces on the far ends
-    space-between - places an even amount of space between each grid item, with no space at the far ends
-    space-evenly - places an even amount of space between each grid item, including the far ends
-
+- start - aligns the grid to be flush with the start edge of the grid container
+- end - aligns the grid to be flush with the end edge of the grid container
+- center - aligns the grid in the center of the grid container
+- stretch - resizes the grid items to allow the grid to fill the full width of the grid container
+- space-around - places an even amount of space between each grid item, with half-sized spaces on the far ends
+- space-between - places an even amount of space between each grid item, with no space at the far ends
+- space-evenly - places an even amount of space between each grid item, including the far ends
 
 `align-content`
 
 > Sometimes the total size of your grid might be less than the size of its grid container. This could happen if all of your grid items are sized with non-flexible units like px. In this case you can set the alignment of the grid within the grid container. This property aligns the grid along the block (column) axis (as opposed to justify-content which aligns the grid along the inline (row) axis).
 
-
-    start - aligns the grid to be flush with the start edge of the grid container
-    end - aligns the grid to be flush with the end edge of the grid container
-    center - aligns the grid in the center of the grid container
-    stretch - resizes the grid items to allow the grid to fill the full height of the grid container
-    space-around - places an even amount of space between each grid item, with half-sized spaces on the far ends
-    space-between - places an even amount of space between each grid item, with no space at the far ends
-    space-evenly - places an even amount of space between each grid item, including the far ends
-
+- start - aligns the grid to be flush with the start edge of the grid container
+- end - aligns the grid to be flush with the end edge of the grid container
+- center - aligns the grid in the center of the grid container
+- stretch - resizes the grid items to allow the grid to fill the full height of the grid container
+- space-around - places an even amount of space between each grid item, with half-sized spaces on the far ends
+- space-between - places an even amount of space between each grid item, with no space at the far ends
+- space-evenly - places an even amount of space between each grid item, including the far ends
 
 ### Areas
 
-grid-template-areas
+> Defines a grid template by referencing the names of the grid areas which are specified with the grid-area property. Repeating the name of a grid area causes the content to span those cells. A period signifies an empty cell. The syntax itself provides a visualization of the structure of the grid.
+
+The `grid-template-areas` is really amazing, and also the strangest syntax choice in Grid. It lets you define names for content areas of your grid, then later, assign items (grid children) to those areas by name.
+
+```css
+.my-grid {
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
+}
+```
+
+You can use `.` to define an empty area. Quotes are needed, because here, whitespace matters. Each set of quotes defines a row, and the spaces define a new column.
+
+Then, on the Grid Items...
+
+```css
+.item-a {
+  grid-area: header;
+}
+.item-b {
+  grid-area: main;
+}
+.item-c {
+  grid-area: sidebar;
+}
+.item-d {
+  grid-area: footer;
+}
+```
+
+...to assign the items to the named areas. 
+
+By the way, you can name "lines" this way too, not just areas, but I feel like this is much more useful.
+
+### Gaps
+
+> Specifies the size of the grid lines. You can think of it like setting the width of the gutters between the columns/rows.
+
+`grid-gap` is a wonderful property that defines the size of the "lines", but we can think of it as defining our "gutters". 
+
+You can define rows and columns separately, or you an use one property to define them both.
+
+```css
+.container {
+  grid-row-gap: 1.5em;
+  grid-column-gap: 0.75em;
+  grid-gap: 1.5em 0.75em;
+  grid-gap: 1em; /* sets both */
+}
+```
+
+> The gutters are only created between the columns/rows, not on the outer edges.
+
+Grid gaps do not affect your `grid-template-columns` or row settings. If you set 10px as the gap, your 100px column will remain 100px. 
 
 ## Grid items
 
 ### Placing items
 
-grid-column-start
-grid-column-end
-grid-column
+> Determines a grid item's location within the grid by referring to specific grid lines. grid-column-start/grid-row-start is the line where the item begins, and grid-column-end/grid-row-end is the line where the item ends.
 
+- _line_ - can be a number to refer to a numbered grid line, or a name to refer to a named grid line
+- span _number_ - the item will span across the provided number of grid tracks
+- _auto_ - indicates auto-placement, an automatic span, or a default span of one
+
+These properties let you specify how your Grid items span over rows and columns. 
+
+`grid-column-start`
+`grid-column-end`
 grid-row-start
 grid-row-end
+
+Or, you can use 
+grid-column
+
+
 grid-row
 
 grid-area
