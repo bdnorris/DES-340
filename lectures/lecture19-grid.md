@@ -359,22 +359,65 @@ There's also `grid-area` of course, noted previously.
 
 ### item alignments
 
-justify-self
+`justify-self`
 
-align-self
+> Aligns a grid item inside a cell along the inline (row) axis (as opposed to align-self which aligns along the block (column) axis). This value applies to a grid item inside a single cell.
+
+- _start_ - aligns the grid item to be flush with the start edge of the cell
+- _end_ - aligns the grid item to be flush with the end edge of the cell
+- _center_ - aligns the grid item in the center of the cell
+- _stretch_ - fills the whole width of the cell (this is the default)
+
+`align-self`
+
+> Aligns a grid item inside a cell along the block (column) axis (as opposed to justify-self which aligns along the inline (row) axis). This value applies to the content inside a single grid item.
+ 
+- _start_ - aligns the grid item to be flush with the start edge of the cell
+- _end_ - aligns the grid item to be flush with the end edge of the cell
+- _center_ - aligns the grid item in the center of the cell
+- _stretch_ - fills the whole height of the cell (this is the default)
 
 ## Back to the parents for a second...
 
+### Implicit vs. Explicit
+
+We won't go too deep into this, but we need to acknowledge the Implicit grid.
+
+> Implicit tracks get created when there are more grid items than cells in the grid or when a grid item is placed outside of the explicit grid.
+
+Basically, if you have more items than can fit in your explicit grid, rows or columns are added.
+
+[The Difference Between Explicit and Implicit Grids](https://css-tricks.com/difference-explicit-implicit-grids/)
+
 ### Auto columns and rows
 
-grid-auto-columns
+`grid-auto-columns`
 
-grid-auto-rows 
+`grid-auto-rows`
+
+> Specifies the size of any auto-generated grid tracks (aka implicit grid tracks).
+
+```css
+.container {
+  grid-template-columns: 60px 60px;
+  grid-template-rows: 90px 90px
+}
+```
 
 ### Flow
 
-grid-auto-flow
+`grid-auto-flow`
 
+> If you have grid items that you don't explicitly place on the grid, the auto-placement algorithm kicks in to automatically place the items. This property controls how the auto-placement algorithm works.
+
+
+- _row_ - tells the auto-placement algorithm to fill in each row in turn, adding new rows as necessary (default)
+- _column_ - tells the auto-placement algorithm to fill in each column in turn, adding new columns as necessary
+- _dense_ - tells the auto-placement algorithm to attempt to fill in holes earlier in the grid if smaller items come up later
+
+`dense` is pretty cool, but...
+
+> Note that dense only changes the visual order of your items and might cause them to appear out of order, which is bad for accessibility.
 
 ### Gutters aka "Gaps"
 
@@ -389,42 +432,48 @@ We get some new features to define our gutters, and since we're not using margin
 
 > The gutters are only created between the columns/rows, not on the outer edges.
 
-### Implicit vs Explicit Grid
-
 ### Inspecting in the browser
+
+Firefox is our best tool for inspecting our grid. It allows you to turn on lines and see lines, gaps, and tracks with labeling.
+
+[CSS Grid Inspector](https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Examine_grid_layouts)
 
 ## Summary
 
-It's not necessarily important for you to become an expert in this, or to memorize these properties, what's important, especially in your role as a designer, is that you take away from Grid, Flexbox and other layout principles what is possible to do on the web. 
+It's not necessarily important for you to become an expert in this, or to memorize these properties, what's important, especially in your role as a designer, is that you take away from Grid, Flexbox and other layout principles what is possible to do on the web.
 
 ## Resources
 
-http://cssgridgarden.com/
+From the same people as Flexbox Froggy, teaches you grid properties and values through a gardening game. 
+[CSS Grid Garden](http://cssgridgarden.com/)
 
-https://gridbyexample.com/
+Real world patterns for using grid to achieve different layouts.
+[Grid by Example](https://gridbyexample.com/)
 
-https://tympanus.net/codrops/css_reference/grid/
+[Codrops Grid Guide](https://tympanus.net/codrops/css_reference/grid/)
 
-http://jensimmons.com/post/feb-27-2017/learn-css-grid
+### Jen Simmons
 
-  https://www.youtube.com/watch?v=0Gr1XSyxZy0
+Jen has a lot of good grid information:
 
-  https://www.youtube.com/watch?v=hs3piaN4b5I
+[Learn CSS Grid](http://jensimmons.com/post/feb-27-2017/learn-css-grid)
 
-  https://www.youtube.com/watch?v=lZ2JX_6SGNI&list=PLbSquHt1VCf3rmXD2BymC_ZOGDEIu0OWP
-  https://www.youtube.com/watch?v=ZPtpzuRajzM&ut=
-  https://www.youtube.com/watch?v=mVQiNpqXov8
+<!-- [The benefits of learning how to code layouts with CSS Grid](http://jensimmons.com/post/feb-28-2017/benefits-learning-how-code-layouts-css) -->
 
-  https://www.youtube.com/watch?v=EEOJZy_Gge4
+- [9 Biggest Mistakes with CSS Grid](https://www.youtube.com/watch?v=0Gr1XSyxZy0)
+- [Flexbox vs. CSS Grid — Which is Better?](https://www.youtube.com/watch?v=hs3piaN4b5I)
+- [Min & Max Content Sizing in CSS Grid — 1/3 Flexibility](https://www.youtube.com/watch?v=lZ2JX_6SGNI)
+- [FR Units in CSS Grid — 2/3 Flexibility](https://www.youtube.com/watch?v=ZPtpzuRajzM&ut=)
+- [MinMax in CSS Grid — 3/3 Flexibility](https://www.youtube.com/watch?v=mVQiNpqXov8)
+- [Flexibility & The Fold – new possibilities with CSS Grid](https://www.youtube.com/watch?v=EEOJZy_Gge4)
+- [Incredibly Easy Layouts with CSS Grid](https://www.youtube.com/watch?v=tFKrK4eAiUQ&t)
+- [Responsive Mondrian – a demo of CSS Grid](https://www.youtube.com/watch?v=qNtJ5p3h2A4)
+- [Internet Explorer + CSS Grid????](https://www.youtube.com/watch?v=7msERxu7ivg&t=1s)
+- [Why I love CSS Grid - by Jen Simmons](https://www.youtube.com/watch?v=tY-MHUsG6ls)
 
-  https://www.youtube.com/watch?v=tFKrK4eAiUQ&t
-  https://www.youtube.com/watch?v=qNtJ5p3h2A4
 
-  https://www.youtube.com/watch?v=7msERxu7ivg&t=1s
 
-https://www.youtube.com/watch?v=tY-MHUsG6ls
-
-https://www.youtube.com/watch?v=HgwCeNVPlo0&feature=youtu.be
+https://www.youtube.com/watch?v=HgwCeNVPlo0
 
 https://www.youtube.com/watch?v=bI1wNuvuFxo
 
@@ -440,10 +489,9 @@ https://www.mozilla.org/en-US/developer/css-grid/
 
 https://www.mozilla.org/en-US/developer/css-grid/
 
-http://jensimmons.com/post/feb-28-2017/benefits-learning-how-code-layouts-css
-
-http://jensimmons.com/post/feb-27-2017/learn-css-grid
 
 https://www.youtube.com/watch?v=7kVeCqQCxlk
 
 https://www.slideshare.net/mor10/css-grid-changes-everything-about-web-layouts-wordcamp-europe-2017
+
+Wes Bos
