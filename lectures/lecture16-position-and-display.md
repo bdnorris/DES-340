@@ -226,7 +226,7 @@ Sticky came along to make this easier. You set the position, then set a directio
 
 ```css
 .header h1 {
-  position: stick;
+  position: sticky;
   top: 0;
   z-index: 100;
 }
