@@ -340,16 +340,22 @@ These properties let you specify how your Grid items span over rows and columns.
 
 `grid-column-start`
 `grid-column-end`
-grid-row-start
-grid-row-end
+`grid-row-start`
+`grid-row-end`
 
-Or, you can use 
-grid-column
+Or, you can use the shorthand properties with slashes (`/`) to specify both.
 
+`grid-column`
+`grid-row`
 
-grid-row
+```css
+.item-c {
+  grid-column: 3 / span 2;
+  grid-row: third-line / 4;
+}
+```
 
-grid-area
+There's also `grid-area` of course, noted previously.
 
 ### item alignments
 
