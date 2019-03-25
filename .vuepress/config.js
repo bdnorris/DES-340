@@ -18,7 +18,7 @@ module.exports = {
           "lectures/lecture01-intro.md",
           "lectures/lecture02-rwd.md",
           "lectures/lecture03-web-how.md",
-          "lectures/lecture04-clickability-and-affordance.md", // swtich 3 and 4 later
+          "lectures/lecture04-clickability-and-affordance.md", // switch 3 and 4 later
           "lectures/lecture05-html-elements-and-attributes.md",
           "lectures/lecture06-the-dom.md",
           "lectures/lecture07-units.md",
