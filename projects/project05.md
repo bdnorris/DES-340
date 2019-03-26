@@ -4,7 +4,7 @@
 
 Points: 150
 
-This assignment will let you practice designing a website from concept to completion using modern workflows. You will create a concept for a new site, a "styletile", a sitemap, a wireframe, a prototype, and a design.
+This assignment will let you practice designing a website from concept to completion using modern workflows. You will create a concept for a new site, a "styletile", a sitemap, a wireframe, <!-- a prototype,--> and a design.
 
 ## Objectives
 
@@ -35,9 +35,26 @@ So don’t be afraid to think big, the rest of the assignment will only focus on
 *   It doesn’t have to be a million-dollar idea. Keep in mind the main objective of this project is the workflow itself.
 *   Come up with a few different ideas to discuss with me so we can pick the one that will fulfill the goals of this project the best.
 
-## Define Your Audience
+## Define your audience and write your brief
 
-Have a specific audience/user in mind (even if the audience doesn’t technically exist, e.g. freelance mutant zombie hunters.
+You will need to write a "design brief" for me to approve in order to move forward with your project. It should follow the following format.
+
+1. Briefly describe what your website is about or otherwise describe its function.
+
+2. Company / Organization
+_Describe the organization behind the site. Who is the site owner (real or fictional)?_
+
+3. Purpose
+<!-- _Is it a redesign? Is it launching a new product or service?_ -->
+
+   1. What are the reasons someone would come to your site (information, entertainment, news, look up products/pricing, make a purchase, get contact details) ?
+
+   2. What is would the key metric of success be (sales, contacts, influence) ?
+
+4. Audience
+_Write a bit about your target audience. Who are they, what are the interests. Are there any important demographic aspects to your target audience (age, gender, economic status, location and language)?_
+
+<!-- 4. Have a specific audience/user in mind (even if the audience doesn’t technically exist, e.g. freelance mutant zombie hunters. -->
 
 <!-- ## User Stories
 
@@ -78,8 +95,8 @@ Sometimes, a more complex isometric view is useful:
 
 ...whatever is most appropriate for your site.
 
-Sitemaps may also share a lot in common with a map of the user flow, corresponding to the user stories you’ve previously written.  
-[https://speckyboy.com/collection-inspiring-sitemaps-user-flow-maps/](https://speckyboy.com/collection-inspiring-sitemaps-user-flow-maps/)
+<!-- Sitemaps may also share a lot in common with a map of the user flow, corresponding to the user stories you’ve previously written.  
+[https://speckyboy.com/collection-inspiring-sitemaps-user-flow-maps/](https://speckyboy.com/collection-inspiring-sitemaps-user-flow-maps/) -->
 
 We’re aiming for a **traditional sitemap** on this project, that **must account for all pages on our site** (large amounts of repetitive pages would be abstracted into a “stack” or some other visual metaphor). Additionally, incorporating some “flow” concepts might be useful, especially if the user flow is particularly complex.
 
@@ -89,6 +106,8 @@ You can develop your “sitemap” in the style and program of your choosing. I'
 
 [Thumb_Wireframing_03.ai](http://briannorris.io/msuweb/Thumb_Wireframing_03.ai) (right-click, save download as)  
 [Thumb_Wireframing_03_leg.ai](http://briannorris.io/msuweb/Thumb_Wireframing_03_leg.ai) (if you have trouble opening the above)
+
+// Add sketch files
 
 **Minimum Requirement** would be a simple document with pages represented by rectangles with a clear hierarchy (levels of content). Dimensions of this document are up to you.
 
@@ -101,14 +120,14 @@ Wireframing is creating a “low-fi” digital sketch of your site. The purpose 
 Huge list of tips for wireframing, we will only have time to touch on the basics, but this article is a good summary of how far you can take wireframing, especially on a large project that might involve many team members and a large budget.  
 [https://www.smashingmagazine.com/2016/11/wireframe-perfectionist-guide/](https://www.smashingmagazine.com/2016/11/wireframe-perfectionist-guide/)
 
-### And also...“Prototyping:” Planning your interactions
+<!-- ### And also...“Prototyping:” Planning your interactions
 
 The methods described here won’t apply, but the “why’s” regarding prototyping do:  
 [The Skeptics Guide to Low Fidelity Prototyping](https://www.smashingmagazine.com/2014/10/the-skeptics-guide-to-low-fidelity-prototyping/) <span class="important">« Please Read!</span>
 
 Essentially, prototyping might include simply adding clickable links to your wireframes, but often includes interactive items programmed in javascript and animation.
 
-There are will be **no requirements** for prototyping on this project. I simply want you to explore and have awareness of the possibilities.
+There will be **no requirements** for prototyping on this project. I simply want you to explore and have awareness of the possibilities. -->
 
 ### Tools
 
@@ -182,8 +201,6 @@ Style Tiles and Style Guides definitely bleed together. Both show colors, button
 *   [carbondesignsystem.com](http://carbondesignsystem.com/style/colors/swatches)
 
 
-
-
 ### Tasks
 
 1.  Research this concept further by reading the following articles on Style Tiles and Atomic Design:
@@ -218,8 +235,6 @@ Use media queries for changes for different screen sizes. Minimum of one media q
 The goal is to create an HTML document with a healthy selection of elements styled appropriately. When you view some of the reference materials, you’ll notice large corporate style guides can be very large and are often websites in themselves. We’re obviously aiming for something smaller, but here are some guidelines. -->
 
 
-
-
 ## Page Design
 
 You will continue exploring web design by creating a series of designs for a common view in contemporary sites: The user profile page. Any website that has a social component (users can share content, view the content shared by others, network, send messages, etc.) often has a profile page for each user.
@@ -247,40 +262,54 @@ Mobile: 320px–480px
 Desktop: 768px–1280px
 
 
-
-
 ## Presentation
 
-There will be no critique, you are responsible for having an approved concept to begin work on part two of the assignment on the given due date.
+<!-- There will be no critique, you are responsible for having an approved concept to begin work on part two of the assignment on the given due date. -->
 
-*   Have your idea, in writing.
+<!-- *   Have your idea, in writing.
 *   Define your audience, in writing. This can be a general description, or a list of specifics.
-*   We can expand later, but it’s important to have a few to make sure your concept is robust enough to carry through the rest of your project.
+*   We can expand later, but it’s important to have a few to make sure your concept is robust enough to carry through the rest of your project. -->
 
-After discussing these items with me you should place them as text notes on your InVision board under the headings:  
-“Assignment 7: Part 1: Concept”  
-“Assignment 7: Part 1: Audience”  
-“Assignment 7: Part 1: User Stories”.
+### Brief
+
+After discussing these items with me you should place them as text notes on your InVision board under the heading: 
+
+"Project 5: Website Brief"  
+
+<!-- “Assignment 7: Part 1: Audience”  
+“Assignment 7: Part 1: User Stories”. -->
 
 
-## Presentation
+### Sitemap
 
-Please place in your InVision account, under the heading “Assignment 7: Information Architecture and Wireframes”
+Please place your sitemap, in the an appropriate format on your InVision board, under the heading:
 
-*   Your Sitemap, as text or image, whatever’s most appropriate.
-*   A text note of your published Webflow project wireframing URL.
+ "Project 5: Information Architecture and Wireframes”
 
-### Presentation
+<!-- *   Your Sitemap, as text or image, whatever’s most appropriate. -->
+<!-- *   A text note of your published Webflow project wireframing URL. -->
 
-You can create more than one style tile if you wish, and each style tile should be 1200px x 900px, landscape. Upload to your InVision board with the section title “**Assignment 7: Style Tiles**”.
+### Wireframes
 
-### Presentation
+Please place your wireframes as PNG images on your InVision board under the heading:
 
-Make a section on your Invision board called Assignment 6: Research
+"Project 5: Wireframes"
+
+### Style Tiles
+
+You can create more than one style tile if you wish, and each style tile should be 1200px x 900px, landscape. Upload to your InVision board under the heading:
+
+"Project 5: Style Tiles”
+
+### Design
+
+Make a section on your InVision board called "Assignment 5: Research"
 Post the research examples in this section. Arrange them neatly.
 
-Make a section on your Invision board called Assignment 6: Designs
+Make a section on your InVision board called "Assignment 5: Designs"
 
 Place your designs with a realistic browser height for their view. You could mock-up these designs in a desktop and mobile browser if you wish. Arrange them side by side.
+
 Additionally, place your full designs at their full height.
+
 If you have additional designs, or want to show state changes, you can put as many designs as you want here.
