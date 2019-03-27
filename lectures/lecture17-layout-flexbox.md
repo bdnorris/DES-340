@@ -1,8 +1,8 @@
-# CSS Layout and Flexbox
+# CSS Layout with Flexbox
 
 [Lecture CodePen](https://codepen.io/bdnorris/pen/WPwoGw)
 
-## Floats, and why we're skipping them
+## Floats, and why we&rsquo;re skipping them
 
 I mentioned floats when we discussed images. In the early web, there were no real layout methods. The web was really supposed to just be text documents with image support, sort of like a Word file. The hack was to use the `<table>` element to layout web pages. When responsive design became a thing, CSS floats were used instead. Still a hack. 
 
@@ -16,7 +16,7 @@ This is a pretty good site to see a lot of basic CSS layout techniques, includin
 
 ## Flexbox
 
-You. are. so. lucky. Flexbox might seem tough, but keep in mind, we had nothing before it. The entire web was a lie, every website you ever used was basically doing incredible things with hacks on top of hacks. You get Flexbox.
+_You. are. so. lucky._ Flexbox might seem tough, but keep in mind, we had nothing before it. The entire web was a lie, every website you ever used was basically doing incredible things with hacks on top of hacks. Now we have Flexbox.
 
 **So what is it?** Flexbox is a set of CSS properties that allow for one-directional layout where a parent's children can be set to automatically fill the parent's space. It also gives us some really great alignment tools. 
 
@@ -30,7 +30,9 @@ From CSS Tricks...
 
 <!-- > **Note:** Flexbox layout is most appropriate to the components of an application, and small-scale layouts, while the _Grid_ layout is intended for larger scale layouts. -->
 
-The key to understanding Flexbox is understanding that it's a parent-child relationship. To activate Flexbox, I can use the display property.
+The key to understanding Flexbox is understanding that it's a parent-child relationship. Without Flexbox, there's not a lot of ways for a parent to have any control over it's children. Flexbox gives us that control. 
+
+To activate Flexbox, I can use the display property.
 
 ```html
 <section>
@@ -58,7 +60,7 @@ Flex children can also be flex parents though. We'll look at this in a bit.
 
 The easiest way to use flexbox is just to declare it on the parent. There a bunch of defaults that come into play, and you will automatically create a vertical row of boxes that flex to fill the space of the parent. That's just one line of CSS!
 
-But, the complete flexbox spec is huge and has a lot of properties, so it takes a bit of time to learn. This CSS Tricks article on this is indispensable, and you should refer to it often while you're learning, and even for quite a while after you learn the basics.
+But, the complete flexbox specification is huge and has a lot of properties, so it takes a bit of time to learn. **This CSS Tricks article on this is indispensable**, and you should refer to it often while you're learning, and even for quite a while after you learn the basics.
 
 [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
@@ -113,11 +115,11 @@ section {
 }
 ```
 
-Notice, a lot of flexbox property values are direction agnostic. So we say `flex-start` instead of "left" for a row. That's because if our direction was `column`, `flex-start` would be "top", not left.
+**Notice, a lot of flexbox property values are direction agnostic**. So we say `flex-start` instead of "left" for a row. That's because if our direction was `column`, `flex-start` would be "top", not left.
 
 ### Wrap
 
-Flexbox is one-dimensional, meaning the properties really only works one way, "row" or "column". However, we can allow for wrapping, making grids of items workable.
+Flexbox is one-dimensional, meaning the properties really only work in one direction, "row" or "column". However, we can allow for wrapping, making grids of items workable.
 
 By default, flex children will all try to fit onto one line. You can allow the items to wrap with the `flex-wrap` property.
 
@@ -130,11 +132,13 @@ section {
 }
 ```
 
-What's tricky here is what I call the "Last Row Problem". Using wrap lets you create extra rows or columns, but, you don't have a lot of control over the rows individually. You have to be really careful about how you use `justify-content` with wrapping. Using `justify-content: space-between` will affect the last row differently if there are a different number of children.
+What's tricky here is what I call the "Last Row Problem". Using wrap lets you create extra rows or columns, but, you don't have a lot of control over the rows individually. You have to be really careful about how you use `justify-content` with wrapping. Using `justify-content: space-between` will affect the last row differently if there is an uneven number of children.
+
+Another way to say that, if you have 3 items per row, and 9 items your fine. But if you have 10 or 11, something different is going to happen on that last row.
 
 ### Alignment
 
-One of the coolest things about flexbox is all the alignments it gives us. The `align-items` property gives us control over alignment on the "cross-axis", that is, the axis other than the main one. If you have `flex-direction` set to "row", then the cross-axis is the vertical axis.
+One of the coolest things about flexbox is all the alignments it gives us. The `align-items` property gives us control over alignment on the **&ldquo;cross-axis&rdquo;**, that is, the axis other than the main one. If you have `flex-direction` set to &ldquo;row&rdquo;, then the cross-axis is the vertical axis.
 
 ```css
 section {
@@ -150,9 +154,9 @@ section {
 }
 ```
 
-"stretch" is really useful, it's one of the few ways we could keep different items the same height, even if they have different content, without explicitly setting the height.
+`stretch` is really useful, it's one of the few ways we could keep different items the same height, even if they have different content, without explicitly setting the height.
 
-"center" is also very useful. Sometimes I use flexbox with just one parent and item, just because of how easy it is to center.
+`center` is also very useful. Sometimes I use flexbox with just one parent and item, just because of how easy it is to center.
 
 ```html
 <section>
@@ -278,7 +282,7 @@ div {
 }
 ```
 
-This div can grow and shrink but will try to be 50%. This means if its siblings are set the same and its parent allows wrapping, it will allow 2 per row. If there were 3 and wrapping was not allowed, it would end up being 33.333%. You'll see more about how this stuff works in the next lecture.
+This div can grow and shrink but will try to be 50%. This means if its siblings are set the same and its parent allows wrapping, it will allow 2 per row. If there were 3 and wrapping was not allowed, it would end up being 33.333%. You'll see more about how this stuff works a future lecture.
 
 Although setting different values other than 1 or 0 for flex-grow and flex-shrink is a pretty powerful tool, I don't really use it. I find percentages are easier for me to grasp, and I simply use either 0 or 1 to basically turn shrinking and growing to on or off.
 
@@ -385,14 +389,15 @@ This is a pretty great way to learn flexbox properties. You should really try it
 Probably the best way to learn Flexbox is to try and build something with it, and keep this open in a browser tab to refer to:
 [CSS Tricks: A Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
-https://tympanus.net/codrops/css_reference/flexbox/
+[Codrops Flexbox Reference](https://tympanus.net/codrops/css_reference/flexbox/)
 
-http://bennettfeely.com/flexplorer/
+[Flexbox Playground](https://demos.scotch.io/visual-guide-to-css3-flexbox-flexbox-playground/demos/)
 
-https://demos.scotch.io/visual-guide-to-css3-flexbox-flexbox-playground/demos/
+[Another Flexbox Playground](http://bennettfeely.com/flexplorer/)
 
-[MDN Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/flex)https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+[MDN Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/flex)
 
-vet this -> https://www.youtube.com/watch?v=JJSoEo8JSnc
+[MDN Flexbox Concepts](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
 
-Flexbugs!!!
+The rollout of Flexbox was a little shaky, so there are some bugs existing in some older browsers. Here's a great list to help you track down what your issue might be.
+[Flexbugs: A list of known Flexbox browser bugs](https://github.com/philipwalton/flexbugs)

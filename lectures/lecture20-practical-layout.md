@@ -208,9 +208,11 @@ width: 300px;
 float: right;
 } -->
 
+### Flex Order
+
 ### Text columns
 
-### Yet another note on Grid
+<!-- ### Yet another note on Grid
 
 So let's mention CSS Grid one more time. It's pretty great, and will absolutely solve a lot of your layout problems. However, I'm not lecturing on it, since I still think it will be easier to figure out Flexbox first.
 
@@ -224,4 +226,4 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_
 
 https://labs.jensimmons.com/2016/
 
-https://www.youtube.com/watch?v=tFKrK4eAiUQ&t=448s
+https://www.youtube.com/watch?v=tFKrK4eAiUQ&t=448s -->

@@ -132,3 +132,9 @@ might fix it and you don’t really know what you did but it worked. But
 as soon as it works again, the high comes back. I fixed the code. I did it.
 It was me.
 I. Am. A. Genius. -->
+
+
+https://www.youtube.com/watch?v=NJjlzxud4_M&index=3&list=PLbSquHt1VCf1kpv9WRGMCA9_Nn4vCLZ9Y
+
+Feature Queries
+https://www.youtube.com/watch?v=T8uxmUQZsck&list=PLbSquHt1VCf1kpv9WRGMCA9_Nn4vCLZ9Y&index=5

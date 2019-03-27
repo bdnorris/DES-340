@@ -1,8 +1,8 @@
 # Coding for responsive design and Media Queries
 
-We've talked a lot about the design part of Responsive Web Design (RWD), but how do you code it? This is a pretty big subject, but the main key to making all of this work is the use of "media queries". Media Queries allow us to write breakpoints into our CSS. 
+We've talked a lot about the design part of Responsive Web Design (RWD), but how do you code it? This is a pretty big subject, but the main key to making all of this work is the use of "media queries". Media Queries allow us to write our design breakpoints into our CSS. 
 
-In the past most web design consisted of pretty much everything being set at a fixed width. Once a plethora of web-enabled devices started hitting the market  "responsive" came along as the new web development buzzword. The thing was, a lot of the tools already existed. Flexible units like percentages had been in CSS from the beginning, min-width and max-width were introduced in IE 7. Media queries were the last needed piece. Without them, our designs couldn't "respond" to the width of the viewport. They were introduced as an official standard in June 2012 and were supported all major browsers. 
+In the past most web design consisted of pretty much everything being set at a fixed width. Once a plethora of web-enabled devices started hitting the market "responsive" came along as the new web development buzzword. The thing was, a lot of the tools already existed. Flexible units like percentages had been in CSS from the beginning, and min-width and max-width were introduced in IE 7. Media queries were the last needed piece. Without them, our designs couldn't "respond" to the width of the viewport. They were introduced as an official standard in June 2012 and were supported all major browsers. 
 
 ## Classic articles from 2010-11
 
@@ -14,7 +14,7 @@ Most of the technique's listed here are pretty similar to what you would use tod
 
 ## Media queries
 
-[Media Query Codepen](https://codepen.io/bdnorris/pen/EroEZp)
+[Media Query Codepen](https://codepen.io/bdnorris/pen/dreZjy)
 
 Media queries are the heart of responsive coding. They're how we set our breakpoints in our code. They let you turn particular CSS styles on and off depending on the size of the viewport.
 
@@ -39,14 +39,14 @@ There's a lot you can do with media queries other than check viewport width, but
 body {
 	font-size: 14px;
 } 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
 	/* medium */
 	body {
 		font-size: 16px;
 		color: blue;
 	}
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
 	/* large */
 	body {
 		font-size: 18px;
@@ -54,7 +54,9 @@ body {
 }
 ```
 
-There, we used two media queries to adjust our font size. But what about that `color` property? It would _cascade_ up to from 768px into our desktop. Our font-size will work because the large setting is **after** the medium styles, meaning it will overwrite them. If you want to limit a media query to a specific range, you'll have to use both `min-width` and `max-width` (this also means when someone hit's print, they're printing the mobile version).
+I'm since we're moving up with our sizes here, I'm adding one pixel to our breakpoints that the design was created at (768px and 1024px). If we were using `max-width`, we would use 768px and 1024px instead. More on this later.
+
+There, we used two media queries to adjust our font size. But what about that `color` property? It would _cascade_ up to from 769px into our desktop. Our font-size will work because the large setting is **after** the medium styles, meaning it will overwrite them. If you want to limit a media query to a specific range, you'll have to use both `min-width` and `max-width` (this also means when someone hit's print, they're printing the mobile version).
 
 You can think of min-width and max-width like the bookends of your CSS code. 
 
@@ -87,7 +89,7 @@ I'm taking advantage of that and using a "mobile-first" coding approach...not to
 
 ## Retina Images
 
-[Retina Images CodePen](https://codepen.io/bdnorris/pen/JxMLLz)
+[Retina Images Codepen](https://codepen.io/bdnorris/pen/wOjmOq)
 
 If you're on a "Retina" screen (Apple's branded name for pixel dense screens), you'll notice that images might look a little blurry.
 
@@ -115,7 +117,7 @@ So, if we have an image that appears in the browser at 300px &times; 200px, we'l
 	}
 ```
 
-This would force the image's container to be half the size of the image, making our image sharp on a Retina screen. But be careful, we still need to watch our image's size. Sometimes you have to balance quality and filesize to give an overall good experience to your user.
+This would force the image's container to be half the size of the image, making our image sharp on a Retina screen. But be careful, we still need to watch our image's size. Sometimes you have to balance quality and file size to give an overall good experience to your user.
 
 Remember, setting the style of the `<img>` tag here can be done globally, so images always fill their containers. In fact, height may not be necessary at all.
 
@@ -138,7 +140,7 @@ Just remember, whatever type of screen you have, it's good to find other types o
 
 ## Ems, Rems, Percentage and VW
 
-... percentage and vw codepen ...
+[Relative Units Codepen](https://codepen.io/bdnorris/pen/oVddgj)
 
 Now's where we bring back those relative units and see how we can use them with media queries.
 
@@ -166,7 +168,7 @@ html, body {
 } 
 ```
 
-By using Ems for my button, I can easily change the context of that Em on it's parent to affect the sizing of the button overall, and make it larger for 769px and above. By using Rems, I'm still connecting the size to the root. I could also...
+By using Ems for my button's styles, I can easily change the context of that Em on it's parent to affect the sizing of the button overall, and make it larger for 769px and above. By using Rems, I'm still connecting the size to the root. I could also...
 
 ```css
 html, body {
@@ -212,7 +214,9 @@ In the above code, I'm saying to make my flex children 100% wide, but for above 
 
 ### VW and VH
 
-Let's not forget our "Viewport Units." They make it easy for us to size things directly based on the viewport width, with or without media queries. Although the unit itself is essentialy 1% of the viewport height or width, they are different from percentages, because percentages are related to the parent, whereas Viewport Units are relative to the viewport only.
+[VW and VH Codepen](https://codepen.io/bdnorris/pen/aMGGZb?editors=1100)
+
+Let's not forget our "Viewport Units." They make it easy for us to size things directly based on the viewport width, with or without media queries. Although the unit itself is essentially 1% of the viewport height or width, they are different from percentages, because percentages are related to the parent, whereas Viewport Units are relative to the viewport only.
 
 ```css
 .my-container {
@@ -221,7 +225,7 @@ Let's not forget our "Viewport Units." They make it easy for us to size things d
 
 	.my-child {
 		width: 50%; /* Here, we're saying make our box half of it's parents width, effectively 300px */
-		width: 20vw; /* Here, we're saying make our box half of the viewport width, REGARDLESS of the parent's width */
+		width: 50vw; /* Here, we're saying make our box half of the viewport width, REGARDLESS of the parent's width */
 	}
 ```
 
@@ -231,10 +235,6 @@ The also work better with heights. If you need to create a hero section that alw
 header {
 	width: 100vw;
 	height: 80vh;
-}
-
-.thing-under-the-header-we-also-want-to-see {
-	height: 20vh;
 }
 ```
 
@@ -271,6 +271,6 @@ There's a lot of interesting things you can do, check out this link for some ide
 [RWD Guide from Google](https://developers.google.com/web/fundamentals/design-and-ui/responsive/)
 
 
-http://giona.net/tools/css3-mediaquery-generator/
+[Media Query Generator](http://giona.net/tools/css3-mediaquery-generator/)
 
 

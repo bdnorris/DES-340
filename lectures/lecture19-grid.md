@@ -4,47 +4,47 @@ Similar to Flexbox, but with two dimensions at once, the Grid specification allo
 
 ## Caveats
 
-I've hesitated a lot on whether this is the right course and the right time to dig into the CSS Grid specification. However, after working through examples of how to do layout with Flexbox, I've realized a lot of my techniques, although resilient and useful, are difficutl to explain. Grid solves a lot of these problems.
+I've hesitated a lot on whether this is the right course and the right time to dig into the CSS Grid specification. However, after working through examples of how to do layout with Flexbox, I've realized a lot of my techniques, although resilient and useful, are difficult to explain. Grid solves a lot of these problems.
 
-There are two reasons I hesitated, one is the size of the Grid spec. There are so many properties, new units, and completely new syntax that you don't see in other CSS properties.
+There are two reasons I hesitated, one is the size of the Grid specification. There are so many properties, new units, and completely new syntax that you don't see in other CSS properties.
 
-The other is that's so new. Partly this leads to a lack of patterns of the kinds of things you can do with Grid. But the biggest reason is that there is virtually no support in older browsers. Because of this, I simply don't have very much experience with Grid, because supporting Internet Explorer and older versions of Safari isn't optional. 
+The other is that's so new. Partly this leads to a lack of patterns of the kinds of things you can do with Grid. But the biggest reason is that there is virtually no support in older browsers. Because of this, I simply don't have very much experience with Grid, because supporting Internet Explorer and older versions of Safari isn't optional in my work. 
 
-However, Grid is just too powerful, too useful, and I'm deciding to bet on the idea that as students who are new to CSS, Grid is just a more straight forward way to layout web pages.
+However, Grid is just too powerful, too useful, and I'm deciding to bet on the idea that as students who are new to CSS, Grid is a more straight-forward way to layout web pages.
 
 ## History
 
 [The Story of CSS Grid from its Creators](https://alistapart.com/article/the-story-of-css-grid-from-its-creators)
 
-Historically, new features of HTML, CSS or Javascript are slow to be implemented. One reason is that the specifications can take a while to get standardized. Flexbox suffered from this, leading to older browsers using different versions of it. Also different browser makers all have to implement a feature before one can safely use that feature. 
+Historically, new features of HTML, CSS or Javascript are slow to be implemented. One reason is that the specifications can take a while to get standardized. Flexbox suffered from this, leading to older browsers using different versions of it. Usually, different browser makers all have to implement a feature before a developer can safely use that feature, especially when it's a layout feature. 
 
-The people trying to define the Grid spec wanted to avoid the same mistakes that were made with Flexbox, so everything came out relatively fast as a fully formed whole. Hitting the newest browsers in a very complete state. The folks at Microsoft actually spearheaded this movement, mostly so they could build more stuff with web technologies. 
+The people trying to define the Grid spec wanted to avoid the same mistakes that were made with Flexbox. Everything came out relatively fast as a fully-formed whole, hitting up-to-date browsers in a complete state. The folks at Microsoft actually spearheaded this movement, mostly so they could build more stuff with web technologies. 
 
 [CanIUse: Grid](https://caniuse.com/#search=grid)
 
-Now, with pretty good support, Grid is ready, if you don't have to support Internet Explorer. 
+Now, with pretty good support, Grid is ready...if you don't have to support Internet Explorer. 
 
 ## To Flexbox or to Grid
 
-The main difference between Flexbox and Grid is that although we have the `flex-wrap` property, Flexbox was really only ever meant to work in one direction. Grid is meant to work it two directions, with both columns and rows. 
+The main difference between Flexbox and Grid is that although we have the `flex-wrap` property, Flexbox was really only ever meant to work in one direction. Grid is meant to work in two directions, with both columns and rows. 
 
 One thing that Grid can do is it can let you assign content to areas of the grid regardless of that items order in your HTML. This would allow you to prioritize mobile for your HTML order, but really change stuff on larger screens. 
 
-Another thing Grid does that is really useful, is that it comes ith it's own explicit gutter property called `grid-gap`. This is really nice, since using margins and paddings with Flexbox can be a bit painful.
+Another thing Grid comes with is it's own explicit gutter property called `grid-gap`. This is really nice, since using margins and paddings with Flexbox can be painful.
 
-Grid doesn't necessarily replace Flexbox, sometimes flexbox is easier. But when you find ourself straining to make Flexbox work, Grid might be your answer.
+Grid doesn't necessarily replace Flexbox, sometimes flexbox is easier. But when you find yourself straining to make Flexbox work, Grid might be your answer.
 
-So when to use Grid...when Flexbox isn't enough.
+So when to use Grid... when Flexbox isn't enough.
 
 ## How to Grid?
 
 Instead of covering the entire Grid specification, I'm going to focus on the most used and most useful properties. In the next lecture, we'll look at some practical uses for these. It will be up to you to go further with Grid if you want, there are a ton of resources at the end of this lecture.
 
-Remember the CSS Tricks article showing all of the Flexbox properities. Well, check out the one for Grid...
+Remember the CSS Tricks article showing all of the Flexbox properties? Well, check out the one for Grid...
 
 [CSS-Tricks: Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
-Any quotes in this lecture that aren't referenced are from this CSS-Tricks guide.
+Any quotes in this lecture that aren't referenced are from the above CSS-Tricks guide.
 
 > CSS Grid Layout (aka "Grid"), is a two-dimensional grid-based layout system that aims to do nothing less than completely change the way we design grid-based user interfaces. CSS has always been used to lay out our web pages, but it's never done a very good job of it. First, we used tables, then floats, positioning and inline-block, but all of these methods were essentially hacks and left out a lot of important functionality (vertical centering, for instance). Flexbox helped out, but it's intended for simpler one-dimensional layouts, not complex two-dimensional ones (Flexbox and Grid actually work very well together). Grid is the very first CSS module created specifically to solve the layout problems we've all been hacking our way around for as long as we've been making websites.
 
@@ -80,7 +80,7 @@ One slightly confusing thing about Grid is the idea of lines. **Grid Lines** are
 
 ## Grid Examples
 
-[Example CodePen for this Lecture](https://google.com)
+[Example CodePen for this Lecture](https://codepen.io/bdnorris/pen/XGYQXo)
 
 ## Grid Containers
 
@@ -149,7 +149,7 @@ If we set three columns in the following way...
 }
 ```
 
-Lets say our grid container is 1000px wide. The first column will be set explicitly at 100px. That leaves 900px that will be divided for the rest of the columns. 600px for the second one and then 300px for the first one. However, if our site is responsive, and the parent container changes size, that first column will stay at 100px wide. The second and third columsn will flex, the second one always remaining twice the size of the first.
+Lets say our grid container is 1000px wide. The first column will be set explicitly at 100px. That leaves 900px that will be divided for the rest of the columns. 600px for the second one and then 300px for the first one. However, if our site is responsive, and the parent container changes size, that first column will stay at 100px wide. The second and third columns will flex, the second one always remaining twice the size of the first.
 
 [CSS-Tricks: Introduction to the fr Unit](https://css-tricks.com/introduction-fr-css-unit/)
 
@@ -190,7 +190,7 @@ The repeat function lets us type a little less.
   grid-template-columns: 100px repeat(4, 1fr);
 }
 ```
-The repeat function lets us define 4 `1fr` columns. It would be the equavilant of `grid-template-columns: 1fr 1fr 1fr 1fr;` Not a huge deal for 4, but it's nice if we wanted 10 or 12 or more.
+The repeat function lets us define 4 `1fr` columns. It would be the equivalent of `grid-template-columns: 1fr 1fr 1fr 1fr;` Not a huge deal for 4, but it's nice if we wanted 10 or 12 or more.
 
 ### Content
 
@@ -218,23 +218,23 @@ Our first column using `max-content` would size itself based on all of the conte
 
 ### Aligning content
 
-`align-items` ...
+`align-items`
 
 > Aligns grid items along the block (column) axis (as opposed to justify-items which aligns along the inline (row) axis). This value applies to all grid items inside the container.
 
-start - aligns items to be flush with the start edge of their cell
-end - aligns items to be flush with the end edge of their cell
-center - aligns items in the center of their cell
-stretch - fills the whole height of the cell (this is the default)
+- start - aligns items to be flush with the start edge of their cell
+- end - aligns items to be flush with the end edge of their cell
+- center - aligns items in the center of their cell
+- stretch - fills the whole height of the cell (this is the default)
 
 `justify-items` ...
 
 > Aligns grid items along the inline (row) axis (as opposed to align-items which aligns along the block (column) axis). This value applies to all grid items inside the container.
 
-start - aligns items to be flush with the start edge of their cell
-end - aligns items to be flush with the end edge of their cell
-center - aligns items in the center of their cell
-stretch - fills the whole width of the cell (this is the default)
+- start - aligns items to be flush with the start edge of their cell
+- end - aligns items to be flush with the end edge of their cell
+- center - aligns items in the center of their cell
+- stretch - fills the whole width of the cell (this is the default)
 
 ### Aligning the grid
 
@@ -244,66 +244,180 @@ These align the grid itself.
 
 > Sometimes the total size of your grid might be less than the size of its grid container. This could happen if all of your grid items are sized with non-flexible units like px. In this case you can set the alignment of the grid within the grid container. This property aligns the grid along the inline (row) axis (as opposed to align-content which aligns the grid along the block (column) axis).
 
-
-    start - aligns the grid to be flush with the start edge of the grid container
-    end - aligns the grid to be flush with the end edge of the grid container
-    center - aligns the grid in the center of the grid container
-    stretch - resizes the grid items to allow the grid to fill the full width of the grid container
-    space-around - places an even amount of space between each grid item, with half-sized spaces on the far ends
-    space-between - places an even amount of space between each grid item, with no space at the far ends
-    space-evenly - places an even amount of space between each grid item, including the far ends
-
+- start - aligns the grid to be flush with the start edge of the grid container
+- end - aligns the grid to be flush with the end edge of the grid container
+- center - aligns the grid in the center of the grid container
+- stretch - resizes the grid items to allow the grid to fill the full width of the grid container
+- space-around - places an even amount of space between each grid item, with half-sized spaces on the far ends
+- space-between - places an even amount of space between each grid item, with no space at the far ends
+- space-evenly - places an even amount of space between each grid item, including the far ends
 
 `align-content`
 
 > Sometimes the total size of your grid might be less than the size of its grid container. This could happen if all of your grid items are sized with non-flexible units like px. In this case you can set the alignment of the grid within the grid container. This property aligns the grid along the block (column) axis (as opposed to justify-content which aligns the grid along the inline (row) axis).
 
-
-    start - aligns the grid to be flush with the start edge of the grid container
-    end - aligns the grid to be flush with the end edge of the grid container
-    center - aligns the grid in the center of the grid container
-    stretch - resizes the grid items to allow the grid to fill the full height of the grid container
-    space-around - places an even amount of space between each grid item, with half-sized spaces on the far ends
-    space-between - places an even amount of space between each grid item, with no space at the far ends
-    space-evenly - places an even amount of space between each grid item, including the far ends
-
+- start - aligns the grid to be flush with the start edge of the grid container
+- end - aligns the grid to be flush with the end edge of the grid container
+- center - aligns the grid in the center of the grid container
+- stretch - resizes the grid items to allow the grid to fill the full height of the grid container
+- space-around - places an even amount of space between each grid item, with half-sized spaces on the far ends
+- space-between - places an even amount of space between each grid item, with no space at the far ends
+- space-evenly - places an even amount of space between each grid item, including the far ends
 
 ### Areas
 
-grid-template-areas
+> Defines a grid template by referencing the names of the grid areas which are specified with the grid-area property. Repeating the name of a grid area causes the content to span those cells. A period signifies an empty cell. The syntax itself provides a visualization of the structure of the grid.
+
+The `grid-template-areas` is really amazing, and also the strangest syntax choice in Grid. It lets you define names for content areas of your grid, then later, assign items (grid children) to those areas by name.
+
+```css
+.my-grid {
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
+}
+```
+
+You can use `.` to define an empty area. Quotes are needed, because here, whitespace matters. Each set of quotes defines a row, and the spaces define a new column.
+
+Then, on the Grid Items...
+
+```css
+.item-a {
+  grid-area: header;
+}
+.item-b {
+  grid-area: main;
+}
+.item-c {
+  grid-area: sidebar;
+}
+.item-d {
+  grid-area: footer;
+}
+```
+
+...to assign the items to the named areas. 
+
+By the way, you can name "lines" this way too, not just areas, but I feel like this is much more useful.
+
+### Gaps
+
+> Specifies the size of the grid lines. You can think of it like setting the width of the gutters between the columns/rows.
+
+`grid-gap` is a wonderful property that defines the size of the "lines", but we can think of it as defining our "gutters". 
+
+You can define rows and columns separately, or you an use one property to define them both.
+
+```css
+.container {
+  grid-row-gap: 1.5em;
+  grid-column-gap: 0.75em;
+  grid-gap: 1.5em 0.75em;
+  grid-gap: 1em; /* sets both */
+}
+```
+
+> The gutters are only created between the columns/rows, not on the outer edges.
+
+Grid gaps do not affect your `grid-template-columns` or row settings. If you set 10px as the gap, your 100px column will remain 100px. 
 
 ## Grid items
 
 ### Placing items
 
-grid-column-start
-grid-column-end
-grid-column
+> Determines a grid item's location within the grid by referring to specific grid lines. grid-column-start/grid-row-start is the line where the item begins, and grid-column-end/grid-row-end is the line where the item ends.
 
-grid-row-start
-grid-row-end
-grid-row
+- _line_ - can be a number to refer to a numbered grid line, or a name to refer to a named grid line
+- span _number_ - the item will span across the provided number of grid tracks
+- _auto_ - indicates auto-placement, an automatic span, or a default span of one
 
-grid-area
+These properties let you specify how your Grid items span over rows and columns. 
+
+`grid-column-start`
+`grid-column-end`
+`grid-row-start`
+`grid-row-end`
+
+Or, you can use the shorthand properties with slashes (`/`) to specify both.
+
+`grid-column`
+`grid-row`
+
+```css
+.item-c {
+  grid-column: 3 / span 2;
+  grid-row: third-line / 4;
+}
+```
+
+There's also `grid-area` of course, noted previously.
 
 ### item alignments
 
-justify-self
+`justify-self`
 
-align-self
+> Aligns a grid item inside a cell along the inline (row) axis (as opposed to align-self which aligns along the block (column) axis). This value applies to a grid item inside a single cell.
+
+- _start_ - aligns the grid item to be flush with the start edge of the cell
+- _end_ - aligns the grid item to be flush with the end edge of the cell
+- _center_ - aligns the grid item in the center of the cell
+- _stretch_ - fills the whole width of the cell (this is the default)
+
+`align-self`
+
+> Aligns a grid item inside a cell along the block (column) axis (as opposed to justify-self which aligns along the inline (row) axis). This value applies to the content inside a single grid item.
+ 
+- _start_ - aligns the grid item to be flush with the start edge of the cell
+- _end_ - aligns the grid item to be flush with the end edge of the cell
+- _center_ - aligns the grid item in the center of the cell
+- _stretch_ - fills the whole height of the cell (this is the default)
 
 ## Back to the parents for a second...
 
+### Implicit vs. Explicit
+
+We won't go too deep into this, but we need to acknowledge the Implicit grid.
+
+> Implicit tracks get created when there are more grid items than cells in the grid or when a grid item is placed outside of the explicit grid.
+
+Basically, if you have more items than can fit in your explicit grid, rows or columns are added.
+
+[The Difference Between Explicit and Implicit Grids](https://css-tricks.com/difference-explicit-implicit-grids/)
+
 ### Auto columns and rows
 
-grid-auto-columns
+`grid-auto-columns`
 
-grid-auto-rows 
+`grid-auto-rows`
+
+> Specifies the size of any auto-generated grid tracks (aka implicit grid tracks).
+
+```css
+.container {
+  grid-template-columns: 60px 60px;
+  grid-template-rows: 90px 90px
+}
+```
 
 ### Flow
 
-grid-auto-flow
+`grid-auto-flow`
 
+> If you have grid items that you don't explicitly place on the grid, the auto-placement algorithm kicks in to automatically place the items. This property controls how the auto-placement algorithm works.
+
+
+- _row_ - tells the auto-placement algorithm to fill in each row in turn, adding new rows as necessary (default)
+- _column_ - tells the auto-placement algorithm to fill in each column in turn, adding new columns as necessary
+- _dense_ - tells the auto-placement algorithm to attempt to fill in holes earlier in the grid if smaller items come up later
+
+`dense` is pretty cool, but...
+
+> Note that dense only changes the visual order of your items and might cause them to appear out of order, which is bad for accessibility.
 
 ### Gutters aka "Gaps"
 
@@ -318,61 +432,66 @@ We get some new features to define our gutters, and since we're not using margin
 
 > The gutters are only created between the columns/rows, not on the outer edges.
 
-### Implicit vs Explicit Grid
-
 ### Inspecting in the browser
+
+Firefox is our best tool for inspecting our grid. It allows you to turn on lines and see lines, gaps, and tracks with labeling.
+
+[CSS Grid Inspector](https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Examine_grid_layouts)
 
 ## Summary
 
-It's not necessarily important for you to become an expert in this, or to memorize these properties, what's important, especially in your role as a designer, is that you take away from Grid, Flexbox and other layout principles what is possible to do on the web. 
+It's not necessarily important for you to become an expert in this, or to memorize these properties, what's important, especially in your role as a designer, is that you take away from Grid, Flexbox and other layout principles what is possible to do on the web.
 
 ## Resources
 
-http://cssgridgarden.com/
+From the same people as Flexbox Froggy, teaches you grid properties and values through a gardening game. 
+[CSS Grid Garden](http://cssgridgarden.com/)
 
-https://gridbyexample.com/
+Real world patterns for using grid to achieve different layouts.
+[Grid by Example](https://gridbyexample.com/)
 
-https://tympanus.net/codrops/css_reference/grid/
+[Codrops Grid Guide](https://tympanus.net/codrops/css_reference/grid/)
 
-http://jensimmons.com/post/feb-27-2017/learn-css-grid
+[CSS Grid (Mozilla)](https://www.mozilla.org/en-US/developer/css-grid/)
 
-  https://www.youtube.com/watch?v=0Gr1XSyxZy0
+### Jen Simmons
 
-  https://www.youtube.com/watch?v=hs3piaN4b5I
+Jen has a lot of good grid information:
 
-  https://www.youtube.com/watch?v=lZ2JX_6SGNI&list=PLbSquHt1VCf3rmXD2BymC_ZOGDEIu0OWP
-  https://www.youtube.com/watch?v=ZPtpzuRajzM&ut=
-  https://www.youtube.com/watch?v=mVQiNpqXov8
+[Learn CSS Grid](http://jensimmons.com/post/feb-27-2017/learn-css-grid)
 
-  https://www.youtube.com/watch?v=EEOJZy_Gge4
+<!-- [The benefits of learning how to code layouts with CSS Grid](http://jensimmons.com/post/feb-28-2017/benefits-learning-how-code-layouts-css) -->
 
-  https://www.youtube.com/watch?v=tFKrK4eAiUQ&t
-  https://www.youtube.com/watch?v=qNtJ5p3h2A4
+- [9 Biggest Mistakes with CSS Grid](https://www.youtube.com/watch?v=0Gr1XSyxZy0)
+- [Flexbox vs. CSS Grid — Which is Better?](https://www.youtube.com/watch?v=hs3piaN4b5I)
+- [Min & Max Content Sizing in CSS Grid — 1/3 Flexibility](https://www.youtube.com/watch?v=lZ2JX_6SGNI)
+- [FR Units in CSS Grid — 2/3 Flexibility](https://www.youtube.com/watch?v=ZPtpzuRajzM&ut=)
+- [MinMax in CSS Grid — 3/3 Flexibility](https://www.youtube.com/watch?v=mVQiNpqXov8)
+- [Flexibility & The Fold – new possibilities with CSS Grid](https://www.youtube.com/watch?v=EEOJZy_Gge4)
+- [Incredibly Easy Layouts with CSS Grid](https://www.youtube.com/watch?v=tFKrK4eAiUQ&t)
+- [Responsive Mondrian – a demo of CSS Grid](https://www.youtube.com/watch?v=qNtJ5p3h2A4)
+- [Internet Explorer + CSS Grid????](https://www.youtube.com/watch?v=7msERxu7ivg&t=1s)
+- [Why I love CSS Grid - by Jen Simmons](https://www.youtube.com/watch?v=tY-MHUsG6ls)
+- [Revolutionize Your Page: Real Art Direction on the Web](https://aneventapart.com/news/post/real-art-direction-on-the-web-by-jen-simmons-an-event-apart)
 
-  https://www.youtube.com/watch?v=7msERxu7ivg&t=1s
+### Some more YouTube Tutorials and Talks
 
-https://www.youtube.com/watch?v=tY-MHUsG6ls
+- [How to Create Website Layouts Using CSS Grid](https://www.youtube.com/watch?v=HgwCeNVPlo0)
+- [CSS Grid Changes EVERYTHING - Amazing Presentation](https://www.youtube.com/watch?v=7kVeCqQCxlk)
+  - [CSS Grid Changes Everything About Web Layouts (Slides)](https://www.slideshare.net/mor10/css-grid-changes-everything-about-web-layouts-wordcamp-europe-2017)
+- [CSS Grid Layout by Rachel Andrew](https://aneventapart.com/news/post/css-grid-layout-by-rachel-andrewan-event-apart-video)
+- 
 
-https://www.youtube.com/watch?v=HgwCeNVPlo0&feature=youtu.be
+<!-- - [hey](https://www.youtube.com/watch?v=bI1wNuvuFxo) -->
 
-https://www.youtube.com/watch?v=bI1wNuvuFxo
 
-https://aneventapart.com/news/post/real-art-direction-on-the-web-by-jen-simmons-an-event-apart
+[Progressively Enhancing CSS Layout: From Floats To Flexbox To Grid](https://www.smashingmagazine.com/2017/07/enhancing-css-layout-floats-flexbox-grid/)
 
-https://aneventapart.com/news/post/css-grid-layout-by-rachel-andrewan-event-apart-video
+[Practical CSS Grid: Adding Grid to an Existing Design](https://alistapart.com/article/practical-grid)
 
-https://www.smashingmagazine.com/2017/07/enhancing-css-layout-floats-flexbox-grid/
 
-https://alistapart.com/article/practical-grid
 
-https://www.mozilla.org/en-US/developer/css-grid/
 
-https://www.mozilla.org/en-US/developer/css-grid/
+Wes Bos is a prolific tutorial and web development course author. Normally he charges for his courses, but Mozilla sponsored his time to make a free CSS Grid course. If you want to really learn this, this is the course to take.
 
-http://jensimmons.com/post/feb-28-2017/benefits-learning-how-code-layouts-css
-
-http://jensimmons.com/post/feb-27-2017/learn-css-grid
-
-https://www.youtube.com/watch?v=7kVeCqQCxlk
-
-https://www.slideshare.net/mor10/css-grid-changes-everything-about-web-layouts-wordcamp-europe-2017
+[Wes Bos Grid Course](https://cssgrid.io/)
