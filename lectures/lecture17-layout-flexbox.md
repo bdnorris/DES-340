@@ -56,7 +56,7 @@ section {
 
 In this case, I've declared the `<section>` element to be a flex parent, making all of the `<div>` elements flex children. That relationship doesn't go past this parent-child relationship, so your markup is very important here.
 
-Flex children can also be flex parents though. We'll look at this in a bit.
+Flex children can also be flex parents. We'll look at this in a bit.
 
 The easiest way to use flexbox is just to declare it on the parent. There a bunch of defaults that come into play, and you will automatically create a vertical row of boxes that flex to fill the space of the parent. That's just one line of CSS!
 
