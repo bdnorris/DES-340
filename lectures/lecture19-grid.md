@@ -452,6 +452,8 @@ Real world patterns for using grid to achieve different layouts.
 
 [Codrops Grid Guide](https://tympanus.net/codrops/css_reference/grid/)
 
+[CSS Grid (Mozilla)](https://www.mozilla.org/en-US/developer/css-grid/)
+
 ### Jen Simmons
 
 Jen has a lot of good grid information:
@@ -470,28 +472,26 @@ Jen has a lot of good grid information:
 - [Responsive Mondrian – a demo of CSS Grid](https://www.youtube.com/watch?v=qNtJ5p3h2A4)
 - [Internet Explorer + CSS Grid????](https://www.youtube.com/watch?v=7msERxu7ivg&t=1s)
 - [Why I love CSS Grid - by Jen Simmons](https://www.youtube.com/watch?v=tY-MHUsG6ls)
+- [Revolutionize Your Page: Real Art Direction on the Web](https://aneventapart.com/news/post/real-art-direction-on-the-web-by-jen-simmons-an-event-apart)
+
+### Some more YouTube Tutorials and Talks
+
+- [How to Create Website Layouts Using CSS Grid](https://www.youtube.com/watch?v=HgwCeNVPlo0)
+- [CSS Grid Changes EVERYTHING - Amazing Presentation](https://www.youtube.com/watch?v=7kVeCqQCxlk)
+  - [CSS Grid Changes Everything About Web Layouts (Slides)](https://www.slideshare.net/mor10/css-grid-changes-everything-about-web-layouts-wordcamp-europe-2017)
+- [CSS Grid Layout by Rachel Andrew](https://aneventapart.com/news/post/css-grid-layout-by-rachel-andrewan-event-apart-video)
+- 
+
+<!-- - [hey](https://www.youtube.com/watch?v=bI1wNuvuFxo) -->
+
+
+[Progressively Enhancing CSS Layout: From Floats To Flexbox To Grid](https://www.smashingmagazine.com/2017/07/enhancing-css-layout-floats-flexbox-grid/)
+
+[Practical CSS Grid: Adding Grid to an Existing Design](https://alistapart.com/article/practical-grid)
 
 
 
-https://www.youtube.com/watch?v=HgwCeNVPlo0
 
-https://www.youtube.com/watch?v=bI1wNuvuFxo
+Wes Bos is a prolific tutorial and web development course author. Normally he charges for his courses, but Mozilla sponsored his time to make a free CSS Grid course. If you want to really learn this, this is the course to take.
 
-https://aneventapart.com/news/post/real-art-direction-on-the-web-by-jen-simmons-an-event-apart
-
-https://aneventapart.com/news/post/css-grid-layout-by-rachel-andrewan-event-apart-video
-
-https://www.smashingmagazine.com/2017/07/enhancing-css-layout-floats-flexbox-grid/
-
-https://alistapart.com/article/practical-grid
-
-https://www.mozilla.org/en-US/developer/css-grid/
-
-https://www.mozilla.org/en-US/developer/css-grid/
-
-
-https://www.youtube.com/watch?v=7kVeCqQCxlk
-
-https://www.slideshare.net/mor10/css-grid-changes-everything-about-web-layouts-wordcamp-europe-2017
-
-Wes Bos
+[Wes Bos Grid Course](https://cssgrid.io/)
