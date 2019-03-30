@@ -288,7 +288,7 @@ After discussing these items with me you should place them as a text note on you
 
 Please place your sitemap, in the an appropriate format on your InVision board, under the heading:
 
- "Project 5: Information Architecture and Wireframes”
+ "Project 5: Information Architecture"
 
 <!-- *   Your Sitemap, as text or image, whatever’s most appropriate. -->
 <!-- *   A text note of your published Webflow project wireframing URL. -->
@@ -298,6 +298,8 @@ Please place your sitemap, in the an appropriate format on your InVision board, 
 Please place your wireframes as PNG images on your InVision board under the heading:
 
 "Project 5: Wireframes"
+
+Feel free to attach a PDF as well, but PNGs are required to show during critique.
 
 ### Style Tiles
 
@@ -312,8 +314,16 @@ Post the research examples in this section. Arrange them neatly.
 
 Make a section on your InVision board called "Assignment 5: Designs"
 
-Place your designs with a realistic browser height for their view. You could mock-up these designs in a desktop and mobile browser if you wish. Arrange them side by side.
+Place your designs with a _realistic browser height_ for their view. You could mock-up these designs in a desktop and mobile browser if you wish. Arrange them side by side.
 
 Additionally, place your full designs at their full height.
 
 If you have additional designs, or want to show state changes, you can put as many designs as you want here.
+
+:::danger Due Dates
+4/8 Project Brief Due   
+4/10 Sitemap Due
+4/15 Wireframes Due / User Testing exercise
+4/17 Style Tiles Due
+4/22 Project Due / Critique
+:::
