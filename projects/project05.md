@@ -4,7 +4,7 @@
 
 Points: 150
 
-This assignment will let you practice designing a website from concept to completion using modern workflows. You will create a concept for a new site, a "styletile", a sitemap, a wireframe, <!-- a prototype,--> and a design.
+This assignment will let you practice designing a website from concept to completion using modern workflows. You will create a concept for a new site, a "styletile", a sitemap, a wireframe, and a design.
 
 ## Objectives
 
@@ -13,7 +13,7 @@ This assignment will let you practice designing a website from concept to comple
 *   Design and analysis of websites and user interfaces.
 *   Exploration of information architecture concepts.
 *   Introduction to “wireframing”/low-fidelity sketching.
-*   Practice designing full page web layouts.
+*   Practice designing full-page web layouts.
 *   Application of the skills you’ve previously practiced regarding designing web components and content hierarchy.
 
 ## Concept
@@ -29,7 +29,7 @@ It will depend on your concept, but you will likely need to come up with the ent
 So don’t be afraid to think big, the rest of the assignment will only focus on the most important parts.
 
 *   Don’t be afraid to make your site **interactive or have useful tools**. Even if you don't know how to code the interactivity, you can still concept it and show the idea in your designs.
-*   Make your site **useful and informative**. It should have text and image content. You will show a small portion, but the implication is there could be a lot more deeper in the site.
+*   Make your site **useful and informative**. It should have text and image content. You will show a small portion, but the implication is there could be a lot deeper in the site.
 *   Pick something you’re passionate about, choose a subject that will keep you engaged.
 *   But **don’t make it about yourself**. No portfolio sites.
 *   It doesn’t have to be a million-dollar idea. Keep in mind the main objective of this project is the workflow itself.
@@ -37,7 +37,7 @@ So don’t be afraid to think big, the rest of the assignment will only focus on
 
 ## Define your audience and write your brief
 
-You will need to write a "design brief" for me to approve in order to move forward with your project. It should follow the following format.
+You will need to write a "design brief" for me to approve in order to move forward with your project. It should follow the following format:
 
 1. Briefly describe what your website is about or otherwise describe its function.
 
@@ -45,14 +45,12 @@ You will need to write a "design brief" for me to approve in order to move forwa
 _Describe the organization behind the site. Who is the site owner (real or fictional)?_
 
 3. Purpose
-<!-- _Is it a redesign? Is it launching a new product or service?_ -->
+   1. What are the reasons someone would come to your site (information, entertainment, news, look up products/pricing, make a purchase, get contact details)?
 
-   1. What are the reasons someone would come to your site (information, entertainment, news, look up products/pricing, make a purchase, get contact details) ?
-
-   2. What is would the key metric of success be (sales, contacts, influence) ?
+   2. What is would the key metric of success be (sales, contacts, influence)?
 
 4. Audience
-_Write a bit about your target audience. Who are they, what are the interests. Are there any important demographic aspects to your target audience (age, gender, economic status, location and language)?_
+_Write a bit about your target audience. Who are they, what are their interests? Are there any important demographic aspects to your target audience (age, gender, economic status, location, and language)?_
 
 <!-- 4. Have a specific audience/user in mind (even if the audience doesn’t technically exist, e.g. freelance mutant zombie hunters. -->
 
@@ -72,8 +70,8 @@ Earlier, you were directed to have a certain number of pages in your site. Now i
 > “I often tell clients that Information Architecture (IA) establishes the baseline, or foundation, for a solid site structure. It helps create the traffic patterns and navigational routes that get the customer from A to B in language that is helpful and easy to understand. In fact, IA is the first step in meeting customer goals and can therefore increase brand awareness and product or service sales.”
 > 
 > —Keith LaFerriere
-> 
-> [https://alistapart.com/article/flexiblefueleducatingtheclientonia](https://alistapart.com/article/flexiblefueleducatingtheclientonia)
+
+[Flexible Fuel: Educating the Client on IA](https://alistapart.com/article/flexiblefueleducatingtheclientonia)
 
 ### Tasks
 
@@ -115,9 +113,11 @@ You can develop your “sitemap” in the style and program of your choosing. I'
 
 Wireframing is creating a “low-fi” digital sketch of your site. The purpose of this exercise is to plan as much as possible and work out any potential issues before jumping into the design phase of the project.
 
+**With my help, you will choose 3 main pages from your sitemap to wireframe both mobile and desktop views.**
+
 ### Examples and Resources
 
-Huge list of tips for wireframing, we will only have time to touch on the basics, but this article is a good summary of how far you can take wireframing, especially on a large project that might involve many team members and a large budget.  
+You'll find a lot of tips and suggestions and opinions about wireframing, we will only have time to touch on the basics, but this article is a good summary of how far you can take wireframing, especially on a large project that might involve many team members and a large budget.  
 [https://www.smashingmagazine.com/2016/11/wireframe-perfectionist-guide/](https://www.smashingmagazine.com/2016/11/wireframe-perfectionist-guide/)
 
 <!-- ### And also...“Prototyping:” Planning your interactions
@@ -131,7 +131,7 @@ There will be **no requirements** for prototyping on this project. I simply want
 
 ### Tools
 
-Choosing a tool for wireframing and prototyping is difficult. It depends a lot on the level of detail you want to establish. Simple thumbnail wireframes can be used to plan the IA and content areas as I’ve mentioned above, and further detail can be achieved with static wireframes consisting of gray boxes and text in Illustrator, Photoshop or Sketch.
+Choosing a tool for wireframing and prototyping is difficult. It depends a lot on the level of detail you want to establish. Simple thumbnail wireframes can be used to plan the IA and content areas as I’ve mentioned above, and further detail can be achieved with static wireframes consisting of gray boxes and text in Illustrator, Photoshop, XD, or Sketch.
 
 <!-- You can also go further with wireframes and create semi-functional mock-ups. We’re going to combine wireframing and some basic prototyping in this project using a tool called [Webflow](https://webflow.com/).
 
@@ -147,7 +147,7 @@ Feel free to use Webflow’s built in form fields, linking capabilities, etc. to
 
 The main reason I’m choosing Webflow as the tool for this exercise is it’s great responsive support. You will be able to layout a page, and in real-time, slide the viewport to different widths and see the adjustments happening live. -->
 
-**You must consider the view, all the way from mobile to desktop for this assignment.**
+<!-- **You must consider the view, all the way from mobile to desktop for this assignment.** -->
 
 ## User Testing
 
@@ -158,7 +158,6 @@ Instead of the typical critique, you will be grouped up with other students to a
 **Your role when you’re showing your wireframe:** Walk your group through your wireframes and sitemap quickly, then let them ask questions. Answer, but pay attention when your answer seems to be need a lot of explanation. It should be obvious what the items on your page are for. If you don’t have an answer, or it takes an inordinate amount of explaining...congrats, you’ve just found an improvement you can make through our facsimile of user testing.
 
 Collect information from your user testing session, make any necessary adjustments, and make sure you have included the necessary items on your InVision board as noted below.
-
 
 # Planning your design
 
@@ -237,8 +236,11 @@ The goal is to create an HTML document with a healthy selection of elements styl
 
 ## Page Design
 
-You will continue exploring web design by creating a series of designs for a common view in contemporary sites: The user profile page. Any website that has a social component (users can share content, view the content shared by others, network, send messages, etc.) often has a profile page for each user.
+<!-- You will continue exploring web design by creating a series of designs for a common view in contemporary sites: The user profile page. Any website that has a social component (users can share content, view the content shared by others, network, send messages, etc.) often has a profile page for each user. -->
 
+With my help, you will choose a key page on your site and produce a full design. It should be one of the pages you chose to wireframe and it should show the most important aspects of your site. 
+
+It might be the home page, or another "landing page" (a page users would likely find on your site via search engines or social media). 
 
 > ...there are five important things you can do to make sure they see—and understand—as much of your site as possible:
 > 
@@ -249,6 +251,8 @@ You will continue exploring web design by creating a series of designs for a com
 > *   Minimize noise.
 > 
 > —Steve Krug, [Billboard Design 101](http://www.pcworld.com/article/137231/article.html)
+
+It might also be best to choose a page that is simply integral to the function of your site and may only be accessible to users with accounts. 
 
 
 ### Specifications
@@ -272,7 +276,7 @@ Desktop: 768px–1280px
 
 ### Brief
 
-After discussing these items with me you should place them as text notes on your InVision board under the heading: 
+After discussing these items with me you should place them as a text note on your InVision board under the heading: 
 
 "Project 5: Website Brief"  
 
