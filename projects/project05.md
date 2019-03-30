@@ -1,10 +1,10 @@
-# Project 5: Web Process
+# Project 5: Web Design Process
 
 ## Modern Web Design Workflow
 
 Points: 150
 
-This assignment will let you practice designing a website from concept to completion using modern workflows. You will create a concept for a new site, a "styletile", a sitemap, a wireframe, and a design.
+This assignment will let you practice designing a website from concept to completion using modern workflows. You will create [a project brief](#project-brief) for a new site, a [sitemap](#information-architecture-sitemap), a [wireframe](#“wireframing-”-planning-your-most-important-pages), a ["styletile"](#planning-your-design), and a [page design](#page-design).
 
 ## Objectives
 
@@ -12,13 +12,13 @@ This assignment will let you practice designing a website from concept to comple
 *   Introduction to modern web design workflow by working through a simplified version.
 *   Design and analysis of websites and user interfaces.
 *   Exploration of information architecture concepts.
-*   Introduction to “wireframing”/low-fidelity sketching.
+*   Introduction to “wireframing” (low-fidelity digital sketching).
 *   Practice designing full-page web layouts.
 *   Application of the skills you’ve previously practiced regarding designing web components and content hierarchy.
 
-## Concept
+## Project Brief
 
-Step 1 is to come up with a concept for your site.
+**Step 1 is to come up with a concept for your site.**
 
 ### Some Guidelines
 
@@ -32,25 +32,29 @@ So don’t be afraid to think big, the rest of the assignment will only focus on
 *   Make your site **useful and informative**. It should have text and image content. You will show a small portion, but the implication is there could be a lot deeper in the site.
 *   Pick something you’re passionate about, choose a subject that will keep you engaged.
 *   But **don’t make it about yourself**. No portfolio sites.
-*   It doesn’t have to be a million-dollar idea. Keep in mind the main objective of this project is the workflow itself.
+*   It doesn’t have to be a million-dollar idea. Keep in mind, the main objective of this project is _the workflow itself_.
 *   Come up with a few different ideas to discuss with me so we can pick the one that will fulfill the goals of this project the best.
 
-## Define your audience and write your brief
+### Define your audience and write your brief
 
 You will need to write a "design brief" for me to approve in order to move forward with your project. It should follow the following format:
 
 1. Briefly describe what your website is about or otherwise describe its function.
 
 2. Company / Organization
-_Describe the organization behind the site. Who is the site owner (real or fictional)?_
+   - Describe the organization behind the site. Who is the site owner (real or fictional)?
 
 3. Purpose
-   1. What are the reasons someone would come to your site (information, entertainment, news, look up products/pricing, make a purchase, get contact details)?
+   - What are the reasons someone would come to your site (information, entertainment, news, look up products/pricing, make a purchase, get contact details)?
 
-   2. What is would the key metric of success be (sales, contacts, influence)?
+   - What is would the key metric of success be (sales, contacts, influence)?
 
-4. Audience
-_Write a bit about your target audience. Who are they, what are their interests? Are there any important demographic aspects to your target audience (age, gender, economic status, location, and language)?_
+4. Audience 
+   - Write a bit about your target audience. Who are they, what are their interests? Are there any important demographic aspects to your target audience (age, gender, economic status, location, and language)?
+
+:::warning
+Project Brief Due 4/8
+:::
 
 <!-- 4. Have a specific audience/user in mind (even if the audience doesn’t technically exist, e.g. freelance mutant zombie hunters. -->
 
@@ -68,8 +72,8 @@ Next, you need to plan the architecture of all the pages of your site.
 Earlier, you were directed to have a certain number of pages in your site. Now it’s time to document those, categorize them into sections, and map out their relationships.
 
 > “I often tell clients that Information Architecture (IA) establishes the baseline, or foundation, for a solid site structure. It helps create the traffic patterns and navigational routes that get the customer from A to B in language that is helpful and easy to understand. In fact, IA is the first step in meeting customer goals and can therefore increase brand awareness and product or service sales.”
-> 
-> —Keith LaFerriere
+
+&mdash; Keith LaFerriere
 
 [Flexible Fuel: Educating the Client on IA](https://alistapart.com/article/flexiblefueleducatingtheclientonia)
 
@@ -85,18 +89,25 @@ They’re typically shown from the top down; where Home and any other common lan
 ### Examples
 
 The most common would be a tree view:  
-[http://spot.pcc.edu/~gkerr/general/assets/sitemap-example.jpg](http://spot.pcc.edu/~gkerr/general/assets/sitemap-example.jpg)  
-[https://www.gliffy.com/examples/site-map](https://www.gliffy.com/examples/site-map)
+- [Sitemap Example](http://spot.pcc.edu/~gkerr/general/assets/sitemap-example.jpg)
+- [Sitemaps (Every Interaction)](https://www.everyinteraction.com/definition/sitemap/)
+- [Sitemap with some "Flow" Diagramming](https://www.goup.co.uk/guides/sitemaps/)
 
-Sometimes, a more complex isometric view is useful:  
-[http://baynesmedia.com/category/user-experience/information-architecture/](http://baynesmedia.com/category/user-experience/information-architecture/)
+<!-- Sometimes, a more complex isometric view is useful:  
+[http://baynesmedia.com/category/user-experience/information-architecture/](http://baynesmedia.com/category/user-experience/information-architecture/) -->
 
-...whatever is most appropriate for your site.
+You will also see the term "sitemap" used in a few different ways. It can mean a page on a site that lists all the pages, kind of like an index. It can also mean a file with links to all the pages of your site that you can submit to search engines to make sure your site is well indexed.
+
+Here, when we say "sitemap" we mean a diagram of your website's hierarchy. Since this diagram represents the pages and their relationships, it can be though of as a "map" of your site.
 
 <!-- Sitemaps may also share a lot in common with a map of the user flow, corresponding to the user stories you’ve previously written.  
 [https://speckyboy.com/collection-inspiring-sitemaps-user-flow-maps/](https://speckyboy.com/collection-inspiring-sitemaps-user-flow-maps/) -->
 
 We’re aiming for a **traditional sitemap** on this project, that **must account for all pages on our site** (large amounts of repetitive pages would be abstracted into a “stack” or some other visual metaphor). Additionally, incorporating some “flow” concepts might be useful, especially if the user flow is particularly complex.
+
+### Navigation
+
+Working out the Information Architecture and creating a sitemap helps you define your main navigation items. A large site likely doesn't have a link to every page in it's navigation. The IA work here makes it clear what should be in the navigation and how the nav should be structured. Orphaned pages that don't live in the hierarchy are good candidates for "Utility Navigation".
 
 ### Guidelines
 
@@ -104,6 +115,8 @@ You can develop your “sitemap” in the style and program of your choosing. I'
 
 [Thumb_Wireframing_03.ai](http://briannorris.io/msuweb/Thumb_Wireframing_03.ai) (right-click, save download as)  
 [Thumb_Wireframing_03_leg.ai](http://briannorris.io/msuweb/Thumb_Wireframing_03_leg.ai) (if you have trouble opening the above)
+
+A thumbnail style like this let's you show, in a really generic way, the kind of content that might be on a particular page. 
 
 // Add sketch files
 
