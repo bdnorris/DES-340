@@ -52,7 +52,7 @@ You will need to write a "design brief" for me to approve in order to move forwa
 4. Audience 
    - Write a bit about your target audience. Who are they, what are their interests? Are there any important demographic aspects to your target audience (age, gender, economic status, location, and language)?
 
-:::warning
+:::warning Due Date
 Project Brief Due 4/8
 :::
 
@@ -113,14 +113,21 @@ Working out the Information Architecture and creating a sitemap helps you define
 
 You can develop your “sitemap” in the style and program of your choosing. I'm providing an Illustrator file to assist you with the “thumbnail” style.
 
-[Thumb_Wireframing_03.ai](http://briannorris.io/msuweb/Thumb_Wireframing_03.ai) (right-click, save download as)  
-[Thumb_Wireframing_03_leg.ai](http://briannorris.io/msuweb/Thumb_Wireframing_03_leg.ai) (if you have trouble opening the above)
+[Thumb_Wireframing_03.ai](/assets/Thumb_Wireframing_03.ai) (right-click, save download as)  
+[Thumb_Wireframing_03_leg.ai](/assets/Thumb_Wireframing_03_leg.ai) (if you have trouble opening the above)
+[Thumb_Wireframing_03.sketch](/assets/Thumb_Wireframing_03.sketch) (also available for Sketch)
 
 A thumbnail style like this let's you show, in a really generic way, the kind of content that might be on a particular page. 
 
-// Add sketch files
+I also have a Sketch library for making flow charts and sitemaps. You use it a bit differently than the above files. By going to "preferences" > "libraries" you can add this file to your Sketch library, and access it's symbols in any file from the insert menu.
+
+[ux-flow-kit-sketch-2.0-up-50.2.zip](/assets/ux-flow-kit-sketch-2.0-up-50.2.zip)
 
 **Minimum Requirement** would be a simple document with pages represented by rectangles with a clear hierarchy (levels of content). Dimensions of this document are up to you.
+
+:::warning Due Date
+Sitemap due 4/10
+:::
 
 ## “Wireframing:” Planning your most important pages
 
@@ -131,7 +138,9 @@ Wireframing is creating a “low-fi” digital sketch of your site. The purpose 
 ### Examples and Resources
 
 You'll find a lot of tips and suggestions and opinions about wireframing, we will only have time to touch on the basics, but this article is a good summary of how far you can take wireframing, especially on a large project that might involve many team members and a large budget.  
-[https://www.smashingmagazine.com/2016/11/wireframe-perfectionist-guide/](https://www.smashingmagazine.com/2016/11/wireframe-perfectionist-guide/)
+[Wireframing – The Perfectionist's Guide](https://www.smashingmagazine.com/2016/11/wireframe-perfectionist-guide/)
+
+<mark>**You need to wireframe both "desktop" an "mobile" views.**</mark>
 
 <!-- ### And also...“Prototyping:” Planning your interactions
 
@@ -162,9 +171,17 @@ The main reason I’m choosing Webflow as the tool for this exercise is it’s g
 
 <!-- **You must consider the view, all the way from mobile to desktop for this assignment.** -->
 
-## User Testing
+### Prototyping
 
-Instead of the typical critique, you will be grouped up with other students to analyze each other wireframes. I will post groups here when ready.
+For the sake of time, I am not requiring prototyping on this assignment. However, if you are using Sketch or XD, it may very well be trivial to add some basic prototyping to your wireframes that will help in the "user testing" exercise.
+
+### User Testing
+
+For this exercise, you will be grouped up with other students to analyze each other's wireframes. I will post groups here when ready.
+
+Typically, you would do user testing on a finished or nearly finished site or application. However, I want to do this exercise because now is a good time to get some feedback on your wireframes before you advance into a more complete and complex design.
+
+Someone other than you should be operating the computer and going through your wireframes as you explain. Switch up the "driver" for each member of the groups review.
 
 **Your role when looking at another’s wireframes:** Okay, these aren’t real sites, they may or may not clickable, but you should still be able to look at the wireframes, and imagine yourself clicking through. Are there areas that you don’t understand? What happens if you click that button? What does this box represent? Ask lots of questions.
 
@@ -172,35 +189,37 @@ Instead of the typical critique, you will be grouped up with other students to a
 
 Collect information from your user testing session, make any necessary adjustments, and make sure you have included the necessary items on your InVision board as noted below.
 
-# Planning your design
+:::warning Due Date
+Wireframes due & user testing exercise 4/15
+:::
 
-### Style tiles
+## Style tiles
 
 The next step is to develop a "Style Tile." This will allow us to define the look and feel of our site, and quickly iterate changes, rather than start with a complex, full-page. design. This allows us to efficiently show the look and feel of the site as a whole, rather than focusing on one particular page.
 
 We’re going to continue to approach this project with the idea that it is a large complex web project, even though we’re only touching bits and pieces. As you can probably imagine, it would be a vast and complex undertaking to design an entire large site by having an Illustrator file for every single page and possible configuration of a site. Instead, developing style tiles, style guides, and wireframes—along with careful art direction—can be an efficient way to get a project up and running. It’s also a great way to begin showing a client work, without too much initial time investment.
 
-### So, what’s the difference?
+### What's a "Styletile"?
 
-Style Tiles and Style Guides definitely bleed together. Both show colors, buttons, typography, etc. But there are some differences:
+<!-- Style Tiles and Style Guides definitely bleed together. Both show colors, buttons, typography, etc. But there are some differences: -->
 
-#### Style Tiles
+<!-- #### Style Tiles -->
 
 **Audience**: Although style tiles are great for communicating amongst a design and development team, the ultimate audience for them is the client. They’re meant to quickly get feedback and show possible directions.
 
 **Level of Detail**: Style tiles are general. They exist to communicate mood and the general design direction.
 
-#### Style Guides
+<!-- #### Style Guides
 
 **Audience**: Style guides are to keep everyone on the team, sometimes including individuals outside the organization, from straying too far from the original design intent.
 
-**Level of Detail**: Style guides are specific. They have specifications, like width and height, or exact color codes, etc.
+**Level of Detail**: Style guides are specific. They have specifications, like width and height, or exact color codes, etc. -->
 
-#### You can find examples of style tiles and style guides on my InVision board:
+#### You can find examples of style tiles and style guides on this InVision board:
 
 [https://projects.invisionapp.com/boards/ST34OYIN2HV3R/](https://projects.invisionapp.com/boards/ST34OYIN2HV3R/)
 
-#### And here are some links to some web-based style guides (you will not have to show any code like a lot of these do):
+<!-- #### And here are some links to some web-based style guides (you will not have to show any code like a lot of these do):
 
 *   [styleguides.io](http://styleguides.io)
 *   [mapbox.com](https://www.mapbox.com/base/styling/buttons/)
@@ -210,7 +229,7 @@ Style Tiles and Style Guides definitely bleed together. Both show colors, button
 *   [lightningdesignsystem.com](https://www.lightningdesignsystem.com/guidelines/motion/)
 *   [mailchimp.com](http://ux.mailchimp.com/patterns/forms)
 *   [codeforamerica.clearleft.com](http://codeforamerica.clearleft.com/)
-*   [carbondesignsystem.com](http://carbondesignsystem.com/style/colors/swatches)
+*   [carbondesignsystem.com](http://carbondesignsystem.com/style/colors/swatches) -->
 
 
 ### Tasks
@@ -230,6 +249,11 @@ Style Tiles and Style Guides definitely bleed together. Both show colors, button
     *   Photographic style (natural light/white background/cool/warm/faces/crop styles/etc.)
     *   Some “mood words” (optional—see reference material)
 
+### Specifications
+
+**Create your styletiles at 1200px x 900px**
+
+You will need to create at least one styletile. Feel free to create additional tiles if you need more room than this format allows.
 
 <!-- 
 ### Style Guide
@@ -245,7 +269,9 @@ Think about STATE. Add hover, selected and disabled versions of buttons if appli
 Use media queries for changes for different screen sizes. Minimum of one media query should be used for this project to let me know you understand the concept.
 
 The goal is to create an HTML document with a healthy selection of elements styled appropriately. When you view some of the reference materials, you’ll notice large corporate style guides can be very large and are often websites in themselves. We’re obviously aiming for something smaller, but here are some guidelines. -->
-
+:::warning Due Date
+Styletiles due 4/17
+:::
 
 ## Page Design
 
@@ -275,9 +301,10 @@ Exact file dimensions and any grids or guides you use are up to you. But take so
 Your desktop view should show what happens beyond your maximum breakpoint. Both views can be as tall as they need to be.
 
 But, here are some ranges of widths as a guideline:
-Mobile: 320px–480px
-Desktop: 768px–1280px
+- Mobile: 320px–480px
+- Desktop: 1024px–1280px
 
+You will need to show both the mobile and desktop designs at full height _and_ provide versions that show a realistic browser view. This will show us what we'd be likely to see upon first landing of the page. 
 
 ## Presentation
 
@@ -338,5 +365,5 @@ If you have additional designs, or want to show state changes, you can put as ma
 4/10 Sitemap Due
 4/15 Wireframes Due / User Testing exercise
 4/17 Style Tiles Due
-4/22 Project Due / Critique
+4/22 Project Due / Critique (focus on style tiles and final designs)
 :::
