@@ -4,7 +4,7 @@
 
 Points: 150
 
-This assignment will let you practice designing a website from concept to completion using modern workflows. You will create [a project brief](#project-brief) for a new site, a [sitemap](#information-architecture-sitemap), a [wireframe](#“wireframing-”-planning-your-most-important-pages), a ["styletile"](#planning-your-design), and a [page design](#page-design).
+This assignment will let you practice designing a website from concept to completion using modern workflows. You will create [a project brief](#project-brief) for a new site, a [sitemap](#information-architecture-sitemap), a [wireframe](#“wireframing-”-planning-your-most-important-pages), a ["styletile"](#style-tiles), and a [page design](#page-design).
 
 ## Objectives
 
