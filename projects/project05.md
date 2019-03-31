@@ -142,6 +142,8 @@ You'll find a lot of tips and suggestions and opinions about wireframing, we wil
 
 <mark>**You need to wireframe both "desktop" an "mobile" views.**</mark>
 
+You can find more examples of wireframes on [this InVision board](https://projects.invisionapp.com/d/main#/projects/boards/5257818)
+
 <!-- ### And also...“Prototyping:” Planning your interactions
 
 The methods described here won’t apply, but the “why’s” regarding prototyping do:  
