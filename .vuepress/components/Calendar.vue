@@ -60,7 +60,7 @@ export default {
       const monthNames = ["January", "February", "March", "April", "May", "June",
         "July", "August", "September", "October", "November", "December"
       ];
-      console.log(parseInt(month));
+      console.log('parseMonth', parseInt(month));
       let monthName = monthNames[parseInt(month)-1];
       return monthName + ' ' + dateS;
     },
