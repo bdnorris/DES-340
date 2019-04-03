@@ -480,17 +480,14 @@ Jen has a lot of good grid information:
 - [CSS Grid Changes EVERYTHING - Amazing Presentation](https://www.youtube.com/watch?v=7kVeCqQCxlk)
   - [CSS Grid Changes Everything About Web Layouts (Slides)](https://www.slideshare.net/mor10/css-grid-changes-everything-about-web-layouts-wordcamp-europe-2017)
 - [CSS Grid Layout by Rachel Andrew](https://aneventapart.com/news/post/css-grid-layout-by-rachel-andrewan-event-apart-video)
-- 
 
 <!-- - [hey](https://www.youtube.com/watch?v=bI1wNuvuFxo) -->
 
+### Other Links
 
 [Progressively Enhancing CSS Layout: From Floats To Flexbox To Grid](https://www.smashingmagazine.com/2017/07/enhancing-css-layout-floats-flexbox-grid/)
 
 [Practical CSS Grid: Adding Grid to an Existing Design](https://alistapart.com/article/practical-grid)
-
-
-
 
 Wes Bos is a prolific tutorial and web development course author. Normally he charges for his courses, but Mozilla sponsored his time to make a free CSS Grid course. If you want to really learn this, this is the course to take.
 
