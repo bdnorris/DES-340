@@ -4,7 +4,7 @@
 
 Points: 150
 
-This assignment will let you practice designing a website from concept to completion using modern workflows. You will create [a project brief](#project-brief) for a new site, a [sitemap](#information-architecture-sitemap), a [wireframe](#“wireframing-”-planning-your-most-important-pages), a ["styletile"](#planning-your-design), and a [page design](#page-design).
+This assignment will let you practice designing a website from concept to completion using modern workflows. You will create [a project brief](#project-brief) for a new site, a [sitemap](#information-architecture-sitemap), a [wireframe](#“wireframing-”-planning-your-most-important-pages), a ["styletile"](#style-tiles), and a [page design](#page-design).
 
 ## Objectives
 
@@ -53,7 +53,7 @@ You will need to write a "design brief" for me to approve in order to move forwa
    - Write a bit about your target audience. Who are they, what are their interests? Are there any important demographic aspects to your target audience (age, gender, economic status, location, and language)?
 
 :::warning Due Date
-Project Brief Due 4/8
+Project Brief Due: Monday 4/8
 :::
 
 <!-- 4. Have a specific audience/user in mind (even if the audience doesn’t technically exist, e.g. freelance mutant zombie hunters. -->
@@ -126,7 +126,7 @@ I also have a Sketch library for making flow charts and sitemaps. You use it a b
 **Minimum Requirement** would be a simple document with pages represented by rectangles with a clear hierarchy (levels of content). Dimensions of this document are up to you.
 
 :::warning Due Date
-Sitemap due 4/10
+Sitemap due: Wednesday 4/10
 :::
 
 ## “Wireframing:” Planning your most important pages
@@ -192,7 +192,7 @@ Someone other than you should be operating the computer and going through your w
 Collect information from your user testing session, make any necessary adjustments, and make sure you have included the necessary items on your InVision board as noted below.
 
 :::warning Due Date
-Wireframes due & user testing exercise 4/15
+Wireframes due & user testing exercise: Monday 4/15
 :::
 
 ## Style tiles
@@ -272,7 +272,7 @@ Use media queries for changes for different screen sizes. Minimum of one media q
 
 The goal is to create an HTML document with a healthy selection of elements styled appropriately. When you view some of the reference materials, you’ll notice large corporate style guides can be very large and are often websites in themselves. We’re obviously aiming for something smaller, but here are some guidelines. -->
 :::warning Due Date
-Styletiles due 4/17
+Styletiles due: Wednesday 4/17
 :::
 
 ## Page Design
@@ -364,8 +364,12 @@ If you have additional designs, or want to show state changes, you can put as ma
 
 :::danger Due Dates
 4/8 Project Brief Due   
+
 4/10 Sitemap Due
+
 4/15 Wireframes Due / User Testing exercise
+
 4/17 Style Tiles Due
+
 4/22 Project Due / Critique (focus on style tiles and final designs)
 :::
