@@ -8,7 +8,7 @@ I've hesitated a lot on whether this is the right course and the right time to d
 
 There are two reasons I hesitated, one is the size of the Grid specification. There are so many properties, new units, and completely new syntax that you don't see in other CSS properties.
 
-The other is that's so new. Partly this leads to a lack of patterns of the kinds of things you can do with Grid. But the biggest reason is that there is virtually no support in older browsers. Because of this, I simply don't have very much experience with Grid, because supporting Internet Explorer and older versions of Safari isn't optional in my work. 
+The other is that it's so new. Partly this leads to a lack of patterns of the kinds of things you can do with Grid. But the biggest reason is that there is virtually no support in older browsers. Because of this, I simply don't have very much experience with Grid, because supporting Internet Explorer and older versions of Safari isn't optional in my work. 
 
 However, Grid is just too powerful, too useful, and I'm deciding to bet on the idea that as students who are new to CSS, Grid is a more straight-forward way to layout web pages.
 
@@ -36,7 +36,7 @@ Grid doesn't necessarily replace Flexbox, sometimes flexbox is easier. But when 
 
 So when to use Grid... when Flexbox isn't enough.
 
-## How to Grid?
+## How to Grid
 
 Instead of covering the entire Grid specification, I'm going to focus on the most used and most useful properties. In the next lecture, we'll look at some practical uses for these. It will be up to you to go further with Grid if you want, there are a ton of resources at the end of this lecture.
 

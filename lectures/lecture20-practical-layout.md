@@ -56,10 +56,9 @@ As you can also see in this pen, you can easily use flexbox settings to change h
 
 ## Grids
 
-It is possible to use Flexbox to make grids of items, however, it can be tricky to use margins (although, not impossible).
+It is possible to use Flexbox to make grids of items, however, it can be tricky to use margins (although, not impossible). Grid offers a better solution. The following Codepen demonstrates the issues:
 
-GRID GRID GRID
-
+[Grid of items CodePen](https://codepen.io/bdnorris/pen/oOjLjv)
 
 ## RWD Layout Patterns
 
@@ -154,7 +153,10 @@ My total space I want is still 3em, so each box should be 25% - 3/4 ems. Giving 
 
 But what if I want to have a wrapping grid of items, `first-child` and `last-child` won't work. There is no pseudo-class for first and last in a row of wrapping flex-children.
 
-### Grid again?
+
+
+## CSS Grid
+
 
 The solution to that is to use Grid, it's what it was made for. We'll look at it later! For now, here's a Flexbox solution, instead of compensating for the left and right margin with pseudo classes, we'll just allow our container to be a bit larger than the container above it. 
 
@@ -162,9 +164,24 @@ The second solution in this CodePen is based on another pseudo selector called `
 
 ... cp
 
+The `grid-gap` property makes this quite a bit easier. 
+
+Examples
+
+You can also do a lot with Grid for responsive layout, sometimes without using any media queries at all.
+
+Example
+
+GRID GRID GRID
+
+But you can also use "grid area" to great effect combined with media queries.
+
+
 ### Using order
 
 We can use the Flexbox `order` property to let us flip things around in our RWD patterns.
+
+
 
 ## Nesting for success-ting
 
@@ -224,6 +241,20 @@ grid game like froggy
 https://www.youtube.com/watch?v=jV8B24rSN5o <- vet this
 https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout
 
+ -->
+
+
+## Learn from patterns!
+
+https://gridbyexample.com/patterns/
+
+https://developers.google.com/web/fundamentals/design-and-ux/responsive/patterns
+
+https://bradfrost.github.io/this-is-responsive/patterns.html
+
+ ## Resources
+
 https://labs.jensimmons.com/2016/
 
-https://www.youtube.com/watch?v=tFKrK4eAiUQ&t=448s -->
+https://www.youtube.com/watch?v=tFKrK4eAiUQ&t=448s
+
