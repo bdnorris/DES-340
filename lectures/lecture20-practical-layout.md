@@ -176,6 +176,14 @@ GRID GRID GRID
 
 But you can also use "grid area" to great effect combined with media queries.
 
+grid `auto-fit` for responsive w/o media query
+
+```css
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-gap: 10px;
+```
+
 
 ### Using order
 

@@ -58,25 +58,25 @@ One slightly confusing thing about Grid is the idea of lines. **Grid Lines** are
 
 > The dividing lines that make up the structure of the grid. They can be either vertical ("column grid lines") or horizontal ("row grid lines") and reside on either side of a row or column.
 
-[!Grid Line](/assets/img/terms-grid-line.svg)
+![Grid Line](/assets/img/grid/terms-grid-line.svg)
 
 **Grid Track** The "track" is actually referencing the column or the row.
 
 > The space between two adjacent grid lines. You can think of them like the columns or rows of the grid.
 
-[!Grid Track](/assets/img/terms-grid-track.svg)
+![Grid Track](/assets/img/grid/terms-grid-track.svg)
 
 **Grid Cell** A unit made up of the intersection one column and one row.
 
 > The space between two adjacent row and two adjacent column grid lines. It's a single "unit" of the grid.
 
-[!Grid Cell](/assets/img/terms-grid-cell.svg)
+![Grid Cell](/assets/img/grid/terms-grid-cell.svg)
 
 **Grid Area** The actual item in the grid you place your content into. An area can be one cell, or multiple cells.
 
 > The total space surrounded by four grid lines. A grid area may be comprised of any number of grid cells.
 
-[!Grid Area](/assets/img/terms-grid-area.svg)
+![Grid Area](/assets/img/grid/terms-grid-area.svg)
 
 ## Grid Examples
 
@@ -399,8 +399,8 @@ Basically, if you have more items than can fit in your explicit grid, rows or co
 
 ```css
 .container {
-  grid-template-columns: 60px 60px;
-  grid-template-rows: 90px 90px
+  grid-auto-columns: 60px;
+  grid-auto-rows: 60px;
 }
 ```
 
