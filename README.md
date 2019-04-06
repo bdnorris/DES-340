@@ -8,8 +8,8 @@ next: false
 ## Active Assignments
 
 - Projects
-  - Finalize [Project 4](./projects/project04.md)
-  - Start Brief Ideas for [Project 5](./projects/project05.md)
+  <!-- - Finalize [Project 4](./projects/project04.md) -->
+  - Complete Brief for [Project 5](./projects/project05.md)
 <!-- - Codecademy [Deploy a Website](https://www.codecademy.com/learn/deploy-a-website) -->
 <!-- - Exercise [E5](./exercises/exercise05-coding-text.md) -->
 
