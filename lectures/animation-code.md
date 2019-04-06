@@ -156,6 +156,19 @@ amount of times you move your feet!
 We can also use steps in the CSS transition rule as well as animations. -->
 
 
+https://css-tricks.com/writing-animations-that-bring-your-site-to-life/
+
+
+A couple of house rules with animations
+Have you ever bumped into a site that animates all the things? Wow, those can be jarring. So, here’s a couple of things to avoid when working with animations so our app doesn’t fall into the same boat:
+
+Avoid animating CSS properties other than transform and opacity. If other properties have to be animated, like width or height, then make sure there aren’t a lot of layout changes happening at the same time. There’s actually a cost to animations and you can see exactly how much by referring to CSS Triggers.
+Also, just because animations can create perceived performance gains, there’s actually a point of diminishing return when it comes to using them. Animating too many elements at the same time may result in decreased performance.
+Now we can get our hands dirty with some code!
+
+
+
+
 ## Resources
 
 [CSS Reference for Transitions](https://cssreference.io/transitions/)

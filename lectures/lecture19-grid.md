@@ -34,7 +34,9 @@ Another thing Grid comes with is it's own explicit gutter property called `grid-
 
 Grid doesn't necessarily replace Flexbox, sometimes flexbox is easier. But when you find yourself straining to make Flexbox work, Grid might be your answer.
 
-So when to use Grid... when Flexbox isn't enough.
+Here's a great wrap-up of thoughts on when to use each...
+
+[To Grid or to Flex](https://css-irl.info/to-grid-or-to-flex/)
 
 ## How to Grid
 
@@ -335,6 +337,8 @@ Grid gaps do not affect your `grid-template-columns` or row settings. If you set
 - _line_ - can be a number to refer to a numbered grid line, or a name to refer to a named grid line
 - span _number_ - the item will span across the provided number of grid tracks
 - _auto_ - indicates auto-placement, an automatic span, or a default span of one
+
+[Grid Item Placement](https://gedd.ski/post/grid-item-placement/)
 
 These properties let you specify how your Grid items span over rows and columns. 
 

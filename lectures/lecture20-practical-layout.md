@@ -189,9 +189,8 @@ grid `auto-fit` for responsive w/o media query
 
 We can use the Flexbox `order` property to let us flip things around in our RWD patterns.
 
+https://codepen.io/bdnorris/pen/PLagZW
 
-
-## Nesting for success-ting
 
 ## Using `display` in media queries
 
@@ -233,23 +232,8 @@ width: 300px;
 float: right;
 } -->
 
-### Flex Order
-
 ### Text columns
 
-<!-- ### Yet another note on Grid
-
-So let's mention CSS Grid one more time. It's pretty great, and will absolutely solve a lot of your layout problems. However, I'm not lecturing on it, since I still think it will be easier to figure out Flexbox first.
-
-However, I absolutely encourage you to check out some CSS Grid stuff on your own if you're interested. Here are some resources to get you started.
-
-...
-https://css-tricks.com/snippets/css/complete-guide-grid/
-grid game like froggy
-https://www.youtube.com/watch?v=jV8B24rSN5o <- vet this
-https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout
-
- -->
 
 
 ## Learn from patterns!
