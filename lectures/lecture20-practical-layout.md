@@ -2,9 +2,9 @@
 
 The focus of this lecture will be to describe and offer some sample code for some real-world layout problems.
 
-## What do I mean by "Layout"
+## What do I mean by “Layout”
 
-A lot of the hacks I've mentioned, like tables and floats, were all about how to get our elements to live next to each other on the same line (or maybe a better term is "row"). Flexbox and Grid solve this issue, but there's a lot of nuances and gotcha's I want to talk about, as well as how all of this works with Responsive Web Design (RWD).
+A lot of the hacks I've mentioned that we used to use for layout, like tables and floats, were all about how to get our elements to live next to each other on the same line (or maybe a better term is "row"). Flexbox and Grid solve this issue, but there's a lot of nuances and gotcha's I want to talk about, as well as how all of this works with Responsive Web Design (RWD).
 
 ## Mixing percentages and standard units
 
@@ -20,7 +20,7 @@ The `calc()` CSS value can be used pretty much anywhere you would use a number, 
 }
 ```
 
-That CSS would tell the browser to compute 50% of its parent and subtract 1em. I can add with `+`, subtract with `-`, divide with `/`, or multiply with `/`.
+That CSS would tell the browser to compute 50% of its parent and subtract 1em. I can add with `+`, subtract with `-`, divide with `/`, or multiply with `*`.
 
 The following would be a completely valid alternative way to write `width: 33.333%`.
 
@@ -48,35 +48,11 @@ The general principle for making columns of elements is the "row/column" method.
 
 **Transparent background, or background that only goes out to your max-width**: if you don't need the row to have a background you can get away with one wrapper.
 
-** Full-width background**: you'll need three containers, one that expands indefinitely and another one with a max-width set.
+**Full-width background**: you'll need three containers, one that expands indefinitely and another one with a max-width set.
 
 [Flexbox Column CodePen](https://codepen.io/bdnorris/pen/GzwNpz)
 
 As you can also see in this pen, you can easily use Flexbox settings to change how many items per row at different breakpoints by overwriting your settings inside media queries.
-
-## Grids
-
-It is possible to use Flexbox to make grids of items, however, it can be tricky to use margins (although, not impossible). Grid offers a better solution. The following CodePen demonstrates the issues:
-
-[Grid of items CodePen](https://codepen.io/bdnorris/pen/oOjLjv)
-
-## RWD Layout Patterns
-
-... grids and layout codepen ...
-
-Going back to when we first talked about RWD, here's some examples of some of those responsive layout patterns.
-
-### Mostly Fluid pattern
-
-... cp
-
-### Column Drop pattern
-
-... cp
-
-<!-- ### Combining max-widths and percentages
-
-Let's look a little closer. A really common pattern I use would be to combine a container's max-width with  -->
 
 ### Adding gutters
 
@@ -149,9 +125,31 @@ So we have to do some arithmetic here... 4 items per row means 3 gutters because
 
 My total space I want is still 3em, so each box should be 25% - 3/4 ems. Giving me, `calc(25% - 0.75em)`. Complicated, but it's the kind of thing you only need to figure out once, then you can use over and over again. Here's a CodePen showing some options.
 
-... cp
+[... cp](https://codepen.io/bdnorris/pen/GzwNpz)
 
 But what if I want to have a wrapping grid of items, `first-child` and `last-child` won't work. There is no pseudo-class for first and last in a row of wrapping flex-children.
+
+## Grids of items
+
+It is possible to use Flexbox to make grids of items, however, it can be tricky to use margins (although, not impossible). Grid offers a better solution. The following CodePen demonstrates the issues:
+
+[Grid of items CodePen](https://codepen.io/bdnorris/pen/oOjLjv)
+
+## RWD Layout Patterns
+
+Going back to when we first talked about RWD, here's some examples of some of those responsive layout patterns.
+
+### Mostly Fluid pattern
+
+[... cp](https://codepen.io/bdnorris/pen/oOLVWM)
+
+### Column Drop pattern
+
+[... cp](https://codepen.io/bdnorris/pen/BEzbma)
+
+<!-- ### Combining max-widths and percentages
+
+Let's look a little closer. A really common pattern I use would be to combine a container's max-width with  -->
 
 ## Responsive CSS Grid
 
@@ -159,17 +157,11 @@ The solution to that is to use Grid, it's what it was made for. For now, here's 
 
 The second solution in this CodePen is based on another pseudo selector called `nth-child()`, that works like `first-child` and `last-child`, but lets us specify things like "every third item" or "every sixth item", etc. We'll look at these closer in another lecture.
 
-... cp
+[... cp](https://codepen.io/bdnorris/pen/rbepeP)
 
 The `grid-gap` property makes this quite a bit easier. 
 
-Examples
-
 You can also do a lot with Grid for responsive layout, sometimes without using any media queries at all.
-
-Example
-
-GRID GRID GRID
 
 But you can also use "grid area" to great effect combined with media queries.
 
@@ -181,7 +173,7 @@ grid `auto-fit` for responsive w/o media query
   grid-gap: 10px;
 ```
 
-https://codepen.io/bdnorris/pen/rbepeP
+
 
 ### Using order
 
@@ -194,13 +186,15 @@ https://codepen.io/bdnorris/pen/PLagZW
 
 showing and hiding with display none and media queries
 
+[cp ...](https://codepen.io/bdnorris/pen/VNjRyq)
+
 ## Nesting
 
 The real trick of layout is to figure out your boxes. Sometimes I like to do by printing out a black and white copy of the design, and with a red pen, draw my boxes. Remember CSS is all about boxes. 
 
 A combination of Flexbox and the right nesting of elements can often get you the layout you need.
 
-CP...
+[CP...](https://codepen.io/bdnorris/pen/wZWVgJ)
 
 Remember, you can nest both Grid and Flexbox. Grid children and Flex children can also be Grid and Flex containers.
 
@@ -208,10 +202,12 @@ Remember, you can nest both Grid and Flexbox. Grid children and Flex children ca
 
 Maybe try Bootstrap and Foundation
 
-Media queries for layouts
+
+
+<!-- Media queries for layouts
 > Media queries are heavily used to turn multi-column layouts into
 single-column layouts in responsive design. Let’s take a two-column
-desktop layout in HTML:
+desktop layout in HTML: -->
 
 <!-- ```css
 <section>
@@ -242,9 +238,15 @@ float: right;
 
 ### Text columns
 
+## In class exercise
+
+Please find a layout you'd like me to try, and I will set aside some time next class to code it live.
+
 
 
 ## Learn from patterns!
+
+https://responsivedesign.is/patterns/
 
 https://gridbyexample.com/patterns/
 
