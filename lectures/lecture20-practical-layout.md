@@ -44,11 +44,11 @@ I took the max-width of my imagined container that would normally be centered, b
 
 ## Making columns
 
-The general principle for making columns of elements is the "row/column" method. Basically, you have a block level container as your row, and you use Flexbox to set items inside that row. Your container will usually have a `max-width` set, so your columns do not expand indefinitely. How many containers you need depends on your background.
+The general principle for making columns of elements is the “row/column” method. Basically, you have a block level container as your row, and you use Flexbox to set items inside that row. Your container will usually have a `max-width` set, so your columns do not expand indefinitely. How many containers you need depends on your background.
 
 **Transparent background, or background that only goes out to your max-width**: if you don't need the row to have a background you can get away with one wrapper.
 
-**Full-width background**: you'll need three containers, one that expands indefinitely and another one with a max-width set.
+**Full-width background**: you'll need two containers, one that expands indefinitely and another one with a max-width set.
 
 [Flexbox Column CodePen](https://codepen.io/bdnorris/pen/GzwNpz)
 
@@ -76,7 +76,7 @@ However, what if I don't want flexible gutters? What if I want my boxes to flex,
 
 ### First and last child
 
-We'll get more into "pseudo-classes" later, but I want to introduce two right now, They are `first-child` and `last-child`. We use pseudo-classes by placing an `:` after our selector.
+We looked a bit at "pseudo-classes" earlier in the CSS Selectors lecture, but I want to re-introduce two right now, They are `first-child` and `last-child`. We use pseudo-classes by placing an `:` after our selector.
 
 First and last child select the first child of a parent, and the last child of a parent, leaving the rest alone.
 
@@ -125,9 +125,9 @@ So we have to do some arithmetic here... 4 items per row means 3 gutters because
 
 My total space I want is still 3em, so each box should be 25% - 3/4 ems. Giving me, `calc(25% - 0.75em)`. Complicated, but it's the kind of thing you only need to figure out once, then you can use over and over again. Here's a CodePen showing some options.
 
-[... cp](https://codepen.io/bdnorris/pen/GzwNpz)
-
 But what if I want to have a wrapping grid of items, `first-child` and `last-child` won't work. There is no pseudo-class for first and last in a row of wrapping flex-children.
+
+You can implement "nth child" patterns as well, targeting even or odd items to make this work, _if_ you know how many items you have total. But, if your not sure how many items you have and you want a grid, CSS Grid may be more useful. 
 
 ## Grids of items
 
@@ -135,17 +135,21 @@ It is possible to use Flexbox to make grids of items, however, it can be tricky 
 
 [Grid of items CodePen](https://codepen.io/bdnorris/pen/oOjLjv)
 
+<!-- The solution to that is to use Grid, it's what it was made for. For now, here's a Flexbox solution, instead of compensating for the left and right margin with pseudo classes, we'll just allow our container to be a bit larger than the container above it.  -->
+
+<!-- The second solution in this CodePen is based on another pseudo selector called `nth-child()`, that works like `first-child` and `last-child`, but lets us specify things like "every third item" or "every sixth item", etc. We'll look at these closer in another lecture. -->
+
 ## RWD Layout Patterns
 
-Going back to when we first talked about RWD, here's some examples of some of those responsive layout patterns.
+Going back to when we first talked about RWD, here are some examples of some of those responsive layout patterns.
 
 ### Mostly Fluid pattern
 
-[... cp](https://codepen.io/bdnorris/pen/oOLVWM)
+[Mostly Fluid CodePen](https://codepen.io/bdnorris/pen/oOLVWM)
 
 ### Column Drop pattern
 
-[... cp](https://codepen.io/bdnorris/pen/BEzbma)
+[Column Drop CodePen](https://codepen.io/bdnorris/pen/BEzbma)
 
 <!-- ### Combining max-widths and percentages
 
@@ -153,19 +157,9 @@ Let's look a little closer. A really common pattern I use would be to combine a 
 
 ## Responsive CSS Grid
 
-The solution to that is to use Grid, it's what it was made for. For now, here's a Flexbox solution, instead of compensating for the left and right margin with pseudo classes, we'll just allow our container to be a bit larger than the container above it. 
+CSS Grid has the benefit of several new values and functions that allow some responsiveness without media queries.
 
-The second solution in this CodePen is based on another pseudo selector called `nth-child()`, that works like `first-child` and `last-child`, but lets us specify things like "every third item" or "every sixth item", etc. We'll look at these closer in another lecture.
-
-[... cp](https://codepen.io/bdnorris/pen/rbepeP)
-
-The `grid-gap` property makes this quite a bit easier. 
-
-You can also do a lot with Grid for responsive layout, sometimes without using any media queries at all.
-
-But you can also use "grid area" to great effect combined with media queries.
-
-grid `auto-fit` for responsive w/o media query
+Grid `auto-fit` is an awesome value for this. It fills your row with as many columns it can fit. 
 
 ```css
   display: grid;
@@ -173,36 +167,53 @@ grid `auto-fit` for responsive w/o media query
   grid-gap: 10px;
 ```
 
+[Learn more about `auto-fit` and `auto-fill`](https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/)
+
+<!-- The `grid-gap` property makes this quite a bit easier.  -->
+
+<!-- You can also do a lot with Grid for responsive layout, sometimes without using any media queries at all. -->
+
+You can also use "grid area" to great effect combined with media queries.
+
+[Responsive Grid CodePen](https://codepen.io/bdnorris/pen/rbepeP)
 
 
-### Using order
+## Using order
 
 We can use the Flexbox `order` property to let us flip things around in our RWD patterns.
 
-https://codepen.io/bdnorris/pen/PLagZW
+[Flex Order CodePen](https://codepen.io/bdnorris/pen/PLagZW)
 
 
 ## Using `display` in media queries
 
-showing and hiding with display none and media queries
+Sometimes you might need very different components to show in different breakpoints. For instance, differing navigation for mobile and desktop might not always work with just different styles. Different HTML may be required. This is pretty simple to do with the `display` property. 
 
-[cp ...](https://codepen.io/bdnorris/pen/VNjRyq)
+[Display and Media Queries CodePen](https://codepen.io/bdnorris/pen/VNjRyq)
 
 ## Nesting
 
-The real trick of layout is to figure out your boxes. Sometimes I like to do by printing out a black and white copy of the design, and with a red pen, draw my boxes. Remember CSS is all about boxes. 
+The real trick of layout is to figure out your boxes. Sometimes I like to do by printing out a black and white copy of the design, and with a red pen, draw my boxes. Remember, CSS is all about boxes. 
 
 A combination of Flexbox and the right nesting of elements can often get you the layout you need.
 
-[CP...](https://codepen.io/bdnorris/pen/wZWVgJ)
+[Nesting Example CodePen](https://codepen.io/bdnorris/pen/wZWVgJ)
 
 Remember, you can nest both Grid and Flexbox. Grid children and Flex children can also be Grid and Flex containers.
 
 ## Frameworks
 
-Maybe try Bootstrap and Foundation
+CSS Frameworks are essentially JS and CSS files you include as a base, prior to defining your custom styles. They have built-in grid systems and lots of pre-fab styles to get you running quickly. 
 
+Ultimately, you'll learn more by doing it yourself, but frameworks can be a good way to get started making websites since they can fill in gaps in your knowledge.
 
+An extremely popular one is [Bootstrap](https://getbootstrap.com/), made by the developers at Twitter. 
+
+Personally, I've always been partial to [Foundation](https://foundation.zurb.com/) from Zurb. 
+
+[Framework CodePen](https://codepen.io/bdnorris/pen/yrJmPE)
+
+You can quickly build grids using these by using the frameworks pre-defined utility classes.
 
 <!-- Media queries for layouts
 > Media queries are heavily used to turn multi-column layouts into
@@ -236,31 +247,34 @@ width: 300px;
 float: right;
 } -->
 
-### Text columns
+## Text columns
+
+Yes! You can do traditional text columns in CSS. I find them lacking sometimes because they don't often stand up to good typographic practices. 
+
+This CSS-Tricks article explains how to use them pretty well.
+
+[Guide to Responsive-Friendly CSS Columns](https://css-tricks.com/guide-responsive-friendly-css-columns/)
 
 ## In class exercise
 
-Please find a layout you'd like me to try, and I will set aside some time next class to code it live.
-
+Please find a layout you'd like me to try, take a screenshot and the URL, and send to me via Slack. I will set aside some time next class to pick one, and attempt to code it live.
 
 
 ## Learn from patterns!
 
-https://responsivedesign.is/patterns/
+[Responsive Design Patterns](https://responsivedesign.is/patterns/)
 
-https://gridbyexample.com/patterns/
+[Grid by Example Patterns](https://gridbyexample.com/patterns/)
 
-https://developers.google.com/web/fundamentals/design-and-ux/responsive/patterns
+[Google Developers Responsive Patterns](https://developers.google.com/web/fundamentals/design-and-ux/responsive/patterns)
 
-https://bradfrost.github.io/this-is-responsive/patterns.html
+[Brad Frost Responsive Patterns](https://bradfrost.github.io/this-is-responsive/patterns.html)
 
- ## Resources
+## Resources
 
-https://labs.jensimmons.com/2016/
+[Jen Simmons Layout Lab](https://labs.jensimmons.com/2016/)
 
-https://www.youtube.com/watch?v=tFKrK4eAiUQ&t=448s
+[Look Ma, No Media Queries! Responsive Layouts Using CSS Grid](https://css-tricks.com/look-ma-no-media-queries-responsive-layouts-using-css-grid/)
 
-https://css-tricks.com/look-ma-no-media-queries-responsive-layouts-using-css-grid/
-
-https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/
+[Auto-Sizing Columns in CSS Grid: `auto-fill` vs `auto-fit`](https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/)
 
