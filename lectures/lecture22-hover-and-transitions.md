@@ -74,12 +74,16 @@ a:hover {
 
 Here, we've used the `transition` property and told it we want to transition the color property over half a second. 
 
+So, why put the transition in the default style, rather than the hover style? Putting it in the default style makes sure it runs, not only when hover comes into affect, but when you move the mouse away as well. Essentially, any state change that includes a change to `color` will trigger the transition.
+
+### Multiple transitions and "all"
+
+If you want to transition more than one thing, lets say, both background color **and** color, you have a couple of options.
+
+
 <!-- 
 
-One question you may have is, “why did we put the transition rule into the default style rather than the hover style?” Surely we want it to fade when we hover, right? Yes we do! But we also want the fade to happen when we move away from the tag, so we put the transition in the
-116 Learn to Code Now
-default style to have it in all instances — in this case, both hovering over
-the tag and moving away from the tag with our mouse.
+
 What if we want to transition more than one thing? Let’s say a
 background color and a text color? Instead of the name of the attribute
 (e.g. “color”), we can just say “all”:
