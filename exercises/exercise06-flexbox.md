@@ -1,4 +1,4 @@
- # E6: Flexbox Exercise
+# E6: Flexbox Exercise
 
 Points: 20
 

@@ -36,7 +36,7 @@ On this assignment, you will practice some contemporary user interface design pa
 
 [Adobe XD Template](/assets/Project4-WebTemplate.xd) -->
 
-For the following designs, I'm providing a starter Sketch or XD file. **You are required to use Sketch on this project** There is a 12-column grid for desktop, and a 4-column grid for mobile. Template sizes are required, but **you can adjust the grid if you'd like** (either number of columns, or their width or their gap width). 
+For the following designs, I'm providing a starter Sketch. **You are required to use Sketch on this project** There is a 12-column grid for desktop, and a 4-column grid for mobile. Template sizes are required, but **you can adjust the grid if you'd like** (either number of columns, or their width or their gap width). 
 
 [Sketch Documentation: Rulers, Guides, and Grids](https://sketchapp.com/docs/canvas/rulers-guides-grids/)
 
@@ -161,7 +161,7 @@ Create the design again, but this time, pull the options out of the dropdown and
 
 _Adjust the After Design to be fluid. It should have the same content as the original design, but the position and size of your elements can change._
 
-### Examples
+### Examplessh
 
 <img style="max-width:375px;display:block;border:1px solid #ccc;" src="/assets/img/project3/161770788.jpg" alt="Before" />Before (closed)
 

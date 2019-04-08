@@ -1,58 +1,81 @@
-<!-- Hover states
-So far, the way we’ve selected our HTML tags in CSS has been pretty straightforward — whatever the tag name is, that’s the CSS selector. If we’re picking all our <a> tags, we select them with “a”, if we’re picking all our <section> tags, we select them with “header”, but what if
-we’re doing something more complex? How about if we want to style them only when a user hovers the tag? We’re going to introduce the hover state — a new CSS selector — that styles tags only when a user hovers it.
-Let’s say we want to style up our links on the page. We want to make the default look a blue color with no underline:
+# Hover and Transitions
+
+## Hover states
+
+Pretty much any HTML element can be styled when the user's cursor is above it. We call that the "hover" state. To add hover styles, we just need to use the "hover" pseudo-class.
+
+```css
+/* Selects any <a> element when "hovered" */
 a {
-color: #2727e6;
-text-decoration: none;
-}
-Whenever a link has no underline, it might make it more difficult for users to notice that this link is a link — without the underline they may just think it’s another bit of text. Let’s make any of the links change color when we hover them.
-To select an <a> tag on hover, we need to select the “a” first, then only on hover. To do this we use the selector “a:hover”. If we want to select a <section> tag on hover, we’d use “section:hover”. No space between the colon and “hover”.
-112 Learn to Code Now
-In our CSS, we’d need two styles, the first being the default from above
-— this is what it looks like normally. Then we need a second style to
-overwrite what we want to change — in this case, from blue text to
-black text:
-a {
-color: #2727e6;
-text-decoration: none;
+  color: #2727e6;
+  text-decoration: none;
 }
 a:hover {
-color: #111118;
+  color: #111118;
+  text-decoration: underline;
 }
-Notice in the second rule that we don’t need to repeat the text
-decoration rule. We only need to overwrite the things we want
-to change.
-In some circumstances, we might want to overwrite a default that isn’t
-there. For instance, we might want to add a background only on hover
-— the default styling would just be transparent and then the hover state
-would be a background color:
+```
+
+You won't need to repeat anything in the second ruleset, just change the styles you need to, they'll overwrite what came before.
+
+You can do this with any selector, not just links.
+
+```css
 header {
-color: red;
+  background-color: red;
 }
 header:hover {
-background-color: yellow;
+  background-color: yellow;
 }
+```
 
-In this case, on our header the default styling would be a red text
-color and no background color, then on hover, we are overwriting the
-background color to be yellow. The text color stays red on default and
-on hover.
+Of course, this isn't the best example, the intention of hover is often to let the user know they are clickable, or otherwise that some kind of interaction is possible.
+
+By the way, you can use this with classes or any other selectors as well. 
+
+```css
+.header {
+  background-color: red;
+}
+.header:hover {
+  background-color: yellow;
+}
+```
 
 
-Transitions
-At the moment, whenever we change between states of default and hover, we get an instant flick of change. In a lot of instances, this can look jarring to users, especially if the user is hovering over a large area. Wouldn’t it be great if we could add a fade effect? To do this, we can add a CSS transition.
-Let’s say we want to fade our link’s text color from blue to black again, but this time we want to fade it between the two colors over half
-a second:
+### Mobile caveats
+
+Before web capable devices with touch screens, it was also common to use hover to show or hide some information. You could make stateful interactions with just CSS and no Javascript. However, hover is unreliable on mobile devices. Some devices have a "soft-touch" capability, where they distinguish between a light touch on the screen and an intentional tap, sometimes showing the hover state. 
+
+But this is unreliable. Best to only use hover for desktop enhancements, and make sure your page doesn't _need_ it to function.
+
+## Transitions
+
+> Transitions enable you to define the transition between two states of an element. Different states may be defined using pseudo-classes like :hover or :active or dynamically set using JavaScript.
+
+&mdash; [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/transition)
+
+Transitions are the first type of animation we'll look at in CSS. With them, you can transition between two sets of styles, based on the "state". 
+
+There aren't a lot of options for changing state without Javascript. However, `hover` is one of them, so we'll look at how to set up a transition along with hover.
+
+Currently, if we have a hover style, the change in CSS happens immediately. With a transition, we can set the change up to take place over a given amount of time.
+
+```css
 a {
-color: #2727e6;
-text-decoration: none;
-transition: color 0.5s;
+  color: #2727e6;
+  text-decoration: none;
+  transition: color 0.5s;
 }
 a:hover {
-color: #111118;
+  color: #111118;
 }
-Here we’ve transitioned the color rule over 0.5 seconds (“0.5s”).
+```
+
+Here, we've used the `transition` property and told it we want to transition the color property over half a second. 
+
+<!-- 
+
 One question you may have is, “why did we put the transition rule into the default style rather than the hover style?” Surely we want it to fade when we hover, right? Yes we do! But we also want the fade to happen when we move away from the tag, so we put the transition in the
 116 Learn to Code Now
 default style to have it in all instances — in this case, both hovering over
@@ -73,27 +96,3 @@ In this case, we’re changing both the header’s background color and the
 text color over two seconds (“2s”). -->
 
 
-
-
-<!-- Combining class attributes with
-hover states
-Okay, just one more complicated selector. I promise.
-In the last example, where we had a <p> tag with the class attribute of “intro”, what if we wanted to do something when a user hovered the <p> tag? We’d combine the selectors:
-p {
-font-size: 16px;
-}
-p.intro {
-font-size: 18px;
-font-weight: 700;
-}
-p.intro:hover {
-color: red;
-} -->
-
-<!-- Here we have three styles. The first is picking any <p> tag. The second
-is picking any <p> tag, then filtering for any with the class attribute of
-“intro”. The last one is picking any <p> tag, then filtering for the class
-attribute of “intro” and then only applying the style on hover. Phew!
-So for this style sheet, the tag with <p class=”intro”> would be font
-size 18px and bold font weight (or 700 weight) by default. Then we
-apply the red color only on hover. -->
