@@ -20,7 +20,7 @@ The fonts used are Merriweather and Open Sans. You can get it from [Google Fonts
 
 The main task of this exercise is to practice using Flexbox to position elements in an organism and continuing to practice setting appropriate element styles in your CSS. You should be able to determine colors, text stylings, margins, and paddings from the Sketch document.
 
-It would be helpful to have [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) open in a new tab as a reference to all of the properties it Flexbox contains. 
+It would be helpful to have [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) open in a new tab as a reference to all of the propertiess Flexbox contains. 
 
 
 ## Turn in
