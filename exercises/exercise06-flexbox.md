@@ -4,7 +4,7 @@ Points: 20
 
 Now that we've gone over several CSS techniques used to position elements on a page, it's time to start practicing how to use them. More specifically, you will be utilizing Flexbox to lay out a two-column organism. 
 
-Download [this Packaged file](/assets/#. Included is a Sketch document, a PNG and PDF. Use the Sketch document to measure elements and set the typography. The PNG and PDF should be used as a quick reference.
+Download [this Packaged file](/assets/#). Included is a Sketch document, a PNG and PDF. Use the Sketch document to measure elements and set the typography. The PNG and PDF should be used as a quick reference.
 
 
 ## HTML
