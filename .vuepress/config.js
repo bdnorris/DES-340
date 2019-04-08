@@ -46,6 +46,7 @@ module.exports = {
           "exercises/exercise03-first-website.md",
           "exercises/exercise04-atomic-design.md",
           'exercises/exercise05-coding-text.md',
+          'exercises/exercise06-flexbox.md',
         ]
       },
       {
