@@ -53,7 +53,7 @@ You will need to write a "design brief" for me to approve in order to move forwa
    - Write a bit about your target audience. Who are they, what are their interests? Are there any important demographic aspects to your target audience (age, gender, economic status, location, and language)?
 
 :::warning Due Date
-Project Brief Due 4/8
+Project Brief Due: Monday 4/8
 :::
 
 <!-- 4. Have a specific audience/user in mind (even if the audience doesn’t technically exist, e.g. freelance mutant zombie hunters. -->
@@ -126,7 +126,7 @@ I also have a Sketch library for making flow charts and sitemaps. You use it a b
 **Minimum Requirement** would be a simple document with pages represented by rectangles with a clear hierarchy (levels of content). Dimensions of this document are up to you.
 
 :::warning Due Date
-Sitemap due 4/10
+Sitemap due: Wednesday 4/10
 :::
 
 ## “Wireframing:” Planning your most important pages
@@ -183,16 +183,20 @@ For this exercise, you will be grouped up with other students to analyze each ot
 
 Typically, you would do user testing on a finished or nearly finished site or application. However, I want to do this exercise because now is a good time to get some feedback on your wireframes before you advance into a more complete and complex design.
 
-Someone other than you should be operating the computer and going through your wireframes as you explain. Switch up the "driver" for each member of the groups review.
+Someone other than you should be operating the computer and going through your wireframes. Switch up the "driver" for each member of the groups review.
 
-**Your role when looking at another’s wireframes:** Okay, these aren’t real sites, they may or may not clickable, but you should still be able to look at the wireframes, and imagine yourself clicking through. Are there areas that you don’t understand? What happens if you click that button? What does this box represent? Ask lots of questions.
+**Your role when looking at another’s wireframes:** Okay, these aren’t real sites, they may or may not clickable, but you should still be able to look at the wireframes, and imagine yourself clicking through. Look through the wireframes and describe what you see, what you think certain parts of the page are for. If you can't tell, ask.
 
-**Your role when you’re showing your wireframe:** Walk your group through your wireframes and sitemap quickly, then let them ask questions. Answer, but pay attention when your answer seems to be need a lot of explanation. It should be obvious what the items on your page are for. If you don’t have an answer, or it takes an inordinate amount of explaining...congrats, you’ve just found an improvement you can make through our facsimile of user testing.
+<!-- Are there areas that you don’t understand? What happens if you click that button? What does this box represent? Ask lots of questions. -->
+
+**Your role when you’re showing your wireframe:** Walk your group through your brief and sitemap quickly, pointing out which pages you've wireframed. As the driver points things out in your wireframes or asks questions. Answer, but pay attention when your answer seems to be need a lot of explanation. It should be obvious what the items on your page are for. If you don’t have an answer, or it takes an inordinate amount of explaining...congrats, you’ve just found an improvement you can make through our facsimile of user testing.
 
 Collect information from your user testing session, make any necessary adjustments, and make sure you have included the necessary items on your InVision board as noted below.
 
+If you find your wireframes need more work than you can complete in class, feel free to take another period to refine them as you start your styletiles.
+
 :::warning Due Date
-Wireframes due & user testing exercise 4/15
+Wireframes due & user testing exercise: Monday 4/15
 :::
 
 ## Style tiles
@@ -272,7 +276,7 @@ Use media queries for changes for different screen sizes. Minimum of one media q
 
 The goal is to create an HTML document with a healthy selection of elements styled appropriately. When you view some of the reference materials, you’ll notice large corporate style guides can be very large and are often websites in themselves. We’re obviously aiming for something smaller, but here are some guidelines. -->
 :::warning Due Date
-Styletiles due 4/17
+Styletiles due: Wednesday 4/17
 :::
 
 ## Page Design
@@ -345,7 +349,7 @@ Feel free to attach a PDF as well, but PNGs are required to show during critique
 
 ### Style Tiles
 
-You can create more than one style tile if you wish, and each style tile should be 1200px x 900px, landscape. Upload to your InVision board under the heading:
+You can create more than one style tile if you wish, and each style tile should be 1200px x 900px, landscape, in PNG or JPG format. Upload to your InVision board under the heading:
 
 "Project 5: Style Tiles”
 
@@ -364,8 +368,12 @@ If you have additional designs, or want to show state changes, you can put as ma
 
 :::danger Due Dates
 4/8 Project Brief Due   
+
 4/10 Sitemap Due
+
 4/15 Wireframes Due / User Testing exercise
+
 4/17 Style Tiles Due
+
 4/22 Project Due / Critique (focus on style tiles and final designs)
 :::

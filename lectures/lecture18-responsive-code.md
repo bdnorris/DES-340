@@ -1,4 +1,4 @@
-# Coding for responsive design and Media Queries
+# Coding for Responsive Design and Media Queries
 
 We've talked a lot about the design part of Responsive Web Design (RWD), but how do you code it? This is a pretty big subject, but the main key to making all of this work is the use of "media queries". Media Queries allow us to write our design breakpoints into our CSS. 
 

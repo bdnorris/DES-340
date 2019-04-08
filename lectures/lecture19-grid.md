@@ -8,7 +8,7 @@ I've hesitated a lot on whether this is the right course and the right time to d
 
 There are two reasons I hesitated, one is the size of the Grid specification. There are so many properties, new units, and completely new syntax that you don't see in other CSS properties.
 
-The other is that's so new. Partly this leads to a lack of patterns of the kinds of things you can do with Grid. But the biggest reason is that there is virtually no support in older browsers. Because of this, I simply don't have very much experience with Grid, because supporting Internet Explorer and older versions of Safari isn't optional in my work. 
+The other is that it's so new. Partly this leads to a lack of patterns of the kinds of things you can do with Grid. But the biggest reason is that there is virtually no support in older browsers. Because of this, I simply don't have very much experience with Grid, because supporting Internet Explorer and older versions of Safari isn't optional in my work. 
 
 However, Grid is just too powerful, too useful, and I'm deciding to bet on the idea that as students who are new to CSS, Grid is a more straight-forward way to layout web pages.
 
@@ -34,9 +34,11 @@ Another thing Grid comes with is it's own explicit gutter property called `grid-
 
 Grid doesn't necessarily replace Flexbox, sometimes flexbox is easier. But when you find yourself straining to make Flexbox work, Grid might be your answer.
 
-So when to use Grid... when Flexbox isn't enough.
+Here's a great wrap-up of thoughts on when to use each...
 
-## How to Grid?
+[To Grid or to Flex](https://css-irl.info/to-grid-or-to-flex/)
+
+## How to Grid
 
 Instead of covering the entire Grid specification, I'm going to focus on the most used and most useful properties. In the next lecture, we'll look at some practical uses for these. It will be up to you to go further with Grid if you want, there are a ton of resources at the end of this lecture.
 
@@ -58,25 +60,25 @@ One slightly confusing thing about Grid is the idea of lines. **Grid Lines** are
 
 > The dividing lines that make up the structure of the grid. They can be either vertical ("column grid lines") or horizontal ("row grid lines") and reside on either side of a row or column.
 
-[!Grid Line](/assets/img/terms-grid-line.svg)
+![Grid Line](/assets/img/grid/terms-grid-line.svg)
 
 **Grid Track** The "track" is actually referencing the column or the row.
 
 > The space between two adjacent grid lines. You can think of them like the columns or rows of the grid.
 
-[!Grid Track](/assets/img/terms-grid-track.svg)
+![Grid Track](/assets/img/grid/terms-grid-track.svg)
 
 **Grid Cell** A unit made up of the intersection one column and one row.
 
 > The space between two adjacent row and two adjacent column grid lines. It's a single "unit" of the grid.
 
-[!Grid Cell](/assets/img/terms-grid-cell.svg)
+![Grid Cell](/assets/img/grid/terms-grid-cell.svg)
 
 **Grid Area** The actual item in the grid you place your content into. An area can be one cell, or multiple cells.
 
 > The total space surrounded by four grid lines. A grid area may be comprised of any number of grid cells.
 
-[!Grid Area](/assets/img/terms-grid-area.svg)
+![Grid Area](/assets/img/grid/terms-grid-area.svg)
 
 ## Grid Examples
 
@@ -336,6 +338,8 @@ Grid gaps do not affect your `grid-template-columns` or row settings. If you set
 - span _number_ - the item will span across the provided number of grid tracks
 - _auto_ - indicates auto-placement, an automatic span, or a default span of one
 
+[Grid Item Placement](https://gedd.ski/post/grid-item-placement/)
+
 These properties let you specify how your Grid items span over rows and columns. 
 
 `grid-column-start`
@@ -399,8 +403,8 @@ Basically, if you have more items than can fit in your explicit grid, rows or co
 
 ```css
 .container {
-  grid-template-columns: 60px 60px;
-  grid-template-rows: 90px 90px
+  grid-auto-columns: 60px;
+  grid-auto-rows: 60px;
 }
 ```
 
@@ -480,17 +484,14 @@ Jen has a lot of good grid information:
 - [CSS Grid Changes EVERYTHING - Amazing Presentation](https://www.youtube.com/watch?v=7kVeCqQCxlk)
   - [CSS Grid Changes Everything About Web Layouts (Slides)](https://www.slideshare.net/mor10/css-grid-changes-everything-about-web-layouts-wordcamp-europe-2017)
 - [CSS Grid Layout by Rachel Andrew](https://aneventapart.com/news/post/css-grid-layout-by-rachel-andrewan-event-apart-video)
-- 
 
 <!-- - [hey](https://www.youtube.com/watch?v=bI1wNuvuFxo) -->
 
+### Other Links
 
 [Progressively Enhancing CSS Layout: From Floats To Flexbox To Grid](https://www.smashingmagazine.com/2017/07/enhancing-css-layout-floats-flexbox-grid/)
 
 [Practical CSS Grid: Adding Grid to an Existing Design](https://alistapart.com/article/practical-grid)
-
-
-
 
 Wes Bos is a prolific tutorial and web development course author. Normally he charges for his courses, but Mozilla sponsored his time to make a free CSS Grid course. If you want to really learn this, this is the course to take.
 

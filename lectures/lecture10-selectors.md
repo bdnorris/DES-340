@@ -319,3 +319,6 @@ font-size: 24px;
 background-color: yellow;
 } -->
 
+## Resources
+
+[Selector Quiz](https://codepen.io/pehaa/pen/ROapJZ)
