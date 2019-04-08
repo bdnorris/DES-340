@@ -38,7 +38,7 @@ p {
 }
 ```
 
-By default, you can only use fonts that are already installed on the user's machine. How do you know what font's the user has? You don't. In the early days of the web, we had to pick a safe font that we could assume a lot of people had on their computers like Arial, Georgia, Helvetica and Times New Roman. This was pretty limiting, but a lot of clever designers managed to be creative regardless.
+By default, you can only use fonts that are already installed on the user's machine. How do you know what font's the user has? You don't. In the early days of the web, we had to pick a safe font that we could assume a lot of people had on their computers like Arial, Georgia, Helvetica and Times New Roman. This was pretty limiting, but a lot of clever designers managed to be creative regardless. *Webfonts* have changed all that, but we're not quite ready to dive in to all the ins-and-outs of installing them yet.
 
 ### Font "Stacks"
 
@@ -82,7 +82,7 @@ p {
 }
 ```
 
-In this case, if the font size was 16px, the leading would be 16 &times 1.5 = 24px. You can also specify units for line-height like ems or pixels, but the ratio is preferable, since you can set it at a default value for all elements of a certain type, and it will scale if you change the font size on a subset of those elements.
+In this case, if the font size was 16px, the leading would be 16 &times; 1.5 = 24px. You can also specify units for line-height like ems or pixels, but the ratio is preferable. You can set it at a default value for all elements of a certain type, and it will scale if you change the font size on a subset of those elements.
 
 ## Letter spacing or tracking
 
@@ -118,8 +118,8 @@ p {
 }
 ```
 
-Here, there are four different values you can put in: left, center, right and
-justify.
+Here, there are four different values you can use: `left`, `center`, `right` and
+`justify`.
 
 Be very careful with Justify. The reason Justify works in Adobe programs is because they have complex algorithms to figure out where to break the text. Your browser is not as sophisticated, and will not produce the best results. 
 
@@ -185,7 +185,7 @@ This can be useful for styling superscripts and subscripts.
 
 ## Hierarchy and scale
 
-Determining hierarchy and scale to your type designs can be tough, as you probably experienced in other design classes, and Project 1A of this class. Whatever your process is, it's good to at least have a process. I find it useful to adopt someone else's scale or a previous design of your own and then make adjustments for your typeface choices and style. 
+Determining hierarchy and scale to your type designs can be tough, as you probably experienced in other design classes, and Project 1A of this class. Whatever your process is, it's good to at least _have_ a process. I find it useful to adopt someone else's scale or a previous design of your own and then make adjustments for your typeface choices and style. 
 
 Google's **Material Design** [typography system guidelines](https://material.io/design/typography/the-type-system.html) are extremely useful to remind yourself of what kinds of text elements you should design for on a large project. 
 
@@ -200,6 +200,24 @@ Remember, the web shares a lot of principles with other graphic design disciplin
 Apple and Google, for better or for worse, are some of the thought leaders and influencers when it comes to these patterns. They create apps and sites that people use all of the time, nearly daily. And other companies reference their design guidelines simply because it makes it easier for the user to not have to re-learn new user-interface queues for every new app or website. 
 
 But it's not just the patterns that make these guidelines useful, the people at these companies have spent more time thinking about this stuff than you have, so I encourage you to learn from their work. Just keep in mind that they are guidelines, and don't apply to every solution.
+
+## The line break tag
+
+There's a tag called `<br>` that lets you break a line of text. You can use it when you don't need space between something, but the word breaking matters. For instance, when writing something like an address. _Sometimes_ you can get away with using it to finesse line breaking on a headline. Just make sure to test and make sure it works responsively.
+
+> The HTML `<br>` element produces a line break in text (carriage-return). It is useful for writing a poem or an address, where the division of lines is significant.
+
+> The `<br>` element has a single, well-defined purpose&mdash;to create a line break in a block of text. As such, it has no dimensions or visual output of its own, and there is very little you can do to style it.
+
+> Accessibility concerns
+
+> Creating separate paragraphs of text using `<br>` is not only bad practice, it is problematic for people who navigate with the aid of screen reading technology. Screen readers may announce the presence of the element, but not any content contained within `<br>`s. This can be a confusing and frustrating experience for the person using the screen reader.
+
+> Use `<p>` elements, and use CSS properties like margin to control their spacing.
+
+&mdash;MDN 
+
+Essentially, **do not use the `<br>` tag to create whitespace between items**. It does not give you the fine control over spacing you probably need. Use margin and padding on your CSS elements instead.
 
 ## Resources
 

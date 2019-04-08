@@ -8,9 +8,9 @@ next: false
 ## Active Assignments
 
 - Projects
-  - Finish [Project 2](./projects/project02.md)
-- Codecademy [Make a Website](https://www.codecademy.com/learn/make-a-website)
-- Exercise [E4](./exercises/exercise04-atomic-design.md)
+  - Continue [Project 4](./projects/project04.md)
+<!-- - Codecademy [Deploy a Website](https://www.codecademy.com/learn/deploy-a-website) -->
+<!-- - Exercise [E5](./exercises/exercise05-coding-text.md) -->
 
 <!-- ## Calendar: Section 301 (Fleener/MW/4PM)
 

@@ -1,4 +1,4 @@
-# CSS Position, Display, and the Box Model
+# CSS Position and Display
 
 [Lecture CodePen](https://codepen.io/bdnorris/pen/NoNRoK)
 
@@ -33,8 +33,6 @@ We can set these in CSS with the `display` property, overriding whatever the def
 
 There's also a property value for `display` called `inline-block`. Inline-block gives you the best of both worlds, allowing elements to flow like inline elements, but giving them access to the full box model.
 
-/ example pen
-
 This allows you a way to pretty easily set block elements next to each other in your layout. The only issue is that since they are behaving like text, they will honor whitespace and place small space characters between them. If you are attempting a very precise layout, this might break things for you.
 
 [inline-block layout](http://learnlayout.com/inline-block-layout.html)
@@ -58,9 +56,9 @@ Why would you want to do this?
 - Once you get into interaction design, showing and hiding things is a pretty big part of creating a user interface.
 - Maybe you're styling something where you don't totally control the template (the HTML), like a shopping cart site. You might decide you don't want that particular element showing up, and instead of having to remove it from the template, you can just hide it with CSS.
 
-Keep in mind, there are other ways to hide things, but `display: block;` is the only way to hide something that completely removes it from the flow of the document.
+Keep in mind, there are other ways to hide things, but `display: block;` is the only way to hide something that **completely removes it from the flow of the document**.
 
-We can also set `visibility: hidden` on an element. The difference is, this element will still be in the flow of the document, taking up the same space as it normally would. Maybe you want that so you would use the "visibility" property here.
+We can also set `visibility: hidden` on an element. The difference is, this element will still be in the flow of the document, taking up the same space as it normally would.
 
 Similarly, there is `opacity: 0`. Essentially the same as `hidden`, but this property is animate-able, which we'll look at later. Of course `opacity: 0.5` is not at all the same as `hidden` and would just show your element _and everything inside it_ at 50% opacity.
 
@@ -102,8 +100,6 @@ What they do depends a bit on the context, so we'll look at some examples soon.
 ### Z-index
 
 Some position settings allow you to set a `z-index` value. This is a numerical value that allows you to dictate layers in your layout, positioning some items on top of others.
-
-document flow...
 
 ### Static
 
@@ -179,11 +175,7 @@ It will position itself to its parent. Unlike relative positioning, it does not 
 
 Nothing really happens to the `.header` element here, because even know we set `position: relative;` on it, we didn't specify any directional tags. Setting `relative` here only defines it as something for its children to position themselves "absolutely" to. 
 
-Back in the pre-responsive days, you could use absolute positioning to basically grid out your designs and by using directional properties assign coordinates for the elements to sit. But, this doesn't work very well with flexible design patterns.
-
 I find myself using `absolute` less and less. Probably the best thing to use `absolute` for is decorative elements or icons. If you had some navigation and placed an icon in the HTML to flow naturally, the icon will just kind of show up after the text. If you wanted the icon to always be on the left, regardless of the width of our text, you could absolutely position it to its box.
-
-// codepen example
 
 > So two rules for absolute positioning, if you want the “co-ordinates” of
 the tag (the left, right, top or bottom) based on another tag, put that tag
@@ -195,7 +187,7 @@ as a relatively positioned tag. If you want the “co-ordinates” to be based o
 
 ### Fixed
 
-`position: fixed;` is how we can make things "sticky" with CSS. It works similarly to `absolute`, and removes the element from the normal flow of the page. The difference is it doesn't care about scrolling. For that reason, it's always positioned relative to the document root (`<html>`). 
+`position: fixed;` is how we can make things "stick" with CSS. It works similarly to `absolute`, and removes the element from the normal flow of the page. The difference is it doesn't care about scrolling. For that reason, it's always positioned relative to the document root (`<html>`). 
 
 The following CSS would make my fixed item take up the entire viewport...
 
@@ -226,9 +218,27 @@ Often this is used for a sticky header.
 
 Anything with `position: absolute;` that is nested inside your fixed element will be positioned relative to your `fixed` element.
 
+### Sticky
+
+I have to admit I don't know a ton about `sticky`. Since it's not supported in IE, I usually have to resort to Javascript to make "sticky" things that scroll normally and then attach themselves to the top of the document once you keep scrolling. 
+
+Sticky came along to make this easier. You set the position, then set a direction for where you want it to stick, usually `top`. Similar to `fixed`, but `fixed` has no relation to scrolling. The element will take up its normal place in the flow, then stick when scrolled past, removing itself from the flow and acting like a `fixed` element.
+
+```css
+.header h1 {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+```
+
+You'll usually need a high `z-index` so other items don't show up on top of it.
+
 ### A note on layout
 
 > One thing you might be tempted to do is start building your layouts using positions rather than floats, because it looks easier — it’s similar to design programs like Photoshop and Sketch where you set an “x” and “y” position and away you go. But resist the temptation. The more positioning you use, the more tangles you’ll end up in, when it comes to fixing your layout for mobile.
+
+Back in the pre-responsive days, you could use absolute positioning to basically grid out your designs and by using directional properties assign coordinates for the elements to sit. But, this doesn't work very well with flexible design patterns.
 
 Positioning shouldn't be used for your main layout rules, essentially because it's harder to implement responsive design. This will become more clear as we dig further into layout.
 
