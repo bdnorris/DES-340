@@ -34,6 +34,7 @@ module.exports = {
           "lectures/lecture17-layout-flexbox.md",
           "lectures/lecture18-responsive-code.md",
           "lectures/lecture19-grid.md",
+          "lectures/lecture20-practical-layout.md"
         ]
       },
       {
