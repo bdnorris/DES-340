@@ -1,15 +1,15 @@
 # CSS Effects
 
+## Shadows
+
+There are two kinds of shadows we can use. One for text, and the other for elements (boxes).
+
+### Text shadows
+
+
+
+
 <!--
-
-
-
-
-
-Drop shadows
-For both text and tags, we can add drop shadows to apply some subtle
-(or not so subtle) effects to our designs. There are two types of drop
-shadows we can use, one for the text and one for the tag itself.
 
 Text drop shadows
 The CSS rule for text shadows takes four values, the “x” direction, the
@@ -120,24 +120,3 @@ img:hover {
 filter: grayscale(0);
 }
  -->
-
- <!-- Aligning with block elements
-Unlike with “inline” and “inline-block” tags, “block” tags are a little
-trickier to align. The problem is that CSS sucks at aligning things down
-the page, because technically the page shouldn’t know anything about
-browser size. Of course, we sometimes do want to make things look
-like they know about the size of the page!
-There’s no one right way to do this. You can use margins and paddings
-to move tags around which works up to a point. You can use positions
-to move tags too.
-One way to move the tag into the middle of the page uses positions and
-transforms together. We move the top left corner to the center of the
-page, then move it back across and up the page with a transform: -->
-
-<!-- section.intro {
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-}
-Just using the position absolute (or fixed) to move the tag means the top left corner is right in the middle of the page, not the center of the tag. By using transform we can shift the whole tag upwards by half its height, then across by half its width. -->

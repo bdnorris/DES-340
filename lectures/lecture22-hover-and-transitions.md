@@ -80,23 +80,57 @@ So, why put the transition in the default style, rather than the hover style? Pu
 
 If you want to transition more than one thing, lets say, both background color **and** color, you have a couple of options.
 
+One option is to use the `all` keyword instead of specifying what property to transition.
 
-<!-- 
-
-
-What if we want to transition more than one thing? Let’s say a
-background color and a text color? Instead of the name of the attribute
-(e.g. “color”), we can just say “all”:
-header {
-color: black;
-background-color: white;
-transition: all 2s;
+```css
+a {
+  color: #2727e6;
+  background-color: white;
+  text-decoration: none;
+  transition: all 0.5s;
 }
-header:hover {
-color: red;
-background-color: yellow;
+a:hover {
+  color: #111118;
+  background-color: black;
 }
-In this case, we’re changing both the header’s background color and the
-text color over two seconds (“2s”). -->
+```
 
+This would transition every property that differs. If you don't want to transition every property, or want two different properties to take different amounts of time, you'll need to list them out, separated by commas, instead.
 
+```css
+a {
+  color: #2727e6;
+  background-color: white;
+  text-decoration: none;
+  transition: color 0.2s, background-color 0.3s;
+}
+a:hover {
+  color: #111118;
+  background-color: black;
+}
+```
+
+### Timing
+
+We'll talk more about timing in the animation section, but for now, just know that there are different animating timing settings, some of which you can define yourself, and some easy presets as well. You you can apply these to transitions as well as other types of animations we'll look at soon.
+
+Built in ones are `linear`, `ease`, `ease-in`, `ease-in-out`, and `ease-out`.
+
+You can preview examples of these at [cubic-bezier.com](http://cubic-bezier.com/#.17,.67,.83,.67)
+
+```css
+a {
+  color: #2727e6;
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+a:hover {
+  color: #111118;
+}
+```
+
+`ease` is pretty safe, I tend to start with ease before I try anything else. It starts the animation slowly, speeds up, but then slows back down again at the end. Imagine it like a car accelerating, going fast for a bit, then braking. 
+
+## Resources
+
+[CSS Reference: Transitions](https://cssreference.io/transitions/)
