@@ -9,8 +9,8 @@ next: false
 
 - Projects
   <!-- - Finalize [Project 4](./projects/project04.md) -->
-  - Complete Brief for [Project 5](./projects/project05.md)
-<!-- - Exercise [E5](./exercises/exercise05-coding-text.md) -->
+  - Complete Sitemap for [Project 5](./projects/project05.md)
+- Exercise [E6](./exercises/exercise06-flexbox.md)
 
 <!-- ## Calendar: Section 301 (Fleener/MW/4PM)
 
