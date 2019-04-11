@@ -6,35 +6,38 @@ There are two kinds of shadows we can use. One for text, and the other for eleme
 
 ### Text shadows
 
+You can define shadows on your text by using the `text-shadow` property, and giving it four values. 
+
+```css
+p { 
+  text-shadow: 1px 1px 1px #000;
+}
+```
+
+The first value is the x, or horizontal offset, the second is the y, or vertical offset. Positive values push the shadow right, then down respectively. You can specify 0s here for no offset, or negative numbers to move left and up. 
+
+The third value is the blur. A higher number here results in a more diffuse shadow.
+
+The last value is the color. It's actually pretty useful to use RGBA or HSLA values here, so you can have transparent shadows.
+
+```css
+p { 
+  text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.4); 
+}
+```
+
+You can stack shadows with commas, leading to some more elaborate effects. Obviously, there's a lot of good reasons to not use shadows with your type, and I would rarely recommend them for body fonts. But, they can be good to add to headers and larger text to achieve certain effects, or if you're not sure what kind of background the text might appear on.
+
+Keep in mind, you can use lighter colors too, achieving more of a glow effect.
+
+## Resources
+
+https://css-tricks.com/almanac/properties/t/text-shadow/
 
 
 
 <!--
 
-Text drop shadows
-The CSS rule for text shadows takes four values, the “x” direction, the
-“y” direction, the “blur”, then the color of the shadow.
-The “x” direction is across the page. If you want to move the shadow to
-the right of the tag, you can use a positive number of pixels (e.g. 5px). To
-keep the same, just use “0”. If you want to move the shadow to the left,
-you can use negative pixels (e.g. -5px). Same thing for the “y” direction,
-5px would be further down the page, -5px would be back up the page, 0
-would be no difference up or down.
-The blur is also a pixel value referring to how far the drop shadow
-should be blurred over. If it’s 0, there’s no blur to the shadow and
-it looks sharp. The bigger the blur value, the more area the shadow
-spreads over and the lighter it will be.
-The last is a color value. This can be a hex or rgba value. In fact, rgba
-colors are great for drop shadows as they can give them a transparency
-that hex values can’t.
-
-Let’s say we want to give our <h1> tag a 50 percent transparent black text shadow that is slightly blurred, straight down and to the right. We would add:
-h1 {
-text-shadow: 0 5px 2px rgba(0, 0, 0, 0.5);
-}
-We’re not putting any left value to make it go straight down. Then
-we’re putting the value 5px downwards with a 2px blur, then giving
-it a rgba color.
 
 Outer drop shadow
 The other drop shadow effect is the “box-shadow” — instead of just being on the text, it’s on the overall tag itself. It has pretty much the same values, “x”, “y”, blur and color, just this time it’s a different rule, the “box-shadow” rule:
