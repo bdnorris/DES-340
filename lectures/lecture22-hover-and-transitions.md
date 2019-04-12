@@ -129,7 +129,7 @@ a:hover {
 }
 ```
 
-`ease` is pretty safe, I tend to start with ease before I try anything else. It starts the animation slowly, speeds up, but then slows back down again at the end. Imagine it like a car accelerating, going fast for a bit, then braking. 
+`ease` is pretty safe, I tend to start with ease before I try anything else. It starts the animation slowly, speeds up, but then slows back down again at the end. Imagine it like a car accelerating, going fast for a bit, then braking.
 
 ## Resources
 
