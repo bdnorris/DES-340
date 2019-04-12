@@ -177,11 +177,11 @@ The main reason I’m choosing Webflow as the tool for this exercise is it’s g
 
 <!-- **You must consider the view, all the way from mobile to desktop for this assignment.** -->
 
-### Parts of a Wireframe
+### Parts of a wireframe
 
-With wireframe, we are now at the page level of our hierarchy. Your wireframes should show the content hierarchy of the items that go on that page. However, they don't need to have specific content, and can show content somewhat generically. 
+With wireframe, we are now at the page level of our hierarchy. Your wireframes should show the content hierarchy of the items that go on that page. However, they don't need to have specific content and can show content somewhat generically. 
 
-Generally, aim for headings and actions to have real copy, but body copy can just be lorem ipsum. Photos are almost never necessary, unless you want to pick a few generic ones to represent "photo" in a generic/abstract way. 
+Generally, aim for headings and actions to have the real copy, but body copy can just be lorem ipsum. Photos are almost never necessary unless you want to pick a few generic ones to represent "photo" in a generic/abstract way. 
 
 ### Prototyping
 
