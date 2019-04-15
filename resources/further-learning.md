@@ -34,3 +34,7 @@ Scroll down to the list of twitter profiles. These are your current CSS influenc
 [Stack Overflow](https://stackoverflow.com/)
 
 [Mozilla Developer Network](https://developer.mozilla.org/)
+
+## Checkout CSS Tricks' Guides
+
+[Where do you learn HTML and CSS in 2019](https://css-tricks.com/where-do-you-learn-html-css-in-2019/)

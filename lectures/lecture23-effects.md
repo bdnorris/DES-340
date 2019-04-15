@@ -30,96 +30,81 @@ You can stack shadows with commas, leading to some more elaborate effects. Obvio
 
 Keep in mind, you can use lighter colors too, achieving more of a glow effect.
 
+### Box Shadows
+
+To add shadows to your elements, you can use the `box-shadow` property. It uses similar values to `text-shadow`: "x", "y", blur, color. 
+
+```css
+.my-element {
+  box-shadow: 0 5px 2px rgba(0, 0, 0, 0.5);
+}
+```
+
+You can make glow affects with this property as well, by using lighter colors.
+
+There's one more value we can pass to `box-shadow` though, and that's `inner`. By setting `inner` as the first value in the list, we can create an inner shadow that runs along the inside of the box.
+
+```css
+.my-element {
+  box-shadow: inner 0 0 15px rgba(255, 255, 255, 0.4);
+}
+```
+
+Shadows like this can be a pain to get right, so I often use a generator to help out.
+
+[CSSMatic Box-Shadow](https://www.cssmatic.com/box-shadow)
+
+## Filters
+
+`filter` is a newer property that allows you to use Photoshop like filters on your elements. It has decent browser support, but notably, doesn't work in IE.
+
+[Can I Use: Filter](https://caniuse.com/#search=filter)
+
+It works similarly to the `transform` property we'll discuss in the next lecture, where the property is `filter`, then you give it a function with a value in parenthesis. 
+
+```css
+img {
+  filter: blur(2px);
+}
+```
+
+Here's all of the filters you can try on your elements...
+
+```css
+.my-element {
+  filter: grayscale(100%); /* 0% is normal, 100% is black and white */
+  filter: sepia(50%);
+  filter: saturation(200%); /* 100% is normal, lower is less saturated, higher is more */
+  filter: contrast(500%); /* 100% is normal */
+  filter: brightness(200%); /* 100% is normal */
+  filter: invert(100%); /* 0% is normal */
+}
+```
+
+You can also combine filters by separating them with spaces. **Do not repeat the property**, it will overwrite your previous declaration.
+
+```css
+.my-class {
+  filter: contrast(200%) grayscale(100%) blur(3px);
+  filter: brightness(150%); /* this would overwrite all of the above */
+}
+```
+
+There are technically more, and I expect they will keep adding them.
+
+[MDN CSS Filter](https://developer.mozilla.org/en-US/docs/Web/CSS/filter)
+
+[Here's a good set of examples from CSS Tricks](https://css-tricks.com/almanac/properties/f/filter/)
+
+[Here's another from Alligator.io](https://alligator.io/css/css-filter-examples/)
+
+
 ## Resources
 
-https://css-tricks.com/almanac/properties/t/text-shadow/
+[CSS Tricks text-shadow](https://css-tricks.com/almanac/properties/t/text-shadow/)
 
+[CSS Reference text-shadow](https://cssreference.io/property/text-shadow/)
 
+[CSS Reference box-shadow](https://cssreference.io/property/box-shadow/)
 
-<!--
-
-
-Outer drop shadow
-The other drop shadow effect is the “box-shadow” — instead of just being on the text, it’s on the overall tag itself. It has pretty much the same values, “x”, “y”, blur and color, just this time it’s a different rule, the “box-shadow” rule:
-h1 {
-box-shadow: 0 5px 2px rgba(0, 0, 0, 0.5);
-}
-As before, we’re having a shadow that goes straight down by 5px with a 2px blur and a 50 percent transparent black color.
-
-Glow effect
-We can use box-shadow to give a tag a glow effect too. All we’d need
-to do is not move the shadow down or to the left, then give it a large
-blur. In this example, we’ll blur by 15px with a 40 percent transparent
-white color:
-header {
-box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
-}
-
-Inner shadows
-Most shadows go around the edge of the tag itself, but we can add
-one more value to make the box shadow go from the outer edge to
-the inner edge. All we do is add the word “inner” to the start of our
-box-shadow rule.
-header {
-box-shadow: inner 0 0 15px rgba(255, 255, 255, 0.4);
-}
-
-
- -->
-<!--
-
-Filters
-Recently Adobe started added some of their own code to how CSS works to let us use some of the powerful Photoshop filters in our browsers. Because they are so new they may not work in some older browsers. For 90 percent of users they will work fine, but for those using older computers it may look as if these filters were never there. So for the moment, use sparingly until everyone else catches up (or buys new laptops).
-We’re going to add a new rule called filter to our CSS. The first one lets us blur tags. Blur tags have a pixel unit, the larger the number, the more blur we have:
-img {
-filter: blur(2px);
-}
-We can also fade our image to gray by increasing another filter
-called grayscale:
-
-img {
-filter: grayscale(100%);
-}
-The default for this is 0% grayscale (so normal), but we can fade to gray by increasing the percentage to 100%.
-
-Instead of gray, we could fade our image out to an antique sepia effect
-by using a similar filter:
-img {
-filter: sepia(50%);
-}
-Similar to grayscale, we can increase the saturation of the image too:
-img {
-filter: saturation(200%);
-}
-100% is the default saturation and anything less than 100% will reduce
-the saturation in the same way that grayscale works.
-We can also change the contrast of the image in a similar way
-to saturation:
-
-img {
-filter: contrast(500%);
-}
-This will increase the contrast by five times the original. We can also
-change the brightness of the image:
-img {
-filter: brightness(200%);
-}
-
-We can invert the color of the tag too by adding an invert filter:
-img {
-filter: invert(100%);
-}
-We can also combine filters:
-img {
-filter: contrast(200%) grayscale(100%) blur(3px);
-}
-Where filters can come in really useful is in hover effects, for instance if we wanted to fade an image from gray into full color:
-img {
-filter: grayscale(100%);
-transition: filter 1s;
-}
-
-img:hover {
-filter: grayscale(0);
-}
- -->
+[CSSMatic Box-Shadow Generator](https://www.cssmatic.com/box-shadow)
