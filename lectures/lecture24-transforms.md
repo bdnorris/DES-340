@@ -104,28 +104,55 @@ This will rotate your element around the top left corner. You can also use pixel
 
 ## 3-D 
 
-transform-style: preserve-3d;
+There's also a whole 3-d aspect to transforms. 
 
-backface-visibility: hidden;
+```css
+.my-element {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transform: perspective(50px);
+  perspective-origin: center;
+  transform: translateZ(100px);
+  transform: matrix3d(
+    1,0,0,0,
+    0,1,0,0,
+    0,0,1,0,
+    -50,-100,0,1.1
+  );
+  transform: translate3d(42px, -62px, -135px);
+  transform: scaleZ(1.4);
+  transform: scale3d(0.5, 1, 1.7);
+  transform: rotate3d(1, 1, 1, 45deg);
+}
+```
 
-perspective(50px) 
-translateZ(100px);
-perspective-origin
+I'm not an expert in using these, nor do they come up often, so this will be something you can explore on your own if you're interested.
 
-matrix3d()
-translate3d()
-translateZ()
-scaleZ() 
-scale3d() 
-rotate3d() =
+There are also some helpful generators out there like...
+
+[westciv.com](http://westciv.com/tools/3Dtransforms/index.html)
+
 
 ## Using with transitions
 
+Combining transforms with transitions allows for a wide range of animations. 
+
+```css
+.my-element {
+  transform: scale(1); /* Default */
+  transition: transform 200ms ease;
+}
+.my-element:hover {
+  transform: scale(1.5);
+}
+```
+
+We want to set a base transform on the element, this increases performance slightly, getting the element ready to transform. 
 
 
 ## Resources
 
-https://css-tricks.com/almanac/properties/t/transform/
+[CSS Tricks Almanac](https://css-tricks.com/almanac/properties/t/transform/)
 
-https://cssreference.io/property/transform/
+[CSS Reference on Transform](https://cssreference.io/property/transform/)
 

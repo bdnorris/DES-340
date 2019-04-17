@@ -30,5 +30,3 @@ Name your Codepen "DES-340: Exercise 6". Copy the URL and send to me via Slack.
 :::danger Due Dates
 April 29th
 :::
-
-
