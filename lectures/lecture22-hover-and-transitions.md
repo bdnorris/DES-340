@@ -31,7 +31,7 @@ header:hover {
 }
 ```
 
-Of course, this isn't the best example, the intention of hover is often to let the user know they are clickable, or otherwise that some kind of interaction is possible.
+The intention of hover is often to let the user know they are clickable, or otherwise that some kind of interaction is possible.
 
 By the way, you can use this with classes or any other selectors as well. 
 

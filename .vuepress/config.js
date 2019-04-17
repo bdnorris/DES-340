@@ -35,7 +35,9 @@ module.exports = {
           "lectures/lecture18-responsive-code.md",
           "lectures/lecture19-grid.md",
           "lectures/lecture20-practical-layout.md",
-          "lectures/lecture21-class-usage-naming.md"
+          "lectures/lecture21-class-usage-naming.md",
+          "lectures/lecture22-hover-and-transitions.md",
+          "lectures/lecture23-effects.md",
         ]
       },
       {
