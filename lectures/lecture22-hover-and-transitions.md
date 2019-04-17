@@ -1,5 +1,7 @@
 # Hover and Transitions
 
+[Lecture CodePen](https://codepen.io/bdnorris/pen/pBpBNW)
+
 ## Hover states
 
 Pretty much any HTML element can be styled when the user's cursor is above it. We call that the "hover" state. To add hover styles, we just need to use the "hover" pseudo-class.
