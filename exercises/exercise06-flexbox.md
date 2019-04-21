@@ -28,7 +28,5 @@ It would be helpful to have [A Complete Guide to Flexbox](https://css-tricks.com
 Name your Codepen "DES-340: Exercise 6". Copy the URL and send to me via Slack.
 
 :::danger Due Dates
-April 27th
+April 29th
 :::
-
-

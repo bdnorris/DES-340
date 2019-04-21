@@ -34,7 +34,10 @@ module.exports = {
           "lectures/lecture17-layout-flexbox.md",
           "lectures/lecture18-responsive-code.md",
           "lectures/lecture19-grid.md",
-          "lectures/lecture20-practical-layout.md"
+          "lectures/lecture20-practical-layout.md",
+          "lectures/lecture21-class-usage-naming.md",
+          "lectures/lecture22-hover-and-transitions.md",
+          "lectures/lecture23-effects.md",
         ]
       },
       {
@@ -58,7 +61,8 @@ module.exports = {
           "projects/project02.md",
           "projects/project03.md",
           "projects/project04.md",
-          "projects/project05.md"
+          "projects/project05.md",
+          "projects/project06.md"
         ]
       },
       {

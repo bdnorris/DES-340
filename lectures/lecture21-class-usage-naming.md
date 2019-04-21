@@ -102,11 +102,19 @@ If you use a class like this, make sure that the styles inside are only those th
 ```css
 .red {
   color: red;
+}
+```
+
+But then, don't do this...
+
+```css
+.red {
+  color: red;
   font-size: 1.2em;
 }
 ```
 
-The above is a terrible idea because the idea of a utility class is that I should be able to remove it from the HTML, and all I would be doing is changing the color. If it contains any other styles, things start to break.
+The above is a terrible idea because the idea of a utility class is that I should be able to remove it from the HTML, and all I would be doing is changing the color. If it contains any other styles, things start to get complicated.
 
 ### Component and BEM
 
@@ -152,9 +160,22 @@ It probably looks a little unwieldy having so many long class names, but BEM is 
 
 The only items that are more than one level are the ones where I targeted the `<h2>` and the `<a>`. This means our specificity for each ruleset is very low. Low specificity means it's less likely we run into trouble later with styles that are too difficult to overwrite. 
 
+## Organization
+
+Organizing all of this is difficult, but there are a lot of things that help. Some involve discussions of technologies we're not ready for or running software we can't run on lab computers. 
+
+There are two resources I'll point at to help with this. One is [CSS Guidelines](https://cssguidelin.es/).
+
+The other is [SMACSS](http://smacss.com/), a methodology for organizing your CSS. Searching around, you will find articles about SMACSS vs. BEM as if they were incompatible. I beg to differ, you can use them together.
+
+> SMACSS (pronounced “smacks”) is more style guide than rigid framework. There is no library within here for you to download or install. SMACSS is a way to examine your design process and as a way to fit those rigid frameworks into a flexible thought process. It is an attempt to document a consistent approach to site development when using CSS.
+
+But this is all for later. On small projects, while you're learning, just do what works best for you. You will want to start studying these other methodologies when you start feeling the pain on larger projects. 
+
 ## Resources
 
-An excellent, very in-depth resource for all kinds of CSS conventions:
-[cssguidelin.es](https://cssguidelin.es/)
+An excellent, very in-depth resource for all kinds of CSS conventions: [cssguidelin.es](https://cssguidelin.es/)
 
 [BEM Introduction](http://getbem.com/introduction/)
+
+[SMACSS](http://smacss.com/)

@@ -86,6 +86,10 @@ Earlier, you were directed to have a certain number of pages in your site. Now i
 
 They’re typically shown from the top down; where Home and any other common landing pages would be at the top, main section pages underneath (often corresponding to the main navigation), sub-sections underneath that, and so on.
 
+Each box on your sitemap should represent an individual page. You do not need to list out every piece of content that goes into a page (save that for wireframing). If it's not a full page, it shouldn't be a box on your sitemap.
+
+Even if that page has dynamic content, each box should represent a unique URL on your site and the hierarchy would be represented via URL. http://mysite.com/products/apparel would represent a page called "Apparel" underneath (further down in the hierarchy) "Products", which is underneath "Home".
+
 ### Examples
 
 The most common would be a tree view:  
@@ -142,7 +146,7 @@ You'll find a lot of tips and suggestions and opinions about wireframing, we wil
 
 <mark>**You need to wireframe both "desktop" an "mobile" views.**</mark>
 
-You can find more examples of wireframes on [this InVision board](https://projects.invisionapp.com/d/main#/projects/boards/5257818)
+You can find more examples of wireframes on [this InVision board](https://projects.invisionapp.com/boards/ST34OYIN2HV3R/)
 
 <!-- ### And also...“Prototyping:” Planning your interactions
 
@@ -172,6 +176,12 @@ Feel free to use Webflow’s built in form fields, linking capabilities, etc. to
 The main reason I’m choosing Webflow as the tool for this exercise is it’s great responsive support. You will be able to layout a page, and in real-time, slide the viewport to different widths and see the adjustments happening live. -->
 
 <!-- **You must consider the view, all the way from mobile to desktop for this assignment.** -->
+
+### Parts of a wireframe
+
+With wireframe, we are now at the page level of our hierarchy. Your wireframes should show the content hierarchy of the items that go on that page. However, they don't need to have specific content and can show content somewhat generically. 
+
+Generally, aim for headings and actions to have the real copy, but body copy can just be lorem ipsum. Photos are almost never necessary unless you want to pick a few generic ones to represent "photo" in a generic/abstract way. 
 
 ### Prototyping
 
