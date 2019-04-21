@@ -38,6 +38,7 @@ module.exports = {
           "lectures/lecture21-class-usage-naming.md",
           "lectures/lecture22-hover-and-transitions.md",
           "lectures/lecture23-effects.md",
+          "lectures/lecture24-transforms.md"
         ]
       },
       {
