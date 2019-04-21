@@ -39,3 +39,7 @@ Netlify is my new favorite thing. It's meant to run off of git projects, but it 
 #### CodePen Projects
 
 CodePen has a projects mode
+
+## Domain Names
+
+### Where to find and where to buy
