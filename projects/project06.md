@@ -59,7 +59,7 @@ These are good trustworthy resources, especially for syntax (the exact code you 
 
 ### Planning Your Layout
 
-I recommend you start this project by reviewing the above links, and then, printing out a black and white version of your assigned PSD. Then, take a red pen or marker, and start planning out your “block-level elements” and how it will fit together.
+I recommend you start this project by reviewing the above links, and then, printing out a black and white version of your page design. Then, take a red pen or marker, and start planning out your “block-level elements” and how it will fit together.
 
 I encourage you to use VSCode and run the [Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) but feel free to use any code editor you wish.
 
