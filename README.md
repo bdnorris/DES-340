@@ -9,7 +9,8 @@ next: false
 
 - Projects
   <!-- - Finalize [Project 4](./projects/project04.md) -->
-  - Complete Designs for [Project 5](./projects/project05.md)
+  - Finalize [Project 5](./projects/project05.md)
+  - Start [Project 6](./projects/project06.md) by printing out your final designs from project 5 to bring to class Wednesday and downloading and reviewing the starter site.
 - Exercise [E6](./exercises/exercise06-flexbox.md)
 
 <!-- ## Calendar: Section 301 (Fleener/MW/4PM)
