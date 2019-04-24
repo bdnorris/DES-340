@@ -2,6 +2,10 @@
 
 A newer CSS feature, transforms give you a lot of power to create more advanced effects in the browser. They are also the cornerstone of web animation (animating transforms uses much lower computer resources than animating position, size, etc.)
 
+Transforms are also nice because they do not affect neighboring elements, so you can scale and move and rotate without worrying about how it will affect your page layout. 
+
+[Lecture CodePen](https://codepen.io/bdnorris/pen/xezeXd)
+
 ## The syntax
 
 We can use the `transform` property for all transforms. Like other properties, they will overwrite if re-declared, so we'll look at how to do multiple transformations in a bit. For now, the basic syntax is...
@@ -26,26 +30,30 @@ We can rotate our element using the `rotate` transform and the degree unit. Posi
   transform: rotate(-10deg);
 }
 ```
-
+<!-- 
 transform: rotateY(50deg);
-transform: rotateX(50deg);
+transform: rotateX(50deg); -->
 
 ## Skewing
 
-Skewing is kind of like _slanting_. Perhaps you've  used the skew tool in Illustrator. 
+Skewing is kind of like _slanting_. Perhaps you've used the skew tool in Illustrator. 
 
 You can skew in two directions, x (horizontal) and y (vertical). This transform takes degree units as well. You're essentially telling the corners of the element's box to increase or decrease their angles. 
 
 ```css
 .my-element {
-  transform: skew(10deg, 10deg);
+  transform: skew(10deg, 20deg);
 }
 ```
 
-skewX
-skewY
+You can also skew in only one direction...
 
-...
+```css
+.my-element {
+  transform: skewX(10deg);
+  transform: skewY(20deg);
+}
+```
 
 ## Scaling
 
@@ -53,9 +61,21 @@ Sometimes you might want to shrink or grow your element, especially as part of a
 
 Scale can take a relative value, similar to `line-height`. 1 = normal, 2 = twice the normal size, 0.5 = 1/2 size, 0 = scaled to nothing.
 
+You can provide one value for overall scale, or two values for x, then y.
+
 ```css
 .my-element {
   transform: scale(0.5);
+  transform: scale(0.5, 1.5);
+}
+```
+
+And again, you can scale in only one direction if you wish...
+
+```css
+.my-element {
+  transform: scaleX(0.5);
+  transform: scaleY(1.5);
 }
 ```
 
@@ -69,8 +89,14 @@ Scale can take a relative value, similar to `line-height`. 1 = normal, 2 = twice
 }
 ```
 
-translateX
-translateY
+And again, you can move in only one direction if you wish...
+
+```css
+.my-element {
+  transform: translateX(10px);
+  transform: translateY(1em);
+}
+```
 
 ## Combining Transforms
 
@@ -93,7 +119,7 @@ To combine transforms, we just need to separate them with spaces.
 }
 ```
 
-This will rotate your element around the top left corner. You can also use pixel units to the transform origin (across then down) as well as percentages (useful for when you may not be sure of the size of the element). 
+This will rotate your element around the top left corner. You can also use pixel units to the transform-origin (across then down) as well as percentages (useful for when you may not be sure of the size of the element). 
 
 ```css
 .my-element {
@@ -104,7 +130,7 @@ This will rotate your element around the top left corner. You can also use pixel
 
 ## 3-D 
 
-There's also a whole 3-d aspect to transforms. 
+There's also a whole 3-dimensional aspect to transforms. 
 
 ```css
 .my-element {
@@ -126,7 +152,7 @@ There's also a whole 3-d aspect to transforms.
 }
 ```
 
-I'm not an expert in using these, nor do they come up often, so this will be something you can explore on your own if you're interested.
+I'm not an expert in using these, nor do they come up often so this will be something you can explore on your own if you're interested.
 
 There are also some helpful generators out there like...
 
@@ -148,6 +174,10 @@ Combining transforms with transitions allows for a wide range of animations.
 ```
 
 We want to set a base transform on the element, this increases performance slightly, getting the element ready to transform. 
+
+Animating transforms is typically highly performant because the browser doesn't have to recompute the positions of neighboring items. But, since transforms only use one property, you have to animate _all_ transformations. You can't separate "scale" from "rotate" and only animate one, for example. 
+
+**Keyframe** animations give us more options, which we'll look at in a later lecture.
 
 
 ## Resources
