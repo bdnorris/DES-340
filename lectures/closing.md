@@ -69,3 +69,5 @@ All of the [A List Apart Books](https://abookapart.com/)
 ### More
 
 [Check out the Resources Page](/resources/resources.md)
+
+[...and the Further Learning Page](/resources/further-learning.md)
