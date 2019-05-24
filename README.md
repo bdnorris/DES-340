@@ -46,3 +46,9 @@ Run `vuepress dev` to run locally,
 `vuepress build` to build static files for deployment.
 
 [VuePress Guide](https://vuepress.vuejs.org/guide/)
+
+## Credits
+
+Content by [Brian Norris](https://briannorris.io)
+
+Projects 2 and 3 originated by [Jesse Nivens](https://www.linkedin.com/in/jessenivens)
