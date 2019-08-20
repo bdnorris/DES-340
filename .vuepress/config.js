@@ -84,7 +84,8 @@ module.exports = {
           "resources/curated-sources.md",
           "resources/resources.md",
           "resources/further-learning.md",
-          "resources/randomizer.md"
+          "resources/randomizer.md",
+          "resources/for-consideration.md"
         ]
       }
     ]
