@@ -24,7 +24,9 @@ https://dev.to/prototyp/improving-css-performance-and-file-size-an-in-depth-guid
 
 https://dev.to/prototyp/improve-your-css-with-these-5-principles-35jd
 
+https://www.freecodecamp.org/news/learn-css-grid-in-5-minutes-f582e87b1228/
 
+https://www.designsystems.com/
 
 ## Narrative example for advanced class
 
