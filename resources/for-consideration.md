@@ -34,3 +34,8 @@ https://www.couroazul.com/about/
 
 ## UI Audit example
 https://www.uxdetails.com/details/disney-plus?ref=webdesignernews.com
+
+
+https://www.smashingmagazine.com/2019/05/display-box-generation
+
+https://www.fastcompany.com/3038367/9-gifs-that-explain-responsive-design-brilliantly-2
