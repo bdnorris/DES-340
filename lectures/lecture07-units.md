@@ -75,6 +75,8 @@ If you changed the parent to be 80%, the 50% would compute to 40% of the window.
 
 If I have another container inside that first container with a width of 50%, it takes 50% of the width of the parent element and not the viewport. -->
 
+(CSS Tricks: What Does 100% Mean in CSS?)[https://css-tricks.com/what-does-100-mean-in-css/]
+
 ### em Units
 
 Em is the font relative unit, this is similar to Em spaces and Em dashes that you are already familiar with. This unit is relative to itself, then its parent.  

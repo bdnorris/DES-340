@@ -6,6 +6,10 @@ Some of these were featured in lectures, some were not. There are also many link
 
 [Web Design Field Manual](http://webfieldmanual.com/)
 
+### By Special Request
+
+[Programming and Coding Glossary](https://www.smartadvocate.com/News/Blog/software-programming-and-coding-glossary-for-kids)
+
 ### General
 
 [Mozilla Developer Network](https://developer.mozilla.org/)
